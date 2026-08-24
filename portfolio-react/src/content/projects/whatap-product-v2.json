@@ -1,0 +1,3330 @@
+{
+  "schemaVersion": 1,
+  "slug": "whatap-product-v2",
+  "blocks": [
+    {
+      "id": "whatap-product-v2-1",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-product-v2-2",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "summary"
+      },
+      "children": [
+        {
+          "id": "whatap-product-v2-2.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-2.2",
+          "type": "block",
+          "tag": "ul",
+          "attributes": {},
+          "children": [
+            {
+              "id": "whatap-product-v2-2.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-2.2.2",
+              "type": "block",
+              "tag": "li",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-product-v2-2.2.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-product-v2-2.2.2.2",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-title"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-product-v2-2.2.2.2.1",
+                      "type": "text",
+                      "value": "Role"
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-product-v2-2.2.2.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-product-v2-2.2.2.4",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-text"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-product-v2-2.2.2.4.1",
+                      "type": "text",
+                      "value": "Product Designer"
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-product-v2-2.2.2.5",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-2.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-2.2.4",
+              "type": "block",
+              "tag": "li",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-product-v2-2.2.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-product-v2-2.2.4.2",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-title"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-product-v2-2.2.4.2.1",
+                      "type": "text",
+                      "value": "Design Tools"
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-product-v2-2.2.4.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-product-v2-2.2.4.4",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-text"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-product-v2-2.2.4.4.1",
+                      "type": "text",
+                      "value": "Sketch, Adobe Illustrator"
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-product-v2-2.2.4.5",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-2.2.5",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-2.2.6",
+              "type": "block",
+              "tag": "li",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-product-v2-2.2.6.1",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-title"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-product-v2-2.2.6.1.1",
+                      "type": "text",
+                      "value": "Duration"
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-product-v2-2.2.6.2",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-text"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-product-v2-2.2.6.2.1",
+                      "type": "text",
+                      "value": "2019.07 - 2019.10"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-2.2.7",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-2.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-product-v2-3",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-product-v2-4",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "intro"
+      },
+      "children": [
+        {
+          "id": "whatap-product-v2-4.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-4.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "whatap-product-v2-4.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-4.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-product-v2-4.2.2.1",
+                  "type": "text",
+                  "value": "배경"
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-4.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-4.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-4.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "whatap-product-v2-4.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-4.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "whatap-product-v2-4.4.2.1",
+                  "type": "text",
+                  "value": "\n              와탭은 기업의 IT 서비스를 안정적으로 운영할 수 있도록 도움을 주는 서비스입니다. 기업에서 고객과 주고 받는 데이터를 저장하는 서버의 자원을\n              분석하여, 실시간 데이터 차트와 로그 등을 분석하여 문제점을 사전에 알아차릴 수 있도록 해주는 모니터링 솔루션입니다. 기존과 다른 차별점이 있다면\n              SaaS 기반의 솔루션이어서 고객의 서버에 현장 방문하여 설치하는 방식이 아니라 고객이 원하면 언제든지 직접 설치할 수 있는 간편한 클라우드형\n              서비스입니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-4.4.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-4.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-product-v2-5",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-product-v2-6",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "whatap-product-v2-6.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-6.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "whatap-product-v2-6.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-6.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-product-v2-6.2.2.1",
+                  "type": "text",
+                  "value": "문제점"
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-6.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-6.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-6.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "whatap-product-v2-6.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-6.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "whatap-product-v2-6.4.2.1",
+                  "type": "text",
+                  "value": "\n              와탭 서비스 안에는 애플리케이션 모니터링과 서버 모니터링 제품을 2가지를 운영하고 있었습니다. 와탭의 비전을 설명드리자면, IT 통합 모니터링 서비스를\n              와탭 안에서 원스톱으로 한번에 모두 해결할 수 있도록 하는 것입니다. 그래서 신규 제품들인 데이터베이스, URL, 컨테이너의 모니터링 서비스들이 와탭\n              안에 우후죽순으로 늘어나게 되었습니다. 그러나 여기서의 문제점은 기존 제품이 단독 제품처럼 네비게이션을 갖고 있어 다른 제품으로의 이동 동선이\n              복잡하다는 것이었습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-6.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-6.4.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "img-wrap"
+              },
+              "children": [
+                {
+                  "id": "whatap-product-v2-6.4.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-product-v2-6.4.4.2",
+                  "type": "inline",
+                  "tag": "img",
+                  "attributes": {
+                    "class": "img-in",
+                    "src": "./img/whatap-product-v2-0.png"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "whatap-product-v2-6.4.4.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-6.4.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-6.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-product-v2-7",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-product-v2-8",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "whatap-product-v2-8.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-8.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "whatap-product-v2-8.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-8.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-product-v2-8.2.2.1",
+                  "type": "text",
+                  "value": "Goal"
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-8.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-8.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-8.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "whatap-product-v2-8.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-8.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "quote"
+              },
+              "children": [
+                {
+                  "id": "whatap-product-v2-8.4.2.1",
+                  "type": "text",
+                  "value": "\"다른 프로젝트로의 동선을 최소화하기 위해 통합 네비게이션 바를 만들어 항상 접근이 용이하도록 하자.\""
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-8.4.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-8.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-product-v2-9",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-product-v2-10",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "whatap-product-v2-10.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-10.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "whatap-product-v2-10.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-10.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-product-v2-10.2.2.1",
+                  "type": "text",
+                  "value": "Design Concept"
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-10.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-10.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-10.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "whatap-product-v2-10.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-10.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "whatap-product-v2-10.4.2.1",
+                  "type": "text",
+                  "value": "\n              통합 모니터링을 쉽게 할 수 있도록 최초 진입 설정부터 제품 안에서의 활동까지 겸할 수 있는 짧은 사용자 흐름과 화면 내의 동선까지 최소화하는 것을\n              목표로 설정하였습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-10.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-10.4.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "img-wrap"
+              },
+              "children": [
+                {
+                  "id": "whatap-product-v2-10.4.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-product-v2-10.4.4.2",
+                  "type": "inline",
+                  "tag": "img",
+                  "attributes": {
+                    "class": "img-in",
+                    "src": "./img/whatap-product-v2-1.png"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "whatap-product-v2-10.4.4.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-10.4.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-10.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-product-v2-11",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-product-v2-12",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "full"
+      },
+      "children": [
+        {
+          "id": "whatap-product-v2-12.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-12.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "img-wrap"
+          },
+          "children": [
+            {
+              "id": "whatap-product-v2-12.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-12.2.2",
+              "type": "inline",
+              "tag": "img",
+              "attributes": {
+                "class": "img-in",
+                "src": "./img/whatap-product-v2-2.png"
+              },
+              "children": []
+            },
+            {
+              "id": "whatap-product-v2-12.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-12.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-product-v2-13",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-product-v2-14",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "whatap-product-v2-14.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-14.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "whatap-product-v2-14.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-14.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-product-v2-14.2.2.1",
+                  "type": "text",
+                  "value": "Navigation"
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-14.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-14.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-14.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "whatap-product-v2-14.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-14.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "whatap-product-v2-14.4.2.1",
+                  "type": "text",
+                  "value": "\n              프로젝트와 메뉴의 위계를 설정하여 프로젝트를 상단에, 메뉴를 하단에 두어 프로젝트 선택에 따라 해당하는 메뉴가 유연하게 바뀌도록 디자인을\n              설계하였습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-14.4.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-14.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-product-v2-15",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-product-v2-16",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "full margin-top-no"
+      },
+      "children": [
+        {
+          "id": "whatap-product-v2-16.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-16.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "img-wrap"
+          },
+          "children": [
+            {
+              "id": "whatap-product-v2-16.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-16.2.2",
+              "type": "inline",
+              "tag": "img",
+              "attributes": {
+                "class": "img-in",
+                "src": "./img/whatap-product-v2-3.png"
+              },
+              "children": []
+            },
+            {
+              "id": "whatap-product-v2-16.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-16.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-product-v2-17",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-product-v2-18",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "whatap-product-v2-18.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-18.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "whatap-product-v2-18.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-18.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-product-v2-18.2.2.1",
+                  "type": "text",
+                  "value": "Product Pages"
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-18.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-18.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-product-v2-19",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-product-v2-20",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "full margin-top-no"
+      },
+      "children": [
+        {
+          "id": "whatap-product-v2-20.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-20.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "img-wrap"
+          },
+          "children": [
+            {
+              "id": "whatap-product-v2-20.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-20.2.2",
+              "type": "inline",
+              "tag": "img",
+              "attributes": {
+                "class": "img-in",
+                "src": "./img/whatap-product-v2-4.png"
+              },
+              "children": []
+            },
+            {
+              "id": "whatap-product-v2-20.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-20.2.4",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "id": "whatap-product-v2-20.2.4.1",
+                  "type": "text",
+                  "value": "로그인 후, 처음으로 보이는 프로젝트 보드는 자신이 등록한 모든 프로젝트의 주요 정보들을 볼 수 있는 화면입니다."
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-20.2.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-20.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-product-v2-21",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-product-v2-22",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "full margin-top-no"
+      },
+      "children": [
+        {
+          "id": "whatap-product-v2-22.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-22.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "img-wrap"
+          },
+          "children": [
+            {
+              "id": "whatap-product-v2-22.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-22.2.2",
+              "type": "inline",
+              "tag": "img",
+              "attributes": {
+                "class": "img-in",
+                "src": "./img/whatap-product-v2-5.png"
+              },
+              "children": []
+            },
+            {
+              "id": "whatap-product-v2-22.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-22.2.4",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "id": "whatap-product-v2-22.2.4.1",
+                  "type": "text",
+                  "value": "와탭 애플리케이션 모니터링 진입 시, 처음 나오는 대시보드 화면"
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-22.2.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-22.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-product-v2-23",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-product-v2-24",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "full margin-top-no"
+      },
+      "children": [
+        {
+          "id": "whatap-product-v2-24.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-24.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "img-wrap"
+          },
+          "children": [
+            {
+              "id": "whatap-product-v2-24.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-24.2.2",
+              "type": "inline",
+              "tag": "img",
+              "attributes": {
+                "class": "img-in",
+                "src": "./img/whatap-product-v2-6.png"
+              },
+              "children": []
+            },
+            {
+              "id": "whatap-product-v2-24.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-24.2.4",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "id": "whatap-product-v2-24.2.4.1",
+                  "type": "text",
+                  "value": "와탭 서버 모니터링 진입 시, 처음 나오는 대시보드 화면"
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-24.2.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-24.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-product-v2-25",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-product-v2-26",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "full margin-top-no"
+      },
+      "children": [
+        {
+          "id": "whatap-product-v2-26.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-26.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "img-wrap"
+          },
+          "children": [
+            {
+              "id": "whatap-product-v2-26.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-26.2.2",
+              "type": "inline",
+              "tag": "img",
+              "attributes": {
+                "class": "img-in",
+                "src": "./img/whatap-product-v2-7.png"
+              },
+              "children": []
+            },
+            {
+              "id": "whatap-product-v2-26.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-26.2.4",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "id": "whatap-product-v2-26.2.4.1",
+                  "type": "text",
+                  "value": "와탭 데이터베이스 모니터링 진입 시, 처음 나오는 대시보드 화면"
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-26.2.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-26.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-product-v2-27",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-product-v2-28",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "full margin-top-no"
+      },
+      "children": [
+        {
+          "id": "whatap-product-v2-28.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-28.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "img-wrap"
+          },
+          "children": [
+            {
+              "id": "whatap-product-v2-28.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-28.2.2",
+              "type": "inline",
+              "tag": "img",
+              "attributes": {
+                "class": "img-in",
+                "src": "./img/whatap-product-v2-8.png"
+              },
+              "children": []
+            },
+            {
+              "id": "whatap-product-v2-28.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-28.2.4",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "id": "whatap-product-v2-28.2.4.1",
+                  "type": "text",
+                  "value": "와탭 URL 모니터링 진입 시, 처음 나오는 대시보드 화면"
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-28.2.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-28.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-product-v2-29",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-product-v2-30",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "full margin-top-no"
+      },
+      "children": [
+        {
+          "id": "whatap-product-v2-30.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-30.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "img-wrap"
+          },
+          "children": [
+            {
+              "id": "whatap-product-v2-30.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-30.2.2",
+              "type": "inline",
+              "tag": "img",
+              "attributes": {
+                "class": "img-in",
+                "src": "./img/whatap-product-v2-9.png"
+              },
+              "children": []
+            },
+            {
+              "id": "whatap-product-v2-30.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-30.2.4",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "id": "whatap-product-v2-30.2.4.1",
+                  "type": "text",
+                  "value": "와탭 컨테이너 모니터링 진입 시, 처음 나오는 대시보드 화면"
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-30.2.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-30.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-product-v2-31",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-product-v2-32",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "full-max"
+      },
+      "children": [
+        {
+          "id": "whatap-product-v2-32.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-32.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "img-wrap"
+          },
+          "children": [
+            {
+              "id": "whatap-product-v2-32.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-32.2.2",
+              "type": "inline",
+              "tag": "img",
+              "attributes": {
+                "class": "img-in",
+                "src": "../../img/whatap-product-v2-main.png"
+              },
+              "children": []
+            },
+            {
+              "id": "whatap-product-v2-32.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-32.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-product-v2-33",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-product-v2-34",
+      "type": "block",
+      "tag": "div",
+      "attributes": {
+        "class": "project"
+      },
+      "children": [
+        {
+          "id": "whatap-product-v2-34.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-34.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "wrapper"
+          },
+          "children": [
+            {
+              "id": "whatap-product-v2-34.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-34.2.2",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "carousel-title"
+              },
+              "children": [
+                {
+                  "id": "whatap-product-v2-34.2.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-product-v2-34.2.2.2",
+                  "type": "block",
+                  "tag": "h4",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "whatap-product-v2-34.2.2.2.1",
+                      "type": "text",
+                      "value": "Other Works"
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-product-v2-34.2.2.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-34.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-34.2.4",
+              "type": "block",
+              "tag": "ul",
+              "attributes": {
+                "class": "carousel",
+                "data-target": "carousel"
+              },
+              "children": [
+                {
+                  "id": "whatap-product-v2-34.2.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-product-v2-34.2.4.2",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-product-v2-34.2.4.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-product-v2-34.2.4.2.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../1min-return/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "whatap-product-v2-34.2.4.2.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "whatap-product-v2-34.2.4.2.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "whatap-product-v2-34.2.4.2.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.2.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-product-v2-34.2.4.2.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.2.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/1min-web-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.2.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.2.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.2.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-product-v2-34.2.4.2.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.2.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.2.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.2.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-product-v2-34.2.4.2.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Product Design, Front-End"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.2.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.2.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-product-v2-34.2.4.2.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "1달간 '1분'으로 이뤄낸 것들"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.2.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.2.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.2.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "whatap-product-v2-34.2.4.2.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-product-v2-34.2.4.2.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-product-v2-34.2.4.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-product-v2-34.2.4.4",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-product-v2-34.2.4.4.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-product-v2-34.2.4.4.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../bznav-sans/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "whatap-product-v2-34.2.4.4.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "whatap-product-v2-34.2.4.4.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "whatap-product-v2-34.2.4.4.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.4.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-product-v2-34.2.4.4.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.4.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/bznav-sans-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.4.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.4.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.4.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-product-v2-34.2.4.4.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.4.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.4.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.4.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-product-v2-34.2.4.4.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Internal Product Design"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.4.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.4.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-product-v2-34.2.4.4.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "비즈넵의 프로덕트 폰트, BZNAV Sans"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.4.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.4.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.4.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "whatap-product-v2-34.2.4.4.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-product-v2-34.2.4.4.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-product-v2-34.2.4.5",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-product-v2-34.2.4.6",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-product-v2-34.2.4.6.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-product-v2-34.2.4.6.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../insight-renewal/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "whatap-product-v2-34.2.4.6.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "whatap-product-v2-34.2.4.6.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "whatap-product-v2-34.2.4.6.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.6.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-product-v2-34.2.4.6.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.6.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/insight-renewal-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.6.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.6.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.6.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-product-v2-34.2.4.6.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.6.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.6.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.6.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-product-v2-34.2.4.6.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Product Design"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.6.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.6.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-product-v2-34.2.4.6.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "유익하게 새로워진 '비즈넵 인사이트'"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.6.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.6.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.6.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "whatap-product-v2-34.2.4.6.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-product-v2-34.2.4.6.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-product-v2-34.2.4.7",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-product-v2-34.2.4.8",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-product-v2-34.2.4.8.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-product-v2-34.2.4.8.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../tax-invoice/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "whatap-product-v2-34.2.4.8.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "whatap-product-v2-34.2.4.8.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "whatap-product-v2-34.2.4.8.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.8.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-product-v2-34.2.4.8.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.8.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/tax-invoice-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.8.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.8.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.8.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-product-v2-34.2.4.8.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.8.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.8.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.8.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-product-v2-34.2.4.8.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Product Design"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.8.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.8.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-product-v2-34.2.4.8.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "비즈넵, '세금계산서 발급' 합니다"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.8.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.8.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.8.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "whatap-product-v2-34.2.4.8.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-product-v2-34.2.4.8.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-product-v2-34.2.4.9",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-product-v2-34.2.4.10",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-product-v2-34.2.4.10.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-product-v2-34.2.4.10.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../whatap-mobile-app/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "whatap-product-v2-34.2.4.10.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "whatap-product-v2-34.2.4.10.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "whatap-product-v2-34.2.4.10.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.10.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-product-v2-34.2.4.10.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.10.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/whatap-mobile-app-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.10.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.10.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.10.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-product-v2-34.2.4.10.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.10.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.10.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.10.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-product-v2-34.2.4.10.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "UX/UI, Mobile"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.10.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.10.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-product-v2-34.2.4.10.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "WhaTap Mobile App"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.10.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.10.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.10.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "whatap-product-v2-34.2.4.10.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-product-v2-34.2.4.10.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-product-v2-34.2.4.11",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-product-v2-34.2.4.12",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-product-v2-34.2.4.12.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-product-v2-34.2.4.12.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../whatap-signup/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "whatap-product-v2-34.2.4.12.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "whatap-product-v2-34.2.4.12.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "whatap-product-v2-34.2.4.12.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.12.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-product-v2-34.2.4.12.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.12.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/whatap-signup-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.12.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.12.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.12.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-product-v2-34.2.4.12.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.12.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.12.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.12.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-product-v2-34.2.4.12.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "UX/UI, Front-End"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.12.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.12.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-product-v2-34.2.4.12.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "WhaTap Signup Page"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.12.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.12.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.12.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "whatap-product-v2-34.2.4.12.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-product-v2-34.2.4.12.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-product-v2-34.2.4.13",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-product-v2-34.2.4.14",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-product-v2-34.2.4.14.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-product-v2-34.2.4.14.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../diabates-notes/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "whatap-product-v2-34.2.4.14.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "whatap-product-v2-34.2.4.14.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "whatap-product-v2-34.2.4.14.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.14.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-product-v2-34.2.4.14.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.14.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/diabates-app-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.14.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.14.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.14.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-product-v2-34.2.4.14.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.14.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.14.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.14.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-product-v2-34.2.4.14.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "GUI, Mobile"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.14.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.14.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-product-v2-34.2.4.14.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "'당뇨 수첩', 당뇨 환자를 위한 식단 관리 앱"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.14.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.14.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.14.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "whatap-product-v2-34.2.4.14.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-product-v2-34.2.4.14.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-product-v2-34.2.4.15",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-product-v2-34.2.4.16",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-product-v2-34.2.4.16.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-product-v2-34.2.4.16.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../seoul-touristic-icon/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "whatap-product-v2-34.2.4.16.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "whatap-product-v2-34.2.4.16.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "whatap-product-v2-34.2.4.16.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.16.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-product-v2-34.2.4.16.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.16.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/seoul-touristic-icon-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.16.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.16.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.16.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-product-v2-34.2.4.16.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.16.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.16.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.16.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-product-v2-34.2.4.16.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Icon Design"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.16.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.16.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-product-v2-34.2.4.16.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "Seoul Tourisic Icon"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.16.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.16.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.16.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "whatap-product-v2-34.2.4.16.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-product-v2-34.2.4.16.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-product-v2-34.2.4.17",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-product-v2-34.2.4.18",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-product-v2-34.2.4.18.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-product-v2-34.2.4.18.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../neumorphic-native-apps/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "whatap-product-v2-34.2.4.18.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "whatap-product-v2-34.2.4.18.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "whatap-product-v2-34.2.4.18.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.18.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-product-v2-34.2.4.18.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.18.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/neumorphic-native-apps-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.18.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.18.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.18.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-product-v2-34.2.4.18.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.18.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.18.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.18.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-product-v2-34.2.4.18.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "GUI, Mobile"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.18.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.18.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-product-v2-34.2.4.18.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "Neumorphic Native Apps"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-product-v2-34.2.4.18.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "whatap-product-v2-34.2.4.18.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-product-v2-34.2.4.18.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "whatap-product-v2-34.2.4.18.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-product-v2-34.2.4.18.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-product-v2-34.2.4.19",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-34.2.5",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-34.2.6",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "button-wrapper"
+              },
+              "children": [
+                {
+                  "id": "whatap-product-v2-34.2.6.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-product-v2-34.2.6.2",
+                  "type": "inline",
+                  "tag": "button",
+                  "attributes": {
+                    "id": "prev",
+                    "class": "no-drag"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "whatap-product-v2-34.2.6.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-product-v2-34.2.6.4",
+                  "type": "inline",
+                  "tag": "button",
+                  "attributes": {
+                    "id": "next",
+                    "class": "no-drag"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "whatap-product-v2-34.2.6.5",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-34.2.7",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-34.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-product-v2-35",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-product-v2-36",
+      "type": "inline",
+      "tag": "footer",
+      "attributes": {},
+      "children": [
+        {
+          "id": "whatap-product-v2-36.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-product-v2-36.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "footer-wrap"
+          },
+          "children": [
+            {
+              "id": "whatap-product-v2-36.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-36.2.2",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "copyright"
+              },
+              "children": [
+                {
+                  "id": "whatap-product-v2-36.2.2.1",
+                  "type": "text",
+                  "value": "Copyright © 2023"
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-36.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-product-v2-36.2.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "description"
+              },
+              "children": [
+                {
+                  "id": "whatap-product-v2-36.2.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-product-v2-36.2.4.2",
+                  "type": "block",
+                  "tag": "ul",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "whatap-product-v2-36.2.4.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-product-v2-36.2.4.2.2",
+                      "type": "block",
+                      "tag": "li",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "whatap-product-v2-36.2.4.2.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "whatap-product-v2-36.2.4.2.2.2",
+                          "type": "block",
+                          "tag": "p",
+                          "attributes": {},
+                          "children": [
+                            {
+                              "id": "whatap-product-v2-36.2.4.2.2.2.1",
+                              "type": "text",
+                              "value": "Designed and developed by "
+                            },
+                            {
+                              "id": "whatap-product-v2-36.2.4.2.2.2.2",
+                              "type": "inline",
+                              "tag": "span",
+                              "attributes": {
+                                "class": "mylogo"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-product-v2-36.2.4.2.2.2.2.1",
+                                  "type": "text",
+                                  "value": "Youngsam"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "whatap-product-v2-36.2.4.2.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-product-v2-36.2.4.2.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-product-v2-36.2.4.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-product-v2-36.2.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-product-v2-36.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-product-v2-37",
+      "type": "text",
+      "value": " "
+    }
+  ]
+}

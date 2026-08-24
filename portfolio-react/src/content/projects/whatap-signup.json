@@ -1,0 +1,3645 @@
+{
+  "schemaVersion": 1,
+  "slug": "whatap-signup",
+  "blocks": [
+    {
+      "id": "whatap-signup-1",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-signup-2",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "summary"
+      },
+      "children": [
+        {
+          "id": "whatap-signup-2.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-signup-2.2",
+          "type": "block",
+          "tag": "ul",
+          "attributes": {},
+          "children": [
+            {
+              "id": "whatap-signup-2.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-2.2.2",
+              "type": "block",
+              "tag": "li",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-signup-2.2.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-2.2.2.2",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-title"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-2.2.2.2.1",
+                      "type": "text",
+                      "value": "Role"
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-2.2.2.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-2.2.2.4",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-text"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-2.2.2.4.1",
+                      "type": "text",
+                      "value": "Product Designer & Front-End Developer"
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-2.2.2.5",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-2.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-2.2.4",
+              "type": "block",
+              "tag": "li",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-signup-2.2.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-2.2.4.2",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-title"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-2.2.4.2.1",
+                      "type": "text",
+                      "value": "Design Tools"
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-2.2.4.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-2.2.4.4",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-text"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-2.2.4.4.1",
+                      "type": "text",
+                      "value": "Sketch"
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-2.2.4.5",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-2.2.5",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-2.2.6",
+              "type": "block",
+              "tag": "li",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-signup-2.2.6.1",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-title"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-2.2.6.1.1",
+                      "type": "text",
+                      "value": "Duration"
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-2.2.6.2",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-text"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-2.2.6.2.1",
+                      "type": "text",
+                      "value": "2019.09 - 2019.10"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-2.2.7",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-signup-2.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-signup-3",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-signup-4",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "intro"
+      },
+      "children": [
+        {
+          "id": "whatap-signup-4.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-signup-4.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "whatap-signup-4.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-4.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-signup-4.2.2.1",
+                  "type": "text",
+                  "value": "배경"
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-4.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-signup-4.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-signup-4.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "whatap-signup-4.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-4.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "whatap-signup-4.4.2.1",
+                  "type": "text",
+                  "value": "와탭의 기존의 회원가입 절차가 복잡하고 UI를 개선하기 위해 작업을 시작하였습니다."
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-4.4.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-signup-4.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-signup-5",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-signup-6",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "whatap-signup-6.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-signup-6.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "whatap-signup-6.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-6.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-signup-6.2.2.1",
+                  "type": "text",
+                  "value": "문제점"
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-6.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-signup-6.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-signup-6.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "whatap-signup-6.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-6.4.2",
+              "type": "block",
+              "tag": "ul",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "whatap-signup-6.4.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-6.4.2.2",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "text-li"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-6.4.2.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-6.4.2.2.2",
+                      "type": "block",
+                      "tag": "h6",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "whatap-signup-6.4.2.2.2.1",
+                          "type": "text",
+                          "value": "필요하지 않은 정보들로 인해 절차가 복잡"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-6.4.2.2.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-6.4.2.2.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "whatap-signup-6.4.2.2.4.1",
+                          "type": "text",
+                          "value": "언어와 사업대상국, 프로모션 코드까지 물어보고 있어서 사용자에게 과도하게 질문을 하고 있습니다."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-6.4.2.2.5",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-6.4.2.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-6.4.2.4",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "text-li"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-6.4.2.4.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-6.4.2.4.2",
+                      "type": "block",
+                      "tag": "h6",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "whatap-signup-6.4.2.4.2.1",
+                          "type": "text",
+                          "value": "순서를 최적화하지 못함"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-6.4.2.4.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-6.4.2.4.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "whatap-signup-6.4.2.4.4.1",
+                          "type": "text",
+                          "value": "\n                  질문을 할 때는 \"가장 쉬운\" 것에서 \"가장 어려운\" 것으로 진행할 때 이해가 빨라지고, \"기본적인\" 요구사항부터 \"비즈니스적인\" 요구사항으로 물어보는\n                  것이 적절합니다. 그런데, 회사명부터 물어보고 있다는 것은 \"비즈니스적인\" 것부터 물어보고 있어서 사용자의 흐름에 방해가 될 수 있습니다.\n                "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-6.4.2.4.5",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-6.4.2.5",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-6.4.2.6",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "text-li"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-6.4.2.6.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-6.4.2.6.2",
+                      "type": "block",
+                      "tag": "h6",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "whatap-signup-6.4.2.6.2.1",
+                          "type": "text",
+                          "value": "Placeholder와 Label이 불필요하게 중복"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-6.4.2.6.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-6.4.2.6.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "whatap-signup-6.4.2.6.4.1",
+                          "type": "text",
+                          "value": "\n                  Input의 Placeholder가 있어서 레이블은 불필요하게 많이 중복되어 있습니다. 또한 레이블이 왼쪽에 있어 사용자의 시각적 흐름이 Z형이 되어 시야의\n                  전환이 이루어지기 때문에, 복잡함과 피로감을 주고 있습니다. 그리고 반응형 웹을 고려하면 레이아웃이 틀어질 수 있어 문제가 될 수 있습니다.\n                "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-6.4.2.6.5",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-6.4.2.7",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-6.4.2.8",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "text-li"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-6.4.2.8.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-6.4.2.8.2",
+                      "type": "block",
+                      "tag": "h6",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "whatap-signup-6.4.2.8.2.1",
+                          "type": "text",
+                          "value": "입력필드가 Line으로 되어있다"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-6.4.2.8.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-6.4.2.8.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "whatap-signup-6.4.2.8.4.1",
+                          "type": "text",
+                          "value": "\n                  기본적으로 많이들 사용하고 있는 Line 형태의 입력 필드이지만, 박스 형태의 입력 필드가 사용성이 좋습니다. 그래서 구글에서도 입력필드를 다시\n                  박스형태로 바꾸어 적용한 UI 디자인 사례가 있습니다.\n                "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-6.4.2.8.5",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-6.4.2.9",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-6.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-6.4.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "img-wrap"
+              },
+              "children": [
+                {
+                  "id": "whatap-signup-6.4.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-6.4.4.2",
+                  "type": "block",
+                  "tag": "video",
+                  "attributes": {
+                    "class": "video-in",
+                    "autoplay": "",
+                    "loop": "",
+                    "muted": "",
+                    "playsinline": ""
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-6.4.4.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-6.4.4.2.2",
+                      "type": "inline",
+                      "tag": "source",
+                      "attributes": {
+                        "src": "./img/whatap-signup-page-1.mp4?001",
+                        "type": "video/mp4"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "whatap-signup-6.4.4.2.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-6.4.4.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-6.4.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-signup-6.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-signup-7",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-signup-8",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "whatap-signup-8.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-signup-8.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "whatap-signup-8.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-8.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-signup-8.2.2.1",
+                  "type": "text",
+                  "value": "문제점 해결"
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-8.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-signup-8.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-signup-8.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "whatap-signup-8.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-8.4.2",
+              "type": "block",
+              "tag": "ul",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "whatap-signup-8.4.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-8.4.2.2",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "text-li"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-8.4.2.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-8.4.2.2.2",
+                      "type": "block",
+                      "tag": "h6",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "whatap-signup-8.4.2.2.2.1",
+                          "type": "text",
+                          "value": "필요한 내용으로만 단순화"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-8.4.2.2.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-8.4.2.2.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "whatap-signup-8.4.2.2.4.1",
+                          "type": "text",
+                          "value": "\n                  입력필드가 많아지면 전환률은 떨어집니다. 정보를 줄이는 것은 회사의 마케팅과 관련되어 있는 부분이라 대표님과 관련 구성원분들과 충분한 상의를\n                  나누었습니다. '언어'의 경우는 기본적인 국가 IP를 받아서 프로덕트와 연결할 수 있도록 하였고, 얼마든지 프로덕트 안에서 계정 설정으로 변경할 수\n                  있도록 하였습니다. '사업대상국'의 경우는 일본에서 와탭을 연결해주는 파트너 업체를 위한 질문이어서, 그 업체를 통한 경우는 특수 프로모션 코드를\n                  이용하여 알 수 있도록 구분지어 불필요하게 되었습니다. 그리고 '프로모션 코드'는 소지한 사람에게만 보여질 수 있도록 기본적으로 가리게 하여\n                  소지하지 않은 사람들에게 혼동을 주지 않게 하였습니다.\n                "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-8.4.2.2.5",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-8.4.2.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-8.4.2.4",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "text-li"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-8.4.2.4.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-8.4.2.4.2",
+                      "type": "block",
+                      "tag": "h6",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "whatap-signup-8.4.2.4.2.1",
+                          "type": "text",
+                          "value": "순서를 최적화"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-8.4.2.4.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-8.4.2.4.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "whatap-signup-8.4.2.4.4.1",
+                          "type": "text",
+                          "value": "기본적인 질문과 쉬운 질문부터 단계적으로 질문하여 사용자가 비교적 회원가입을 하기에 부담이 적게 하였습니다."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-8.4.2.4.5",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-8.4.2.5",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-8.4.2.6",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "text-li"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-8.4.2.6.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-8.4.2.6.2",
+                      "type": "block",
+                      "tag": "h6",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "whatap-signup-8.4.2.6.2.1",
+                          "type": "text",
+                          "value": "Placeholder와 레이블을 일치"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-8.4.2.6.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-8.4.2.6.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "whatap-signup-8.4.2.6.4.1",
+                          "type": "text",
+                          "value": "\n                  이 과정은 구글의 입력필드를 참고하여 작업하였습니다. 회원가입을 고려할 때는 모바일을 우선적으로 체크하여, 모바일 화면에 입력필드가 최대한 많이\n                  보일 수 있는 디자인을 찾고 있었습니다. 많은 레퍼런스를 참고하였지만, 구글의 입력필드가 좋은 디자인안이었습니다. 덧붙이자면, 코딩작업을 할 때\n                  최대한 JS를 안쓰고 CSS에서 해결하려 하였습니다. 이유는 퍼포먼스가 더 빨라 사용자에게 버벅임을 줄일 수 있을 것 같았습니다.\n                "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-8.4.2.6.5",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-8.4.2.7",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-8.4.2.8",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "text-li"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-8.4.2.8.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-8.4.2.8.2",
+                      "type": "block",
+                      "tag": "h6",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "whatap-signup-8.4.2.8.2.1",
+                          "type": "text",
+                          "value": "입력 필드를 Box 형태로"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-8.4.2.8.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-8.4.2.8.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "whatap-signup-8.4.2.8.4.1",
+                          "type": "text",
+                          "value": "입력 필드를 박스 형태로 바꾸어 사용자에게 입력 필드라는 것을 명확히 알려주었습니다. 그리고 불필요하게 중복되는 레이블은 제거하였습니다."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-8.4.2.8.5",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-8.4.2.9",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-8.4.2.10",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "text-li"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-8.4.2.10.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-8.4.2.10.2",
+                      "type": "block",
+                      "tag": "h6",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "whatap-signup-8.4.2.10.2.1",
+                          "type": "text",
+                          "value": "입력란이 끝나면 유효성 피드백"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-8.4.2.10.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-8.4.2.10.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "whatap-signup-8.4.2.10.4.1",
+                          "type": "text",
+                          "value": "입력란을 다 채운 후에 유효성을 확인하여 에러 상태와 그 이유를 알려주어 사용자가 정확히 정보를 입력할 수 있도록 유도하였습니다."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-8.4.2.10.5",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-8.4.2.11",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-8.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-8.4.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "img-wrap"
+              },
+              "children": [
+                {
+                  "id": "whatap-signup-8.4.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-8.4.4.2",
+                  "type": "block",
+                  "tag": "video",
+                  "attributes": {
+                    "class": "video-in",
+                    "autoplay": "",
+                    "loop": "",
+                    "muted": "",
+                    "playsinline": ""
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-8.4.4.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-8.4.4.2.2",
+                      "type": "inline",
+                      "tag": "source",
+                      "attributes": {
+                        "src": "./img/whatap-signup-page-2.mp4?001",
+                        "type": "video/mp4"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "whatap-signup-8.4.4.2.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-8.4.4.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-8.4.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-signup-8.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-signup-9",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-signup-10",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "whatap-signup-10.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-signup-10.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "whatap-signup-10.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-10.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-signup-10.2.2.1",
+                  "type": "text",
+                  "value": "Output"
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-10.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-signup-10.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-signup-10.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "whatap-signup-10.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-10.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "whatap-signup-10.4.2.1",
+                  "type": "text",
+                  "value": "\n              회원가입은 회사의 서비스 성장도의 지표이기 때문에, Google Analytics 같은 웹서비스 지표를 보기 위해서는 도메인을 달리 설정할 필요가 있었습니다.\n              어느 나라에서 가입률이 어떤 상태인지 정확히 알기 위해서 입니다. 그래서 기존에는 도메인 하나에서 Javascript로 언어를 변경했었지만, 3가지를 만들\n              필요가 있었습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-10.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-10.4.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "img-wrap"
+              },
+              "children": [
+                {
+                  "id": "whatap-signup-10.4.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-10.4.4.2",
+                  "type": "inline",
+                  "tag": "img",
+                  "attributes": {
+                    "class": "img-in",
+                    "src": "./img/whatap-signup-page-3.png"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "whatap-signup-10.4.4.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-10.4.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-signup-10.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-signup-11",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-signup-12",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "whatap-signup-12.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-signup-12.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "whatap-signup-12.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-12.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-signup-12.2.2.1",
+                  "type": "text",
+                  "value": "Coding"
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-12.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-signup-12.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-signup-12.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "whatap-signup-12.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-12.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "whatap-signup-12.4.2.1",
+                  "type": "text",
+                  "value": "\n              개발 실력이 얕은 상태에서 회원가입 완료를 하면 Form의 데이터를 서버 쪽에 전달하고 아이디가 중복되었는지 등의 데이터를 받아와야 해서 백엔드 분과\n              어느정도 데이터를 맞추고 작업을 하였습니다. 그런데 작업을 하다보니 언어의 전달 순서가 달라 UX를 의논하였을 때, 국가전화번호 순으로 정렬하는 것으로\n              의논이 결정되었습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-12.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-12.4.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "img-wrap"
+              },
+              "children": [
+                {
+                  "id": "whatap-signup-12.4.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-12.4.4.2",
+                  "type": "inline",
+                  "tag": "img",
+                  "attributes": {
+                    "class": "img-in",
+                    "src": "./img/whatap-signup-page-4.png"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "whatap-signup-12.4.4.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-12.4.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-signup-12.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-signup-13",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-signup-14",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "whatap-signup-14.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-signup-14.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "whatap-signup-14.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-14.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-signup-14.2.2.1",
+                  "type": "text",
+                  "value": "마무리하면서"
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-14.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-signup-14.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-signup-14.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "whatap-signup-14.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-14.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "whatap-signup-14.4.2.1",
+                  "type": "text",
+                  "value": "\n              폼 디자인에 있어서 다양한 회원가입 페이지들을 보았고, 회원가입 UX 디자인 유용한 글들을 많이 읽게 되어 작업에 도움이 되었습니다. 공감가는 부분들은\n              적극 수용하여 회사 특성에 맞게 유연하게 변형시켜 작업하였습니다. 작업하면서 SNS를 이용한 간편 회원가입을 넣고 싶었으나, B2B 서비스여서 이메일을\n              입력하는 유저들이 회사 메일을 주로 입력하기 때문에 개인 SNS 계정과 연결하는 것이 불필요하다고 생각되었습니다. 또한 비밀번호를 1번만 입력하는 것과\n              비밀번호 확인을 넣는 것과 많은 의견이 있었습니다. 결국 비밀번호 확인을 넣어 안정성을 확보하는 것으로 결정하기로 하였습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-14.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-14.4.4",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "refer"
+              },
+              "children": [
+                {
+                  "id": "whatap-signup-14.4.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-14.4.4.2",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "whatap-signup-14.4.4.2.1",
+                      "type": "text",
+                      "value": "참고"
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-14.4.4.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-14.4.5",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-14.4.6",
+              "type": "block",
+              "tag": "p",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-signup-14.4.6.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-14.4.6.2",
+                  "type": "inline",
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://brunch.co.kr/@ebprux/56",
+                    "target": "_blank"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-14.4.6.2.1",
+                      "type": "text",
+                      "value": "https://brunch.co.kr/@ebprux/56"
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-14.4.6.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-14.4.7",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-14.4.8",
+              "type": "block",
+              "tag": "p",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-signup-14.4.8.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-14.4.8.2",
+                  "type": "inline",
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://brunch.co.kr/@thinkAboutlove/262",
+                    "target": "_blank"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-14.4.8.2.1",
+                      "type": "text",
+                      "value": "https://brunch.co.kr/@thinkAboutlove/262"
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-14.4.8.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-14.4.9",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-14.4.10",
+              "type": "block",
+              "tag": "p",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-signup-14.4.10.1",
+                  "type": "inline",
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://brunch.co.kr/@dalgudot/74",
+                    "target": "_blank"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-14.4.10.1.1",
+                      "type": "text",
+                      "value": "https://brunch.co.kr/@dalgudot/74"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-14.4.11",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-14.4.12",
+              "type": "block",
+              "tag": "p",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-signup-14.4.12.1",
+                  "type": "inline",
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://brunch.co.kr/@dalgudot/101",
+                    "target": "_blank"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-14.4.12.1.1",
+                      "type": "text",
+                      "value": "https://brunch.co.kr/@dalgudot/101"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-14.4.13",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-14.4.14",
+              "type": "block",
+              "tag": "p",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "whatap-signup-14.4.14.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-14.4.14.2",
+                  "type": "inline",
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://blog.wishket.com/사용자-경험을-고려한-입력폼-디자인-팁-4가지/",
+                    "target": "_blank"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-14.4.14.2.1",
+                      "type": "text",
+                      "value": "https://blog.wishket.com/사용자-경험을-고려한-입력폼-디자인-팁-4가지/"
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-14.4.14.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-14.4.15",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-signup-14.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-signup-15",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-signup-16",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "full-max"
+      },
+      "children": [
+        {
+          "id": "whatap-signup-16.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-signup-16.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "img-wrap"
+          },
+          "children": [
+            {
+              "id": "whatap-signup-16.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-16.2.2",
+              "type": "inline",
+              "tag": "img",
+              "attributes": {
+                "class": "img-in",
+                "src": "./img/whatap-signup-page-0.png"
+              },
+              "children": []
+            },
+            {
+              "id": "whatap-signup-16.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-signup-16.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-signup-17",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-signup-18",
+      "type": "block",
+      "tag": "div",
+      "attributes": {
+        "class": "project"
+      },
+      "children": [
+        {
+          "id": "whatap-signup-18.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-signup-18.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "wrapper"
+          },
+          "children": [
+            {
+              "id": "whatap-signup-18.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-18.2.2",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "carousel-title"
+              },
+              "children": [
+                {
+                  "id": "whatap-signup-18.2.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-18.2.2.2",
+                  "type": "block",
+                  "tag": "h4",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "whatap-signup-18.2.2.2.1",
+                      "type": "text",
+                      "value": "Other Works"
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-18.2.2.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-18.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-18.2.4",
+              "type": "block",
+              "tag": "ul",
+              "attributes": {
+                "class": "carousel",
+                "data-target": "carousel"
+              },
+              "children": [
+                {
+                  "id": "whatap-signup-18.2.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-18.2.4.2",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-18.2.4.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-18.2.4.2.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../1min-return/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "whatap-signup-18.2.4.2.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "whatap-signup-18.2.4.2.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "whatap-signup-18.2.4.2.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.2.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-signup-18.2.4.2.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.2.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/1min-web-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.2.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.2.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.2.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-signup-18.2.4.2.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.2.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "whatap-signup-18.2.4.2.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.2.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-signup-18.2.4.2.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Product Design, Front-End"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.2.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.2.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-signup-18.2.4.2.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "1달간 '1분'으로 이뤄낸 것들"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.2.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.2.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.2.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "whatap-signup-18.2.4.2.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-18.2.4.2.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-18.2.4.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-18.2.4.4",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-18.2.4.4.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-18.2.4.4.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../bznav-sans/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "whatap-signup-18.2.4.4.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "whatap-signup-18.2.4.4.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "whatap-signup-18.2.4.4.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.4.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-signup-18.2.4.4.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.4.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/bznav-sans-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.4.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.4.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.4.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-signup-18.2.4.4.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.4.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "whatap-signup-18.2.4.4.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.4.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-signup-18.2.4.4.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Internal Product Design"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.4.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.4.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-signup-18.2.4.4.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "비즈넵의 프로덕트 폰트, BZNAV Sans"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.4.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.4.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.4.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "whatap-signup-18.2.4.4.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-18.2.4.4.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-18.2.4.5",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-18.2.4.6",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-18.2.4.6.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-18.2.4.6.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../insight-renewal/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "whatap-signup-18.2.4.6.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "whatap-signup-18.2.4.6.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "whatap-signup-18.2.4.6.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.6.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-signup-18.2.4.6.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.6.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/insight-renewal-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.6.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.6.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.6.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-signup-18.2.4.6.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.6.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "whatap-signup-18.2.4.6.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.6.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-signup-18.2.4.6.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Product Design"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.6.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.6.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-signup-18.2.4.6.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "유익하게 새로워진 '비즈넵 인사이트'"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.6.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.6.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.6.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "whatap-signup-18.2.4.6.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-18.2.4.6.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-18.2.4.7",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-18.2.4.8",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-18.2.4.8.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-18.2.4.8.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../tax-invoice/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "whatap-signup-18.2.4.8.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "whatap-signup-18.2.4.8.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "whatap-signup-18.2.4.8.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.8.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-signup-18.2.4.8.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.8.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/tax-invoice-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.8.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.8.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.8.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-signup-18.2.4.8.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.8.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "whatap-signup-18.2.4.8.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.8.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-signup-18.2.4.8.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Product Design"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.8.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.8.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-signup-18.2.4.8.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "비즈넵, '세금계산서 발급' 합니다"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.8.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.8.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.8.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "whatap-signup-18.2.4.8.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-18.2.4.8.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-18.2.4.9",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-18.2.4.10",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-18.2.4.10.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-18.2.4.10.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../whatap-product-v2/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "whatap-signup-18.2.4.10.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "whatap-signup-18.2.4.10.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "whatap-signup-18.2.4.10.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.10.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-signup-18.2.4.10.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.10.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/whatap-product-v2-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.10.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.10.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.10.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-signup-18.2.4.10.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.10.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "whatap-signup-18.2.4.10.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.10.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-signup-18.2.4.10.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "UX/UI, Web"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.10.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.10.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-signup-18.2.4.10.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "WhaTap Product v2.0"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.10.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.10.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.10.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "whatap-signup-18.2.4.10.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-18.2.4.10.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-18.2.4.11",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-18.2.4.12",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-18.2.4.12.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-18.2.4.12.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../whatap-mobile-app/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "whatap-signup-18.2.4.12.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "whatap-signup-18.2.4.12.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "whatap-signup-18.2.4.12.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.12.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-signup-18.2.4.12.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.12.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/whatap-mobile-app-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.12.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.12.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.12.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-signup-18.2.4.12.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.12.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "whatap-signup-18.2.4.12.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.12.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-signup-18.2.4.12.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "UX/UI, Mobile"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.12.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.12.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-signup-18.2.4.12.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "WhaTap Mobile App"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.12.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.12.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.12.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "whatap-signup-18.2.4.12.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-18.2.4.12.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-18.2.4.13",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-18.2.4.14",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-18.2.4.14.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-18.2.4.14.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../diabates-notes/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "whatap-signup-18.2.4.14.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "whatap-signup-18.2.4.14.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "whatap-signup-18.2.4.14.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.14.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-signup-18.2.4.14.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.14.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/diabates-app-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.14.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.14.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.14.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-signup-18.2.4.14.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.14.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "whatap-signup-18.2.4.14.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.14.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-signup-18.2.4.14.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "GUI, Mobile"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.14.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.14.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-signup-18.2.4.14.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "'당뇨 수첩', 당뇨 환자를 위한 식단 관리 앱"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.14.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.14.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.14.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "whatap-signup-18.2.4.14.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-18.2.4.14.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-18.2.4.15",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-18.2.4.16",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-18.2.4.16.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-18.2.4.16.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../seoul-touristic-icon/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "whatap-signup-18.2.4.16.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "whatap-signup-18.2.4.16.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "whatap-signup-18.2.4.16.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.16.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-signup-18.2.4.16.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.16.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/seoul-touristic-icon-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.16.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.16.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.16.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-signup-18.2.4.16.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.16.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "whatap-signup-18.2.4.16.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.16.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-signup-18.2.4.16.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Icon Design"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.16.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.16.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-signup-18.2.4.16.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "Seoul Tourisic Icon"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.16.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.16.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.16.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "whatap-signup-18.2.4.16.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-18.2.4.16.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-18.2.4.17",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-18.2.4.18",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "whatap-signup-18.2.4.18.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-18.2.4.18.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../neumorphic-native-apps/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "whatap-signup-18.2.4.18.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "whatap-signup-18.2.4.18.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "whatap-signup-18.2.4.18.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.18.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-signup-18.2.4.18.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.18.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/neumorphic-native-apps-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.18.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.18.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.18.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-signup-18.2.4.18.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.18.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "whatap-signup-18.2.4.18.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.18.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-signup-18.2.4.18.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "GUI, Mobile"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.18.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.18.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "whatap-signup-18.2.4.18.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "Neumorphic Native Apps"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "whatap-signup-18.2.4.18.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "whatap-signup-18.2.4.18.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "whatap-signup-18.2.4.18.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "whatap-signup-18.2.4.18.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-18.2.4.18.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-18.2.4.19",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-18.2.5",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-18.2.6",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "button-wrapper"
+              },
+              "children": [
+                {
+                  "id": "whatap-signup-18.2.6.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-18.2.6.2",
+                  "type": "inline",
+                  "tag": "button",
+                  "attributes": {
+                    "id": "prev",
+                    "class": "no-drag"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "whatap-signup-18.2.6.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-18.2.6.4",
+                  "type": "inline",
+                  "tag": "button",
+                  "attributes": {
+                    "id": "next",
+                    "class": "no-drag"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "whatap-signup-18.2.6.5",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-18.2.7",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-signup-18.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-signup-19",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "whatap-signup-20",
+      "type": "inline",
+      "tag": "footer",
+      "attributes": {},
+      "children": [
+        {
+          "id": "whatap-signup-20.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "whatap-signup-20.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "footer-wrap"
+          },
+          "children": [
+            {
+              "id": "whatap-signup-20.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-20.2.2",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "copyright"
+              },
+              "children": [
+                {
+                  "id": "whatap-signup-20.2.2.1",
+                  "type": "text",
+                  "value": "Copyright © 2023"
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-20.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "whatap-signup-20.2.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "description"
+              },
+              "children": [
+                {
+                  "id": "whatap-signup-20.2.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "whatap-signup-20.2.4.2",
+                  "type": "block",
+                  "tag": "ul",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "whatap-signup-20.2.4.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "whatap-signup-20.2.4.2.2",
+                      "type": "block",
+                      "tag": "li",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "whatap-signup-20.2.4.2.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "whatap-signup-20.2.4.2.2.2",
+                          "type": "block",
+                          "tag": "p",
+                          "attributes": {},
+                          "children": [
+                            {
+                              "id": "whatap-signup-20.2.4.2.2.2.1",
+                              "type": "text",
+                              "value": "Designed and developed by "
+                            },
+                            {
+                              "id": "whatap-signup-20.2.4.2.2.2.2",
+                              "type": "inline",
+                              "tag": "span",
+                              "attributes": {
+                                "class": "mylogo"
+                              },
+                              "children": [
+                                {
+                                  "id": "whatap-signup-20.2.4.2.2.2.2.1",
+                                  "type": "text",
+                                  "value": "Youngsam"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "whatap-signup-20.2.4.2.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "whatap-signup-20.2.4.2.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "whatap-signup-20.2.4.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "whatap-signup-20.2.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "whatap-signup-20.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "whatap-signup-21",
+      "type": "text",
+      "value": " "
+    }
+  ]
+}

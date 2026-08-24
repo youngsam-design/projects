@@ -1,0 +1,1280 @@
+{
+  "schemaVersion": 2,
+  "projectId": "prj_bznav_sans",
+  "slug": "bznav-sans",
+  "title": "비즈넵의 프로덕트 폰트, BZNAV Sans",
+  "excerpt": "국문·영문·숫자가 모두 잘 어울리는 비즈넵 프로덕트 전용 폰트 BZNAV Sans를 만든 과정",
+  "pageMeta": {
+    "title": "YS - 비즈넵의 프로덕트 폰트, BZNAV Sans",
+    "bodyClass": "pages",
+    "bodyStyle": "color: orange",
+    "styles": ".contents > section.full-max .img-wrap .img-in {\n        object-fit: cover;\n      }"
+  },
+  "hero": {
+    "eyebrow": "2020년 10월 16일",
+    "headline": "비즈넵의 프로덕트 폰트, BZNAV Sans",
+    "coverAssetId": "ast_bz_hero",
+    "mesh": false,
+    "meshWarp": false
+  },
+  "theme": {
+    "mainColor": "0, 31, 61",
+    "backgroundColor": "255, 255, 255",
+    "textColor": "0, 36, 71",
+    "menuColor": "0, 31, 61"
+  },
+  "contentWidth": "medium",
+  "meta": [
+    {
+      "id": "bz-meta-1",
+      "label": "Personal Side Project",
+      "value": "Font Making History"
+    },
+    {
+      "id": "bz-meta-2",
+      "label": "Tools",
+      "value": "FontLab"
+    },
+    {
+      "id": "bz-meta-3",
+      "label": "Duration",
+      "value": "2020.9 - 2020.10"
+    }
+  ],
+  "relatedProjects": [
+    {
+      "id": "related_1min-return",
+      "slug": "1min-return",
+      "category": "Product Design, Front-End",
+      "title": "1달간 '1분'으로 이뤄낸 것들",
+      "thumbnailAssetId": "ast_bz_rel_1min-return"
+    },
+    {
+      "id": "related_insight-renewal",
+      "slug": "insight-renewal",
+      "category": "Product Design",
+      "title": "유익하게 새로워진 '비즈넵 인사이트'",
+      "thumbnailAssetId": "ast_bz_rel_insight-renewal"
+    },
+    {
+      "id": "related_tax-invoice",
+      "slug": "tax-invoice",
+      "category": "Product Design",
+      "title": "비즈넵, '세금계산서 발급' 합니다",
+      "thumbnailAssetId": "ast_bz_rel_tax-invoice"
+    },
+    {
+      "id": "related_whatap-product-v2",
+      "slug": "whatap-product-v2",
+      "category": "UX/UI, Web",
+      "title": "WhaTap Product v2.0",
+      "thumbnailAssetId": "ast_bz_rel_whatap-product-v2"
+    },
+    {
+      "id": "related_whatap-mobile-app",
+      "slug": "whatap-mobile-app",
+      "category": "UX/UI, Mobile",
+      "title": "WhaTap Mobile App",
+      "thumbnailAssetId": "ast_bz_rel_whatap-mobile-app"
+    },
+    {
+      "id": "related_whatap-signup",
+      "slug": "whatap-signup",
+      "category": "UX/UI, Front-End",
+      "title": "WhaTap Signup Page",
+      "thumbnailAssetId": "ast_bz_rel_whatap-signup"
+    },
+    {
+      "id": "related_diabates-notes",
+      "slug": "diabates-notes",
+      "category": "GUI, Mobile",
+      "title": "'당뇨 수첩', 당뇨 환자를 위한 식단 관리 앱",
+      "thumbnailAssetId": "ast_bz_rel_diabates-notes"
+    },
+    {
+      "id": "related_seoul-touristic-icon",
+      "slug": "seoul-touristic-icon",
+      "category": "Icon Design",
+      "title": "Seoul Tourisic Icon",
+      "thumbnailAssetId": "ast_bz_rel_seoul-touristic-icon"
+    },
+    {
+      "id": "related_neumorphic-native-apps",
+      "slug": "neumorphic-native-apps",
+      "category": "GUI, Mobile",
+      "title": "Neumorphic Native Apps",
+      "thumbnailAssetId": "ast_bz_rel_neumorphic-native-apps"
+    }
+  ],
+  "version": 1,
+  "blocks": [
+    {
+      "id": "bz-section110",
+      "type": "section",
+      "variant": [
+        "content"
+      ],
+      "children": [
+        {
+          "id": "bz-group109",
+          "type": "group",
+          "variant": [
+            "contentSection"
+          ],
+          "children": [
+            {
+              "id": "bz-h1",
+              "type": "heading",
+              "level": 4,
+              "variant": [],
+              "children": [
+                {
+                  "id": "bz-t2",
+                  "type": "text",
+                  "text": "배경",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-p4",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-t3",
+                  "type": "text",
+                  "text": "지엔터프라이즈의 프로덕트 디자이너로 2020년 6월 1일에 입사를 했었고, 기존 디자이너 분들은 디자인 시스템 없이 XD를 사용하고 있었습니다. UI 작업을 하기 위해 XD 파일을 하나씩 살펴보는 과정에서 많은 시간을 소모하고 있었습니다. 지엔터프라이즈의 애자일 조직문화 속에서 빠르게 화면을 제작하기 위해서는 디자인 시스템이 절실히 필요했습니다. 그래서 XD를 버리고 Figma를 도입하여 빠르게 디자인 시스템을 제작하려고 하였습니다. 디자인 시스템을 제작하기 위해서 타이포그래피의 바탕인 폰트를 설정하여야 했습니다. 여기부터 고민이 시작되었습니다.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-img5",
+              "type": "image",
+              "assetId": "ast_bz_1",
+              "alt": "BZNAV Sans 1분 프로젝트 화면",
+              "layout": "content",
+              "variant": [
+                "contentImage"
+              ],
+              "caption": "기능 위주로 파일 구분이 되어있어서, 화면 내에 어떤 컴포넌트가 있는지를 확인하려면 파일을 하나씩 열거나 제플린으로 확인을 해야했습니다.",
+              "grid": {
+                "span": 12
+              }
+            },
+            {
+              "id": "bz-h6",
+              "type": "heading",
+              "level": 4,
+              "variant": [],
+              "children": [
+                {
+                  "id": "bz-t7",
+                  "type": "text",
+                  "text": "문제점",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-p9",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-t8",
+                  "type": "text",
+                  "text": "기존에 사용하고 있는 폰트에는 문제가 있었는데, 운영 중인 비즈넵 서비스 웹앱과 모바일앱에서 이용하고 있었습니다. 이전 회사에서 홈페이지 개발을 하면서 다양한 웹폰트로 사용해보면서 발견했던 문제점이 있었는데, 크게 2가지로 설명할 수 있습니다.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-p11",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-t10",
+                  "type": "text",
+                  "text": "첫 번째는 문서 작업을 할 때는 괜찮은데, 해상도가 낮은 웹에서는 일부 글리프가 뭉개지는 현상이 나타납니다. 모바일은 해상도가 높아 앱에서 사용하는 폰트가 뭉개지는 현상을 식별하기 힘듭니다. 하지만 레티나가 아니어서 해상도가 낮은 PC에서 보거나 모바일에서 웹브라우저를 사용하는 경우, 웹브라우저가 지원하는 ppi(최대 72ppi)가 낮아 일부 글리프가 뭉개집니다.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-img12",
+              "type": "image",
+              "assetId": "ast_bz_2",
+              "alt": "비즈넵 세무사용 웹앱 폰트 뭉개짐",
+              "layout": "content",
+              "variant": [
+                "contentImage"
+              ],
+              "caption": "(비즈넵 세무사용 웹앱) 폰트가 Bold일 경우에, 또 글씨의 크기가 작아질 경우에 더 심하게 뭉개지는 현상을 볼 수 있습니다.",
+              "grid": {
+                "span": 12
+              }
+            },
+            {
+              "id": "bz-p14",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-t13",
+                  "type": "text",
+                  "text": "두 번째는 해당 폰트에서 지원하는 자족에 Medium(중간체)이 없었습니다. 실제로 앱에 사용하는 자족은 Regular, Medium, Bold가 대부분이어서 Medium 하나가 빠지는 것은 타이포그래피에 큰 제약을 가져옵니다.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-img15",
+              "type": "image",
+              "assetId": "ast_bz_3",
+              "alt": "기존 폰트 자족 비교",
+              "layout": "content",
+              "variant": [
+                "contentImage"
+              ],
+              "caption": "기존 폰트는 다양한 자족을 지원했지만, 실제 앱에 사용할 수 있는 폰트는 Regular와 Bold로 2가지여서 극히 제한적이었습니다.",
+              "grid": {
+                "span": 12
+              }
+            },
+            {
+              "id": "bz-h16",
+              "type": "heading",
+              "level": 4,
+              "variant": [],
+              "children": [
+                {
+                  "id": "bz-t17",
+                  "type": "text",
+                  "text": "글리프가 깨지지 않는 가독성 좋은 무료 폰트는 없을까?",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-p22",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-t18",
+                  "type": "text",
+                  "text": "이제까지 폰트를 사용하면서 영문·숫자·국문 모두 완벽하게 느낀 폰트는 없었습니다. 웹에서 글리프가 깨지지 않는 거의 유일한 무료용 폰트는 ",
+                  "marks": []
+                },
+                {
+                  "id": "bz-a19",
+                  "type": "link",
+                  "href": "https://fonts.google.com/noto/specimen/Noto+Sans+KR",
+                  "newTab": true,
+                  "children": [
+                    {
+                      "id": "bz-t20",
+                      "type": "text",
+                      "text": "Noto Sans Korean",
+                      "marks": []
+                    }
+                  ]
+                },
+                {
+                  "id": "bz-t21",
+                  "type": "text",
+                  "text": "이라고 보는데요. 하지만 국문이 가독성에 우수하여도, 숫자나 영문에서는 국문(한글)에서 느꼈던 견고함이 느껴지지 않아 마음에 들지 않았습니다. 그래서 개발자에게는 CSS파일에서 font-family를 설정할 때, Noto Sans Korean보다 사용하고 싶은 영문을 앞에 적어달라 요청드립니다. 그렇게 적용하면 원하는 모습대로 같이 사용할 수 있지만, 서로 다른 글꼴을 사용해서 발생하는 글꼴의 두께나 간격, 글줄의 높이가 달라 고려해야할 변수가 많아 어울리는 글꼴을 찾기 매우 어려웠습니다. 또 폰트를 여러개를 쓸 경우 불러오는 파일이 많아 용량이 커지기 때문에, 네트워크 속도가 느린 경우 폰트가 느리게 반영될 수 있습니다. 이 점은 웹페이지를 방문하는 고객에게 불편한 경험을 줄 수 있습니다.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-p25",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-cs24",
+                  "type": "span",
+                  "variant": [
+                    "caption"
+                  ],
+                  "children": [
+                    {
+                      "id": "bz-t23",
+                      "type": "text",
+                      "text": "*참고로 Noto Sans Korean의 Regular 하나의 파일이 4.7MB를 차지합니다. 6개의 자족을 모두는 30MB에 달합니다.",
+                      "marks": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bz-img26",
+              "type": "image",
+              "assetId": "ast_bz_4",
+              "alt": "Noto Sans Korean 예시",
+              "layout": "content",
+              "variant": [
+                "contentImage"
+              ],
+              "caption": "대표적으로 Noto Sans Korean의 경우 라이센스가 무료이고, 국문의 경우 가독성이 좋아 많은 사랑을 받고 있지만, 영문과 숫자에서 디자이너의 호불호가 많이 갈리는 대표적인 서체이죠.",
+              "grid": {
+                "span": 12
+              }
+            },
+            {
+              "id": "bz-img27",
+              "type": "image",
+              "assetId": "ast_bz_5",
+              "alt": "font-family 순서 설명",
+              "layout": "content",
+              "variant": [
+                "contentImage"
+              ],
+              "caption": "CSS의 font-family는 앞에 것부터 순서대로 글꼴을 적용합니다. 그래서 영문 폰트부터 설정할 경우 해당 폰트에 국문이 없어서 다음 순서에서 국문 폰트를 참조합니다.",
+              "grid": {
+                "span": 12
+              }
+            },
+            {
+              "id": "bz-img28",
+              "type": "image",
+              "assetId": "ast_bz_6",
+              "alt": "폰트 2가지 조합시 이슈",
+              "layout": "content",
+              "variant": [
+                "contentImage"
+              ],
+              "caption": "폰트를 2가지로 가져가면 디자인 화면도 같이 바꿔서 글자의 줄바꿈이나 글의 폭을 봐야하는 이슈도 추가로 발생합니다.",
+              "grid": {
+                "span": 12
+              }
+            },
+            {
+              "id": "bz-h29",
+              "type": "heading",
+              "level": 4,
+              "variant": [],
+              "children": [
+                {
+                  "id": "bz-t30",
+                  "type": "text",
+                  "text": "애플 웹사이트처럼 국문과 영문이 잘 어울려 멋질 수 있는 방법은 무엇일까?",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-p32",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-t31",
+                  "type": "text",
+                  "text": "영문·숫자·국문 모두 잘 어울려져 있는 서비스를 찾아보면 애플 사이트에서의 경험이 대표적이지 않나 싶네요. 신제품이 나올 때마다 애플 사이트를 보면 국문에 대한 개인적인 선입견이 무너지는 느낌이 들었습니다. 물론 애플 사이트도 영문은 '샌프란시스코 서체(SF Pro)'이고 국문은 '애플산돌고딕'이지만, 내가 만드는 서비스에도 애플 사이트 같은 느낌의 폰트를 반영하고 싶다는 생각이 강하게 들었습니다.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-img33",
+              "type": "image",
+              "assetId": "ast_bz_7",
+              "alt": "애플 사이트 참고",
+              "layout": "content",
+              "variant": [
+                "contentImage"
+              ],
+              "caption": "(참고) 애플 사이트",
+              "grid": {
+                "span": 12
+              }
+            },
+            {
+              "id": "bz-p35",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-t34",
+                  "type": "text",
+                  "text": "그냥 애플 시스템(SF Pro, 애플산돌고딕)을 사용할 수도 있지 않을까라는 생각이 들기도 합니다. 상업적으로 사용해도 문제가 전혀 없는 것도 확인했습니다. 그러나, IOS가 아닌 다른 OS(윈도우, 안드로이드 등)에서는 시스템 폰트에 애플 시스템 폰트가 없어 사용할 수 없습니다.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-h36",
+              "type": "heading",
+              "level": 4,
+              "variant": [],
+              "children": [
+                {
+                  "id": "bz-t37",
+                  "type": "text",
+                  "text": "모든 조건을 만족할 하나의 폰트로 만들기 위해서 필요한 것은?",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-p39",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-t38",
+                  "type": "text",
+                  "text": "서체 전문가가 아니기에 타입페이스는 전문가에게 맡기고, 주어진 시간 내에서 완성할 수 있는 결과물에 집중하기로 하였습니다. 그러기 위해서는 수정 및 배포가 가능한 무료 라이센스(Open Font License)에서 원하는 폰트를 선택하는 것을 찾아, 합성(Merge)을 하는 것이 가장 빠르게 결과물을 낼 수 있다고 판단했습니다. 국문의 최소 2350자를 만들기에는 시간이 부족하고, 성과를 낼 수 있을지 장담할 수 없기 때문입니다. 먼저 국문은 해상도가 깨지지 않고 가독성이 좋은 'Noto Sans Korean'을 선택하였고, 영문·숫자는 자간을 수정하면 SF Pro와 유사한 'Inter'를 합성하기로 하였습니다.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-p45",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-cs44",
+                  "type": "span",
+                  "variant": [
+                    "caption"
+                  ],
+                  "children": [
+                    {
+                      "id": "bz-t40",
+                      "type": "text",
+                      "text": "*",
+                      "marks": []
+                    },
+                    {
+                      "id": "bz-a41",
+                      "type": "link",
+                      "href": "https://www.olis.or.kr/license/Detailselect.do?lId=1086",
+                      "newTab": true,
+                      "children": [
+                        {
+                          "id": "bz-t42",
+                          "type": "text",
+                          "text": "Open Font License",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bz-t43",
+                      "type": "text",
+                      "text": ": 판매가 아닌 한, 허가된 폰트의 사용, 연구, 수정 및 재 배포를 자유롭게 허락함.",
+                      "marks": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bz-h46",
+              "type": "heading",
+              "level": 4,
+              "variant": [],
+              "children": [
+                {
+                  "id": "bz-t47",
+                  "type": "text",
+                  "text": "빠르게 완성할 수 있었던 FontLab 설치",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-p49",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-t48",
+                  "type": "text",
+                  "text": "대학교 시절에 Fontographer를 사용하여 영문 폰트를 만들어본 적은 있지만, 실제로 운영 중인 서비스에 넣기에는 경험이 부족했습니다. 다양한 툴을 경험해보지 못했지만, FontLab을 한 달간 체험판으로 사용해보니 초보자가 이용하기에도 간편하고 무엇보다 커닝 조절이 쉬웠습니다. Inter를 베이스로 작업을 하였기에, 커닝을 모두 새로 조절했었는데 쉬운 툴 덕분에 비교적 빠르게 완성할 수 있었습니다.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-img50",
+              "type": "image",
+              "assetId": "ast_bz_9",
+              "alt": "FontLab 작업 화면",
+              "layout": "content",
+              "variant": [
+                "contentImage"
+              ],
+              "caption": "FontLab",
+              "grid": {
+                "span": 12
+              }
+            },
+            {
+              "id": "bz-h51",
+              "type": "heading",
+              "level": 4,
+              "variant": [],
+              "children": [
+                {
+                  "id": "bz-t52",
+                  "type": "text",
+                  "text": "모바일의 사용성에 맞게 개선해보기",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-h53",
+              "type": "heading",
+              "level": 5,
+              "variant": [],
+              "children": [
+                {
+                  "id": "bz-t54",
+                  "type": "text",
+                  "text": "모바일 화면너비에 맞게 자간 조절",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-p56",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-t55",
+                  "type": "text",
+                  "text": "모바일 화면은 사용자가 눈과 가깝게 보려고 하기 때문에 글자의 호흡이 다른 매체에 비해 빠릅니다. 그래서 상대적으로 모바일에서는 행간을 줄여서 사용하게 되는데, 행간을 줄이면 자간도 함께 조절하여 가독성을 높입니다. 그래서 기본으로 자간을 줄인 상태로 제작을 하였고, 자간을 줄인 만큼 띄어쓰기(Space)의 너비를 줄여 어간을 조절했습니다.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-img57",
+              "type": "image",
+              "assetId": "ast_bz_10",
+              "alt": "모바일 자간 조절 비교",
+              "layout": "content",
+              "variant": [
+                "contentImage"
+              ],
+              "caption": "자간을 줄여 보다 많은 텍스트가 들어갈 수 있어 모바일에서 사용자의 시선의 호흡을 맞추었습니다.",
+              "grid": {
+                "span": 12
+              }
+            },
+            {
+              "id": "bz-h58",
+              "type": "heading",
+              "level": 5,
+              "variant": [],
+              "children": [
+                {
+                  "id": "bz-t59",
+                  "type": "text",
+                  "text": "텍스트도 UI Component로 가운데 맞춤 필요",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-p61",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-t60",
+                  "type": "text",
+                  "text": "폰트를 단순한 정보가 아니라 UI Component로 활용하는 경우가 있습니다. 텍스트가 이제는 어떤 형태로, 어떤 색상으로 감싸져 있느냐에 따라 다른 사용성을 지닙니다. Button, Segment, Chips같은 버튼 형태일 수도 있고 Toast나 Badge 등에도 사용될 수 있습니다. 텍스트가 세로길이의 가운데 정렬이 되는 것은 이제 중요한 요소로 자리잡았습니다.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-img62",
+              "type": "image",
+              "assetId": "ast_bz_11",
+              "alt": "UI 컴포넌트 가운데 정렬 예시 1",
+              "layout": "content",
+              "variant": [
+                "contentImage"
+              ],
+              "caption": null,
+              "grid": {
+                "span": 12
+              }
+            },
+            {
+              "id": "bz-img63",
+              "type": "image",
+              "assetId": "ast_bz_12",
+              "alt": "UI 컴포넌트 가운데 정렬 예시 2",
+              "layout": "content",
+              "variant": [
+                "contentImage"
+              ],
+              "caption": null,
+              "grid": {
+                "span": 12
+              }
+            },
+            {
+              "id": "bz-h64",
+              "type": "heading",
+              "level": 5,
+              "variant": [],
+              "children": [
+                {
+                  "id": "bz-t65",
+                  "type": "text",
+                  "text": "특수문자 기호를 국문에 맞추어 가운데 정렬",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-p67",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-t66",
+                  "type": "text",
+                  "text": "특수문자들을 자세히 살펴보니 국문에 맞추어져 있지 않고, 영문의 소문자에 맞추어져 있었습니다. 국내 고객들을 위한 서비스이다보니 국문에 맞추어야 한다고 생각했습니다. 결국 국문을 우선으로 시각의 흔들림을 최소한으로 하여 고객들에게 불편함을 없애고자 했습니다.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-img68",
+              "type": "image",
+              "assetId": "ast_bz_13",
+              "alt": "특수문자 가운데 정렬 예시",
+              "layout": "content",
+              "variant": [
+                "contentImage"
+              ],
+              "caption": null,
+              "grid": {
+                "span": 12
+              }
+            },
+            {
+              "id": "bz-h69",
+              "type": "heading",
+              "level": 5,
+              "variant": [],
+              "children": [
+                {
+                  "id": "bz-t70",
+                  "type": "text",
+                  "text": "숫자의 너비를 통일하여 자리수 가독성을 높이기",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-p72",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-t71",
+                  "type": "text",
+                  "text": "비즈넵이 사업체의 자산을 보여주기에 숫자를 나타내는 화면이 많은데요. 숫자의 경우 대비가 잘 이루어질 수 있도록 모든 숫자의 너비를 강제적으로 동일하게 맞추었습니다. 그래야 자릿수 비교가 한눈에 되면서 어떤 숫자가 크고 작은지 보이니까요. '1'의 공간이 다소 넓게 느껴져 본문에 사용하게 될 경우, 가독성이 떨어질 수는 있습니다. 하지만 데이터를 파악하는 데에 불편함을 줄이는 것을 중요시하여 숫자들의 너비를 동일하게 맞추었습니다.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-img73",
+              "type": "image",
+              "assetId": "ast_bz_14",
+              "alt": "숫자 너비 통일 예시",
+              "layout": "content",
+              "variant": [
+                "contentImage"
+              ],
+              "caption": null,
+              "grid": {
+                "span": 12
+              }
+            },
+            {
+              "id": "bz-h74",
+              "type": "heading",
+              "level": 4,
+              "variant": [],
+              "children": [
+                {
+                  "id": "bz-t75",
+                  "type": "text",
+                  "text": "작업의 편리함을 위해 개선안 추가",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-h76",
+              "type": "heading",
+              "level": 5,
+              "variant": [],
+              "children": [
+                {
+                  "id": "bz-t77",
+                  "type": "text",
+                  "text": "아이콘 폰트 추가",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-p79",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-t78",
+                  "type": "text",
+                  "text": "텍스트 안에 아이콘을 추가하면 장점은 개발자들에게 어떤 아이콘이 쓰였는지 따로 찾지 않아도 되고, 작업 공수가 줄어듭니다. 단점은 폰트이기 때문에 가운데 정렬이 line-height에 영향을 받아 완전히 중앙에 위치하지 않을 수 있습니다. 사용할 때는 텍스트에 맞춰야하면 아이콘폰트로 사용하고 전체 UI에 맞춰야한다면 svg형태로 작업해야합니다.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-p82",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-cs81",
+                  "type": "span",
+                  "variant": [
+                    "caption"
+                  ],
+                  "children": [
+                    {
+                      "id": "bz-t80",
+                      "type": "text",
+                      "text": "*개발자분들이 아이콘이 업데이트 될 때마다 외부 플러그인(icomoon등)을 사용하여 폰트로 따로 추출하여 사용했었는데, 개발자분들에겐 신경 쓸 점이 줄어들긴 했네요.",
+                      "marks": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bz-img83",
+              "type": "image",
+              "assetId": "ast_bz_19",
+              "alt": "아이콘 폰트 추가 화면",
+              "layout": "content",
+              "variant": [
+                "contentImage"
+              ],
+              "caption": null,
+              "grid": {
+                "span": 12
+              }
+            },
+            {
+              "id": "bz-vid84",
+              "type": "video",
+              "assetId": "ast_bz_v15",
+              "posterAssetId": null,
+              "layout": "content",
+              "variant": [
+                "contentImage"
+              ],
+              "playback": {
+                "controls": false,
+                "autoplay": true,
+                "muted": true,
+                "loop": true
+              },
+              "caption": null,
+              "grid": {
+                "span": 12
+              }
+            },
+            {
+              "id": "bz-h85",
+              "type": "heading",
+              "level": 5,
+              "variant": [],
+              "children": [
+                {
+                  "id": "bz-t86",
+                  "type": "text",
+                  "text": "합자(Ligature) 기능 추가",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-p88",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-t87",
+                  "type": "text",
+                  "text": "문서 작업 시에 ->, -->, =>, ==>, <->, <-->, <=>, <==> 이런식으로 문맥에 화살표 형태를 활용하는 경우가 있는데, 매번 유니코드 정보를 복사해서 활용하는 것이 번거로웠습니다. 그래서 합자 기능을 활용하여 UI 텍스트로 변경해주는 기능을 추가했습니다.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-p91",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-cs90",
+                  "type": "span",
+                  "variant": [
+                    "caption"
+                  ],
+                  "children": [
+                    {
+                      "id": "bz-t89",
+                      "type": "text",
+                      "text": "*단, 웹폰트 작업 시에 letter-spacing(자간조절)에 값을 추가하면 적용이 안됩니다.",
+                      "marks": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bz-vid92",
+              "type": "video",
+              "assetId": "ast_bz_v16",
+              "posterAssetId": null,
+              "layout": "content",
+              "variant": [
+                "contentImage"
+              ],
+              "playback": {
+                "controls": false,
+                "autoplay": true,
+                "muted": true,
+                "loop": true
+              },
+              "caption": null,
+              "grid": {
+                "span": 12
+              }
+            },
+            {
+              "id": "bz-p94",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-t93",
+                  "type": "text",
+                  "text": "배너용 버튼에 활용하거나 텍스트 버튼 작업에 유용한 기능인데요. 빠르게 '$>;'를 입력하면 앞 글자와 간격을 조절한 링크 아이콘을 넣어줍니다.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-vid95",
+              "type": "video",
+              "assetId": "ast_bz_v17",
+              "posterAssetId": null,
+              "layout": "content",
+              "variant": [
+                "contentImage"
+              ],
+              "playback": {
+                "controls": false,
+                "autoplay": true,
+                "muted": true,
+                "loop": true
+              },
+              "caption": null,
+              "grid": {
+                "span": 12
+              }
+            },
+            {
+              "id": "bz-p97",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-t96",
+                  "type": "text",
+                  "text": "문서를 작업할 때, 로고를 빠르게 적용하는 것도 추가했습니다. 텍스트의 크기에 비례하여 적절한 크기로 들어갈 수 있고, 텍스트 컬러를 사용할 수 있어서 작업자 분들의 속도를 올릴 수 있습니다.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-vid98",
+              "type": "video",
+              "assetId": "ast_bz_v18",
+              "posterAssetId": null,
+              "layout": "content",
+              "variant": [
+                "contentImage"
+              ],
+              "playback": {
+                "controls": false,
+                "autoplay": true,
+                "muted": true,
+                "loop": true
+              },
+              "caption": null,
+              "grid": {
+                "span": 12
+              }
+            },
+            {
+              "id": "bz-h99",
+              "type": "heading",
+              "level": 4,
+              "variant": [],
+              "children": [
+                {
+                  "id": "bz-t100",
+                  "type": "text",
+                  "text": "마치면서",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-p102",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-t101",
+                  "type": "text",
+                  "text": "처음부터 폰트 경량화를 목적으로 하고 있어서 사용하지 않는 특수문자는 제거하였고, 국내에만 서비스하고 있었기에 다른나라 문자도 제거하고 시작했습니다. 폰트 경량화에 관해서는 이전에 다녔던 회사에서 QA엔지니어분이 '폰트의 용량이 너무 커서 웹사이트의 성능에 부담을 준다.'는 피드백을 받았고, 웹사이트가 접하는 신규 사용자에게 느리게 뜨면 좋지 않은 서비스 경험을 제공하는 것이어서 그때부터 경량화를 해야한다는 생각을 가지고 있었습니다. 그래서 BZNAV Sans의 Regular 하나의 용량은 480KB로 제작이 되었고, 4MB인 Noto Sans Korean의 Regular보다 약 1/10으로 줄였습니다.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-p104",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-t103",
+                  "type": "text",
+                  "text": "실제로 서비스하는 나만의 글꼴을 만드는 과정은 '실재'하지 않을 것 같은 이상적인 결과물을 만드는 것처럼 허무맹랑하였지만, 그 과정을 이겨내고 스스로 해냈다는 것이 굉장히 보람찹니다. 이전에는 해당 기업에서만 쓰이는 전용 기업용 폰트가 마냥 부러웠었고, 지금껏 스타트업을 다녔던 저에게는 폰트 하나를 구매하는 것조차 엄두가 안났습니다. 처음 작업해보는 것이라 언제 끝낼 수 있다는 보장이 없다보니 회사 안에서 작업과정을 보여주기가 부담스러웠습니다. 그래서 완성할 때까지는 퇴근하고 집에서 작업하거나 주말동안 작업하여 완성하게 되었습니다.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-p106",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-t105",
+                  "type": "text",
+                  "text": "생각했던 것보다는 비교적 짧은 시간에 결과물이 나와서 일정에 있던 디자인시스템에도 더욱 빛을 발휘할 수 있어 기쁨이 배가 되었습니다. 디자이너지만 폰트에 대해서는 고객의 입장에서만 바라보고 깊게 들여다보지 못했는데, 폰트 에디터를 사용하면서 서체 하나하나를 들여다보고 서체의 구조를 알게되어 굉장히 재밌었습니다. 무료로 수정할 수 있게 라이센스를 열어준 모든 타입페이스 디자이너와 그 기업에게 감사의 인사를 하고 싶습니다.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "id": "bz-p108",
+              "type": "paragraph",
+              "variant": [
+                "text"
+              ],
+              "children": [
+                {
+                  "id": "bz-t107",
+                  "type": "text",
+                  "text": "지금도 계속 사용성에 문제가 생기거나 추가하고 싶은게 생기면 빠르게 수정하여 사용하고 있습니다. 지금은 모바일앱, 웹앱, 홈페이지 등 모든 프로덕트에서 'BZNAV Sans' 폰트를 사용하고 있고, 문서 작업하시는 동료도 잘 사용해주어 기쁩니다. 이 경험을 통해 불가능하다고 생각했던 문제를 부딪혀보는 것에 대한 두려움이 많이 사라졌고, 프로덕트 디자인을 하는 시간이 행복합니다. 폰트를 만들어보고 싶은 디자이너 분들은 겁먹지 마시고 도전해보시기 바랍니다.",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bz-section111",
+      "type": "section",
+      "variant": [
+        "fullMax"
+      ],
+      "children": [
+        {
+          "id": "bz-img112",
+          "type": "image",
+          "assetId": "ast_bz_last1",
+          "alt": "BZNAV Sans 최종 화면 1",
+          "layout": "full",
+          "variant": [
+            "contentImage"
+          ],
+          "caption": null
+        },
+        {
+          "id": "bz-img113",
+          "type": "image",
+          "assetId": "ast_bz_last2",
+          "alt": "BZNAV Sans 최종 화면 2",
+          "layout": "full",
+          "variant": [
+            "contentImage"
+          ],
+          "caption": null
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "ast_bz_hero",
+      "kind": "image",
+      "provider": "local",
+      "src": "../../img/bznav-sans-main.png"
+    },
+    {
+      "id": "ast_bz_1",
+      "kind": "image",
+      "provider": "local",
+      "src": "./img/bznav-sans-1.png"
+    },
+    {
+      "id": "ast_bz_2",
+      "kind": "image",
+      "provider": "local",
+      "src": "./img/bznav-sans-2.png"
+    },
+    {
+      "id": "ast_bz_3",
+      "kind": "image",
+      "provider": "local",
+      "src": "./img/bznav-sans-3.png"
+    },
+    {
+      "id": "ast_bz_4",
+      "kind": "image",
+      "provider": "local",
+      "src": "./img/bznav-sans-4.png"
+    },
+    {
+      "id": "ast_bz_5",
+      "kind": "image",
+      "provider": "local",
+      "src": "./img/bznav-sans-5.png"
+    },
+    {
+      "id": "ast_bz_6",
+      "kind": "image",
+      "provider": "local",
+      "src": "./img/bznav-sans-6.png"
+    },
+    {
+      "id": "ast_bz_7",
+      "kind": "image",
+      "provider": "local",
+      "src": "./img/bznav-sans-7.png"
+    },
+    {
+      "id": "ast_bz_9",
+      "kind": "image",
+      "provider": "local",
+      "src": "./img/bznav-sans-9.png"
+    },
+    {
+      "id": "ast_bz_10",
+      "kind": "image",
+      "provider": "local",
+      "src": "./img/bznav-sans-10.png"
+    },
+    {
+      "id": "ast_bz_11",
+      "kind": "image",
+      "provider": "local",
+      "src": "./img/bznav-sans-11.png"
+    },
+    {
+      "id": "ast_bz_12",
+      "kind": "image",
+      "provider": "local",
+      "src": "./img/bznav-sans-12.png"
+    },
+    {
+      "id": "ast_bz_13",
+      "kind": "image",
+      "provider": "local",
+      "src": "./img/bznav-sans-13.png"
+    },
+    {
+      "id": "ast_bz_14",
+      "kind": "image",
+      "provider": "local",
+      "src": "./img/bznav-sans-14.png"
+    },
+    {
+      "id": "ast_bz_19",
+      "kind": "image",
+      "provider": "local",
+      "src": "./img/bznav-sans-19.png"
+    },
+    {
+      "id": "ast_bz_v15",
+      "kind": "video",
+      "provider": "local",
+      "src": "./img/bznav-sans-15.mp4"
+    },
+    {
+      "id": "ast_bz_v16",
+      "kind": "video",
+      "provider": "local",
+      "src": "./img/bznav-sans-16.mp4"
+    },
+    {
+      "id": "ast_bz_v17",
+      "kind": "video",
+      "provider": "local",
+      "src": "./img/bznav-sans-17.mp4"
+    },
+    {
+      "id": "ast_bz_v18",
+      "kind": "video",
+      "provider": "local",
+      "src": "./img/bznav-sans-18.mp4"
+    },
+    {
+      "id": "ast_bz_last1",
+      "kind": "image",
+      "provider": "local",
+      "src": "./img/bznav-sans-last-1.png"
+    },
+    {
+      "id": "ast_bz_last2",
+      "kind": "image",
+      "provider": "local",
+      "src": "./img/bznav-sans-last-2.png"
+    },
+    {
+      "id": "ast_bz_rel_1min-return",
+      "kind": "image",
+      "provider": "local",
+      "src": "../../img/1min-web-main-thumbnail.png"
+    },
+    {
+      "id": "ast_bz_rel_insight-renewal",
+      "kind": "image",
+      "provider": "local",
+      "src": "../../img/insight-renewal-main-thumbnail.png"
+    },
+    {
+      "id": "ast_bz_rel_tax-invoice",
+      "kind": "image",
+      "provider": "local",
+      "src": "../../img/tax-invoice-main-thumbnail.png"
+    },
+    {
+      "id": "ast_bz_rel_whatap-product-v2",
+      "kind": "image",
+      "provider": "local",
+      "src": "../../img/whatap-product-v2-main-thumbnail.png"
+    },
+    {
+      "id": "ast_bz_rel_whatap-mobile-app",
+      "kind": "image",
+      "provider": "local",
+      "src": "../../img/whatap-mobile-app-main-thumbnail.png"
+    },
+    {
+      "id": "ast_bz_rel_whatap-signup",
+      "kind": "image",
+      "provider": "local",
+      "src": "../../img/whatap-signup-main-thumbnail.png"
+    },
+    {
+      "id": "ast_bz_rel_diabates-notes",
+      "kind": "image",
+      "provider": "local",
+      "src": "../../img/diabates-app-main-thumbnail.png"
+    },
+    {
+      "id": "ast_bz_rel_seoul-touristic-icon",
+      "kind": "image",
+      "provider": "local",
+      "src": "../../img/seoul-touristic-icon-main-thumbnail.png"
+    },
+    {
+      "id": "ast_bz_rel_neumorphic-native-apps",
+      "kind": "image",
+      "provider": "local",
+      "src": "../../img/neumorphic-native-apps-main-thumbnail.png"
+    }
+  ]
+}

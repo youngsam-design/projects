@@ -1,0 +1,3922 @@
+{
+  "schemaVersion": 1,
+  "slug": "insight-renewal",
+  "blocks": [
+    {
+      "id": "insight-renewal-1",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "insight-renewal-2",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "summary"
+      },
+      "children": [
+        {
+          "id": "insight-renewal-2.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "insight-renewal-2.2",
+          "type": "block",
+          "tag": "ul",
+          "attributes": {},
+          "children": [
+            {
+              "id": "insight-renewal-2.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-2.2.2",
+              "type": "block",
+              "tag": "li",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "insight-renewal-2.2.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-2.2.2.2",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-title"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-2.2.2.2.1",
+                      "type": "text",
+                      "value": "Role"
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-2.2.2.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-2.2.2.4",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-text"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-2.2.2.4.1",
+                      "type": "text",
+                      "value": "Product Designer"
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-2.2.2.5",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-2.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-2.2.4",
+              "type": "block",
+              "tag": "li",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "insight-renewal-2.2.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-2.2.4.2",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-title"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-2.2.4.2.1",
+                      "type": "text",
+                      "value": "Design Tools"
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-2.2.4.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-2.2.4.4",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-text"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-2.2.4.4.1",
+                      "type": "text",
+                      "value": "Figma"
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-2.2.4.5",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-2.2.5",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-2.2.6",
+              "type": "block",
+              "tag": "li",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "insight-renewal-2.2.6.1",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-title"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-2.2.6.1.1",
+                      "type": "text",
+                      "value": "Duration"
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-2.2.6.2",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-text"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-2.2.6.2.1",
+                      "type": "text",
+                      "value": "2021.07 - 2021.10"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-2.2.7",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "insight-renewal-2.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "insight-renewal-3",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "insight-renewal-4",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "intro"
+      },
+      "children": [
+        {
+          "id": "insight-renewal-4.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "insight-renewal-4.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "insight-renewal-4.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-4.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "insight-renewal-4.2.2.1",
+                  "type": "text",
+                  "value": "배경"
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-4.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "insight-renewal-4.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "insight-renewal-4.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "insight-renewal-4.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-4.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-4.4.2.1",
+                  "type": "text",
+                  "value": "\n              비즈넵은 중소사업자를 대상으로 경영관리를 쉽게 할 수 있도록 도와주는 서비스입니다. 2020년 7월부터 기업의 재무데이터를 토대로 고객에게 요약해서\n              분석해주는 리포트를 발행하고 있습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-4.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-4.4.4",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-4.4.4.1",
+                  "type": "text",
+                  "value": "\n              분석 리포트의 종류는 매출·매입 가결산과 결산 리포트를 시작으로 꾸준히 새로운 리포트를 추가하여 지금은 자금 리포트, 사업용신용카드 이용분석 리포트,\n              예상부가세 리포트, 연결산 리포트, 종합소득세 세무진단 리포트까지 하여 총 8가지를 운영하고 있었습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-4.4.5",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-4.4.6",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-4.4.6.1",
+                  "type": "text",
+                  "value": "그리고 분석 리포트를 운영하던 팀에서 디자이너분이 팀 이동을 원하시면서, 제가 21년 3분기 동안에 인사이트 탭을 맡게 되었습니다."
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-4.4.7",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-4.4.8",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-4.4.8.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-4.4.8.2",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "caption"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-4.4.8.2.1",
+                      "type": "text",
+                      "value": "*팀의 분기에 대한 목표를 Product Owner(PO)와 Product Designer가 상의하여 결정합니다."
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-4.4.8.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-4.4.9",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "insight-renewal-4.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "insight-renewal-5",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "insight-renewal-6",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "insight-renewal-6.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "insight-renewal-6.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "insight-renewal-6.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-6.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "insight-renewal-6.2.2.1",
+                  "type": "text",
+                  "value": "문제점"
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-6.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "insight-renewal-6.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "insight-renewal-6.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "insight-renewal-6.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-6.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-6.4.2.1",
+                  "type": "text",
+                  "value": "\n              2021년도부터 월·주마다 발행해오던 리포트에 대한 방문률이 평균 8~10%3~5%로 낮아지면서, 전체적으로 크게 감소한 것을 확인할 수 있습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-6.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-6.4.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "sub-content"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-6.4.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-6.4.4.2",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "img-wrap"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-6.4.4.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "insight-renewal-6.4.4.2.2",
+                      "type": "inline",
+                      "tag": "img",
+                      "attributes": {
+                        "class": "img-in",
+                        "src": "./img/insight-renewal-1.png"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "insight-renewal-6.4.4.2.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-6.4.4.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-6.4.5",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-6.4.6",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-6.4.6.1",
+                  "type": "text",
+                  "value": "\n              2분기 말, A팀은 리포트를 받아보는 사용자 대상으로 이메일과 문자를 발송하여 분석 리포트 만족도 조사를 진행했습니다. 리포트에 대해 긍정적인 의견도\n              많았지만, 부정적인 의견 중에는 “데이터 정확도가 떨어진다.”, \"본인에게 해당 사항이 없어서 불필요하다.\"라는 의견이 주로 보였고 이는 팀 내부에서도\n              공감할만한 피드백이었습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-6.4.7",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-6.4.8",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "sub-content"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-6.4.8.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-6.4.8.2",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "img-wrap"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-6.4.8.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "insight-renewal-6.4.8.2.2",
+                      "type": "inline",
+                      "tag": "img",
+                      "attributes": {
+                        "class": "img-in",
+                        "src": "./img/insight-renewal-2.png"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "insight-renewal-6.4.8.2.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "insight-renewal-6.4.8.2.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {
+                        "class": "caption"
+                      },
+                      "children": [
+                        {
+                          "id": "insight-renewal-6.4.8.2.4.1",
+                          "type": "text",
+                          "value": "\n                  사업용신용카드 리포트는 만족과 불만족이 높은 경우이다. 사업체마다 데이터의 정합성이 다르게 느껴져서 편차가 심하다고 볼 수 있습니다.\n                "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "insight-renewal-6.4.8.2.5",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-6.4.8.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-6.4.9",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "insight-renewal-6.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "insight-renewal-7",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "insight-renewal-8",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "insight-renewal-8.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "insight-renewal-8.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "insight-renewal-8.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-8.2.2",
+              "type": "block",
+              "tag": "q",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "insight-renewal-8.2.2.1",
+                  "type": "text",
+                  "value": "인사이트 탭이 고객에게 유용하지 않아서 접근을 많이 하려고 하지 않는 이유일까?"
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-8.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-8.2.4",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "insight-renewal-8.2.4.1",
+                  "type": "text",
+                  "value": "데이터를 연동하지 않고도 이용할 수 있는 컨텐츠를 인사이트 탭에 제공하여, 연동 유도 배너를 자연스럽게 노출해보기"
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-8.2.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "insight-renewal-8.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "insight-renewal-8.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "insight-renewal-8.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-8.4.2",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "sub-content"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-8.4.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-8.4.2.2",
+                  "type": "block",
+                  "tag": "h6",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "insight-renewal-8.4.2.2.1",
+                      "type": "text",
+                      "value": "As-Is"
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-8.4.2.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-8.4.2.4",
+                  "type": "block",
+                  "tag": "p",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "insight-renewal-8.4.2.4.1",
+                      "type": "text",
+                      "value": "\n                데이터 연동을 하지 않은 사용자에게 기존의 인사이트 탭은 정부 지원사업과 데이터연동 유도 배너와, 앱 사용 설명 컨텐츠가 제공되고 있었습니다.\n                하지만 정부 지원사업을 제외하고서는 유용한 컨텐츠를 추가적으로 제공하지 않아 탭에 대한 접근이 한정적이었습니다.\n              "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-8.4.2.5",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-8.4.2.6",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "img-wrap"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-8.4.2.6.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "insight-renewal-8.4.2.6.2",
+                      "type": "inline",
+                      "tag": "img",
+                      "attributes": {
+                        "class": "img-in",
+                        "src": "./img/insight-renewal-5.png"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "insight-renewal-8.4.2.6.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-8.4.2.7",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-8.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-8.4.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "sub-content"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-8.4.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-8.4.4.2",
+                  "type": "block",
+                  "tag": "h6",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "insight-renewal-8.4.4.2.1",
+                      "type": "text",
+                      "value": "To-Be"
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-8.4.4.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-8.4.4.4",
+                  "type": "block",
+                  "tag": "p",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "insight-renewal-8.4.4.4.1",
+                      "type": "text",
+                      "value": "\n                정부 지원사업은 지금까지 고객들에게 정기적으로 푸시를 보냈을 때 오픈률이 높았고, 소규모 사업체인 경우에는 관심이 큰 컨텐츠이므로 상단에\n                유지하기로 했습니다.\n              "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-8.4.4.5",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-8.4.4.6",
+                  "type": "block",
+                  "tag": "p",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "insight-renewal-8.4.4.6.1",
+                      "type": "text",
+                      "value": "\n                관심 세무 일정은 국가기관에서 1년 단위로 미리 정한 세금 신고 일정이 있어서 해당 컨텐츠를 비즈넵 안에서 사용자가 관심갖는 일정을 등록하여 D-Day\n                일주일 전에 푸시를 보내는 편의 기능을 제공한다면 많은 노력을 들이지 않고도 유용한 컨텐츠가 될 수 있을 것이라 생각했습니다. 이유는 세금 신고를\n                제때하지 않으면 가산세를 내야해서 대부분의 사업자분은 관심이 크다고 생각해 추가하였습니다.\n              "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-8.4.4.7",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-8.4.4.8",
+                  "type": "block",
+                  "tag": "p",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "insight-renewal-8.4.4.8.1",
+                      "type": "text",
+                      "value": "\n                그리고 "
+                    },
+                    {
+                      "id": "insight-renewal-8.4.4.8.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "https://focus.bznav.com",
+                        "target": "blank"
+                      },
+                      "children": [
+                        {
+                          "id": "insight-renewal-8.4.4.8.2.1",
+                          "type": "text",
+                          "value": "'비즈넵 포커스'"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "insight-renewal-8.4.4.8.3",
+                      "type": "text",
+                      "value": "는 중소사업자를 위한 뉴스레터를 주마다 구독자에게 제공하는 비즈넵의\n                웹 서비스입니다. 비즈넵을 알리는 목적의 외부 마케팅 컨텐츠였지만, 기존 고객이나 신규 고객에게도 유용한 컨텐츠여서 비즈넵 안에도 추가하기로\n                하였습니다.\n              "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-8.4.4.9",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-8.4.4.10",
+                  "type": "block",
+                  "tag": "p",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "insight-renewal-8.4.4.10.1",
+                      "type": "text",
+                      "value": "중소기업·소상공인을 위한 최근 뉴스 및 지원 정책을 선별하여 '뉴스·지원 정책'까지 추가하였습니다."
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-8.4.4.11",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-8.4.4.12",
+                  "type": "block",
+                  "tag": "p",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "insight-renewal-8.4.4.12.1",
+                      "type": "text",
+                      "value": "\n                데이터 연동에 의존하지 않고 고객에게 유의미한 컨텐츠를 늘려 자연스럽게 연동을 유도하여 리포트를 받아보게 하는 것도 사용자 부담이 줄어\n                좋아보였습니다.\n              "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-8.4.4.13",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-8.4.4.14",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "img-wrap"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-8.4.4.14.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "insight-renewal-8.4.4.14.2",
+                      "type": "inline",
+                      "tag": "img",
+                      "attributes": {
+                        "class": "img-in",
+                        "src": "./img/insight-renewal-6.png"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "insight-renewal-8.4.4.14.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-8.4.4.15",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-8.4.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "insight-renewal-8.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "insight-renewal-9",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "insight-renewal-10",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "insight-renewal-10.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "insight-renewal-10.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "insight-renewal-10.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-10.2.2",
+              "type": "block",
+              "tag": "q",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "insight-renewal-10.2.2.1",
+                  "type": "text",
+                  "value": "분석 리포트 발행 당일에 푸시를 보내지만 1개만 읽고 나가버리지 않을까?"
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-10.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-10.2.4",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "insight-renewal-10.2.4.1",
+                  "type": "text",
+                  "value": "UX/UI 개선을 통해 고객이 리포트 분석을 쉽게 하여 이용 가치를 올려서 방문률 올려보기"
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-10.2.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "insight-renewal-10.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "insight-renewal-10.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "insight-renewal-10.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-10.4.2",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "sub-content"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-10.4.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-10.4.2.2",
+                  "type": "block",
+                  "tag": "h6",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "insight-renewal-10.4.2.2.1",
+                      "type": "text",
+                      "value": "As-Is"
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-10.4.2.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-10.4.2.4",
+                  "type": "block",
+                  "tag": "p",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "insight-renewal-10.4.2.4.1",
+                      "type": "text",
+                      "value": "\n                발행일 당일에 카테고리 형태로 카드가 생성되는 형태여서 차곡차곡 쌓이는 컨텐츠는 다채로워 보일 수 있었습니다. 그러나 분석하기에는 같은 카테고리의\n                리포트로 접근이 어려워 동일한 컨텐츠의 날짜 비교 분석하기가 불편했습니다.\n              "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-10.4.2.5",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-10.4.2.6",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "img-wrap"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-10.4.2.6.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "insight-renewal-10.4.2.6.2",
+                      "type": "inline",
+                      "tag": "img",
+                      "attributes": {
+                        "class": "img-in",
+                        "src": "./img/insight-renewal-3.png"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "insight-renewal-10.4.2.6.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-10.4.2.7",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-10.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-10.4.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "sub-content"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-10.4.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-10.4.4.2",
+                  "type": "block",
+                  "tag": "h6",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "insight-renewal-10.4.4.2.1",
+                      "type": "text",
+                      "value": "To-Be"
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-10.4.4.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-10.4.4.4",
+                  "type": "block",
+                  "tag": "p",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "insight-renewal-10.4.4.4.1",
+                      "type": "text",
+                      "value": "\n                전체 리포트를 볼 수 있는 페이지를 생성하여 사용자가 리포트의 종류를 인지하기 쉽게 만들었습니다. 그리고 리포트의 상단에는 날짜 필터를 추가하여\n                다른 날짜와 비교 분석하기 쉽게 만들었습니다.\n              "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-10.4.4.5",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-10.4.4.6",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "img-wrap"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-10.4.4.6.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "insight-renewal-10.4.4.6.2",
+                      "type": "inline",
+                      "tag": "img",
+                      "attributes": {
+                        "class": "img-in",
+                        "src": "./img/insight-renewal-4.png"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "insight-renewal-10.4.4.6.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-10.4.4.7",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-10.4.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "insight-renewal-10.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "insight-renewal-11",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "insight-renewal-12",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "insight-renewal-12.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "insight-renewal-12.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "insight-renewal-12.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-12.2.2",
+              "type": "block",
+              "tag": "q",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "insight-renewal-12.2.2.1",
+                  "type": "text",
+                  "value": "받고 싶지 않은 리포트가 있어도 푸시를 보내고 있어서 전체적인 만족도가 떨어진게 아닐까?"
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-12.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-12.2.4",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "insight-renewal-12.2.4.1",
+                  "type": "text",
+                  "value": "리포트마다 푸시 ON/OFF 기능을 추가하여 고객이 받고 싶은 리포트만 푸시를 받게 하고, 보고 싶지 않은 리포트를 숨기기"
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-12.2.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "insight-renewal-12.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "insight-renewal-12.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "insight-renewal-12.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-12.4.2",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "sub-content"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-12.4.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-12.4.2.2",
+                  "type": "block",
+                  "tag": "h6",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "insight-renewal-12.4.2.2.1",
+                      "type": "text",
+                      "value": "리포트별 푸시 설정"
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-12.4.2.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-12.4.2.4",
+                  "type": "block",
+                  "tag": "p",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "insight-renewal-12.4.2.4.1",
+                      "type": "text",
+                      "value": "\n                만족도 조사 결과 데이터 정확도가 사업체마다 차이가 발생할 수 있는 점에 따라 리포트마다 푸시 설정을 할 수 있도록 하여 사용자의 부담을 줄이려고\n                했습니다.\n              "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-12.4.2.5",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-12.4.2.6",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "img-wrap"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-12.4.2.6.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "insight-renewal-12.4.2.6.2",
+                      "type": "inline",
+                      "tag": "img",
+                      "attributes": {
+                        "class": "img-in",
+                        "src": "./img/insight-renewal-7.png"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "insight-renewal-12.4.2.6.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-12.4.2.7",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-12.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-12.4.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "sub-content"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-12.4.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-12.4.4.2",
+                  "type": "block",
+                  "tag": "h6",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "insight-renewal-12.4.4.2.1",
+                      "type": "text",
+                      "value": "숨김 처리 기능 제공"
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-12.4.4.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-12.4.4.4",
+                  "type": "block",
+                  "tag": "p",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "insight-renewal-12.4.4.4.1",
+                      "type": "text",
+                      "value": "\n                어떤 사장님이 피드백에 남겨주신 글을 보았는데요. '코로나 때문에 매출도 안나오는 데 리포트를 받고 싶지 않다.'라는 피드백이 있었습니다. 저희는\n                사용자들이 분석 리포트를 받아보는게 스트레스일 수도 있다고 생각했습니다. 또 인사이트 첫 화면에 \"매출이 0% 올랐습니다.\"라는 형식의 리포트 요약\n                문구도 추가되었는데요, 이 부분도 불편을 가질 수 있겠다 싶어서 그래서 숨김 처리 기능를 제공하기로 하였습니다.\n              "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-12.4.4.5",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-12.4.4.6",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "img-wrap"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-12.4.4.6.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "insight-renewal-12.4.4.6.2",
+                      "type": "inline",
+                      "tag": "img",
+                      "attributes": {
+                        "class": "img-in",
+                        "src": "./img/insight-renewal-8.png"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "insight-renewal-12.4.4.6.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-12.4.4.7",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-12.4.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "insight-renewal-12.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "insight-renewal-13",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "insight-renewal-14",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "insight-renewal-14.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "insight-renewal-14.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "insight-renewal-14.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-14.2.2",
+              "type": "block",
+              "tag": "q",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "insight-renewal-14.2.2.1",
+                  "type": "text",
+                  "value": "데이터가 부정확하다?"
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-14.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-14.2.4",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "insight-renewal-14.2.4.1",
+                  "type": "text",
+                  "value": "기존의 리포트 생산 방식을 바꾸어 데이터 정확도를 높여보기"
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-14.2.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "insight-renewal-14.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "insight-renewal-14.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "insight-renewal-14.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-14.4.2",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "sub-content"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-14.4.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-14.4.2.2",
+                  "type": "block",
+                  "tag": "p",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "insight-renewal-14.4.2.2.1",
+                      "type": "text",
+                      "value": "\n                기존의 리포트는 당시의 데이터들에 근거하여 발행했습니다. 그래서 발행 시기가 중요했습니다. 그러나 데이터 연동에 따라 외부 데이터가 주는 데이터\n                수집시기에 따라서 정확도가 달라지고, 사업체가 증빙 데이터를 뒤늦게 제출하는 경우에 데이터가 안맞는 부분이 발생하여 데이터가 부정확했습니다.\n                그래서 기존의 정적 방식에서 동적으로 설계하기로 했습니다.\n              "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-14.4.2.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-14.4.2.4",
+                  "type": "block",
+                  "tag": "p",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "insight-renewal-14.4.2.4.1",
+                      "type": "text",
+                      "value": "\n                동적으로 설계가 되면 서버에서 데이터를 조회할 때마다 불러오는 경우이기 때문에 날짜 주기에 유연해질 수 있어 날짜 필터를 좀 더 세분화하여 고객에게\n                제공해드릴 수 있습니다. 그래서 기존에 자금리포트인 경우에 주마다 발행했었다면, 일·주·월간으로 제공도 가능하였고 다른 리포트에도 날짜 필터의\n                주기를 추가했습니다.\n              "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-14.4.2.5",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-14.4.2.6",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "img-wrap"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-14.4.2.6.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "insight-renewal-14.4.2.6.2",
+                      "type": "inline",
+                      "tag": "img",
+                      "attributes": {
+                        "class": "img-in",
+                        "src": "./img/insight-renewal-9.png"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "insight-renewal-14.4.2.6.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-14.4.2.7",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-14.4.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "insight-renewal-14.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "insight-renewal-15",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "insight-renewal-16",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "insight-renewal-16.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "insight-renewal-16.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "insight-renewal-16.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-16.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "insight-renewal-16.2.2.1",
+                  "type": "text",
+                  "value": "결과"
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-16.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "insight-renewal-16.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "insight-renewal-16.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "insight-renewal-16.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-16.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-16.4.2.1",
+                  "type": "text",
+                  "value": "\n              21년 3분기 동안 데이터 동적 설계는 벡엔드 공수가 너무 길어져서 MVP에는 제외되었습니다. 아쉽게 데이터 정확도 높이기는 실패했는데요. 그래도 나머지\n              부분들은 무사히 배포할 수 있었습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-16.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-16.4.4",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-16.4.4.1",
+                  "type": "text",
+                  "value": "\n              10월 5일에 배포하여 표본은 적을 수 있지만, 의미있는 수치를 보았는데요. 개편 시점 이후에 발행된 리포트는 평균 2배 이상 방문률이 높아졌습니다.\n              상단에 날짜 필터로 이동해서 접근성이 높아진 덕에 사용자분들 피드백에서도 '비교가 가능해져서 좋았다', '매출상황변동이 확실하게 비교되네요', '보기\n              편해 졌다' 등의 UX/UI 개선에 대한 긍정적인 피드백이 더 많아졌습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-16.4.5",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-16.4.6",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "sub-content"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-16.4.6.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-16.4.6.2",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "img-wrap"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-16.4.6.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "insight-renewal-16.4.6.2.2",
+                      "type": "inline",
+                      "tag": "img",
+                      "attributes": {
+                        "class": "img-in",
+                        "src": "./img/insight-renewal-10.png"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "insight-renewal-16.4.6.2.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-16.4.6.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-16.4.7",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-16.4.8",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-16.4.8.1",
+                  "type": "text",
+                  "value": "다음에는 인사이트 탭의 정부 지원사업을 사업체마다 맞춤 컨텐츠로 푸시를 고도화하면 방문률을 올리기에 좋을 것 같습니다."
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-16.4.9",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-16.4.10",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "img-wrap"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-16.4.10.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-16.4.10.2",
+                  "type": "inline",
+                  "tag": "img",
+                  "attributes": {
+                    "width": "30%",
+                    "height": "auto",
+                    "style": "margin: 0 auto; display: block; padding-top: 4em",
+                    "src": "./img/insight-renewal-11.gif"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "insight-renewal-16.4.10.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-16.4.11",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "insight-renewal-16.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "insight-renewal-17",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "insight-renewal-18",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "full-max"
+      },
+      "children": [
+        {
+          "id": "insight-renewal-18.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "insight-renewal-18.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "img-wrap"
+          },
+          "children": [
+            {
+              "id": "insight-renewal-18.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-18.2.2",
+              "type": "inline",
+              "tag": "img",
+              "attributes": {
+                "class": "img-in",
+                "src": "../../img/insight-renewal-main.png"
+              },
+              "children": []
+            },
+            {
+              "id": "insight-renewal-18.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "insight-renewal-18.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "insight-renewal-19",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "insight-renewal-20",
+      "type": "block",
+      "tag": "div",
+      "attributes": {
+        "class": "project"
+      },
+      "children": [
+        {
+          "id": "insight-renewal-20.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "insight-renewal-20.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "wrapper"
+          },
+          "children": [
+            {
+              "id": "insight-renewal-20.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-20.2.2",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "carousel-title"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-20.2.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-20.2.2.2",
+                  "type": "block",
+                  "tag": "h4",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "insight-renewal-20.2.2.2.1",
+                      "type": "text",
+                      "value": "Other Works"
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-20.2.2.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-20.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-20.2.4",
+              "type": "block",
+              "tag": "ul",
+              "attributes": {
+                "class": "carousel",
+                "data-target": "carousel"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-20.2.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-20.2.4.2",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-20.2.4.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "insight-renewal-20.2.4.2.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../1min-return/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "insight-renewal-20.2.4.2.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "insight-renewal-20.2.4.2.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "insight-renewal-20.2.4.2.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.2.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "insight-renewal-20.2.4.2.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.2.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/1min-web-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.2.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.2.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.2.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "insight-renewal-20.2.4.2.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.2.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "insight-renewal-20.2.4.2.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.2.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "insight-renewal-20.2.4.2.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Product Design, Front-End"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.2.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.2.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "insight-renewal-20.2.4.2.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "1달간 '1분'으로 이뤄낸 것들"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.2.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.2.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.2.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "insight-renewal-20.2.4.2.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "insight-renewal-20.2.4.2.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-20.2.4.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-20.2.4.4",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-20.2.4.4.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "insight-renewal-20.2.4.4.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../bznav-sans/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "insight-renewal-20.2.4.4.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "insight-renewal-20.2.4.4.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "insight-renewal-20.2.4.4.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.4.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "insight-renewal-20.2.4.4.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.4.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/bznav-sans-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.4.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.4.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.4.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "insight-renewal-20.2.4.4.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.4.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "insight-renewal-20.2.4.4.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.4.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "insight-renewal-20.2.4.4.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Internal Product Design"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.4.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.4.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "insight-renewal-20.2.4.4.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "비즈넵의 프로덕트 폰트, BZNAV Sans"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.4.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.4.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.4.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "insight-renewal-20.2.4.4.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "insight-renewal-20.2.4.4.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-20.2.4.5",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-20.2.4.6",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-20.2.4.6.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "insight-renewal-20.2.4.6.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../tax-invoice/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "insight-renewal-20.2.4.6.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "insight-renewal-20.2.4.6.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "insight-renewal-20.2.4.6.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.6.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "insight-renewal-20.2.4.6.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.6.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/tax-invoice-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.6.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.6.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.6.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "insight-renewal-20.2.4.6.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.6.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "insight-renewal-20.2.4.6.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.6.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "insight-renewal-20.2.4.6.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Product Design"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.6.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.6.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "insight-renewal-20.2.4.6.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "비즈넵, '세금계산서 발급' 합니다"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.6.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.6.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.6.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "insight-renewal-20.2.4.6.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "insight-renewal-20.2.4.6.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-20.2.4.7",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-20.2.4.8",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-20.2.4.8.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "insight-renewal-20.2.4.8.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../whatap-product-v2/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "insight-renewal-20.2.4.8.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "insight-renewal-20.2.4.8.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "insight-renewal-20.2.4.8.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.8.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "insight-renewal-20.2.4.8.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.8.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/whatap-product-v2-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.8.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.8.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.8.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "insight-renewal-20.2.4.8.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.8.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "insight-renewal-20.2.4.8.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.8.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "insight-renewal-20.2.4.8.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "UX/UI, Mobile"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.8.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.8.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "insight-renewal-20.2.4.8.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "WhaTap Product v2.0"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.8.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.8.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.8.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "insight-renewal-20.2.4.8.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "insight-renewal-20.2.4.8.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-20.2.4.9",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-20.2.4.10",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-20.2.4.10.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "insight-renewal-20.2.4.10.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../whatap-mobile-app/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "insight-renewal-20.2.4.10.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "insight-renewal-20.2.4.10.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "insight-renewal-20.2.4.10.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.10.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "insight-renewal-20.2.4.10.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.10.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/whatap-mobile-app-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.10.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.10.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.10.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "insight-renewal-20.2.4.10.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.10.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "insight-renewal-20.2.4.10.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.10.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "insight-renewal-20.2.4.10.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "UX/UI, Mobile"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.10.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.10.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "insight-renewal-20.2.4.10.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "WhaTap Mobile App"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.10.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.10.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.10.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "insight-renewal-20.2.4.10.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "insight-renewal-20.2.4.10.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-20.2.4.11",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-20.2.4.12",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-20.2.4.12.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "insight-renewal-20.2.4.12.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../whatap-signup/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "insight-renewal-20.2.4.12.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "insight-renewal-20.2.4.12.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "insight-renewal-20.2.4.12.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.12.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "insight-renewal-20.2.4.12.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.12.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/whatap-signup-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.12.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.12.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.12.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "insight-renewal-20.2.4.12.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.12.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "insight-renewal-20.2.4.12.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.12.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "insight-renewal-20.2.4.12.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "UX/UI, Front-End"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.12.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.12.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "insight-renewal-20.2.4.12.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "WhaTap Signup Page"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.12.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.12.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.12.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "insight-renewal-20.2.4.12.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "insight-renewal-20.2.4.12.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-20.2.4.13",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-20.2.4.14",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-20.2.4.14.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "insight-renewal-20.2.4.14.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../diabates-notes/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "insight-renewal-20.2.4.14.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "insight-renewal-20.2.4.14.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "insight-renewal-20.2.4.14.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.14.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "insight-renewal-20.2.4.14.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.14.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/diabates-app-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.14.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.14.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.14.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "insight-renewal-20.2.4.14.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.14.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "insight-renewal-20.2.4.14.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.14.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "insight-renewal-20.2.4.14.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "GUI, Mobile"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.14.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.14.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "insight-renewal-20.2.4.14.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "'당뇨 수첩', 당뇨 환자를 위한 식단 관리 앱"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.14.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.14.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.14.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "insight-renewal-20.2.4.14.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "insight-renewal-20.2.4.14.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-20.2.4.15",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-20.2.4.16",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-20.2.4.16.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "insight-renewal-20.2.4.16.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../seoul-touristic-icon/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "insight-renewal-20.2.4.16.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "insight-renewal-20.2.4.16.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "insight-renewal-20.2.4.16.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.16.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "insight-renewal-20.2.4.16.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.16.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/seoul-touristic-icon-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.16.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.16.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.16.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "insight-renewal-20.2.4.16.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.16.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "insight-renewal-20.2.4.16.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.16.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "insight-renewal-20.2.4.16.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Icon Design"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.16.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.16.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "insight-renewal-20.2.4.16.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "Seoul Tourisic Icon"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.16.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.16.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.16.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "insight-renewal-20.2.4.16.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "insight-renewal-20.2.4.16.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-20.2.4.17",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-20.2.4.18",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "insight-renewal-20.2.4.18.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "insight-renewal-20.2.4.18.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../neumorphic-native-apps/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "insight-renewal-20.2.4.18.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "insight-renewal-20.2.4.18.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "insight-renewal-20.2.4.18.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.18.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "insight-renewal-20.2.4.18.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.18.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/neumorphic-native-apps-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.18.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.18.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.18.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "insight-renewal-20.2.4.18.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.18.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "insight-renewal-20.2.4.18.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.18.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "insight-renewal-20.2.4.18.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "GUI, Mobile"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.18.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.18.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "insight-renewal-20.2.4.18.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "Neumorphic Native Apps"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "insight-renewal-20.2.4.18.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "insight-renewal-20.2.4.18.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "insight-renewal-20.2.4.18.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "insight-renewal-20.2.4.18.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "insight-renewal-20.2.4.18.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-20.2.4.19",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-20.2.5",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-20.2.6",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "button-wrapper"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-20.2.6.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-20.2.6.2",
+                  "type": "inline",
+                  "tag": "button",
+                  "attributes": {
+                    "id": "prev",
+                    "class": "no-drag"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "insight-renewal-20.2.6.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-20.2.6.4",
+                  "type": "inline",
+                  "tag": "button",
+                  "attributes": {
+                    "id": "next",
+                    "class": "no-drag"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "insight-renewal-20.2.6.5",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-20.2.7",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "insight-renewal-20.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "insight-renewal-21",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "insight-renewal-22",
+      "type": "inline",
+      "tag": "footer",
+      "attributes": {},
+      "children": [
+        {
+          "id": "insight-renewal-22.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "insight-renewal-22.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "footer-wrap"
+          },
+          "children": [
+            {
+              "id": "insight-renewal-22.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-22.2.2",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "copyright"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-22.2.2.1",
+                  "type": "text",
+                  "value": "Copyright © 2023"
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-22.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "insight-renewal-22.2.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "description"
+              },
+              "children": [
+                {
+                  "id": "insight-renewal-22.2.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "insight-renewal-22.2.4.2",
+                  "type": "block",
+                  "tag": "ul",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "insight-renewal-22.2.4.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "insight-renewal-22.2.4.2.2",
+                      "type": "block",
+                      "tag": "li",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "insight-renewal-22.2.4.2.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "insight-renewal-22.2.4.2.2.2",
+                          "type": "block",
+                          "tag": "p",
+                          "attributes": {},
+                          "children": [
+                            {
+                              "id": "insight-renewal-22.2.4.2.2.2.1",
+                              "type": "text",
+                              "value": "Designed and developed by "
+                            },
+                            {
+                              "id": "insight-renewal-22.2.4.2.2.2.2",
+                              "type": "inline",
+                              "tag": "span",
+                              "attributes": {
+                                "class": "mylogo"
+                              },
+                              "children": [
+                                {
+                                  "id": "insight-renewal-22.2.4.2.2.2.2.1",
+                                  "type": "text",
+                                  "value": "Youngsam"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "insight-renewal-22.2.4.2.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "insight-renewal-22.2.4.2.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "insight-renewal-22.2.4.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "insight-renewal-22.2.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "insight-renewal-22.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "insight-renewal-23",
+      "type": "text",
+      "value": " "
+    }
+  ]
+}

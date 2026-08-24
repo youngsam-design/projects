@@ -1,0 +1,4893 @@
+{
+  "schemaVersion": 1,
+  "slug": "bznav-sans",
+  "blocks": [
+    {
+      "id": "bznav-sans-1",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "bznav-sans-2",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "summary"
+      },
+      "children": [
+        {
+          "id": "bznav-sans-2.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "bznav-sans-2.2",
+          "type": "block",
+          "tag": "ul",
+          "attributes": {},
+          "children": [
+            {
+              "id": "bznav-sans-2.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-2.2.2",
+              "type": "block",
+              "tag": "li",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "bznav-sans-2.2.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-2.2.2.2",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-title"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-2.2.2.2.1",
+                      "type": "text",
+                      "value": "Personal Side Project"
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-2.2.2.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-2.2.2.4",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-text"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-2.2.2.4.1",
+                      "type": "text",
+                      "value": "Font Making History"
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-2.2.2.5",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-2.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-2.2.4",
+              "type": "block",
+              "tag": "li",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "bznav-sans-2.2.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-2.2.4.2",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-title"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-2.2.4.2.1",
+                      "type": "text",
+                      "value": "Tools"
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-2.2.4.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-2.2.4.4",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-text"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-2.2.4.4.1",
+                      "type": "text",
+                      "value": "FontLab"
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-2.2.4.5",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-2.2.5",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-2.2.6",
+              "type": "block",
+              "tag": "li",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "bznav-sans-2.2.6.1",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-title"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-2.2.6.1.1",
+                      "type": "text",
+                      "value": "Duration"
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-2.2.6.2",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-text"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-2.2.6.2.1",
+                      "type": "text",
+                      "value": "2020.9 - 2020.10"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-2.2.7",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "bznav-sans-2.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "bznav-sans-3",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "bznav-sans-4",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "intro"
+      },
+      "children": [
+        {
+          "id": "bznav-sans-4.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "bznav-sans-4.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "bznav-sans-4.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-4.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "bznav-sans-4.2.2.1",
+                  "type": "text",
+                  "value": "배경"
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-4.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "bznav-sans-4.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "bznav-sans-4.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "bznav-sans-4.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-4.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-4.4.2.1",
+                  "type": "text",
+                  "value": "\n              지엔터프라이즈의 프로덕트 디자이너로 2020년 6월 1일에 입사를 했었고, 기존 디자이너 분들은 디자인 시스템 없이 XD를 사용하고 있었습니다. UI 작업을\n              하기 위해 XD 파일을 하나씩 살펴보는 과정에서 많은 시간을 소모하고 있었습니다. 지엔터프라이즈의 애자일 조직문화 속에서 빠르게 화면을 제작하기\n              위해서는 디자인 시스템이 절실히 필요했습니다. 그래서 XD를 버리고 Figma를 도입하여 빠르게 디자인 시스템을 제작하려고 하였습니다. 디자인 시스템을\n              제작하기 위해서 타이포그래피의 바탕인 폰트를 설정하여야 했습니다. 여기부터 고민이 시작되었습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-4.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-4.4.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "sub-content"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-4.4.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-4.4.4.2",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "img-wrap"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-4.4.4.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-4.4.4.2.2",
+                      "type": "inline",
+                      "tag": "img",
+                      "attributes": {
+                        "class": "img-in",
+                        "src": "./img/bznav-sans-1.png"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "bznav-sans-4.4.4.2.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-4.4.4.2.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {
+                        "class": "caption"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-4.4.4.2.4.1",
+                          "type": "text",
+                          "value": "\n                  기능 위주로 파일 구분이 되어있어서, 화면 내에 어떤 컴포넌트가 있는지를 확인하려면 파일을 하나씩 열거나 제플린으로 확인을 해야했습니다.\n                "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-4.4.4.2.5",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-4.4.4.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-4.4.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "bznav-sans-4.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "bznav-sans-5",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "bznav-sans-6",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "bznav-sans-6.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "bznav-sans-6.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "bznav-sans-6.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-6.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "bznav-sans-6.2.2.1",
+                  "type": "text",
+                  "value": "문제점"
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-6.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "bznav-sans-6.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "bznav-sans-6.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "bznav-sans-6.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-6.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-6.4.2.1",
+                  "type": "text",
+                  "value": "\n              기존에 사용하고 있는 폰트에는 문제가 있었는데, 운영 중인 비즈넵 서비스 웹앱과 모바일앱에서 이용하고 있었습니다. 이전 회사에서 홈페이지 개발을\n              하면서 다양한 웹폰트로 사용해보면서 발견했던 문제점이 있었는데, 크게 2가지로 설명할 수 있습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-6.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-6.4.4",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-6.4.4.1",
+                  "type": "text",
+                  "value": "\n              첫 번째는 문서 작업을 할 때는 괜찮은데, 해상도가 낮은 웹에서는 일부 글리프가 뭉개지는 현상이 나타납니다. 모바일은 해상도가 높아 앱에서 사용하는\n              폰트가 뭉개지는 현상을 식별하기 힘듭니다. 하지만 레티나가 아니어서 해상도가 낮은 PC에서 보거나 모바일에서 웹브라우저를 사용하는 경우, 웹브라우저가\n              지원하는 ppi(최대 72ppi)가 낮아 일부 글리프가 뭉개집니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-6.4.5",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-6.4.6",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "sub-content"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-6.4.6.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-6.4.6.2",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "img-wrap"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-6.4.6.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-6.4.6.2.2",
+                      "type": "inline",
+                      "tag": "img",
+                      "attributes": {
+                        "class": "img-in",
+                        "src": "./img/bznav-sans-2.png"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "bznav-sans-6.4.6.2.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-6.4.6.2.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {
+                        "class": "caption"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-6.4.6.2.4.1",
+                          "type": "text",
+                          "value": "(비즈넵 세무사용 웹앱) 폰트가 Bold일 경우에, 또 글씨의 크기가 작아질 경우에 더 심하게 뭉개지는 현상을 볼 수 있습니다."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-6.4.6.2.5",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-6.4.6.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-6.4.7",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-6.4.8",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-6.4.8.1",
+                  "type": "text",
+                  "value": "\n              두 번째는 해당 폰트에서 지원하는 자족에 Medium(중간체)이 없었습니다. 실제로 앱에 사용하는 자족은 Regular, Medium, Bold가 대부분이어서 Medium\n              하나가 빠지는 것은 타이포그래피에 큰 제약을 가져옵니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-6.4.9",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-6.4.10",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "sub-content"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-6.4.10.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-6.4.10.2",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "img-wrap"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-6.4.10.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-6.4.10.2.2",
+                      "type": "inline",
+                      "tag": "img",
+                      "attributes": {
+                        "class": "img-in",
+                        "src": "./img/bznav-sans-3.png"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "bznav-sans-6.4.10.2.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-6.4.10.2.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {
+                        "class": "caption"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-6.4.10.2.4.1",
+                          "type": "text",
+                          "value": "기존 폰트는 다양한 자족을 지원했지만, 실제 앱에 사용할 수 있는 폰트는 Regular와 Bold로 2가지여서 극히 제한적이었습니다."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-6.4.10.2.5",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-6.4.10.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-6.4.11",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "bznav-sans-6.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "bznav-sans-7",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "bznav-sans-8",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "bznav-sans-8.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "bznav-sans-8.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "bznav-sans-8.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-8.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "bznav-sans-8.2.2.1",
+                  "type": "text",
+                  "value": "글리프가 깨지지 않는 가독성 좋은 무료 폰트는 없을까?"
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-8.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "bznav-sans-8.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "bznav-sans-8.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "bznav-sans-8.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-8.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-8.4.2.1",
+                  "type": "text",
+                  "value": "\n              이제까지 폰트를 사용하면서 영문·숫자·국문 모두 완벽하게 느낀 폰트는 없었습니다. 웹에서 글리프가 깨지지 않는 거의 유일한 무료용 폰트는\n              "
+                },
+                {
+                  "id": "bznav-sans-8.4.2.2",
+                  "type": "inline",
+                  "tag": "a",
+                  "attributes": {
+                    "href": "https://fonts.google.com/noto/specimen/Noto+Sans+KR",
+                    "target": "blank"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-8.4.2.2.1",
+                      "type": "text",
+                      "value": "Noto Sans Korean"
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-8.4.2.3",
+                  "type": "text",
+                  "value": "이라고 보는데요. 하지만 국문이 가독성에\n              우수하여도, 숫자나 영문에서는 국문(한글)에서 느꼈던 견고함이 느껴지지 않아 마음에 들지 않았습니다. 그래서 개발자에게는 CSS파일에서 font-family를\n              설정할 때, Noto Sans Korean보다 사용하고 싶은 영문을 앞에 적어달라 요청드립니다. 그렇게 적용하면 원하는 모습대로 같이 사용할 수 있지만, 서로 다른\n              글꼴을 사용해서 발생하는 글꼴의 두께나 간격, 글줄의 높이가 달라 고려해야할 변수가 많아 어울리는 글꼴을 찾기 매우 어려웠습니다. 또 폰트를 여러개를\n              쓸 경우 불러오는 파일이 많아 용량이 커지기 때문에, 네트워크 속도가 느린 경우 폰트가 느리게 반영될 수 있습니다. 이 점은 웹페이지를 방문하는\n              고객에게 불편한 경험을 줄 수 있습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-8.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-8.4.4",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-8.4.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-8.4.4.2",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "caption"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-8.4.4.2.1",
+                      "type": "text",
+                      "value": "*참고로 Noto Sans Korean의 Regular 하나의 파일이 4.7MB를 차지합니다. 6개의 자족을 모두는 30MB에 달합니다."
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-8.4.4.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-8.4.5",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-8.4.6",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "sub-content"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-8.4.6.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-8.4.6.2",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "img-wrap"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-8.4.6.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-8.4.6.2.2",
+                      "type": "inline",
+                      "tag": "img",
+                      "attributes": {
+                        "class": "img-in",
+                        "src": "./img/bznav-sans-4.png"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "bznav-sans-8.4.6.2.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-8.4.6.2.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {
+                        "class": "caption"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-8.4.6.2.4.1",
+                          "type": "text",
+                          "value": "\n                  대표적으로 Noto Sans Korean의 경우 라이센스가 무료이고, 국문의 경우 가독성이 좋아 많은 사랑을 받고 있지만, 영문과 숫자에서 디자이너의 호불호가\n                  많이 갈리는 대표적인 서체이죠.\n                "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-8.4.6.2.5",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-8.4.6.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-8.4.7",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-8.4.8",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "sub-content"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-8.4.8.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-8.4.8.2",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "img-wrap"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-8.4.8.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-8.4.8.2.2",
+                      "type": "inline",
+                      "tag": "img",
+                      "attributes": {
+                        "class": "img-in",
+                        "src": "./img/bznav-sans-5.png"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "bznav-sans-8.4.8.2.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-8.4.8.2.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {
+                        "class": "caption"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-8.4.8.2.4.1",
+                          "type": "text",
+                          "value": "\n                  CSS의 font-family는 앞에 것부터 순서대로 글꼴을 적용합니다. 그래서 영문 폰트부터 설정할 경우 해당 폰트에 국문이 없어서 다음 순서에서 국문\n                  폰트를 참조합니다.\n                "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-8.4.8.2.5",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-8.4.8.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-8.4.9",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-8.4.10",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "sub-content"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-8.4.10.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-8.4.10.2",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "img-wrap"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-8.4.10.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-8.4.10.2.2",
+                      "type": "inline",
+                      "tag": "img",
+                      "attributes": {
+                        "class": "img-in",
+                        "src": "./img/bznav-sans-6.png"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "bznav-sans-8.4.10.2.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-8.4.10.2.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {
+                        "class": "caption"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-8.4.10.2.4.1",
+                          "type": "text",
+                          "value": "폰트를 2가지로 가져가면 디자인 화면도 같이 바꿔서 글자의 줄바꿈이나 글의 폭을 봐야하는 이슈도 추가로 발생합니다."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-8.4.10.2.5",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-8.4.10.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-8.4.11",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "bznav-sans-8.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "bznav-sans-9",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "bznav-sans-10",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "bznav-sans-10.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "bznav-sans-10.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "bznav-sans-10.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-10.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "bznav-sans-10.2.2.1",
+                  "type": "text",
+                  "value": "애플 웹사이트처럼 국문과 영문이 잘 어울려 멋질 수 있는 방법은 무엇일까?"
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-10.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "bznav-sans-10.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "bznav-sans-10.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "bznav-sans-10.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-10.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-10.4.2.1",
+                  "type": "text",
+                  "value": "\n              영문·숫자·국문 모두 잘 어울려져 있는 서비스를 찾아보면 애플 사이트에서의 경험이 대표적이지 않나 싶네요. 신제품이 나올 때마다 애플 사이트를 보면\n              국문에 대한 개인적인 선입견이 무너지는 느낌이 들었습니다. 물론 애플 사이트도 영문은 '샌프란시스코 서체(SF Pro)'이고 국문은 '애플산돌고딕'이지만,\n              내가 만드는 서비스에도 애플 사이트 같은 느낌의 폰트를 반영하고 싶다는 생각이 강하게 들었습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-10.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-10.4.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "sub-content"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-10.4.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-10.4.4.2",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "img-wrap"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-10.4.4.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-10.4.4.2.2",
+                      "type": "inline",
+                      "tag": "img",
+                      "attributes": {
+                        "class": "img-in",
+                        "src": "./img/bznav-sans-7.png"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "bznav-sans-10.4.4.2.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-10.4.4.2.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {
+                        "class": "caption"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-10.4.4.2.4.1",
+                          "type": "text",
+                          "value": "(참고) 애플 사이트"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-10.4.4.2.5",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-10.4.4.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-10.4.4.4",
+                  "type": "block",
+                  "tag": "p",
+                  "attributes": {
+                    "class": "text"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-10.4.4.4.1",
+                      "type": "text",
+                      "value": "\n                그냥 애플 시스템(SF Pro, 애플산돌고딕)을 사용할 수도 있지 않을까라는 생각이 들기도 합니다. 상업적으로 사용해도 문제가 전혀 없는 것도\n                확인했습니다. 그러나, IOS가 아닌 다른 OS(윈도우, 안드로이드 등)에서는 시스템 폰트에 애플 시스템 폰트가 없어 사용할 수 없습니다.\n              "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-10.4.4.5",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-10.4.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "bznav-sans-10.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "bznav-sans-11",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "bznav-sans-12",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "bznav-sans-12.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "bznav-sans-12.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "bznav-sans-12.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-12.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "bznav-sans-12.2.2.1",
+                  "type": "text",
+                  "value": "모든 조건을 만족할 하나의 폰트로 만들기 위해서 필요한 것은?"
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-12.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "bznav-sans-12.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "bznav-sans-12.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "bznav-sans-12.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-12.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-12.4.2.1",
+                  "type": "text",
+                  "value": "\n              서체 전문가가 아니기에 타입페이스는 전문가에게 맡기고, 주어진 시간 내에서 완성할 수 있는 결과물에 집중하기로 하였습니다. 그러기 위해서는 수정 및\n              배포가 가능한 무료 라이센스(Open Font License)에서 원하는 폰트를 선택하는 것을 찾아, 합성(Merge)을 하는 것이 가장 빠르게 결과물을 낼 수 있다고\n              판단했습니다. 국문의 최소 2350자를 만들기에는 시간이 부족하고, 성과를 낼 수 있을지 장담할 수 없기 때문입니다. 먼저 국문은 해상도가 깨지지 않고\n              가독성이 좋은 'Noto Sans Korean'을 선택하였고, 영문·숫자는 자간을 수정하면 SF Pro와 유사한 'Inter'를 합성하기로 하였습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-12.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-12.4.4",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-12.4.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-12.4.4.2",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "caption"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-12.4.4.2.1",
+                      "type": "text",
+                      "value": "*"
+                    },
+                    {
+                      "id": "bznav-sans-12.4.4.2.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "https://www.olis.or.kr/license/Detailselect.do?lId=1086",
+                        "target": "blank"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-12.4.4.2.2.1",
+                          "type": "text",
+                          "value": "Open Font License"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-12.4.4.2.3",
+                      "type": "text",
+                      "value": ": 판매가 아닌 한, 허가된 폰트의 사용,\n                연구, 수정 및 재 배포를 자유롭게 허락함."
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-12.4.4.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-12.4.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "bznav-sans-12.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "bznav-sans-13",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "bznav-sans-14",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "bznav-sans-14.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "bznav-sans-14.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "bznav-sans-14.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-14.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "bznav-sans-14.2.2.1",
+                  "type": "text",
+                  "value": "빠르게 완성할 수 있었던 FontLab 설치"
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-14.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "bznav-sans-14.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "bznav-sans-14.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "bznav-sans-14.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-14.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-14.4.2.1",
+                  "type": "text",
+                  "value": "\n              대학교 시절에 Fontographer를 사용하여 영문 폰트를 만들어본 적은 있지만, 실제로 운영 중인 서비스에 넣기에는 경험이 부족했습니다. 다양한 툴을\n              경험해보지 못했지만, FontLab을 한 달간 체험판으로 사용해보니 초보자가 이용하기에도 간편하고 무엇보다 커닝 조절이 쉬웠습니다. Inter를 베이스로\n              작업을 하였기에, 커닝을 모두 새로 조절했었는데 쉬운 툴 덕분에 비교적 빠르게 완성할 수 있었습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-14.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-14.4.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "sub-content"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-14.4.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-14.4.4.2",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "img-wrap"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-14.4.4.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-14.4.4.2.2",
+                      "type": "inline",
+                      "tag": "img",
+                      "attributes": {
+                        "class": "img-in",
+                        "src": "./img/bznav-sans-9.png"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "bznav-sans-14.4.4.2.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-14.4.4.2.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {
+                        "class": "caption"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-14.4.4.2.4.1",
+                          "type": "text",
+                          "value": "FontLab"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-14.4.4.2.5",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-14.4.4.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-14.4.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "bznav-sans-14.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "bznav-sans-15",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "bznav-sans-16",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "bznav-sans-16.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "bznav-sans-16.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "bznav-sans-16.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-16.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "bznav-sans-16.2.2.1",
+                  "type": "text",
+                  "value": "모바일의 사용성에 맞게 개선해보기"
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-16.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "bznav-sans-16.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "bznav-sans-16.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "bznav-sans-16.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-16.4.2",
+              "type": "block",
+              "tag": "ul",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-16.4.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-16.4.2.2",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "text-li"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-16.4.2.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.2.2",
+                      "type": "block",
+                      "tag": "h6",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "bznav-sans-16.4.2.2.2.1",
+                          "type": "text",
+                          "value": "모바일 화면너비에 맞게 자간 조절"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.2.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.2.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "bznav-sans-16.4.2.2.4.1",
+                          "type": "text",
+                          "value": "\n                  모바일 화면은 사용자가 눈과 가깝게 보려고 하기 때문에 글자의 호흡이 다른 매체에 비해 빠릅니다. 그래서 상대적으로 모바일에서는 행간을 줄여서\n                  사용하게 되는데, 행간을 줄이면 자간도 함께 조절하여 가독성을 높입니다. 그래서 기본으로 자간을 줄인 상태로 제작을 하였고, 자간을 줄인 만큼\n                  띄어쓰기(Space)의 너비를 줄여 어간을 조절했습니다.\n                "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.2.5",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.2.6",
+                      "type": "block",
+                      "tag": "div",
+                      "attributes": {
+                        "class": "sub-content"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-16.4.2.2.6.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "bznav-sans-16.4.2.2.6.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "img-wrap"
+                          },
+                          "children": [
+                            {
+                              "id": "bznav-sans-16.4.2.2.6.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-16.4.2.2.6.2.2",
+                              "type": "inline",
+                              "tag": "img",
+                              "attributes": {
+                                "class": "img-in",
+                                "src": "./img/bznav-sans-10.png"
+                              },
+                              "children": []
+                            },
+                            {
+                              "id": "bznav-sans-16.4.2.2.6.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-16.4.2.2.6.2.4",
+                              "type": "block",
+                              "tag": "p",
+                              "attributes": {
+                                "class": "caption"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-16.4.2.2.6.2.4.1",
+                                  "type": "text",
+                                  "value": "자간을 줄여 보다 많은 텍스트가 들어갈 수 있어 모바일에서 사용자의 시선의 호흡을 맞추었습니다."
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-16.4.2.2.6.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "bznav-sans-16.4.2.2.6.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.2.7",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-16.4.2.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-16.4.2.4",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "text-li"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-16.4.2.4.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.4.2",
+                      "type": "block",
+                      "tag": "h6",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "bznav-sans-16.4.2.4.2.1",
+                          "type": "text",
+                          "value": "텍스트도 UI Component로 가운데 맞춤 필요"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.4.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.4.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "bznav-sans-16.4.2.4.4.1",
+                          "type": "text",
+                          "value": "\n                  폰트를 단순한 정보가 아니라 UI Component로 활용하는 경우가 있습니다. 텍스트가 이제는 어떤 형태로, 어떤 색상으로 감싸져 있느냐에 따라 다른\n                  사용성을 지닙니다. Button, Segment, Chips같은 버튼 형태일 수도 있고 Toast나 Badge 등에도 사용될 수 있습니다. 텍스트가 세로길이의 가운데 정렬이\n                  되는 것은 이제 중요한 요소로 자리잡았습니다.\n                "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.4.5",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.4.6",
+                      "type": "block",
+                      "tag": "div",
+                      "attributes": {
+                        "class": "img-wrap"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-16.4.2.4.6.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "bznav-sans-16.4.2.4.6.2",
+                          "type": "inline",
+                          "tag": "img",
+                          "attributes": {
+                            "class": "img-in",
+                            "src": "./img/bznav-sans-11.png"
+                          },
+                          "children": []
+                        },
+                        {
+                          "id": "bznav-sans-16.4.2.4.6.3",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "bznav-sans-16.4.2.4.6.4",
+                          "type": "inline",
+                          "tag": "img",
+                          "attributes": {
+                            "class": "img-in",
+                            "src": "./img/bznav-sans-12.png"
+                          },
+                          "children": []
+                        },
+                        {
+                          "id": "bznav-sans-16.4.2.4.6.5",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.4.7",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-16.4.2.5",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-16.4.2.6",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "text-li"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-16.4.2.6.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.6.2",
+                      "type": "block",
+                      "tag": "h6",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "bznav-sans-16.4.2.6.2.1",
+                          "type": "text",
+                          "value": "특수문자 기호를 국문에 맞추어 가운데 정렬"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.6.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.6.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "bznav-sans-16.4.2.6.4.1",
+                          "type": "text",
+                          "value": "\n                  특수문자들을 자세히 살펴보니 국문에 맞추어져 있지 않고, 영문의 소문자에 맞추어져 있었습니다. 국내 고객들을 위한 서비스이다보니 국문에 맞추어야\n                  한다고 생각했습니다. 결국 국문을 우선으로 시각의 흔들림을 최소한으로 하여 고객들에게 불편함을 없애고자 했습니다.\n                "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.6.5",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.6.6",
+                      "type": "block",
+                      "tag": "div",
+                      "attributes": {
+                        "class": "sub-content"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-16.4.2.6.6.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "bznav-sans-16.4.2.6.6.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "img-wrap"
+                          },
+                          "children": [
+                            {
+                              "id": "bznav-sans-16.4.2.6.6.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-16.4.2.6.6.2.2",
+                              "type": "inline",
+                              "tag": "img",
+                              "attributes": {
+                                "class": "img-in",
+                                "src": "./img/bznav-sans-13.png"
+                              },
+                              "children": []
+                            },
+                            {
+                              "id": "bznav-sans-16.4.2.6.6.2.3",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "bznav-sans-16.4.2.6.6.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.6.7",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-16.4.2.7",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-16.4.2.8",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "text-li"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-16.4.2.8.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.8.2",
+                      "type": "block",
+                      "tag": "h6",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "bznav-sans-16.4.2.8.2.1",
+                          "type": "text",
+                          "value": "숫자의 너비를 통일하여 자리수 가독성을 높이기"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.8.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.8.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "bznav-sans-16.4.2.8.4.1",
+                          "type": "text",
+                          "value": "\n                  비즈넵이 사업체의 자산을 보여주기에 숫자를 나타내는 화면이 많은데요. 숫자의 경우 대비가 잘 이루어질 수 있도록 모든 숫자의 너비를 강제적으로\n                  동일하게 맞추었습니다. 그래야 자릿수 비교가 한눈에 되면서 어떤 숫자가 크고 작은지 보이니까요. '1'의 공간이 다소 넓게 느껴져 본문에 사용하게 될\n                  경우, 가독성이 떨어질 수는 있습니다. 하지만 데이터를 파악하는 데에 불편함을 줄이는 것을 중요시하여 숫자들의 너비를 동일하게 맞추었습니다.\n                "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.8.5",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.8.6",
+                      "type": "block",
+                      "tag": "div",
+                      "attributes": {
+                        "class": "img-wrap"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-16.4.2.8.6.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "bznav-sans-16.4.2.8.6.2",
+                          "type": "inline",
+                          "tag": "img",
+                          "attributes": {
+                            "class": "img-in",
+                            "src": "./img/bznav-sans-14.png"
+                          },
+                          "children": []
+                        },
+                        {
+                          "id": "bznav-sans-16.4.2.8.6.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-16.4.2.8.7",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-16.4.2.9",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-16.4.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "bznav-sans-16.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "bznav-sans-17",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "bznav-sans-18",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "bznav-sans-18.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "bznav-sans-18.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "bznav-sans-18.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-18.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "bznav-sans-18.2.2.1",
+                  "type": "text",
+                  "value": "작업의 편리함을 위해 개선안 추가"
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-18.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "bznav-sans-18.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "bznav-sans-18.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "bznav-sans-18.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-18.4.2",
+              "type": "block",
+              "tag": "ul",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-18.4.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-18.4.2.2",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "text-li"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-18.4.2.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.2.2",
+                      "type": "block",
+                      "tag": "h6",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "bznav-sans-18.4.2.2.2.1",
+                          "type": "text",
+                          "value": "아이콘 폰트 추가"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.2.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.2.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "bznav-sans-18.4.2.2.4.1",
+                          "type": "text",
+                          "value": "\n                  텍스트 안에 아이콘을 추가하면 장점은 개발자들에게 어떤 아이콘이 쓰였는지 따로 찾지 않아도 되고, 작업 공수가 줄어듭니다. 단점은 폰트이기 때문에\n                  가운데 정렬이 line-height에 영향을 받아 완전히 중앙에 위치하지 않을 수 있습니다. 사용할 때는 텍스트에 맞춰야하면 아이콘폰트로 사용하고 전체\n                  UI에 맞춰야한다면 svg형태로 작업해야합니다.\n                "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.2.5",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.2.6",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {
+                        "class": "text"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-18.4.2.2.6.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "bznav-sans-18.4.2.2.6.2",
+                          "type": "inline",
+                          "tag": "span",
+                          "attributes": {
+                            "class": "caption"
+                          },
+                          "children": [
+                            {
+                              "id": "bznav-sans-18.4.2.2.6.2.1",
+                              "type": "text",
+                              "value": "*개발자분들이 아이콘이 업데이트 될 때마다 외부 플러그인(icomoon등)을 사용하여 폰트로 따로 추출하여 사용했었는데, 개발자분들에겐 신경 쓸\n                    점이 줄어들긴 했네요."
+                            }
+                          ]
+                        },
+                        {
+                          "id": "bznav-sans-18.4.2.2.6.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.2.7",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.2.8",
+                      "type": "block",
+                      "tag": "div",
+                      "attributes": {
+                        "class": "sub-content"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-18.4.2.2.8.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "bznav-sans-18.4.2.2.8.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "img-wrap"
+                          },
+                          "children": [
+                            {
+                              "id": "bznav-sans-18.4.2.2.8.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-18.4.2.2.8.2.2",
+                              "type": "inline",
+                              "tag": "img",
+                              "attributes": {
+                                "class": "img-in",
+                                "src": "./img/bznav-sans-19.png"
+                              },
+                              "children": []
+                            },
+                            {
+                              "id": "bznav-sans-18.4.2.2.8.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-18.4.2.2.8.2.4",
+                              "type": "block",
+                              "tag": "video",
+                              "attributes": {
+                                "class": "video-in",
+                                "autoplay": "",
+                                "loop": "",
+                                "muted": "",
+                                "playsinline": "",
+                                "style": "width: 100%; margin-top: 2em; border: 1px solid rgba(0, 31, 61, 0.2)"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-18.4.2.2.8.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "bznav-sans-18.4.2.2.8.2.4.2",
+                                  "type": "inline",
+                                  "tag": "source",
+                                  "attributes": {
+                                    "src": "./img/bznav-sans-15.mp4",
+                                    "type": "video/mp4"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "bznav-sans-18.4.2.2.8.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-18.4.2.2.8.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "bznav-sans-18.4.2.2.8.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.2.9",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-18.4.2.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-18.4.2.4",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "text-li"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-18.4.2.4.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.4.2",
+                      "type": "block",
+                      "tag": "h6",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "bznav-sans-18.4.2.4.2.1",
+                          "type": "text",
+                          "value": "합자(Ligature) 기능 추가"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.4.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.4.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "bznav-sans-18.4.2.4.4.1",
+                          "type": "text",
+                          "value": "\n                  문서 작업 시에 ->, -->, =>, ==>, <->, <-->, <=>, <==> 이런식으로 문맥에 화살표 형태를 활용하는 경우가 있는데, 매번 유니코드 정보를 복사해서\n                  활용하는 것이 번거로웠습니다. 그래서 합자 기능을 활용하여 UI 텍스트로 변경해주는 기능을 추가했습니다.\n                "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.4.5",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.4.6",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {
+                        "class": "text"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-18.4.2.4.6.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "bznav-sans-18.4.2.4.6.2",
+                          "type": "inline",
+                          "tag": "span",
+                          "attributes": {
+                            "class": "caption"
+                          },
+                          "children": [
+                            {
+                              "id": "bznav-sans-18.4.2.4.6.2.1",
+                              "type": "text",
+                              "value": "*단, 웹폰트 작업 시에 letter-spacing(자간조절)에 값을 추가하면 적용이 안됩니다."
+                            }
+                          ]
+                        },
+                        {
+                          "id": "bznav-sans-18.4.2.4.6.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.4.7",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.4.8",
+                      "type": "block",
+                      "tag": "div",
+                      "attributes": {
+                        "class": "sub-content"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-18.4.2.4.8.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "bznav-sans-18.4.2.4.8.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "img-wrap"
+                          },
+                          "children": [
+                            {
+                              "id": "bznav-sans-18.4.2.4.8.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-18.4.2.4.8.2.2",
+                              "type": "block",
+                              "tag": "video",
+                              "attributes": {
+                                "class": "video-in",
+                                "autoplay": "",
+                                "loop": "",
+                                "muted": "",
+                                "playsinline": "",
+                                "style": "width: 100%; border: 1px solid rgba(0, 31, 61, 0.2)"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-18.4.2.4.8.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "bznav-sans-18.4.2.4.8.2.2.2",
+                                  "type": "inline",
+                                  "tag": "source",
+                                  "attributes": {
+                                    "src": "./img/bznav-sans-16.mp4",
+                                    "type": "video/mp4"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "bznav-sans-18.4.2.4.8.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-18.4.2.4.8.2.3",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "bznav-sans-18.4.2.4.8.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.4.9",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.4.10",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "bznav-sans-18.4.2.4.10.1",
+                          "type": "text",
+                          "value": "배너용 버튼에 활용하거나 텍스트 버튼 작업에 유용한 기능인데요. 빠르게 '$>;'를 입력하면 앞 글자와 간격을 조절한 링크 아이콘을 넣어줍니다."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.4.11",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.4.12",
+                      "type": "block",
+                      "tag": "div",
+                      "attributes": {
+                        "class": "sub-content"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-18.4.2.4.12.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "bznav-sans-18.4.2.4.12.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "img-wrap"
+                          },
+                          "children": [
+                            {
+                              "id": "bznav-sans-18.4.2.4.12.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-18.4.2.4.12.2.2",
+                              "type": "block",
+                              "tag": "video",
+                              "attributes": {
+                                "class": "video-in",
+                                "autoplay": "",
+                                "loop": "",
+                                "muted": "",
+                                "playsinline": "",
+                                "style": "width: 100%; border: 1px solid rgba(0, 31, 61, 0.2)"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-18.4.2.4.12.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "bznav-sans-18.4.2.4.12.2.2.2",
+                                  "type": "inline",
+                                  "tag": "source",
+                                  "attributes": {
+                                    "src": "./img/bznav-sans-17.mp4",
+                                    "type": "video/mp4"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "bznav-sans-18.4.2.4.12.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-18.4.2.4.12.2.3",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "bznav-sans-18.4.2.4.12.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.4.13",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.4.14",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "bznav-sans-18.4.2.4.14.1",
+                          "type": "text",
+                          "value": "\n                  문서를 작업할 때, 로고를 빠르게 적용하는 것도 추가했습니다. 텍스트의 크기에 비례하여 적절한 크기로 들어갈 수 있고, 텍스트 컬러를 사용할 수\n                  있어서 작업자 분들의 속도를 올릴 수 있습니다.\n                "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.4.15",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.4.16",
+                      "type": "block",
+                      "tag": "div",
+                      "attributes": {
+                        "class": "sub-content"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-18.4.2.4.16.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "bznav-sans-18.4.2.4.16.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "img-wrap"
+                          },
+                          "children": [
+                            {
+                              "id": "bznav-sans-18.4.2.4.16.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-18.4.2.4.16.2.2",
+                              "type": "block",
+                              "tag": "video",
+                              "attributes": {
+                                "class": "video-in",
+                                "autoplay": "",
+                                "loop": "",
+                                "muted": "",
+                                "playsinline": "",
+                                "style": "width: 100%; border: 1px solid rgba(0, 31, 61, 0.2)"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-18.4.2.4.16.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "bznav-sans-18.4.2.4.16.2.2.2",
+                                  "type": "inline",
+                                  "tag": "source",
+                                  "attributes": {
+                                    "src": "./img/bznav-sans-18.mp4",
+                                    "type": "video/mp4"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "bznav-sans-18.4.2.4.16.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-18.4.2.4.16.2.3",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "bznav-sans-18.4.2.4.16.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-18.4.2.4.17",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-18.4.2.5",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-18.4.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "bznav-sans-18.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "bznav-sans-19",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "bznav-sans-20",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "bznav-sans-20.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "bznav-sans-20.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "bznav-sans-20.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-20.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "bznav-sans-20.2.2.1",
+                  "type": "text",
+                  "value": "마치면서"
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-20.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "bznav-sans-20.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "bznav-sans-20.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "bznav-sans-20.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-20.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-20.4.2.1",
+                  "type": "text",
+                  "value": "\n              처음부터 폰트 경량화를 목적으로 하고 있어서 사용하지 않는 특수문자는 제거하였고, 국내에만 서비스하고 있었기에 다른나라 문자도 제거하고\n              시작했습니다. 폰트 경량화에 관해서는 이전에 다녔던 회사에서 QA엔지니어분이 '폰트의 용량이 너무 커서 웹사이트의 성능에 부담을 준다.'는 피드백을\n              받았고, 웹사이트가 접하는 신규 사용자에게 느리게 뜨면 좋지 않은 서비스 경험을 제공하는 것이어서 그때부터 경량화를 해야한다는 생각을 가지고\n              있었습니다. 그래서 BZNAV Sans의 Regular 하나의 용량은 480KB로 제작이 되었고, 4MB인 Noto Sans Korean의 Regular보다 약 1/10으로 줄였습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-20.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-20.4.4",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-20.4.4.1",
+                  "type": "text",
+                  "value": "\n              실제로 서비스하는 나만의 글꼴을 만드는 과정은 '실재'하지 않을 것 같은 이상적인 결과물을 만드는 것처럼 허무맹랑하였지만, 그 과정을 이겨내고 스스로\n              해냈다는 것이 굉장히 보람찹니다. 이전에는 해당 기업에서만 쓰이는 전용 기업용 폰트가 마냥 부러웠었고, 지금껏 스타트업을 다녔던 저에게는 폰트 하나를\n              구매하는 것조차 엄두가 안났습니다. 처음 작업해보는 것이라 언제 끝낼 수 있다는 보장이 없다보니 회사 안에서 작업과정을 보여주기가 부담스러웠습니다.\n              그래서 완성할 때까지는 퇴근하고 집에서 작업하거나 주말동안 작업하여 완성하게 되었습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-20.4.5",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-20.4.6",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-20.4.6.1",
+                  "type": "text",
+                  "value": "\n              생각했던 것보다는 비교적 짧은 시간에 결과물이 나와서 일정에 있던 디자인시스템에도 더욱 빛을 발휘할 수 있어 기쁨이 배가 되었습니다. 디자이너지만\n              폰트에 대해서는 고객의 입장에서만 바라보고 깊게 들여다보지 못했는데, 폰트 에디터를 사용하면서 서체 하나하나를 들여다보고 서체의 구조를 알게되어\n              굉장히 재밌었습니다. 무료로 수정할 수 있게 라이센스를 열어준 모든 타입페이스 디자이너와 그 기업에게 감사의 인사를 하고 싶습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-20.4.7",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-20.4.8",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-20.4.8.1",
+                  "type": "text",
+                  "value": "\n              지금도 계속 사용성에 문제가 생기거나 추가하고 싶은게 생기면 빠르게 수정하여 사용하고 있습니다. 지금은 모바일앱, 웹앱, 홈페이지 등 모든\n              프로덕트에서 'BZNAV Sans' 폰트를 사용하고 있고, 문서 작업하시는 동료도 잘 사용해주어 기쁩니다. 이 경험을 통해 불가능하다고 생각했던 문제를\n              부딪혀보는 것에 대한 두려움이 많이 사라졌고, 프로덕트 디자인을 하는 시간이 행복합니다. 폰트를 만들어보고 싶은 디자이너 분들은 겁먹지 마시고\n              도전해보시기 바랍니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-20.4.9",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "bznav-sans-20.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "bznav-sans-21",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "bznav-sans-22",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "full-max"
+      },
+      "children": [
+        {
+          "id": "bznav-sans-22.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "bznav-sans-22.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "img-wrap"
+          },
+          "children": [
+            {
+              "id": "bznav-sans-22.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-22.2.2",
+              "type": "inline",
+              "tag": "img",
+              "attributes": {
+                "class": "img-in",
+                "src": "./img/bznav-sans-last-1.png"
+              },
+              "children": []
+            },
+            {
+              "id": "bznav-sans-22.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-22.2.4",
+              "type": "inline",
+              "tag": "img",
+              "attributes": {
+                "class": "img-in",
+                "src": "./img/bznav-sans-last-2.png"
+              },
+              "children": []
+            },
+            {
+              "id": "bznav-sans-22.2.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "bznav-sans-22.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "bznav-sans-23",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "bznav-sans-24",
+      "type": "block",
+      "tag": "div",
+      "attributes": {
+        "class": "project"
+      },
+      "children": [
+        {
+          "id": "bznav-sans-24.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "bznav-sans-24.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "wrapper"
+          },
+          "children": [
+            {
+              "id": "bznav-sans-24.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-24.2.2",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "carousel-title"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-24.2.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-24.2.2.2",
+                  "type": "block",
+                  "tag": "h4",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "bznav-sans-24.2.2.2.1",
+                      "type": "text",
+                      "value": "Other Works"
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-24.2.2.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-24.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-24.2.4",
+              "type": "block",
+              "tag": "ul",
+              "attributes": {
+                "class": "carousel",
+                "data-target": "carousel"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-24.2.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-24.2.4.2",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-24.2.4.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-24.2.4.2.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../1min-return/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-24.2.4.2.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "bznav-sans-24.2.4.2.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "bznav-sans-24.2.4.2.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.2.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-24.2.4.2.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.2.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/1min-web-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.2.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.2.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.2.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-24.2.4.2.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.2.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "bznav-sans-24.2.4.2.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.2.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "bznav-sans-24.2.4.2.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Product Design, Front-End"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.2.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.2.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "bznav-sans-24.2.4.2.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "1달간 '1분'으로 이뤄낸 것들"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.2.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.2.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.2.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "bznav-sans-24.2.4.2.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-24.2.4.2.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-24.2.4.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-24.2.4.4",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-24.2.4.4.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-24.2.4.4.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../insight-renewal/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-24.2.4.4.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "bznav-sans-24.2.4.4.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "bznav-sans-24.2.4.4.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.4.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-24.2.4.4.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.4.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/insight-renewal-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.4.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.4.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.4.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-24.2.4.4.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.4.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "bznav-sans-24.2.4.4.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.4.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "bznav-sans-24.2.4.4.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Product Design"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.4.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.4.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "bznav-sans-24.2.4.4.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "유익하게 새로워진 '비즈넵 인사이트'"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.4.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.4.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.4.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "bznav-sans-24.2.4.4.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-24.2.4.4.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-24.2.4.5",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-24.2.4.6",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-24.2.4.6.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-24.2.4.6.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../tax-invoice/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-24.2.4.6.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "bznav-sans-24.2.4.6.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "bznav-sans-24.2.4.6.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.6.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-24.2.4.6.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.6.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/tax-invoice-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.6.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.6.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.6.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-24.2.4.6.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.6.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "bznav-sans-24.2.4.6.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.6.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "bznav-sans-24.2.4.6.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Product Design"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.6.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.6.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "bznav-sans-24.2.4.6.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "비즈넵, '세금계산서 발급' 합니다"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.6.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.6.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.6.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "bznav-sans-24.2.4.6.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-24.2.4.6.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-24.2.4.7",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-24.2.4.8",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-24.2.4.8.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-24.2.4.8.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../whatap-product-v2/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-24.2.4.8.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "bznav-sans-24.2.4.8.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "bznav-sans-24.2.4.8.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.8.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-24.2.4.8.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.8.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/whatap-product-v2-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.8.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.8.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.8.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-24.2.4.8.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.8.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "bznav-sans-24.2.4.8.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.8.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "bznav-sans-24.2.4.8.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "UX/UI, Web"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.8.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.8.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "bznav-sans-24.2.4.8.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "WhaTap Product v2.0"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.8.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.8.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.8.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "bznav-sans-24.2.4.8.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-24.2.4.8.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-24.2.4.9",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-24.2.4.10",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-24.2.4.10.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-24.2.4.10.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../whatap-mobile-app/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-24.2.4.10.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "bznav-sans-24.2.4.10.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "bznav-sans-24.2.4.10.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.10.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-24.2.4.10.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.10.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/whatap-mobile-app-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.10.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.10.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.10.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-24.2.4.10.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.10.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "bznav-sans-24.2.4.10.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.10.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "bznav-sans-24.2.4.10.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "UX/UI, Mobile"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.10.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.10.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "bznav-sans-24.2.4.10.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "WhaTap Mobile App"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.10.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.10.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.10.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "bznav-sans-24.2.4.10.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-24.2.4.10.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-24.2.4.11",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-24.2.4.12",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-24.2.4.12.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-24.2.4.12.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../whatap-signup/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-24.2.4.12.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "bznav-sans-24.2.4.12.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "bznav-sans-24.2.4.12.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.12.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-24.2.4.12.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.12.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/whatap-signup-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.12.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.12.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.12.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-24.2.4.12.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.12.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "bznav-sans-24.2.4.12.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.12.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "bznav-sans-24.2.4.12.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "UX/UI, Front-End"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.12.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.12.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "bznav-sans-24.2.4.12.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "WhaTap Signup Page"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.12.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.12.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.12.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "bznav-sans-24.2.4.12.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-24.2.4.12.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-24.2.4.13",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-24.2.4.14",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-24.2.4.14.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-24.2.4.14.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../diabates-notes/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-24.2.4.14.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "bznav-sans-24.2.4.14.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "bznav-sans-24.2.4.14.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.14.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-24.2.4.14.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.14.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/diabates-app-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.14.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.14.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.14.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-24.2.4.14.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.14.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "bznav-sans-24.2.4.14.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.14.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "bznav-sans-24.2.4.14.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "GUI, Mobile"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.14.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.14.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "bznav-sans-24.2.4.14.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "'당뇨 수첩', 당뇨 환자를 위한 식단 관리 앱"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.14.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.14.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.14.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "bznav-sans-24.2.4.14.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-24.2.4.14.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-24.2.4.15",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-24.2.4.16",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-24.2.4.16.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-24.2.4.16.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../seoul-touristic-icon/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-24.2.4.16.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "bznav-sans-24.2.4.16.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "bznav-sans-24.2.4.16.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.16.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-24.2.4.16.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.16.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/seoul-touristic-icon-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.16.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.16.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.16.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-24.2.4.16.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.16.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "bznav-sans-24.2.4.16.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.16.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "bznav-sans-24.2.4.16.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Icon Design"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.16.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.16.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "bznav-sans-24.2.4.16.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "Seoul Tourisic Icon"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.16.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.16.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.16.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "bznav-sans-24.2.4.16.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-24.2.4.16.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-24.2.4.17",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-24.2.4.18",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "bznav-sans-24.2.4.18.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-24.2.4.18.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../neumorphic-native-apps/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "bznav-sans-24.2.4.18.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "bznav-sans-24.2.4.18.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "bznav-sans-24.2.4.18.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.18.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-24.2.4.18.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.18.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/neumorphic-native-apps-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.18.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.18.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.18.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-24.2.4.18.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.18.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "bznav-sans-24.2.4.18.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.18.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "bznav-sans-24.2.4.18.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "GUI, Mobile"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.18.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.18.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "bznav-sans-24.2.4.18.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "Neumorphic Native Apps"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "bznav-sans-24.2.4.18.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "bznav-sans-24.2.4.18.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "bznav-sans-24.2.4.18.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "bznav-sans-24.2.4.18.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-24.2.4.18.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-24.2.4.19",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-24.2.5",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-24.2.6",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "button-wrapper"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-24.2.6.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-24.2.6.2",
+                  "type": "inline",
+                  "tag": "button",
+                  "attributes": {
+                    "id": "prev",
+                    "class": "no-drag"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "bznav-sans-24.2.6.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-24.2.6.4",
+                  "type": "inline",
+                  "tag": "button",
+                  "attributes": {
+                    "id": "next",
+                    "class": "no-drag"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "bznav-sans-24.2.6.5",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-24.2.7",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "bznav-sans-24.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "bznav-sans-25",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "bznav-sans-26",
+      "type": "inline",
+      "tag": "footer",
+      "attributes": {},
+      "children": [
+        {
+          "id": "bznav-sans-26.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "bznav-sans-26.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "footer-wrap"
+          },
+          "children": [
+            {
+              "id": "bznav-sans-26.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-26.2.2",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "copyright"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-26.2.2.1",
+                  "type": "text",
+                  "value": "Copyright © 2023"
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-26.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "bznav-sans-26.2.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "description"
+              },
+              "children": [
+                {
+                  "id": "bznav-sans-26.2.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "bznav-sans-26.2.4.2",
+                  "type": "block",
+                  "tag": "ul",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "bznav-sans-26.2.4.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "bznav-sans-26.2.4.2.2",
+                      "type": "block",
+                      "tag": "li",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "bznav-sans-26.2.4.2.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "bznav-sans-26.2.4.2.2.2",
+                          "type": "block",
+                          "tag": "p",
+                          "attributes": {},
+                          "children": [
+                            {
+                              "id": "bznav-sans-26.2.4.2.2.2.1",
+                              "type": "text",
+                              "value": "Designed and developed by "
+                            },
+                            {
+                              "id": "bznav-sans-26.2.4.2.2.2.2",
+                              "type": "inline",
+                              "tag": "span",
+                              "attributes": {
+                                "class": "mylogo"
+                              },
+                              "children": [
+                                {
+                                  "id": "bznav-sans-26.2.4.2.2.2.2.1",
+                                  "type": "text",
+                                  "value": "Youngsam"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "bznav-sans-26.2.4.2.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bznav-sans-26.2.4.2.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "bznav-sans-26.2.4.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "bznav-sans-26.2.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "bznav-sans-26.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "bznav-sans-27",
+      "type": "text",
+      "value": " "
+    }
+  ]
+}

@@ -1,0 +1,3895 @@
+{
+  "schemaVersion": 1,
+  "slug": "neumorphic-native-apps",
+  "blocks": [
+    {
+      "id": "neumorphic-native-apps-1",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "neumorphic-native-apps-2",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "summary"
+      },
+      "children": [
+        {
+          "id": "neumorphic-native-apps-2.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "neumorphic-native-apps-2.2",
+          "type": "block",
+          "tag": "ul",
+          "attributes": {},
+          "children": [
+            {
+              "id": "neumorphic-native-apps-2.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "neumorphic-native-apps-2.2.2",
+              "type": "block",
+              "tag": "li",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "neumorphic-native-apps-2.2.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-2.2.2.2",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-title"
+                  },
+                  "children": [
+                    {
+                      "id": "neumorphic-native-apps-2.2.2.2.1",
+                      "type": "text",
+                      "value": "Personal Works"
+                    }
+                  ]
+                },
+                {
+                  "id": "neumorphic-native-apps-2.2.2.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-2.2.2.4",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-text"
+                  },
+                  "children": [
+                    {
+                      "id": "neumorphic-native-apps-2.2.2.4.1",
+                      "type": "text",
+                      "value": "UX/UI, Graphic practice"
+                    }
+                  ]
+                },
+                {
+                  "id": "neumorphic-native-apps-2.2.2.5",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "neumorphic-native-apps-2.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "neumorphic-native-apps-2.2.4",
+              "type": "block",
+              "tag": "li",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "neumorphic-native-apps-2.2.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-2.2.4.2",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-title"
+                  },
+                  "children": [
+                    {
+                      "id": "neumorphic-native-apps-2.2.4.2.1",
+                      "type": "text",
+                      "value": "Design Tools"
+                    }
+                  ]
+                },
+                {
+                  "id": "neumorphic-native-apps-2.2.4.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-2.2.4.4",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-text"
+                  },
+                  "children": [
+                    {
+                      "id": "neumorphic-native-apps-2.2.4.4.1",
+                      "type": "text",
+                      "value": "Sketch"
+                    }
+                  ]
+                },
+                {
+                  "id": "neumorphic-native-apps-2.2.4.5",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "neumorphic-native-apps-2.2.5",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "neumorphic-native-apps-2.2.6",
+              "type": "block",
+              "tag": "li",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "neumorphic-native-apps-2.2.6.1",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-title"
+                  },
+                  "children": [
+                    {
+                      "id": "neumorphic-native-apps-2.2.6.1.1",
+                      "type": "text",
+                      "value": "Duration"
+                    }
+                  ]
+                },
+                {
+                  "id": "neumorphic-native-apps-2.2.6.2",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-text"
+                  },
+                  "children": [
+                    {
+                      "id": "neumorphic-native-apps-2.2.6.2.1",
+                      "type": "text",
+                      "value": "2 weeks, 2020.03"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "neumorphic-native-apps-2.2.7",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "neumorphic-native-apps-2.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "neumorphic-native-apps-3",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "neumorphic-native-apps-4",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "intro"
+      },
+      "children": [
+        {
+          "id": "neumorphic-native-apps-4.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "neumorphic-native-apps-4.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "neumorphic-native-apps-4.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "neumorphic-native-apps-4.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "neumorphic-native-apps-4.2.2.1",
+                  "type": "text",
+                  "value": "배경"
+                }
+              ]
+            },
+            {
+              "id": "neumorphic-native-apps-4.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "neumorphic-native-apps-4.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "neumorphic-native-apps-4.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "neumorphic-native-apps-4.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "neumorphic-native-apps-4.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "neumorphic-native-apps-4.4.2.1",
+                  "type": "text",
+                  "value": "\n              스티브잡스가 집착하고 심혈을 기울이던 스큐어모피즘을 보면서 디자인을 하던 시절이 있었습니다. 그러나 잡스가 떠난 뒤, 플랫 디자인과 메터리얼 디자인\n              등의 미니멀리즘이 유행하면서 스큐어모피즘은 추억으로 남게 되었습니다. 인스타그램의 로고가 바뀐 날, 새로운 로고에 대해서 디자이너들이 안좋게\n              평가했던 기억도 이제는 추억이 되었네요.\n            "
+                }
+              ]
+            },
+            {
+              "id": "neumorphic-native-apps-4.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "neumorphic-native-apps-4.4.4",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "neumorphic-native-apps-4.4.4.1",
+                  "type": "text",
+                  "value": "\n              지금은 디스플레이의 해상도가 엄청난 속도로 발전해서 예전의 그래픽 재질을 이미지로 넣기에는 퀄리티가 떨어져 보이기까지 합니다. 만약 스큐어모피즘을\n              적용하고자 한다면 디자이너들은 해상도에 맞추어서 이미지 사이즈를 배로 키워서 작업을 하게 되겠지요. 그러면 불필요하게 일의 작업량이 많아질\n              것입니다. 그것보다는 미니멀리즘이 유행하면서 UI 디자이너의 일이 점점 더 그래픽 쪽보다는 반복되는 UI를 체계화하는 작업에 집중하게되고 제품의 UX에\n              신경을 쓰면서 디자이너의 작업도 다른 형태로 변화하고 있습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "neumorphic-native-apps-4.4.5",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "neumorphic-native-apps-4.4.6",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "neumorphic-native-apps-4.4.6.1",
+                  "type": "text",
+                  "value": "\n              단순한 UI에 익숙해져 있을 즈음, 스큐어모피즘의 대안으로 새롭게 등장한 뉴모피즘을 보았습니다. 플랫디자인이 가지고 있는 단순함과 스큐어모피즘의\n              시각과 촉각을 아우르는 특성을 동시에 나타내고 있어서 디자이너들 사이에서는 이름부터 '-즘'을 붙여 하나의 트렌드로 불러지고 있었습니다. 그래서\n              개인작업을 통해 뉴모피즘의 장점과 단점을 파악하고 실제로 사용될 수 있는지 알아보고자 작업을 시작하였습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "neumorphic-native-apps-4.4.7",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "neumorphic-native-apps-4.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "neumorphic-native-apps-5",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "neumorphic-native-apps-6",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "neumorphic-native-apps-6.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "neumorphic-native-apps-6.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "neumorphic-native-apps-6.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "neumorphic-native-apps-6.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "neumorphic-native-apps-6.2.2.1",
+                  "type": "text",
+                  "value": "Outside Elements"
+                }
+              ]
+            },
+            {
+              "id": "neumorphic-native-apps-6.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "neumorphic-native-apps-6.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "neumorphic-native-apps-6.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "neumorphic-native-apps-6.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "neumorphic-native-apps-6.4.2",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "flex-wrap"
+              },
+              "children": [
+                {
+                  "id": "neumorphic-native-apps-6.4.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-6.4.2.2",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "element outside"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "neumorphic-native-apps-6.4.2.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-6.4.2.4",
+                  "type": "block",
+                  "tag": "ul",
+                  "attributes": {
+                    "class": "text"
+                  },
+                  "children": [
+                    {
+                      "id": "neumorphic-native-apps-6.4.2.4.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "neumorphic-native-apps-6.4.2.4.2",
+                      "type": "block",
+                      "tag": "li",
+                      "attributes": {
+                        "class": "text-li"
+                      },
+                      "children": [
+                        {
+                          "id": "neumorphic-native-apps-6.4.2.4.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "neumorphic-native-apps-6.4.2.4.2.2",
+                          "type": "block",
+                          "tag": "h6",
+                          "attributes": {},
+                          "children": [
+                            {
+                              "id": "neumorphic-native-apps-6.4.2.4.2.2.1",
+                              "type": "text",
+                              "value": "Color"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "neumorphic-native-apps-6.4.2.4.2.3",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "neumorphic-native-apps-6.4.2.4.2.4",
+                          "type": "block",
+                          "tag": "p",
+                          "attributes": {
+                            "style": "margin-top: 1em"
+                          },
+                          "children": [
+                            {
+                              "id": "neumorphic-native-apps-6.4.2.4.2.4.1",
+                              "type": "text",
+                              "value": "#EBECF0"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "neumorphic-native-apps-6.4.2.4.2.5",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "neumorphic-native-apps-6.4.2.4.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "neumorphic-native-apps-6.4.2.4.4",
+                      "type": "block",
+                      "tag": "li",
+                      "attributes": {
+                        "class": "text-li flex"
+                      },
+                      "children": [
+                        {
+                          "id": "neumorphic-native-apps-6.4.2.4.4.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "neumorphic-native-apps-6.4.2.4.4.2",
+                          "type": "block",
+                          "tag": "h6",
+                          "attributes": {},
+                          "children": [
+                            {
+                              "id": "neumorphic-native-apps-6.4.2.4.4.2.1",
+                              "type": "text",
+                              "value": "Shadows"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "neumorphic-native-apps-6.4.2.4.4.3",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "neumorphic-native-apps-6.4.2.4.4.4",
+                          "type": "block",
+                          "tag": "ul",
+                          "attributes": {
+                            "style": "display: flex; flex-flow: row; flex-wrap: wrap; margin-top: 1em"
+                          },
+                          "children": [
+                            {
+                              "id": "neumorphic-native-apps-6.4.2.4.4.4.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-6.4.2.4.4.4.2",
+                              "type": "block",
+                              "tag": "li",
+                              "attributes": {
+                                "style": "display: flex; flex-flow: column; margin-right: 4rem; margin-bottom: 2rem"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.2.2",
+                                  "type": "inline",
+                                  "tag": "strong",
+                                  "attributes": {
+                                    "style": "color: #888c9d"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-6.4.2.4.4.4.2.2.1",
+                                      "type": "text",
+                                      "value": "#1"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.2.4",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-6.4.2.4.4.4.2.4.1",
+                                      "type": "text",
+                                      "value": "color: #A6ABBD"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.2.5",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.2.6",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-6.4.2.4.4.4.2.6.1",
+                                      "type": "text",
+                                      "value": "opacity: 60%"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.2.7",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.2.8",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-6.4.2.4.4.4.2.8.1",
+                                      "type": "text",
+                                      "value": "x: 6px"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.2.9",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.2.10",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-6.4.2.4.4.4.2.10.1",
+                                      "type": "text",
+                                      "value": "x: 6px"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.2.11",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.2.12",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-6.4.2.4.4.4.2.12.1",
+                                      "type": "text",
+                                      "value": "blur: 8px"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.2.13",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-6.4.2.4.4.4.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-6.4.2.4.4.4.4",
+                              "type": "block",
+                              "tag": "li",
+                              "attributes": {
+                                "style": "display: flex; flex-flow: column; margin-right: 4rem; margin-bottom: 2rem"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.4.2",
+                                  "type": "inline",
+                                  "tag": "strong",
+                                  "attributes": {
+                                    "style": "color: #888c9d"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-6.4.2.4.4.4.4.2.1",
+                                      "type": "text",
+                                      "value": "#2"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.4.4",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-6.4.2.4.4.4.4.4.1",
+                                      "type": "text",
+                                      "value": "color: #FFFFFF"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.4.5",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.4.6",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-6.4.2.4.4.4.4.6.1",
+                                      "type": "text",
+                                      "value": "opacity: 100%"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.4.7",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.4.8",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-6.4.2.4.4.4.4.8.1",
+                                      "type": "text",
+                                      "value": "x: -6px"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.4.9",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.4.10",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-6.4.2.4.4.4.4.10.1",
+                                      "type": "text",
+                                      "value": "x: -6px"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.4.11",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.4.12",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-6.4.2.4.4.4.4.12.1",
+                                      "type": "text",
+                                      "value": "blur: 8px"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.4.13",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-6.4.2.4.4.4.5",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-6.4.2.4.4.4.6",
+                              "type": "block",
+                              "tag": "li",
+                              "attributes": {
+                                "style": "display: flex; flex-flow: column"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.6.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.6.2",
+                                  "type": "inline",
+                                  "tag": "strong",
+                                  "attributes": {
+                                    "style": "color: #888c9d"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-6.4.2.4.4.4.6.2.1",
+                                      "type": "text",
+                                      "value": "#3"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.6.3",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.6.4",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-6.4.2.4.4.4.6.4.1",
+                                      "type": "text",
+                                      "value": "color: #FFFFFF"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.6.5",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.6.6",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-6.4.2.4.4.4.6.6.1",
+                                      "type": "text",
+                                      "value": "opacity: 60%"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.6.7",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.6.8",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-6.4.2.4.4.4.6.8.1",
+                                      "type": "text",
+                                      "value": "x: -1px"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.6.9",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.6.10",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-6.4.2.4.4.4.6.10.1",
+                                      "type": "text",
+                                      "value": "x: -1px"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.6.11",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.6.12",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-6.4.2.4.4.4.6.12.1",
+                                      "type": "text",
+                                      "value": "blur: 1px"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-6.4.2.4.4.4.6.13",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-6.4.2.4.4.4.7",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "neumorphic-native-apps-6.4.2.4.4.5",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "neumorphic-native-apps-6.4.2.4.5",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "neumorphic-native-apps-6.4.2.5",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "neumorphic-native-apps-6.4.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "neumorphic-native-apps-6.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "neumorphic-native-apps-7",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "neumorphic-native-apps-8",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "neumorphic-native-apps-8.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "neumorphic-native-apps-8.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "neumorphic-native-apps-8.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "neumorphic-native-apps-8.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "neumorphic-native-apps-8.2.2.1",
+                  "type": "text",
+                  "value": "Inside Elements"
+                }
+              ]
+            },
+            {
+              "id": "neumorphic-native-apps-8.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "neumorphic-native-apps-8.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "neumorphic-native-apps-8.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "neumorphic-native-apps-8.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "neumorphic-native-apps-8.4.2",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "flex-wrap"
+              },
+              "children": [
+                {
+                  "id": "neumorphic-native-apps-8.4.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-8.4.2.2",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "element inside"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "neumorphic-native-apps-8.4.2.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-8.4.2.4",
+                  "type": "block",
+                  "tag": "ul",
+                  "attributes": {
+                    "class": "text"
+                  },
+                  "children": [
+                    {
+                      "id": "neumorphic-native-apps-8.4.2.4.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "neumorphic-native-apps-8.4.2.4.2",
+                      "type": "block",
+                      "tag": "li",
+                      "attributes": {
+                        "class": "text-li"
+                      },
+                      "children": [
+                        {
+                          "id": "neumorphic-native-apps-8.4.2.4.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "neumorphic-native-apps-8.4.2.4.2.2",
+                          "type": "block",
+                          "tag": "h6",
+                          "attributes": {},
+                          "children": [
+                            {
+                              "id": "neumorphic-native-apps-8.4.2.4.2.2.1",
+                              "type": "text",
+                              "value": "Color"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "neumorphic-native-apps-8.4.2.4.2.3",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "neumorphic-native-apps-8.4.2.4.2.4",
+                          "type": "block",
+                          "tag": "p",
+                          "attributes": {
+                            "style": "margin-top: 1em"
+                          },
+                          "children": [
+                            {
+                              "id": "neumorphic-native-apps-8.4.2.4.2.4.1",
+                              "type": "text",
+                              "value": "#EBECF0"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "neumorphic-native-apps-8.4.2.4.2.5",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "neumorphic-native-apps-8.4.2.4.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "neumorphic-native-apps-8.4.2.4.4",
+                      "type": "block",
+                      "tag": "li",
+                      "attributes": {
+                        "class": "text-li flex"
+                      },
+                      "children": [
+                        {
+                          "id": "neumorphic-native-apps-8.4.2.4.4.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "neumorphic-native-apps-8.4.2.4.4.2",
+                          "type": "block",
+                          "tag": "h6",
+                          "attributes": {},
+                          "children": [
+                            {
+                              "id": "neumorphic-native-apps-8.4.2.4.4.2.1",
+                              "type": "text",
+                              "value": "Shadows"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "neumorphic-native-apps-8.4.2.4.4.3",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "neumorphic-native-apps-8.4.2.4.4.4",
+                          "type": "block",
+                          "tag": "ul",
+                          "attributes": {
+                            "style": "display: flex; flex-flow: row; margin-top: 1em"
+                          },
+                          "children": [
+                            {
+                              "id": "neumorphic-native-apps-8.4.2.4.4.4.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-8.4.2.4.4.4.2",
+                              "type": "block",
+                              "tag": "li",
+                              "attributes": {
+                                "style": "display: flex; flex-flow: column; margin-right: 4rem"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.4.4.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.4.4.2.2",
+                                  "type": "inline",
+                                  "tag": "strong",
+                                  "attributes": {
+                                    "style": "color: #888c9d"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-8.4.2.4.4.4.2.2.1",
+                                      "type": "text",
+                                      "value": "#1"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.4.4.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.4.4.2.4",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-8.4.2.4.4.4.2.4.1",
+                                      "type": "text",
+                                      "value": "color: #FFFFFF"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.4.4.2.5",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.4.4.2.6",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-8.4.2.4.4.4.2.6.1",
+                                      "type": "text",
+                                      "value": "opacity: 80%"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.4.4.2.7",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.4.4.2.8",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-8.4.2.4.4.4.2.8.1",
+                                      "type": "text",
+                                      "value": "x: -8px"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.4.4.2.9",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.4.4.2.10",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-8.4.2.4.4.4.2.10.1",
+                                      "type": "text",
+                                      "value": "x: -8px"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.4.4.2.11",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.4.4.2.12",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-8.4.2.4.4.4.2.12.1",
+                                      "type": "text",
+                                      "value": "blur: 24px"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.4.4.2.13",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-8.4.2.4.4.4.3",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "neumorphic-native-apps-8.4.2.4.4.5",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "neumorphic-native-apps-8.4.2.4.5",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "neumorphic-native-apps-8.4.2.4.6",
+                      "type": "block",
+                      "tag": "li",
+                      "attributes": {
+                        "class": "text-li flex"
+                      },
+                      "children": [
+                        {
+                          "id": "neumorphic-native-apps-8.4.2.4.6.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "neumorphic-native-apps-8.4.2.4.6.2",
+                          "type": "block",
+                          "tag": "h6",
+                          "attributes": {},
+                          "children": [
+                            {
+                              "id": "neumorphic-native-apps-8.4.2.4.6.2.1",
+                              "type": "text",
+                              "value": "Inner shadows"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "neumorphic-native-apps-8.4.2.4.6.3",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "neumorphic-native-apps-8.4.2.4.6.4",
+                          "type": "block",
+                          "tag": "ul",
+                          "attributes": {
+                            "style": "display: flex; flex-flow: row; margin-top: 1em"
+                          },
+                          "children": [
+                            {
+                              "id": "neumorphic-native-apps-8.4.2.4.6.4.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-8.4.2.4.6.4.2",
+                              "type": "block",
+                              "tag": "li",
+                              "attributes": {
+                                "style": "display: flex; flex-flow: column; margin-right: 4rem; margin-bottom: 2rem"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.2.2",
+                                  "type": "inline",
+                                  "tag": "strong",
+                                  "attributes": {
+                                    "style": "color: #888c9d"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-8.4.2.4.6.4.2.2.1",
+                                      "type": "text",
+                                      "value": "#1"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.2.4",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-8.4.2.4.6.4.2.4.1",
+                                      "type": "text",
+                                      "value": "color: #FFFFFF"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.2.5",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.2.6",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-8.4.2.4.6.4.2.6.1",
+                                      "type": "text",
+                                      "value": "opacity: 100%"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.2.7",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.2.8",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-8.4.2.4.6.4.2.8.1",
+                                      "type": "text",
+                                      "value": "x: -4px"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.2.9",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.2.10",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-8.4.2.4.6.4.2.10.1",
+                                      "type": "text",
+                                      "value": "x: -4px"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.2.11",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.2.12",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-8.4.2.4.6.4.2.12.1",
+                                      "type": "text",
+                                      "value": "blur: 8px"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.2.13",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-8.4.2.4.6.4.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-8.4.2.4.6.4.4",
+                              "type": "block",
+                              "tag": "li",
+                              "attributes": {
+                                "style": "display: flex; flex-flow: column"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.4.2",
+                                  "type": "inline",
+                                  "tag": "strong",
+                                  "attributes": {
+                                    "style": "color: #888c9d"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-8.4.2.4.6.4.4.2.1",
+                                      "type": "text",
+                                      "value": "#2"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.4.4",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-8.4.2.4.6.4.4.4.1",
+                                      "type": "text",
+                                      "value": "color: #A6ABBD"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.4.5",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.4.6",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-8.4.2.4.6.4.4.6.1",
+                                      "type": "text",
+                                      "value": "opacity: 60%"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.4.7",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.4.8",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-8.4.2.4.6.4.4.8.1",
+                                      "type": "text",
+                                      "value": "x: 4px"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.4.9",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.4.10",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-8.4.2.4.6.4.4.10.1",
+                                      "type": "text",
+                                      "value": "x: 4px"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.4.11",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.4.12",
+                                  "type": "inline",
+                                  "tag": "span",
+                                  "attributes": {},
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-8.4.2.4.6.4.4.12.1",
+                                      "type": "text",
+                                      "value": "blur: 8px"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-8.4.2.4.6.4.4.13",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-8.4.2.4.6.4.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "neumorphic-native-apps-8.4.2.4.6.5",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "neumorphic-native-apps-8.4.2.4.7",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "neumorphic-native-apps-8.4.2.5",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "neumorphic-native-apps-8.4.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "neumorphic-native-apps-8.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "neumorphic-native-apps-9",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "neumorphic-native-apps-10",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "neumorphic-native-apps-10.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "neumorphic-native-apps-10.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "neumorphic-native-apps-10.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "neumorphic-native-apps-10.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "neumorphic-native-apps-10.2.2.1",
+                  "type": "text",
+                  "value": "Native Apps"
+                }
+              ]
+            },
+            {
+              "id": "neumorphic-native-apps-10.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "neumorphic-native-apps-10.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "neumorphic-native-apps-10.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "neumorphic-native-apps-10.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "neumorphic-native-apps-10.4.2",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "img-wrap"
+              },
+              "children": [
+                {
+                  "id": "neumorphic-native-apps-10.4.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-10.4.2.2",
+                  "type": "inline",
+                  "tag": "img",
+                  "attributes": {
+                    "class": "img-fit",
+                    "src": "./img/neumorphic-native-apps-0.png"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "neumorphic-native-apps-10.4.2.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-10.4.2.4",
+                  "type": "inline",
+                  "tag": "img",
+                  "attributes": {
+                    "class": "img-fit",
+                    "src": "./img/neumorphic-native-apps-1.png"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "neumorphic-native-apps-10.4.2.5",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-10.4.2.6",
+                  "type": "inline",
+                  "tag": "img",
+                  "attributes": {
+                    "class": "img-fit",
+                    "src": "./img/neumorphic-native-apps-2.png"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "neumorphic-native-apps-10.4.2.7",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-10.4.2.8",
+                  "type": "inline",
+                  "tag": "img",
+                  "attributes": {
+                    "class": "img-fit",
+                    "src": "./img/neumorphic-native-apps-3.png"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "neumorphic-native-apps-10.4.2.9",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-10.4.2.10",
+                  "type": "inline",
+                  "tag": "img",
+                  "attributes": {
+                    "class": "img-fit",
+                    "src": "./img/neumorphic-native-apps-4.png"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "neumorphic-native-apps-10.4.2.11",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "neumorphic-native-apps-10.4.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "neumorphic-native-apps-10.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "neumorphic-native-apps-11",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "neumorphic-native-apps-12",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "neumorphic-native-apps-12.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "neumorphic-native-apps-12.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "neumorphic-native-apps-12.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "neumorphic-native-apps-12.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "neumorphic-native-apps-12.2.2.1",
+                  "type": "text",
+                  "value": "느낀점"
+                }
+              ]
+            },
+            {
+              "id": "neumorphic-native-apps-12.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "neumorphic-native-apps-12.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "neumorphic-native-apps-12.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "neumorphic-native-apps-12.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "neumorphic-native-apps-12.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "neumorphic-native-apps-12.4.2.1",
+                  "type": "text",
+                  "value": "\n              스케치앱에서 Shadow와 Inner Shadow를 사용하여 작업하였고, 웹페이지에서도 코드로 모양을 구현할 수 있어서 실제 앱에서도 동작할 수 있다고 보여집니다.\n              Shadow에 의존한 그래픽 기법으로 복잡한 구성보다는 단순한 구성에 어울려 심플한 디자인에 사용하기 좋아보입니다. 실제 앱에는 다양한 직군과의\n              이해관계들이 얽혀있다보니 마케팅 요소로 2D 이미지가 들어가면 전체 밸런스가 무너질 것 같은 느낌이 듭니다. 개인적으로는 단순 네이티브 앱으로\n              사용하기에 좋다고 생각합니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "neumorphic-native-apps-12.4.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "neumorphic-native-apps-12.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "neumorphic-native-apps-13",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "neumorphic-native-apps-14",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "full-max"
+      },
+      "children": [
+        {
+          "id": "neumorphic-native-apps-14.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "neumorphic-native-apps-14.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "img-wrap"
+          },
+          "children": [
+            {
+              "id": "neumorphic-native-apps-14.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "neumorphic-native-apps-14.2.2",
+              "type": "inline",
+              "tag": "img",
+              "attributes": {
+                "class": "img-in",
+                "src": "./img/neumorphic-native-apps-5.png"
+              },
+              "children": []
+            },
+            {
+              "id": "neumorphic-native-apps-14.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "neumorphic-native-apps-14.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "neumorphic-native-apps-15",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "neumorphic-native-apps-16",
+      "type": "block",
+      "tag": "div",
+      "attributes": {
+        "class": "project"
+      },
+      "children": [
+        {
+          "id": "neumorphic-native-apps-16.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "neumorphic-native-apps-16.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "wrapper"
+          },
+          "children": [
+            {
+              "id": "neumorphic-native-apps-16.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "neumorphic-native-apps-16.2.2",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "carousel-title"
+              },
+              "children": [
+                {
+                  "id": "neumorphic-native-apps-16.2.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.2.2",
+                  "type": "block",
+                  "tag": "h4",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "neumorphic-native-apps-16.2.2.2.1",
+                      "type": "text",
+                      "value": "Other Works"
+                    }
+                  ]
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.2.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "neumorphic-native-apps-16.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "neumorphic-native-apps-16.2.4",
+              "type": "block",
+              "tag": "ul",
+              "attributes": {
+                "class": "carousel",
+                "data-target": "carousel"
+              },
+              "children": [
+                {
+                  "id": "neumorphic-native-apps-16.2.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.4.2",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.2.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../1min-return/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.2.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.2.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.2.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.2.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.2.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.2.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/1min-web-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.2.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.2.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.2.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.2.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.2.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.2.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.2.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "neumorphic-native-apps-16.2.4.2.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Product Design, Front-End"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.2.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.2.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "neumorphic-native-apps-16.2.4.2.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "1달간 '1분'으로 이뤄낸 것들"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.2.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.2.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.2.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.2.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.2.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.4.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.4.4",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.4.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.4.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../bznav-sans/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.4.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.4.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.4.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.4.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.4.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.4.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/bznav-sans-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.4.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.4.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.4.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.4.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.4.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.4.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.4.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "neumorphic-native-apps-16.2.4.4.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Internal Product Design"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.4.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.4.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "neumorphic-native-apps-16.2.4.4.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "비즈넵의 프로덕트 폰트, BZNAV Sans"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.4.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.4.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.4.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.4.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.4.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.4.5",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.4.6",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.6.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.6.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../insight-renewal/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.6.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.6.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.6.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.6.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.6.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.6.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/insight-renewal-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.6.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.6.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.6.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.6.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.6.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.6.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.6.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "neumorphic-native-apps-16.2.4.6.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Product Design"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.6.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.6.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "neumorphic-native-apps-16.2.4.6.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "유익하게 새로워진 '비즈넵 인사이트'"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.6.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.6.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.6.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.6.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.6.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.4.7",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.4.8",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.8.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.8.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../tax-invoice/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.8.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.8.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.8.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.8.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.8.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.8.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/tax-invoice-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.8.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.8.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.8.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.8.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.8.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.8.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.8.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "neumorphic-native-apps-16.2.4.8.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Product Design"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.8.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.8.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "neumorphic-native-apps-16.2.4.8.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "비즈넵, '세금계산서 발급' 합니다"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.8.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.8.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.8.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.8.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.8.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.4.9",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.4.10",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.10.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.10.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../whatap-product-v2/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.10.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.10.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.10.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.10.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.10.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.10.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/whatap-product-v2-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.10.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.10.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.10.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.10.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.10.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.10.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.10.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "neumorphic-native-apps-16.2.4.10.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "UX/UI, Web"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.10.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.10.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "neumorphic-native-apps-16.2.4.10.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "WhaTap Product v2.0"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.10.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.10.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.10.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.10.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.10.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.4.11",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.4.12",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.12.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.12.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../whatap-mobile-app/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.12.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.12.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.12.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.12.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.12.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.12.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/whatap-mobile-app-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.12.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.12.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.12.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.12.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.12.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.12.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.12.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "neumorphic-native-apps-16.2.4.12.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "UX/UI, Mobile"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.12.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.12.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "neumorphic-native-apps-16.2.4.12.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "WhaTap Mobile App"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.12.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.12.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.12.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.12.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.12.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.4.13",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.4.14",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.14.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.14.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../whatap-signup/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.14.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.14.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.14.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.14.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.14.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.14.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/whatap-signup-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.14.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.14.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.14.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.14.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.14.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.14.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.14.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "neumorphic-native-apps-16.2.4.14.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "UX/UI, Front-End"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.14.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.14.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "neumorphic-native-apps-16.2.4.14.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "WhaTap Signup Page"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.14.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.14.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.14.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.14.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.14.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.4.15",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.4.16",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.16.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.16.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../diabates-notes/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.16.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.16.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.16.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.16.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.16.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.16.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/diabates-app-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.16.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.16.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.16.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.16.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.16.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.16.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.16.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "neumorphic-native-apps-16.2.4.16.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "GUI, Mobile"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.16.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.16.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "neumorphic-native-apps-16.2.4.16.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "'당뇨 수첩', 당뇨 환자를 위한 식단 관리 앱"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.16.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.16.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.16.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.16.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.16.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.4.17",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.4.18",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.18.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.18.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../seoul-touristic-icon/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.18.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.18.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.18.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.18.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.18.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.18.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/seoul-touristic-icon-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.18.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.18.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.18.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.18.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.18.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.18.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.18.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "neumorphic-native-apps-16.2.4.18.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Icon Design"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.18.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.18.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "neumorphic-native-apps-16.2.4.18.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "Seoul Tourisic Icon"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "neumorphic-native-apps-16.2.4.18.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "neumorphic-native-apps-16.2.4.18.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "neumorphic-native-apps-16.2.4.18.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "neumorphic-native-apps-16.2.4.18.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "neumorphic-native-apps-16.2.4.18.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.4.19",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "neumorphic-native-apps-16.2.5",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "neumorphic-native-apps-16.2.6",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "button-wrapper"
+              },
+              "children": [
+                {
+                  "id": "neumorphic-native-apps-16.2.6.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.6.2",
+                  "type": "inline",
+                  "tag": "button",
+                  "attributes": {
+                    "id": "prev",
+                    "class": "no-drag"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.6.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.6.4",
+                  "type": "inline",
+                  "tag": "button",
+                  "attributes": {
+                    "id": "next",
+                    "class": "no-drag"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "neumorphic-native-apps-16.2.6.5",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "neumorphic-native-apps-16.2.7",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "neumorphic-native-apps-16.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "neumorphic-native-apps-17",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "neumorphic-native-apps-18",
+      "type": "inline",
+      "tag": "footer",
+      "attributes": {},
+      "children": [
+        {
+          "id": "neumorphic-native-apps-18.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "neumorphic-native-apps-18.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "footer-wrap"
+          },
+          "children": [
+            {
+              "id": "neumorphic-native-apps-18.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "neumorphic-native-apps-18.2.2",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "copyright"
+              },
+              "children": [
+                {
+                  "id": "neumorphic-native-apps-18.2.2.1",
+                  "type": "text",
+                  "value": "Copyright © 2023"
+                }
+              ]
+            },
+            {
+              "id": "neumorphic-native-apps-18.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "neumorphic-native-apps-18.2.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "description"
+              },
+              "children": [
+                {
+                  "id": "neumorphic-native-apps-18.2.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "neumorphic-native-apps-18.2.4.2",
+                  "type": "block",
+                  "tag": "ul",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "neumorphic-native-apps-18.2.4.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "neumorphic-native-apps-18.2.4.2.2",
+                      "type": "block",
+                      "tag": "li",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "neumorphic-native-apps-18.2.4.2.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "neumorphic-native-apps-18.2.4.2.2.2",
+                          "type": "block",
+                          "tag": "p",
+                          "attributes": {},
+                          "children": [
+                            {
+                              "id": "neumorphic-native-apps-18.2.4.2.2.2.1",
+                              "type": "text",
+                              "value": "Designed and developed by "
+                            },
+                            {
+                              "id": "neumorphic-native-apps-18.2.4.2.2.2.2",
+                              "type": "inline",
+                              "tag": "span",
+                              "attributes": {
+                                "class": "mylogo"
+                              },
+                              "children": [
+                                {
+                                  "id": "neumorphic-native-apps-18.2.4.2.2.2.2.1",
+                                  "type": "text",
+                                  "value": "Youngsam"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "neumorphic-native-apps-18.2.4.2.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "neumorphic-native-apps-18.2.4.2.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "neumorphic-native-apps-18.2.4.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "neumorphic-native-apps-18.2.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "neumorphic-native-apps-18.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "neumorphic-native-apps-19",
+      "type": "text",
+      "value": " "
+    }
+  ]
+}

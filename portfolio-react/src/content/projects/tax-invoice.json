@@ -1,0 +1,3502 @@
+{
+  "schemaVersion": 1,
+  "slug": "tax-invoice",
+  "blocks": [
+    {
+      "id": "tax-invoice-1",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "tax-invoice-2",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "summary"
+      },
+      "children": [
+        {
+          "id": "tax-invoice-2.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "tax-invoice-2.2",
+          "type": "block",
+          "tag": "ul",
+          "attributes": {},
+          "children": [
+            {
+              "id": "tax-invoice-2.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-2.2.2",
+              "type": "block",
+              "tag": "li",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "tax-invoice-2.2.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-2.2.2.2",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-title"
+                  },
+                  "children": [
+                    {
+                      "id": "tax-invoice-2.2.2.2.1",
+                      "type": "text",
+                      "value": "Role"
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-2.2.2.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-2.2.2.4",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-text"
+                  },
+                  "children": [
+                    {
+                      "id": "tax-invoice-2.2.2.4.1",
+                      "type": "text",
+                      "value": "Product Designer"
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-2.2.2.5",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-2.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-2.2.4",
+              "type": "block",
+              "tag": "li",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "tax-invoice-2.2.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-2.2.4.2",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-title"
+                  },
+                  "children": [
+                    {
+                      "id": "tax-invoice-2.2.4.2.1",
+                      "type": "text",
+                      "value": "Design Tools"
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-2.2.4.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-2.2.4.4",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-text"
+                  },
+                  "children": [
+                    {
+                      "id": "tax-invoice-2.2.4.4.1",
+                      "type": "text",
+                      "value": "Figma"
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-2.2.4.5",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-2.2.5",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-2.2.6",
+              "type": "block",
+              "tag": "li",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "tax-invoice-2.2.6.1",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-title"
+                  },
+                  "children": [
+                    {
+                      "id": "tax-invoice-2.2.6.1.1",
+                      "type": "text",
+                      "value": "Duration"
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-2.2.6.2",
+                  "type": "inline",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "sp-text"
+                  },
+                  "children": [
+                    {
+                      "id": "tax-invoice-2.2.6.2.1",
+                      "type": "text",
+                      "value": "2021.04 - 2021.05"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-2.2.7",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "tax-invoice-2.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "tax-invoice-3",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "tax-invoice-4",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "intro"
+      },
+      "children": [
+        {
+          "id": "tax-invoice-4.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "tax-invoice-4.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "tax-invoice-4.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-4.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "tax-invoice-4.2.2.1",
+                  "type": "text",
+                  "value": "배경"
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-4.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "tax-invoice-4.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "tax-invoice-4.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "tax-invoice-4.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-4.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "tax-invoice-4.4.2.1",
+                  "type": "text",
+                  "value": "\n              비즈넵은 사업관리에 필요한 정보들을 한 곳으로 모아서 보는 편리한 기능을 제공합니다. 홈택스 연동을 통해 매출·매입의 정보를, 계좌 연동을 통해 사업\n              자금을, 여신협 연동으로 오프라인 매장에서 발생하는 카드매출, 그리고 배달앱, 쇼핑몰, PG사 연동을 통해 온라인 매출… 이렇게 많은 채널의 연동을\n              제공하여 통신판매업, 식음료 등의 다양한 중소사업자분들에게 사업에 필요한 재무 관리에 도움을 주고 있습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-4.4.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "tax-invoice-4.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "tax-invoice-5",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "tax-invoice-6",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "tax-invoice-6.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "tax-invoice-6.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "tax-invoice-6.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-6.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "tax-invoice-6.2.2.1",
+                  "type": "text",
+                  "value": "문제점"
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-6.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "tax-invoice-6.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "tax-invoice-6.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "tax-invoice-6.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-6.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "tax-invoice-6.4.2.1",
+                  "type": "text",
+                  "value": "\n              데이터 연동을 바탕으로 사용자에게 보여주는 컨텐츠로 사용자에게 정보를 제공하지만, 앱 안에서 활동하는 이벤트 클릭이 단순했습니다. 그래서 앱으로\n              유입을 시키려면 푸시를 보내는 방법이 효과적이지만, 단순한 정보를 바탕으로 푸시를 자주 보내는 것은 사용자에게 오히려 앱에 대한 반감을 가져옵니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-6.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-6.4.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "img-wrap"
+              },
+              "children": [
+                {
+                  "id": "tax-invoice-6.4.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-6.4.4.2",
+                  "type": "inline",
+                  "tag": "img",
+                  "attributes": {
+                    "class": "img-in",
+                    "src": "./img/tax-invoice-1.png"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "tax-invoice-6.4.4.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-6.4.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "tax-invoice-6.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "tax-invoice-7",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "tax-invoice-8",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "tax-invoice-8.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "tax-invoice-8.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "tax-invoice-8.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-8.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "tax-invoice-8.2.2.1",
+                  "type": "text",
+                  "value": "Goal"
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-8.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "tax-invoice-8.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "tax-invoice-8.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "tax-invoice-8.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-8.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "quote"
+              },
+              "children": [
+                {
+                  "id": "tax-invoice-8.4.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-8.4.2.2",
+                  "type": "inline",
+                  "tag": "strong",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "tax-invoice-8.4.2.2.1",
+                      "type": "text",
+                      "value": "사업자분들에게 일상에 필요한 행위를 제공하여 앱 안으로 자연스럽게 유입시키자."
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-8.4.2.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-8.4.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "tax-invoice-8.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "tax-invoice-9",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "tax-invoice-10",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "tax-invoice-10.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "tax-invoice-10.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "tax-invoice-10.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-10.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "tax-invoice-10.2.2.1",
+                  "type": "text",
+                  "value": "Discover"
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-10.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "tax-invoice-10.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "tax-invoice-10.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "tax-invoice-10.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-10.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "tax-invoice-10.4.2.1",
+                  "type": "text",
+                  "value": "\n              사업자의 거래가 발생하면 법인사업자 및 직전연도 공급가액이 3억원 이상 매출인 개인사업자인 경우 전자세금계산서 발급을 의무화하고 있는데요. 미루어\n              발급하면 가산세가 발생하거나 세액을 공제받지 못하는 불이익이 발생합니다. 그래서 해당하는 사업자인 경우 시기에 맞추어 발급을 하는 것이 중요한데요.\n              사업자의 일상에 필요한 세금계산서 발급 기능을 넣을 수 있다면, 앱에 방문하는 필요가 1가지 더 생기고 다른 발급 서비스보다 편리할 수 있다면 아주\n              효과적일 것이라 생각했습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-10.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-10.4.4",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "tax-invoice-10.4.4.1",
+                  "type": "text",
+                  "value": "\n              홈택스에서 제공하는 발급 기능은 Input과 Button들이 여기저기 많아서\n              "
+                },
+                {
+                  "id": "tax-invoice-10.4.4.2",
+                  "type": "inline",
+                  "tag": "strong",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "tax-invoice-10.4.4.2.1",
+                      "type": "text",
+                      "value": "작성을 시도하기 힘들 정도"
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-10.4.4.3",
+                  "type": "text",
+                  "value": "로 쉽지 않아 보였습니다. 또한 필요기재 이상의 것들도 요구하는 것처럼 느껴져 처음 사용자들에게 부담이\n              다가오는 것도 있었을 것이라 생각됩니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-10.4.5",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-10.4.6",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "tax-invoice-10.4.6.1",
+                  "type": "text",
+                  "value": "\n              세금계산서 발급에는 필요기재 사항들이 있는데요. 필수적으로 입력해야하는 정보를 입력하지 않는다면 나중에 가산세를 물 수 있습니다. 또한 홈택스에서\n              발급을\n              "
+                },
+                {
+                  "id": "tax-invoice-10.4.6.2",
+                  "type": "inline",
+                  "tag": "strong",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "tax-invoice-10.4.6.2.1",
+                      "type": "text",
+                      "value": "주로 이용하는 사용자들에게는 익숙한 플로우를 많이 벗어나는 것은 오히려 사용성을 해칠 수도"
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-10.4.6.3",
+                  "type": "text",
+                  "value": "\n              있을 것 같았습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-10.4.7",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-10.4.8",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "img-wrap"
+              },
+              "children": [
+                {
+                  "id": "tax-invoice-10.4.8.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-10.4.8.2",
+                  "type": "inline",
+                  "tag": "img",
+                  "attributes": {
+                    "class": "img-in",
+                    "src": "./img/tax-invoice-2.png"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "tax-invoice-10.4.8.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-10.4.9",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "tax-invoice-10.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "tax-invoice-11",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "tax-invoice-12",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "tax-invoice-12.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "tax-invoice-12.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "tax-invoice-12.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-12.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "tax-invoice-12.2.2.1",
+                  "type": "text",
+                  "value": "Solution"
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-12.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "tax-invoice-12.3",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "tax-invoice-12.4",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "content-in"
+          },
+          "children": [
+            {
+              "id": "tax-invoice-12.4.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-12.4.2",
+              "type": "block",
+              "tag": "p",
+              "attributes": {
+                "class": "text"
+              },
+              "children": [
+                {
+                  "id": "tax-invoice-12.4.2.1",
+                  "type": "text",
+                  "value": "\n              앱 안에 있는 사용자의 정보와 세금계산서 발급용 인증서의 정보를 토대로 Input을 사용자가 굳이 Typing하지 않아도 정보가 미리 입력 될 수 있도록\n              설계하여 플로우는 비슷하나\n              "
+                },
+                {
+                  "id": "tax-invoice-12.4.2.2",
+                  "type": "inline",
+                  "tag": "strong",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "tax-invoice-12.4.2.2.1",
+                      "type": "text",
+                      "value": "실제 소비하는 행동은 줄여주는 방식"
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-12.4.2.3",
+                  "type": "text",
+                  "value": "을 택했습니다.\n            "
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-12.4.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-12.4.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "img-wrap"
+              },
+              "children": [
+                {
+                  "id": "tax-invoice-12.4.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-12.4.4.2",
+                  "type": "inline",
+                  "tag": "img",
+                  "attributes": {
+                    "class": "img-in",
+                    "src": "./img/tax-invoice-3.png"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "tax-invoice-12.4.4.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-12.4.4.4",
+                  "type": "inline",
+                  "tag": "img",
+                  "attributes": {
+                    "class": "img-in",
+                    "src": "./img/tax-invoice-4.png"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "tax-invoice-12.4.4.5",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-12.4.4.6",
+                  "type": "inline",
+                  "tag": "img",
+                  "attributes": {
+                    "class": "img-in",
+                    "src": "./img/tax-invoice-5.png"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "tax-invoice-12.4.4.7",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-12.4.4.8",
+                  "type": "inline",
+                  "tag": "img",
+                  "attributes": {
+                    "class": "img-in",
+                    "src": "./img/tax-invoice-6.png"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "tax-invoice-12.4.4.9",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-12.4.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "tax-invoice-12.5",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "tax-invoice-13",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "tax-invoice-14",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "tax-invoice-14.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "tax-invoice-14.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "tax-invoice-14.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-14.2.2",
+              "type": "block",
+              "tag": "h3",
+              "attributes": {},
+              "children": [
+                {
+                  "id": "tax-invoice-14.2.2.1",
+                  "type": "text",
+                  "value": "결과"
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-14.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-14.2.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "content-in"
+              },
+              "children": [
+                {
+                  "id": "tax-invoice-14.2.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-14.2.4.2",
+                  "type": "block",
+                  "tag": "p",
+                  "attributes": {
+                    "class": "text"
+                  },
+                  "children": [
+                    {
+                      "id": "tax-invoice-14.2.4.2.1",
+                      "type": "text",
+                      "value": "\n                21년 5월 31일 배포하고 나서, 저희는 발급을 완료하면 피드백을 받아볼 수 있도록 추가 작업을 진행했습니다. 발급 기능이 올바르게 사용되고 있는지\n                사용자들에게 평가를 받기 위해서 가시적인 평가가 필요했는데요.\n              "
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-14.2.4.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-14.2.4.4",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "img-wrap"
+                  },
+                  "children": [
+                    {
+                      "id": "tax-invoice-14.2.4.4.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "tax-invoice-14.2.4.4.2",
+                      "type": "block",
+                      "tag": "video",
+                      "attributes": {
+                        "class": "video-in",
+                        "autoplay": "",
+                        "loop": "",
+                        "muted": "",
+                        "playsinline": "",
+                        "style": "width: 100%; height: 70%; margin: 4em auto; padding: 0 10%"
+                      },
+                      "children": [
+                        {
+                          "id": "tax-invoice-14.2.4.4.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "tax-invoice-14.2.4.4.2.2",
+                          "type": "inline",
+                          "tag": "source",
+                          "attributes": {
+                            "src": "./img/tax-invoice-party.mp4?001",
+                            "type": "video/mp4"
+                          },
+                          "children": []
+                        },
+                        {
+                          "id": "tax-invoice-14.2.4.4.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tax-invoice-14.2.4.4.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "tax-invoice-14.2.4.4.4",
+                      "type": "inline",
+                      "tag": "img",
+                      "attributes": {
+                        "class": "img-in",
+                        "src": "./img/tax-invoice-7.png"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "tax-invoice-14.2.4.4.5",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-14.2.4.5",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-14.2.4.6",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "sub-content"
+                  },
+                  "children": [
+                    {
+                      "id": "tax-invoice-14.2.4.6.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "tax-invoice-14.2.4.6.2",
+                      "type": "block",
+                      "tag": "h6",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "tax-invoice-14.2.4.6.2.1",
+                          "type": "text",
+                          "value": "약 5개월간, NPS 11점 척도 측정"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tax-invoice-14.2.4.6.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "tax-invoice-14.2.4.6.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "tax-invoice-14.2.4.6.4.1",
+                          "type": "text",
+                          "value": "\n                  NPS 11점 척도로 약 5달간 피드백을 받아보았습니다. NPS 11점 척도를 기준으로 하면 0~6점은 비추천 고객, 7~8점은 중립, 9~10점은 추천 고객으로\n                  분류하고 있는데요.\n                "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tax-invoice-14.2.4.6.5",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "tax-invoice-14.2.4.6.6",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "tax-invoice-14.2.4.6.6.1",
+                          "type": "text",
+                          "value": "NPS 점수는 '추천 그룹(%) - 비추천 그룹(%)'으로 계산합니다."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tax-invoice-14.2.4.6.7",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "tax-invoice-14.2.4.6.8",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {
+                        "class": "text"
+                      },
+                      "children": [
+                        {
+                          "id": "tax-invoice-14.2.4.6.8.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "tax-invoice-14.2.4.6.8.2",
+                          "type": "inline",
+                          "tag": "span",
+                          "attributes": {
+                            "class": "caption"
+                          },
+                          "children": [
+                            {
+                              "id": "tax-invoice-14.2.4.6.8.2.1",
+                              "type": "inline",
+                              "tag": "a",
+                              "attributes": {
+                                "href": "https://blog.opensurvey.co.kr/research-tips/nps-01/",
+                                "target": "blank"
+                              },
+                              "children": [
+                                {
+                                  "id": "tax-invoice-14.2.4.6.8.2.1.1",
+                                  "type": "text",
+                                  "value": "참고: 고객 만족도 측정하는 가장 간편한 조사 방법, NPS 알아보기."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "tax-invoice-14.2.4.6.8.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tax-invoice-14.2.4.6.9",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "tax-invoice-14.2.4.6.10",
+                      "type": "block",
+                      "tag": "div",
+                      "attributes": {
+                        "class": "img-wrap"
+                      },
+                      "children": [
+                        {
+                          "id": "tax-invoice-14.2.4.6.10.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "tax-invoice-14.2.4.6.10.2",
+                          "type": "inline",
+                          "tag": "img",
+                          "attributes": {
+                            "class": "img-in",
+                            "src": "./img/tax-invoice-8.png"
+                          },
+                          "children": []
+                        },
+                        {
+                          "id": "tax-invoice-14.2.4.6.10.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tax-invoice-14.2.4.6.11",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-14.2.4.7",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-14.2.4.8",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "sub-content"
+                  },
+                  "children": [
+                    {
+                      "id": "tax-invoice-14.2.4.8.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "tax-invoice-14.2.4.8.2",
+                      "type": "block",
+                      "tag": "h6",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "tax-invoice-14.2.4.8.2.1",
+                          "type": "text",
+                          "value": "NPS 측정 점수는 85.9점"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tax-invoice-14.2.4.8.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "tax-invoice-14.2.4.8.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "tax-invoice-14.2.4.8.4.1",
+                          "type": "text",
+                          "value": "\n                  측정 결과는 85.9점을 받았습니다. 80점 이상인 경우 높게 나온 점수로 보는데요. 아마도 홈택스 같은 경우는 오류도 잦고 대응도 느려서 답답하셨던\n                  사용자분들이 많으셨던 것 같습니다. 오류가 발생하면 사용자분들이 피드백 남기기를 활용하셔서 저희가 빨리 파악해서 수정할 수 있었던 것도 긍정적인\n                  역할을 한 것 같습니다. 다음에도 기능을 추가할 때, 불편한 사항들을 CS로 받거나 앱마켓에서 별점 테러를 받는 대신에 화면에서 피드백을 받는 형태로\n                  제작하면 좋지 않을까 싶습니다.\n                "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tax-invoice-14.2.4.8.5",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "tax-invoice-14.2.4.8.6",
+                      "type": "block",
+                      "tag": "div",
+                      "attributes": {
+                        "class": "img-wrap"
+                      },
+                      "children": [
+                        {
+                          "id": "tax-invoice-14.2.4.8.6.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "tax-invoice-14.2.4.8.6.2",
+                          "type": "inline",
+                          "tag": "img",
+                          "attributes": {
+                            "class": "img-in",
+                            "src": "./img/tax-invoice-9.png"
+                          },
+                          "children": []
+                        },
+                        {
+                          "id": "tax-invoice-14.2.4.8.6.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tax-invoice-14.2.4.8.7",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-14.2.4.9",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-14.2.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "tax-invoice-14.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "tax-invoice-15",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "tax-invoice-16",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "content"
+      },
+      "children": [
+        {
+          "id": "tax-invoice-16.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "tax-invoice-16.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "sub-title"
+          },
+          "children": [
+            {
+              "id": "tax-invoice-16.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-16.2.2",
+              "type": "block",
+              "tag": "h5",
+              "attributes": {
+                "style": "opacity: 0.9; font-weight: 400; margin-bottom: 0.5em"
+              },
+              "children": [
+                {
+                  "id": "tax-invoice-16.2.2.1",
+                  "type": "text",
+                  "value": "2021년 11월 1일"
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-16.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-16.2.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "content-in"
+              },
+              "children": [
+                {
+                  "id": "tax-invoice-16.2.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-16.2.4.2",
+                  "type": "block",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "sub-content"
+                  },
+                  "children": [
+                    {
+                      "id": "tax-invoice-16.2.4.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "tax-invoice-16.2.4.2.2",
+                      "type": "block",
+                      "tag": "h6",
+                      "attributes": {
+                        "style": "font-size: 2.325rem; padding-top: 0"
+                      },
+                      "children": [
+                        {
+                          "id": "tax-invoice-16.2.4.2.2.1",
+                          "type": "text",
+                          "value": "누적 이용자수 102명 "
+                        },
+                        {
+                          "id": "tax-invoice-16.2.4.2.2.2",
+                          "type": "inline",
+                          "tag": "br",
+                          "attributes": {},
+                          "children": []
+                        },
+                        {
+                          "id": "tax-invoice-16.2.4.2.2.3",
+                          "type": "text",
+                          "value": "누적 발행건수 512건 "
+                        },
+                        {
+                          "id": "tax-invoice-16.2.4.2.2.4",
+                          "type": "inline",
+                          "tag": "br",
+                          "attributes": {},
+                          "children": []
+                        },
+                        {
+                          "id": "tax-invoice-16.2.4.2.2.5",
+                          "type": "text",
+                          "value": "누적 발행금액 27억원 🎉"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tax-invoice-16.2.4.2.3",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "tax-invoice-16.2.4.2.4",
+                      "type": "block",
+                      "tag": "p",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "tax-invoice-16.2.4.2.4.1",
+                          "type": "text",
+                          "value": "\n                  이용자수 100명, 발행건수 500건을 넘어섰습니다. "
+                        },
+                        {
+                          "id": "tax-invoice-16.2.4.2.4.2",
+                          "type": "inline",
+                          "tag": "br",
+                          "attributes": {},
+                          "children": []
+                        },
+                        {
+                          "id": "tax-invoice-16.2.4.2.4.3",
+                          "type": "text",
+                          "value": "\n                  월간 기준으로도 꾸준히 증가하고 있습니다.\n                "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tax-invoice-16.2.4.2.5",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-16.2.4.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-16.2.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "tax-invoice-16.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "tax-invoice-17",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "tax-invoice-18",
+      "type": "block",
+      "tag": "section",
+      "attributes": {
+        "class": "full-max"
+      },
+      "children": [
+        {
+          "id": "tax-invoice-18.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "tax-invoice-18.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "img-wrap"
+          },
+          "children": [
+            {
+              "id": "tax-invoice-18.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-18.2.2",
+              "type": "inline",
+              "tag": "img",
+              "attributes": {
+                "class": "img-in",
+                "src": "../../img/tax-invoice-main.png"
+              },
+              "children": []
+            },
+            {
+              "id": "tax-invoice-18.2.3",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "tax-invoice-18.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "tax-invoice-19",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "tax-invoice-20",
+      "type": "block",
+      "tag": "div",
+      "attributes": {
+        "class": "project"
+      },
+      "children": [
+        {
+          "id": "tax-invoice-20.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "tax-invoice-20.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "wrapper"
+          },
+          "children": [
+            {
+              "id": "tax-invoice-20.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-20.2.2",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "carousel-title"
+              },
+              "children": [
+                {
+                  "id": "tax-invoice-20.2.2.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-20.2.2.2",
+                  "type": "block",
+                  "tag": "h4",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "tax-invoice-20.2.2.2.1",
+                      "type": "text",
+                      "value": "Other Works"
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-20.2.2.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-20.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-20.2.4",
+              "type": "block",
+              "tag": "ul",
+              "attributes": {
+                "class": "carousel",
+                "data-target": "carousel"
+              },
+              "children": [
+                {
+                  "id": "tax-invoice-20.2.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-20.2.4.2",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "tax-invoice-20.2.4.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "tax-invoice-20.2.4.2.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../1min-return/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "tax-invoice-20.2.4.2.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "tax-invoice-20.2.4.2.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "tax-invoice-20.2.4.2.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.2.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "tax-invoice-20.2.4.2.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.2.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/1min-web-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.2.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.2.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.2.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "tax-invoice-20.2.4.2.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.2.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "tax-invoice-20.2.4.2.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.2.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "tax-invoice-20.2.4.2.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Product Design, Front-End"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.2.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.2.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "tax-invoice-20.2.4.2.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "1달간 '1분'으로 이뤄낸 것들"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.2.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.2.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.2.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "tax-invoice-20.2.4.2.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tax-invoice-20.2.4.2.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-20.2.4.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-20.2.4.4",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "tax-invoice-20.2.4.4.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "tax-invoice-20.2.4.4.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../bznav-sans/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "tax-invoice-20.2.4.4.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "tax-invoice-20.2.4.4.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "tax-invoice-20.2.4.4.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.4.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "tax-invoice-20.2.4.4.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.4.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/bznav-sans-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.4.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.4.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.4.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "tax-invoice-20.2.4.4.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.4.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "tax-invoice-20.2.4.4.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.4.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "tax-invoice-20.2.4.4.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Internal Product Design"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.4.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.4.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "tax-invoice-20.2.4.4.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "비즈넵의 프로덕트 폰트, BZNAV Sans"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.4.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.4.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.4.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "tax-invoice-20.2.4.4.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tax-invoice-20.2.4.4.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-20.2.4.5",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-20.2.4.6",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "tax-invoice-20.2.4.6.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "tax-invoice-20.2.4.6.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../insight-renewal/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "tax-invoice-20.2.4.6.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "tax-invoice-20.2.4.6.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "tax-invoice-20.2.4.6.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.6.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "tax-invoice-20.2.4.6.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.6.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/insight-renewal-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.6.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.6.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.6.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "tax-invoice-20.2.4.6.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.6.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "tax-invoice-20.2.4.6.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.6.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "tax-invoice-20.2.4.6.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Product Design"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.6.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.6.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "tax-invoice-20.2.4.6.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "유익하게 새로워진 '비즈넵 인사이트'"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.6.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.6.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.6.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "tax-invoice-20.2.4.6.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tax-invoice-20.2.4.6.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-20.2.4.7",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-20.2.4.8",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "tax-invoice-20.2.4.8.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "tax-invoice-20.2.4.8.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../whatap-product-v2/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "tax-invoice-20.2.4.8.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "tax-invoice-20.2.4.8.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "tax-invoice-20.2.4.8.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.8.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "tax-invoice-20.2.4.8.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.8.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/whatap-product-v2-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.8.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.8.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.8.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "tax-invoice-20.2.4.8.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.8.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "tax-invoice-20.2.4.8.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.8.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "tax-invoice-20.2.4.8.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "UX/UI, Mobile"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.8.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.8.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "tax-invoice-20.2.4.8.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "WhaTap Product v2.0"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.8.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.8.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.8.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "tax-invoice-20.2.4.8.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tax-invoice-20.2.4.8.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-20.2.4.9",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-20.2.4.10",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "tax-invoice-20.2.4.10.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "tax-invoice-20.2.4.10.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../whatap-mobile-app/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "tax-invoice-20.2.4.10.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "tax-invoice-20.2.4.10.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "tax-invoice-20.2.4.10.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.10.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "tax-invoice-20.2.4.10.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.10.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/whatap-mobile-app-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.10.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.10.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.10.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "tax-invoice-20.2.4.10.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.10.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "tax-invoice-20.2.4.10.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.10.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "tax-invoice-20.2.4.10.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "UX/UI, Mobile"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.10.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.10.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "tax-invoice-20.2.4.10.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "WhaTap Mobile App"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.10.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.10.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.10.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "tax-invoice-20.2.4.10.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tax-invoice-20.2.4.10.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-20.2.4.11",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-20.2.4.12",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "tax-invoice-20.2.4.12.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "tax-invoice-20.2.4.12.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../whatap-signup/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "tax-invoice-20.2.4.12.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "tax-invoice-20.2.4.12.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "tax-invoice-20.2.4.12.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.12.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "tax-invoice-20.2.4.12.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.12.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/whatap-signup-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.12.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.12.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.12.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "tax-invoice-20.2.4.12.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.12.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "tax-invoice-20.2.4.12.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.12.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "tax-invoice-20.2.4.12.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "UX/UI, Front-End"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.12.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.12.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "tax-invoice-20.2.4.12.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "WhaTap Signup Page"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.12.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.12.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.12.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "tax-invoice-20.2.4.12.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tax-invoice-20.2.4.12.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-20.2.4.13",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-20.2.4.14",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "tax-invoice-20.2.4.14.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "tax-invoice-20.2.4.14.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../diabates-notes/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "tax-invoice-20.2.4.14.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "tax-invoice-20.2.4.14.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "tax-invoice-20.2.4.14.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.14.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "tax-invoice-20.2.4.14.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.14.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/diabates-app-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.14.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.14.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.14.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "tax-invoice-20.2.4.14.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.14.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "tax-invoice-20.2.4.14.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.14.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "tax-invoice-20.2.4.14.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "GUI, Mobile"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.14.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.14.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "tax-invoice-20.2.4.14.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "'당뇨 수첩', 당뇨 환자를 위한 식단 관리 앱"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.14.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.14.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.14.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "tax-invoice-20.2.4.14.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tax-invoice-20.2.4.14.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-20.2.4.15",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-20.2.4.16",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "tax-invoice-20.2.4.16.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "tax-invoice-20.2.4.16.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../seoul-touristic-icon/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "tax-invoice-20.2.4.16.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "tax-invoice-20.2.4.16.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "tax-invoice-20.2.4.16.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.16.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "tax-invoice-20.2.4.16.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.16.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/seoul-touristic-icon-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.16.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.16.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.16.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "tax-invoice-20.2.4.16.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.16.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "tax-invoice-20.2.4.16.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.16.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "tax-invoice-20.2.4.16.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "Icon Design"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.16.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.16.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "tax-invoice-20.2.4.16.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "Seoul Tourisic Icon"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.16.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.16.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.16.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "tax-invoice-20.2.4.16.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tax-invoice-20.2.4.16.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-20.2.4.17",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-20.2.4.18",
+                  "type": "block",
+                  "tag": "li",
+                  "attributes": {
+                    "class": "card",
+                    "data-target": "card"
+                  },
+                  "children": [
+                    {
+                      "id": "tax-invoice-20.2.4.18.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "tax-invoice-20.2.4.18.2",
+                      "type": "inline",
+                      "tag": "a",
+                      "attributes": {
+                        "href": "../neumorphic-native-apps/",
+                        "class": "hover-target"
+                      },
+                      "children": [
+                        {
+                          "id": "tax-invoice-20.2.4.18.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "tax-invoice-20.2.4.18.2.2",
+                          "type": "block",
+                          "tag": "div",
+                          "attributes": {
+                            "class": "card-in"
+                          },
+                          "children": [
+                            {
+                              "id": "tax-invoice-20.2.4.18.2.2.1",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.18.2.2.2",
+                              "type": "block",
+                              "tag": "figure",
+                              "attributes": {
+                                "class": "title-media"
+                              },
+                              "children": [
+                                {
+                                  "id": "tax-invoice-20.2.4.18.2.2.2.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.18.2.2.2.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "img",
+                                    "data-url": "../../img/neumorphic-native-apps-main-thumbnail.png"
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.18.2.2.2.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.18.2.2.3",
+                              "type": "text",
+                              "value": " "
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.18.2.2.4",
+                              "type": "block",
+                              "tag": "div",
+                              "attributes": {
+                                "class": "title-content-text"
+                              },
+                              "children": [
+                                {
+                                  "id": "tax-invoice-20.2.4.18.2.2.4.1",
+                                  "type": "text",
+                                  "value": " "
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.18.2.2.4.2",
+                                  "type": "block",
+                                  "tag": "div",
+                                  "attributes": {
+                                    "class": "title-head"
+                                  },
+                                  "children": [
+                                    {
+                                      "id": "tax-invoice-20.2.4.18.2.2.4.2.1",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.18.2.2.4.2.2",
+                                      "type": "inline",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "class": "category-eyebrow"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "tax-invoice-20.2.4.18.2.2.4.2.2.1",
+                                          "type": "text",
+                                          "value": "GUI, Mobile"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.18.2.2.4.2.3",
+                                      "type": "text",
+                                      "value": " "
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.18.2.2.4.2.4",
+                                      "type": "block",
+                                      "tag": "h5",
+                                      "attributes": {
+                                        "class": "title-content-headline"
+                                      },
+                                      "children": [
+                                        {
+                                          "id": "tax-invoice-20.2.4.18.2.2.4.2.4.1",
+                                          "type": "text",
+                                          "value": "Neumorphic Native Apps"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": "tax-invoice-20.2.4.18.2.2.4.2.5",
+                                      "type": "text",
+                                      "value": " "
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "tax-invoice-20.2.4.18.2.2.4.3",
+                                  "type": "text",
+                                  "value": " "
+                                }
+                              ]
+                            },
+                            {
+                              "id": "tax-invoice-20.2.4.18.2.2.5",
+                              "type": "text",
+                              "value": " "
+                            }
+                          ]
+                        },
+                        {
+                          "id": "tax-invoice-20.2.4.18.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tax-invoice-20.2.4.18.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-20.2.4.19",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-20.2.5",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-20.2.6",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "button-wrapper"
+              },
+              "children": [
+                {
+                  "id": "tax-invoice-20.2.6.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-20.2.6.2",
+                  "type": "inline",
+                  "tag": "button",
+                  "attributes": {
+                    "id": "prev",
+                    "class": "no-drag"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "tax-invoice-20.2.6.3",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-20.2.6.4",
+                  "type": "inline",
+                  "tag": "button",
+                  "attributes": {
+                    "id": "next",
+                    "class": "no-drag"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "tax-invoice-20.2.6.5",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-20.2.7",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "tax-invoice-20.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "tax-invoice-21",
+      "type": "text",
+      "value": " "
+    },
+    {
+      "id": "tax-invoice-22",
+      "type": "inline",
+      "tag": "footer",
+      "attributes": {},
+      "children": [
+        {
+          "id": "tax-invoice-22.1",
+          "type": "text",
+          "value": " "
+        },
+        {
+          "id": "tax-invoice-22.2",
+          "type": "block",
+          "tag": "div",
+          "attributes": {
+            "class": "footer-wrap"
+          },
+          "children": [
+            {
+              "id": "tax-invoice-22.2.1",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-22.2.2",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "copyright"
+              },
+              "children": [
+                {
+                  "id": "tax-invoice-22.2.2.1",
+                  "type": "text",
+                  "value": "Copyright © 2023"
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-22.2.3",
+              "type": "text",
+              "value": " "
+            },
+            {
+              "id": "tax-invoice-22.2.4",
+              "type": "block",
+              "tag": "div",
+              "attributes": {
+                "class": "description"
+              },
+              "children": [
+                {
+                  "id": "tax-invoice-22.2.4.1",
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "id": "tax-invoice-22.2.4.2",
+                  "type": "block",
+                  "tag": "ul",
+                  "attributes": {},
+                  "children": [
+                    {
+                      "id": "tax-invoice-22.2.4.2.1",
+                      "type": "text",
+                      "value": " "
+                    },
+                    {
+                      "id": "tax-invoice-22.2.4.2.2",
+                      "type": "block",
+                      "tag": "li",
+                      "attributes": {},
+                      "children": [
+                        {
+                          "id": "tax-invoice-22.2.4.2.2.1",
+                          "type": "text",
+                          "value": " "
+                        },
+                        {
+                          "id": "tax-invoice-22.2.4.2.2.2",
+                          "type": "block",
+                          "tag": "p",
+                          "attributes": {},
+                          "children": [
+                            {
+                              "id": "tax-invoice-22.2.4.2.2.2.1",
+                              "type": "text",
+                              "value": "Designed and developed by "
+                            },
+                            {
+                              "id": "tax-invoice-22.2.4.2.2.2.2",
+                              "type": "inline",
+                              "tag": "span",
+                              "attributes": {
+                                "class": "mylogo"
+                              },
+                              "children": [
+                                {
+                                  "id": "tax-invoice-22.2.4.2.2.2.2.1",
+                                  "type": "text",
+                                  "value": "Youngsam"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "tax-invoice-22.2.4.2.2.3",
+                          "type": "text",
+                          "value": " "
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tax-invoice-22.2.4.2.3",
+                      "type": "text",
+                      "value": " "
+                    }
+                  ]
+                },
+                {
+                  "id": "tax-invoice-22.2.4.3",
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            },
+            {
+              "id": "tax-invoice-22.2.5",
+              "type": "text",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "id": "tax-invoice-22.3",
+          "type": "text",
+          "value": " "
+        }
+      ]
+    },
+    {
+      "id": "tax-invoice-23",
+      "type": "text",
+      "value": " "
+    }
+  ]
+}

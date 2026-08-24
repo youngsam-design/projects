@@ -1,0 +1,152 @@
+.page,
+.centered {
+  min-height: 100vh;
+}
+
+.centered {
+  display: grid;
+  padding: var(--layout-page-gutter);
+  place-items: center;
+}
+
+.page {
+  padding: 0 var(--layout-page-gutter) var(--spacing-huge-medium);
+}
+
+.page > header,
+.createForm,
+.projectList {
+  width: min(100%, 960px);
+  margin-inline: auto;
+}
+
+.page > header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-normal-xlarge);
+}
+
+.page h1,
+.page h2,
+.page p,
+.card h1,
+.card p {
+  margin: 0;
+}
+
+.page header span,
+.card > span,
+.projectList span {
+  color: var(--color-neutral-foreground-low);
+  font-size: var(--caption-medium);
+}
+
+.card,
+.createForm,
+.projectList article {
+  border: 1px solid var(--color-neutral-border-main);
+  border-radius: var(--radius-small);
+  background: var(--color-neutral-background-main);
+}
+
+.card {
+  display: grid;
+  gap: var(--spacing-normal-medium);
+  width: min(100%, 420px);
+  padding: var(--spacing-normal-xlarge);
+}
+
+.card label,
+.createForm label {
+  display: grid;
+  gap: var(--spacing-tiny-large);
+  font-size: var(--caption-medium);
+  font-weight: var(--font-weight-bold);
+}
+
+.card input,
+.createForm input {
+  min-height: 44px;
+  padding-inline: var(--spacing-normal-small);
+  border: 1px solid var(--color-neutral-border-main);
+  border-radius: var(--radius-xsmall);
+  font: inherit;
+}
+
+.card button,
+.createForm button,
+.projectActions a {
+  display: inline-grid;
+  min-height: 40px;
+  padding-inline: var(--spacing-normal-medium);
+  border: 1px solid var(--color-info-foreground-main);
+  border-radius: var(--radius-xsmall);
+  color: var(--color-neutral-foreground-inverse-main);
+  font: inherit;
+  text-decoration: none;
+  background: var(--color-info-foreground-main);
+  cursor: pointer;
+  place-items: center;
+}
+
+.createForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: var(--spacing-normal-medium);
+  align-items: end;
+  margin-bottom: var(--spacing-normal-large);
+  padding: var(--spacing-normal-large);
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.createForm h2,
+.createForm p {
+  grid-column: 1 / -1;
+}
+
+.projectList {
+  display: grid;
+  gap: var(--spacing-normal-small);
+}
+
+.projectList article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-normal-medium);
+  padding: var(--spacing-normal-large);
+
+  @media (max-width: 768px) {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.projectList article > div:first-child {
+  display: grid;
+  gap: var(--spacing-tiny-medium);
+}
+
+.projectList h2 {
+  font-size: var(--heading-small);
+}
+
+.projectList p {
+  color: var(--color-neutral-foreground-low);
+  font-size: var(--caption-medium);
+}
+
+.projectActions {
+  display: flex;
+  gap: var(--spacing-tiny-large);
+}
+
+.projectActions a:first-child:not(:last-child) {
+  border-color: var(--color-neutral-border-main);
+  color: var(--color-neutral-foreground-main);
+  background: var(--color-neutral-background-main);
+}

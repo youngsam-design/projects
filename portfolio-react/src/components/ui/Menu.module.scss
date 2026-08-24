@@ -1,0 +1,191 @@
+.menu {
+  display: flex;
+  width: 240px;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: hidden;
+  padding: var(--spacing-tiny-large);
+  border: 1px solid var(--color-neutral-border-main);
+  border-radius: var(--radius-medium);
+  background: var(--color-neutral-background-blurred-main);
+  box-shadow: var(--elevation-medium);
+  backdrop-filter: var(--blur-large);
+  overscroll-behavior: contain;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: var(--spacing-tiny-large) var(--spacing-normal-medium) var(--spacing-tiny-medium);
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--color-neutral-foreground-low);
+  font-size: var(--caption-medium);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.4;
+}
+
+.title {
+  margin: 0;
+  color: var(--color-neutral-foreground-main);
+  font-size: var(--caption-large);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.4;
+}
+
+.section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: hidden;
+  border-radius: var(--radius-xsmall);
+}
+
+.separatorWrap {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: var(--spacing-tiny-medium) var(--spacing-tiny-large);
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background: var(--color-neutral-border-main);
+}
+
+.item {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: var(--spacing-normal-small);
+  padding: var(--spacing-tiny-large);
+  border: 0;
+  border-radius: var(--radius-xsmall);
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  background: transparent;
+  cursor: pointer;
+}
+
+.item:hover:not(:disabled):not(.active) {
+  background: var(--color-neutral-background-hovered-pressed);
+  outline: none;
+}
+
+.item:focus-visible:not(:disabled) {
+  background: var(--color-neutral-background-inverse-low);
+  outline: none;
+}
+
+.item:focus-visible:not(:disabled) .label,
+.item:focus-visible:not(:disabled) .description,
+.item:focus-visible:not(:disabled) .shortcut,
+.item:focus-visible:not(:disabled) .icon,
+.item:focus-visible:not(:disabled) .chevron,
+.item:focus-visible:not(:disabled) .check {
+  color: var(--color-neutral-foreground-inverse-main);
+}
+
+.item:disabled {
+  cursor: not-allowed;
+}
+
+.item:disabled .label,
+.item:disabled .description,
+.item:disabled .shortcut,
+.item:disabled .icon,
+.item:disabled .chevron,
+.item:disabled .check {
+  color: var(--color-neutral-foreground-disabled);
+}
+
+.item.active {
+  background: var(--color-neutral-background-inverse-low);
+}
+
+.item.active .label,
+.item.active .description,
+.item.active .shortcut,
+.item.active .icon,
+.item.active .chevron,
+.item.active .check {
+  color: var(--color-neutral-foreground-inverse-main);
+}
+
+.item.danger .label {
+  color: var(--color-error-foreground-main);
+}
+
+.icon {
+  display: flex;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-neutral-foreground-low);
+}
+
+.body {
+  display: flex;
+  min-width: 0;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: var(--spacing-tiny-medium);
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-normal-small);
+}
+
+.label {
+  min-width: 0;
+  flex: 1 0 0;
+  overflow-wrap: break-word;
+  color: var(--color-neutral-foreground-main);
+  font-size: var(--caption-medium);
+  font-weight: var(--font-weight-medium);
+  line-height: 18px;
+}
+
+.shortcut {
+  flex-shrink: 0;
+  color: var(--color-neutral-foreground-lowest);
+  font-size: var(--caption-small);
+  font-weight: var(--font-weight-regular);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.chevron {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  color: var(--color-neutral-foreground-lowest);
+}
+
+.check {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  color: var(--color-neutral-foreground-main);
+}
+
+.description {
+  width: 100%;
+  overflow-wrap: break-word;
+  color: var(--color-neutral-foreground-low);
+  font-size: var(--caption-medium);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.4;
+}

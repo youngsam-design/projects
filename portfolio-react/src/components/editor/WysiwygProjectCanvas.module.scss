@@ -1,0 +1,326 @@
+.canvas {
+  position: relative;
+  min-height: 100vh;
+  color: rgb(var(--theme-foreground));
+  background: rgb(var(--theme-background, 255, 255, 255));
+}
+
+.codeBlock {
+  overflow: hidden;
+  border-radius: var(--radius-medium);
+  background: var(--palette-gray-900);
+}
+
+.codeBlockLabel {
+  padding: var(--spacing-tiny-large) var(--spacing-normal-medium);
+  border-bottom: 1px solid var(--palette-gray-alpha-inverse-100);
+  color: var(--palette-gray-400);
+  font-size: var(--caption-small);
+}
+
+.codeBlock pre {
+  margin: 0;
+  padding: var(--spacing-normal-medium);
+  overflow-x: auto;
+}
+
+.codeBlock code {
+  display: block;
+  color: var(--palette-gray-100);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: var(--caption-medium);
+  line-height: 1.6;
+  white-space: pre;
+  tab-size: 2;
+  cursor: text;
+}
+
+.codeBlock code:empty::before {
+  color: var(--palette-gray-500);
+  content: attr(data-placeholder);
+}
+
+.canvasLabel {
+  position: absolute;
+  z-index: calc(var(--z-header) + 1);
+  top: var(--spacing-tiny-large);
+  right: var(--spacing-normal-small);
+  padding: var(--spacing-tiny-large) var(--spacing-normal-medium);
+  border: 1px solid var(--color-neutral-border-main);
+  border-radius: var(--radius-circular);
+  color: var(--color-neutral-foreground-low);
+  font-size: var(--caption-xsmall);
+  background: var(--palette-gray-alpha-inverse-900);
+  backdrop-filter: var(--blur-small);
+}
+
+.canvas :global(#slider [contenteditable="true"]) {
+  display: block;
+  cursor: text;
+}
+
+.canvas :global(#slider [contenteditable="true"]:focus) {
+  outline: none;
+}
+
+.canvas [contenteditable="true"] {
+  cursor: text;
+  display: block;
+  white-space: pre-wrap;
+}
+
+.canvas [contenteditable="true"]:focus {
+  outline: none;
+}
+
+.canvas [contenteditable="true"]:empty::before {
+  color: var(--color-neutral-foreground-lowest);
+  content: attr(data-placeholder);
+  pointer-events: none;
+}
+
+.canvas [data-selected="true"] {
+  outline: 2px solid var(--color-info-foreground-main);
+  outline-offset: 2px;
+  border-radius: var(--radius-xsmall);
+}
+
+.marquee {
+  position: fixed;
+  z-index: calc(var(--z-overlay) + 5);
+  border: 1px solid var(--color-info-foreground-main);
+  background: rgb(35 131 226 / 10%);
+  pointer-events: none;
+}
+
+.selectionBar {
+  position: fixed;
+  z-index: calc(var(--z-overlay) + 4);
+  bottom: var(--spacing-normal-large);
+  left: 50%;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-normal-small);
+  padding: var(--spacing-tiny-large) var(--spacing-normal-medium);
+  border-radius: var(--radius-circular);
+  color: var(--color-neutral-foreground-inverse-main);
+  font-size: var(--caption-medium);
+  background: var(--color-neutral-background-inverse-low);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 24%);
+  transform: translateX(-50%);
+}
+
+.selectionBar button {
+  padding: 6px 12px;
+  border: 0;
+  border-radius: var(--radius-xsmall);
+  color: var(--color-neutral-foreground-inverse-main);
+  font: inherit;
+  background: var(--palette-gray-alpha-inverse-100);
+  cursor: pointer;
+}
+
+.selectionBar button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.selectionBar button:not(:disabled):hover {
+  background: var(--palette-gray-alpha-inverse-200);
+}
+
+.blockToolbar {
+  position: fixed;
+  z-index: calc(var(--z-overlay) + 2);
+  display: flex;
+  gap: 4px;
+}
+
+.resizeFrame {
+  position: fixed;
+  z-index: calc(var(--z-overlay) + 1);
+  border-right: 1px solid rgb(35 131 226 / 45%);
+  border-left: 1px solid rgb(35 131 226 / 45%);
+  pointer-events: none;
+}
+
+.resizeHandle {
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid rgb(35 131 226 / 42%);
+  border-radius: 5px;
+  background: var(--color-neutral-background-main);
+  box-shadow: 0 2px 8px rgb(15 23 42 / 14%);
+  cursor: ew-resize;
+  pointer-events: auto;
+  transform: translateY(-50%);
+}
+
+.resizeHandle::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 18px;
+  border-radius: var(--radius-circular);
+  background: rgb(35 131 226 / 65%);
+  content: "";
+  transform: translate(-50%, -50%);
+}
+
+.resizeHandleLeft {
+  left: -5px;
+}
+
+.resizeHandleRight {
+  right: -5px;
+}
+
+.inlineToolbar {
+  position: fixed;
+  z-index: calc(var(--z-overlay) + 4);
+  display: flex;
+  gap: 2px;
+  padding: 4px;
+  border-radius: var(--radius-xsmall);
+  background: var(--color-neutral-background-inverse-low);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 20%);
+}
+
+.inlineToolbar button {
+  min-height: 30px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 4px;
+  color: var(--color-neutral-foreground-inverse-main);
+  font: inherit;
+  font-size: var(--caption-xsmall);
+  background: transparent;
+  cursor: pointer;
+}
+
+.inlineToolbar button:hover {
+  background: var(--palette-gray-alpha-inverse-100);
+}
+
+.inlineActive {
+  color: var(--color-neutral-background-main);
+  background: var(--color-info-foreground-main);
+}
+
+.inlineActive:hover {
+  background: var(--color-info-foreground-main) !important;
+}
+
+.inlineBold {
+  font-weight: 700;
+}
+
+.inlineItalic {
+  font-style: italic;
+}
+
+.inlineStrike {
+  text-decoration: line-through;
+}
+
+.inlineCode {
+  font-family: monospace;
+}
+
+.inlineTypeSwitch {
+  position: relative;
+}
+
+.inlineTypeMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  margin-top: 4px;
+}
+
+.dropIndicator {
+  position: fixed;
+  z-index: calc(var(--z-overlay) + 3);
+  height: 3px;
+  border-radius: var(--radius-circular);
+  background: var(--palette-blue-300);
+  box-shadow: 0 0 0 1px var(--palette-gray-alpha-inverse-800);
+  pointer-events: none;
+}
+
+.dropIndicator::before {
+  position: absolute;
+  top: 50%;
+  left: -4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: inherit;
+  content: "";
+  transform: translateY(-50%);
+}
+
+.blockToolbar > button {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-xsmall);
+  color: var(--palette-gray-600);
+  font: inherit;
+  font-size: 22px;
+  background: var(--palette-gray-alpha-inverse-900);
+  cursor: pointer;
+  place-items: center;
+}
+
+.blockToolbar > button[draggable="true"] {
+  cursor: grab;
+}
+
+.blockToolbar > button:hover {
+  color: var(--color-neutral-foreground-main);
+  background: var(--color-neutral-background-low);
+}
+
+.insertMenu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: calc(var(--z-overlay) + 2);
+  max-height: min(560px, calc(100vh - 120px));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.settingsMenu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: calc(var(--z-overlay) + 2);
+}
+
+.settingsDetailMenu {
+  position: absolute;
+  top: 40px;
+  left: calc(240px + var(--spacing-tiny-small));
+  z-index: calc(var(--z-overlay) + 3);
+  max-height: min(560px, calc(100vh - 120px));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.mediaContextMenu {
+  position: fixed;
+  z-index: calc(var(--z-overlay) + 4);
+}
+
+/* Inline mark visuals (bold/semibold/italic/underline/strike/code/highlight)
+   live in src/styles/main.scss as global .mark-* classes, shared with the
+   read-mode renderer (RichContent.jsx) — see getTextClassName below. */

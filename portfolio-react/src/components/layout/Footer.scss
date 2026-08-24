@@ -1,0 +1,100 @@
+.footer-wrap {
+  position: relative;
+  z-index: 1;
+  align-items: center;
+
+  @media (min-width: 1280px) {
+    max-width: var(--layout-content-max);
+    margin: 0 auto;
+    padding: 1.5em 0;
+    align-self: center;
+    display: grid;
+    grid-column-gap: var(--layout-grid-gap-desktop);
+    grid-column: 1/15;
+    grid-template-columns: repeat(14, 14fr);
+    color: var(--palette-gray-900);
+  }
+
+  @media (max-width: 1080px) {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 2rem 0;
+    margin: 0 36px;
+  }
+
+  @media (max-width: 767px) {
+    margin: 0 20px;
+  }
+}
+
+.pages footer {
+  background-color: var(--palette-gray-900);
+}
+
+.pages .footer-wrap {
+  @media (min-width: 1280px) {
+    color: var(--palette-gray-400);
+  }
+}
+
+footer .copyright {
+  font-size: var(--caption-xsmall);
+  font-weight: 400;
+  color: var(--palette-gray-900);
+  user-select: none;
+
+  @media (min-width: 1280px) {
+    grid-column: 1/8;
+  }
+
+  @media (max-width: 1080px) {
+    margin-bottom: 0.25rem;
+  }
+}
+
+.pages footer .copyright {
+  color: var(--palette-gray-400);
+}
+
+footer .mylogo {
+  font-family: "FreightText";
+  color: inherit;
+}
+
+footer .description {
+  @media (min-width: 1280px) {
+    grid-column: 8/15;
+  }
+}
+
+footer .description ul {
+  @media (min-width: 1280px) {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+  }
+
+  @media (max-width: 767px) {
+    justify-content: flex-start;
+  }
+}
+
+footer .description ul li {
+  margin-left: 20px;
+}
+
+footer .description ul li p {
+  font-size: var(--caption-xsmall);
+  font-weight: 400;
+  color: var(--palette-gray-900);
+  user-select: none;
+}
+
+.pages footer .description ul li p {
+  color: var(--palette-gray-400);
+}
+
+footer .description ul li:first-child {
+  margin-left: 0;
+}

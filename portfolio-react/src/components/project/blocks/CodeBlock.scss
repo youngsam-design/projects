@@ -1,0 +1,80 @@
+.project-code-block {
+  overflow: hidden;
+  border-radius: var(--radius-medium);
+  background: var(--palette-gray-900);
+}
+
+.project-code-block-label {
+  padding: var(--spacing-tiny-large) var(--spacing-normal-medium);
+  border-bottom: 1px solid var(--palette-gray-alpha-inverse-100);
+  color: var(--palette-gray-400);
+  font-size: var(--caption-small);
+  font-family: "Wanted Sans Variable", sans-serif;
+}
+
+.project-code-block pre {
+  margin: 0;
+  padding: var(--spacing-normal-medium);
+  overflow-x: auto;
+}
+
+.project-code-block code {
+  display: block;
+  color: var(--palette-gray-100);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: var(--caption-medium);
+  line-height: 1.6;
+  white-space: pre;
+  tab-size: 2;
+}
+
+.project-code-block .token.comment,
+.project-code-block .token.prolog,
+.project-code-block .token.doctype,
+.project-code-block .token.cdata {
+  color: var(--palette-gray-500);
+}
+
+.project-code-block .token.punctuation {
+  color: var(--palette-gray-300);
+}
+
+.project-code-block .token.property,
+.project-code-block .token.tag,
+.project-code-block .token.boolean,
+.project-code-block .token.number,
+.project-code-block .token.constant,
+.project-code-block .token.symbol {
+  color: var(--palette-orange-400);
+}
+
+.project-code-block .token.selector,
+.project-code-block .token.attr-name,
+.project-code-block .token.string,
+.project-code-block .token.char,
+.project-code-block .token.builtin {
+  color: var(--palette-green-400);
+}
+
+.project-code-block .token.operator,
+.project-code-block .token.entity,
+.project-code-block .token.url,
+.project-code-block .token.variable {
+  color: var(--palette-pink-400);
+}
+
+.project-code-block .token.atrule,
+.project-code-block .token.attr-value,
+.project-code-block .token.keyword {
+  color: var(--palette-violet-400);
+}
+
+.project-code-block .token.function,
+.project-code-block .token.class-name {
+  color: var(--palette-blue-400);
+}
+
+.project-code-block .token.regex,
+.project-code-block .token.important {
+  color: var(--palette-orange-400);
+}

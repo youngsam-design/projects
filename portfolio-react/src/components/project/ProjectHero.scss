@@ -1,0 +1,135 @@
+@use "../../styles/layout";
+@use "../../foundation/typography/typography";
+
+/* hero: title block first, then a contained cover image below (no overlap) */
+#slider {
+  max-width: var(--container-xl);
+  margin: 0 auto;
+  padding-left: var(--container-padding-md);
+  padding-right: var(--container-padding-md);
+  padding-top: var(--spacing-spacious-large);
+}
+
+#slider .title-sec {
+  display: grid;
+  width: 100%;
+  grid-column-gap: var(--layout-grid-gap-desktop);
+  grid-template-columns: repeat(14, 14fr);
+  margin: 0 auto;
+
+  @media (max-width: 1080px) {
+    grid-column-gap: 24px;
+  }
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    grid-column-gap: var(--layout-grid-gap-mobile);
+  }
+}
+
+#slider .title {
+  grid-column: 3/13;
+
+  @media (max-width: 1080px) {
+    grid-column: 2/14;
+  }
+
+  @media (max-width: 767px) {
+    grid-column: 1/5;
+  }
+}
+
+#slider .title .title-head {
+  display: grid;
+  text-align: center;
+  gap: var(--spacing-tiny-large);
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-delay: 0.2s;
+  animation-fill-mode: backwards;
+}
+
+#slider .title .title-head > span {
+  display: inline-block;
+  color: rgb(var(--theme-foreground));
+  opacity: 0.6;
+  font-size: var(--caption-small);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+#slider .title .title-head .title-content-headline {
+  margin: 0;
+  font-family: "Wanted Sans Variable", sans-serif;
+  // Genuinely continuous fluid scaling (not the foundation tokens' own
+  // single 744px jump) - reads its two anchor values straight from
+  // typography's tier map so it can't drift out of sync with them.
+  font-size: layout.fluid(typography.tier-mobile("display-large"), typography.tier-desktop("display-large"));
+  line-height: 1.1;
+  font-weight: 700;
+  color: rgb(var(--theme-foreground));
+  letter-spacing: -0.0075em;
+}
+
+#slider .hero-cover {
+  grid-column: 1/16;
+  margin-top: var(--spacing-spacious-small);
+}
+
+#slider .hero-cover-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 21 / 9;
+  object-fit: cover;
+  background-color: var(--color-neutral-background-low);
+}
+
+/* summary now renders inside the first .content-section (see
+   findFirstContentSectionId) so it shares that grid instead of running its
+   own top-level one — it still needs its own nested grid for the meta `ul`,
+   spanning the full 14-column row it sits in. */
+.contents section.summary {
+  display: grid;
+  grid-column: 1 / 15;
+  grid-column-gap: var(--layout-grid-gap-desktop);
+  grid-template-columns: repeat(14, 14fr);
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    grid-column-gap: var(--layout-grid-gap-mobile);
+  }
+}
+
+.contents section.summary ul {
+  grid-column: var(--block-grid-start) / span var(--block-grid-span);
+}
+
+.contents section.summary li {
+  margin-bottom: 2em;
+
+  @media (max-width: 1600px) {
+    margin-bottom: layout.fluid(18px, 24px);
+  }
+}
+
+.contents section.summary .sp-title {
+  display: block;
+  color: rgb(var(--theme-foreground));
+  font-size: var(--body-medium);
+  margin-bottom: var(--spacing-tiny-large);
+  font-weight: var(--font-weight-semibold);
+}
+
+.contents section.summary .sp-title.client {
+  margin-bottom: 1.5rem;
+}
+
+.contents section.summary .sp-text {
+  display: block;
+  color: rgb(var(--theme-foreground));
+  font-size: var(--caption-medium);
+  font-weight: 400;
+}

@@ -1,0 +1,774 @@
+@use "../../styles/layout";
+@use "../../foundation/typography/typography";
+
+/* contents */
+
+/* 스크롤 진입 리빌 — 미디어(이미지/영상)만 살짝 페이드인+올라오며 나타난다.
+   기본 상태는 항상 "완전히 보임"이고, ProjectPage.jsx의 IntersectionObserver가
+   뷰포트 밖에 있는 동안에만 .reveal-pending을 붙였다가 뷰포트에 들어오면
+   뗀다. 그래서 이 관찰자를 절대 실행하지 않는 곳(에디터 캔버스, 에디터의
+   "초안 미리보기" 등 - 전부 같은 #contents를 재사용한다)에서는 클래스가
+   붙을 일이 없어 미디어가 항상 정상적으로 보인다 - 숨김을 기본값으로 두고
+   JS가 있어야만 드러나는 방식이 아니다. */
+#contents img,
+#contents video {
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+#contents img.reveal-pending,
+#contents video.reveal-pending {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #contents img,
+  #contents video {
+    transition: none;
+  }
+}
+
+body .container .contents {
+  position: relative;
+  z-index: 800;
+  background-color: rgb(var(--theme-background));
+
+  * {
+    @media (max-width: 480px) {
+      word-break: break-all;
+    }
+  }
+}
+
+.contents > section {
+  margin: var(--spacing-spacious-small) auto 0;
+
+  &:not(.full-max) {
+    @media (min-width: 768px) {
+      max-width: var(--layout-content-max);
+      width: 100%;
+    }
+  }
+
+  &:not(.full):not(.full-max) {
+    @media (max-width: 767px) {
+      padding: 0 28px;
+    }
+  }
+}
+
+/* ==========================================================================
+   블록 간 세로 간격(margin-top/bottom) 한눈에 보기
+   --------------------------------------------------------------------------
+   이 파일은 v2(JSON 블록 에디터)와 레거시(정적 HTML) 프로젝트가 같은 클래스
+   이름(.text, .text-li, .img-wrap, .content-section 등)을 공유하는 전역
+   스타일시트다. 그래서 셀렉터는 항상 이 클래스들을 기준으로 써야 하고,
+   `data-block-type` 속성(v2 전용, ProjectRenderer.jsx가 생성)에 의존한
+   셀렉터는 여기 쓰면 안 된다 — 레거시 9개 프로젝트가 조용히 깨진다.
+
+   대상               | 기본 margin-top       | 주요 예외(선행 요소 → 값)
+   -------------------|------------------------|--------------------------------
+   heading(h1~h4)      | spacing-spacious-large | content-section 첫 자식 → 축소
+   .text(문단)          | 6rem                   | heading 다음 → 0
+                        |                        | .element 다음 → 4rem
+                        |                        | .text 다음 → spacing-normal-medium
+                        |                        | .text-li 안 h6 다음 → 0
+   ul.text(레거시 목록)  | 6rem                   | .text 다음 → 6rem(모바일 4~5rem)
+   .text-li             | spacing-spacious-small | 앞선 .text-li 다음 → spacing-normal-small
+   .img-wrap(이미지)     | 5rem(모바일 3rem)       | content-section 직속 자식 → 1.5~2rem
+                        |                        | 다른 .img-wrap 다음 → 5rem(모바일도 동일)
+                        |                        | .text-li 안 → 3em(+ 마지막 항목 0)
+                        |                        | .text 다음 → 6rem(모바일 3em)
+                        |                        | .full.margin-top-no 안 → 4rem(모바일 2rem)
+   .quote               | 8rem                   | -
+   .refer               | 3em                    | -
+   content-section 첫 자식 | 반응형으로 대폭 축소 (타입 무관, 위 예외들보다도 우선순위 높음)
+
+   ⚠ 위 표의 "예외"들 상당수는 CSS 우선순위(specificity)가 서로 같아서 실제로는
+   "이 파일에서 더 뒤에 나온 규칙이 이긴다" — 즉 아래 두 통합 블록 내부의 순서를
+   바꾸면 실제 렌더링이 바뀔 수 있다. 정리하면서 원래 파일의 상대 순서를 그대로
+   보존했으니, 새 예외를 추가할 때도 어떤 규칙이 우선해야 하는지 먼저 확인할 것.
+   ========================================================================== */
+
+/* .contents > section.hidden:not(.work) {
+  opacity: 0;
+  transform: translate3d(0, 7rem, 0);
+  transition: all 0s;
+} */
+
+.contents > section.content {
+  max-width: var(--container-lg);
+  margin: var(--spacing-spacious-small) auto;
+  padding-left: var(--container-padding-md);
+  padding-right: var(--container-padding-md);
+}
+
+.contents > section.content > .content-section {
+  display: grid;
+  grid-column: 1/15;
+  grid-template-columns: repeat(14, minmax(0, 1fr));
+  column-gap: var(--layout-grid-gap-desktop);
+  min-width: 0;
+  counter-reset: project-numbered-list;
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.contents > section .text-li.bullet-list,
+.contents > section .text-li.numbered-list {
+  position: relative;
+  padding-left: var(--spacing-normal-large);
+  margin-top: var(--spacing-normal-small);
+
+  & + .text-li {
+    margin-top: var(--spacing-tiny-large);
+  }
+
+  & > *:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.contents > section .text-li.bullet-list::before,
+.contents > section .text-li.numbered-list::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgb(var(--theme-foreground));
+  font-size: var(--body-large);
+  line-height: 1.6;
+  font-weight: var(--font-weight-semibold);
+}
+
+.contents > section .text-li.bullet-list::before {
+  content: "•";
+}
+
+.contents > section .text-li.numbered-list {
+  counter-increment: project-numbered-list;
+}
+
+.contents > section .text-li.numbered-list::before {
+  content: counter(project-numbered-list) ".";
+}
+
+/* The marker should match whatever actually sits next to it, not the list
+   type: an item that opens with a heading gets a heading-sized marker, any
+   other item (bullet or numbered) keeps the body-text size set above. Values
+   mirror each heading level's own font-size (see the h1~h4 rules above and
+   the .text-li h6 rule below) so the two stay in sync automatically.
+   h5 has no dedicated size anywhere else in this file, so it shares h4's
+   tier (--heading-medium) rather than inventing a new value. */
+.contents > section .text-li.bullet-list:has(h1)::before,
+.contents > section .text-li.numbered-list:has(h1)::before {
+  font-size: var(--display-large);
+  line-height: 1.35;
+}
+
+.contents > section .text-li.bullet-list:has(h2)::before,
+.contents > section .text-li.numbered-list:has(h2)::before {
+  font-size: var(--display-small);
+  line-height: 1.35;
+}
+
+.contents > section .text-li.bullet-list:has(h3)::before,
+.contents > section .text-li.numbered-list:has(h3)::before {
+  font-size: var(--heading-large);
+  line-height: 1.35;
+}
+
+.contents > section .text-li.bullet-list:has(h4)::before,
+.contents > section .text-li.numbered-list:has(h4)::before,
+.contents > section .text-li.bullet-list:has(h5)::before,
+.contents > section .text-li.numbered-list:has(h5)::before {
+  font-size: var(--heading-medium);
+  line-height: 1.35;
+}
+
+.contents > section .text-li.bullet-list:has(h6)::before,
+.contents > section .text-li.numbered-list:has(h6)::before {
+  font-size: var(--heading-small);
+  line-height: 1.35;
+}
+
+.contents > section .content-section q {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  font-style: italic;
+  color: rgb(var(--theme-accent));
+  margin: 2em 0 3em;
+
+  @media (max-width: 768px) {
+    margin: 1.5em 0 2.5em;
+  }
+
+  @media (max-width: 480px) {
+    margin: 1em 0 2em;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 1.625rem;
+  }
+
+  @media (min-width: 1080px) {
+    font-size: 1.75rem;
+  }
+}
+
+.contents > section .content-section q::before {
+  content: "Q.";
+  display: block;
+  clear: both;
+}
+
+.contents > section.intro > h1,
+.contents > section.intro > h2,
+.contents > section.intro > h3,
+.contents > section.intro > h4,
+.contents > section.intro > h5,
+.contents > section.intro > h6,
+.contents > section .content-section > h1,
+.contents > section .content-section > h2,
+.contents > section .content-section > h3,
+.contents > section .content-section > h4,
+.contents > section .content-section > h5,
+.contents > section .content-section > h6 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Wanted Sans Variable";
+  margin-top: 3em;
+  margin-bottom: 1.25em;
+  letter-spacing: 0;
+  word-break: keep-all;
+  color: rgb(var(--theme-foreground));
+  line-height: 1.35;
+}
+
+/* 레벨별 크기 — 지금까지는 이 값이 없어서 브라우저 기본 h1~h4 배율(em)이
+   상속받은 폰트 크기에 곱해진 결과가 그대로 나왔고, 그 결과 문맥에 따라
+   h4가 h3보다 커지는 등 계층과 무관하게 뒤섞여 있었다. foundation 스케일로
+   레벨마다 명시적인 값을 준다. */
+
+.contents > section .content-section > h1 {
+  font-size: layout.fluid(typography.tier-mobile("display-large"), typography.tier-desktop("display-large"));
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+}
+
+.contents > section .content-section > h2 {
+  font-size: layout.fluid(typography.tier-mobile("display-medium"), typography.tier-desktop("display-medium"));
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+
+  & + .text {
+    text-align: center;
+  }
+}
+
+.contents > section .content-section > h3 {
+  font-size: layout.fluid(typography.tier-mobile("display-small"), typography.tier-desktop("display-small"));
+  font-weight: var(--font-weight-bold);
+}
+
+.contents > section .content-section > h4 {
+  font-size: layout.fluid(typography.tier-mobile("heading-large"), typography.tier-desktop("heading-large"));
+  font-weight: var(--font-weight-semibold);
+}
+
+/* h5/h6 have no dedicated foundation tier smaller than --heading-medium,
+   so both share --heading-small (same tradeoff already made for the
+   .text-li marker sizes above). These mainly show up when a list item's
+   title (see detachListItemHeading) gets pulled out to the top level. */
+.contents > section .content-section > h5 {
+  font-size: layout.fluid(typography.tier-mobile("heading-medium"), typography.tier-desktop("heading-medium"));
+  font-weight: var(--font-weight-semibold);
+}
+
+.contents > section .content-section > h6 {
+  font-size: layout.fluid(typography.tier-mobile("heading-small"), typography.tier-desktop("heading-small"));
+  font-weight: var(--font-weight-semibold);
+}
+
+.contents > section.intro > h3 .des,
+.contents > section .content-section > h3 .des {
+  font-weight: 700;
+  color: rgb(var(--theme-foreground));
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+
+  @media (max-width: 480px) {
+    font-size: 1.325rem;
+  }
+}
+
+/* content-section 안의 첫 자식은 타입을 가리지 않고 여기서 여백을 줄인다 —
+   아래 .text/.img-wrap 통합 블록의 어떤 예외보다도 이 규칙이 우선한다
+   (셀렉터 우선순위가 더 높음). */
+.contents > section .content-section > *:nth-child(1) {
+  margin-top: var(--spacing-tiny-large);
+
+  @media (min-width: 768px) {
+    margin-top: var(--spacing-normal-medium);
+  }
+
+  @media (min-width: 1080px) {
+    margin-top: var(--spacing-normal-large);
+  }
+}
+
+/* ==========================================================================
+   .text(문단) 세로 간격 — 기본값 + 선행 요소별 예외
+   순서 주의: 아래 규칙들은 대부분 우선순위가 동일해서, 같은 요소에 동시에
+   맞아떨어질 수 있는 규칙끼리는 "더 뒤에 있는 쪽이 이긴다". 여기서는 원본
+   파일에 있던 상대 순서를 그대로 유지했다(값/셀렉터 변경 없음, 위치만 통합).
+   ========================================================================== */
+
+.contents > section .text {
+  font-size: var(--body-large);
+  line-height: var(--line-height-relaxed);
+  margin-top: var(--spacing-normal-xlarge);
+  color: rgb(var(--theme-foreground));
+}
+
+.contents > section.intro > h1 + .text,
+.contents > section.intro > h2 + .text,
+.contents > section.intro > h3 + .text,
+.contents > section.intro > h4 + .text,
+.contents > section.intro > h5 + .text,
+.contents > section.intro > h6 + .text,
+.contents > section .content-section > h1 + .text,
+.contents > section .content-section > h2 + .text,
+.contents > section .content-section > h3 + .text,
+.contents > section .content-section > h4 + .text,
+.contents > section .content-section > h5 + .text,
+.contents > section .content-section > h6 + .text {
+  margin-top: 0;
+}
+
+.contents > section .element + .text {
+  margin-top: var(--spacing-spacious-large);
+}
+
+/* :not(.text) here isn't filtering anything meaningful on its own (this
+   plain <p> never carries a .text class) — it exists purely to raise this
+   selector's specificity above ".text-li > p:not(.text)" below, which
+   otherwise always wins and hides this margin-top:0 override entirely. */
+
+.contents > section .text-li h6 + .text {
+  margin-top: 0;
+}
+
+/* p:not(.text) covers older content saved before list-item paragraphs
+   carried the .text class (see createTextListBlock) - keep it alongside
+   .text so existing documents don't lose this margin. Both branches sit at
+   the same specificity as ".text + .text" below and happen to share its
+   margin-top value, so which one wins a same-element tie doesn't matter -
+   if either value ever changes independently, re-check that assumption. */
+
+.contents > section .text-li > .text {
+  margin-top: var(--spacing-normal-medium);
+  color: rgb(var(--theme-foreground));
+  font-size: var(--body-large);
+  line-height: 1.6;
+}
+
+.contents > section .text + .text {
+  margin-top: var(--spacing-normal-large);
+}
+
+.contents > section .text + ul.text {
+  margin-top: 6rem;
+
+  @media (max-width: 767px) {
+    margin-top: 5rem;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 4rem;
+  }
+}
+
+/* ==========================================================================
+   .img-wrap(이미지) 세로 간격 — 기본값 + 선행 요소별 예외
+   순서 주의: content-section 직속 자식 규칙은 반드시 위의 ":nth-child(1)"
+   규칙보다 뒤에, 그리고 아래 "다른 .img-wrap 다음"/".text 다음" 규칙들보다는
+   앞에 있어야 한다(전부 우선순위가 같아서 순서가 승자를 결정함). 원본 파일의
+   상대 순서를 그대로 유지했다.
+   ========================================================================== */
+
+.contents > section .img-wrap {
+  margin: var(--spacing-spacious-large) 0;
+}
+
+.contents > section .img-wrap + .img-wrap {
+  margin-top: 0;
+}
+
+.contents > section .text-li .img-wrap {
+  margin-top: 3em;
+  margin-bottom: 6em;
+}
+
+.contents > section .text-li:last-child .img-wrap:last-child {
+  margin-bottom: 0;
+}
+
+.contents > section .flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: 1080px) {
+    flex-flow: column;
+  }
+}
+
+.contents > section .element.outside {
+  margin-top: 4rem;
+  margin-right: 4rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--palette-gray-100);
+  border-radius: 25%;
+  box-shadow:
+    0.75rem 0.75rem 1rem rgba(166, 171, 189, 0.6),
+    -0.125rem -0.125rem 0.125rem rgba(255, 255, 255, 0.6),
+    -0.75rem -0.75rem 1rem rgba(255, 255, 255, 1);
+
+  @media (max-width: 767px) {
+    margin-top: 2rem;
+  }
+}
+
+.contents > section .element.inside {
+  margin-top: 4rem;
+  margin-right: 4rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--palette-gray-100);
+  border-radius: 25%;
+  box-shadow:
+    -1rem -1rem 3rem rgba(255, 255, 255, 0.8),
+    inset -0.5rem -0.5rem 1rem rgba(255, 255, 255, 1),
+    inset 0.5rem 0.5rem 1rem rgba(166, 171, 189, 0.6);
+
+  @media (max-width: 767px) {
+    margin-top: 2rem;
+  }
+}
+
+/* text-li 안에 오는 헤딩은 content-section의 직속 자식이 아니라서 위쪽의
+   h1~h4 규칙(직속 자식 셀렉터)이 전혀 걸리지 않는다 — 그래서 여기서 레벨별
+   크기를 따로 줘야 하고, 위쪽 :has() 마커 규칙이 참조하는 값과 반드시
+   같아야 한다(마커가 실제 텍스트 크기와 어긋나면 안 되므로). */
+.contents > section .text-li h1,
+.contents > section .text-li h2,
+.contents > section .text-li h3,
+.contents > section .text-li h4,
+.contents > section .text-li h5,
+.contents > section .text-li h6 {
+  margin-top: 0;
+  margin-bottom: var(--spacing-tiny-large);
+  line-height: 1.35;
+  font-weight: 700;
+  color: rgb(var(--theme-foreground));
+  word-break: keep-all;
+}
+
+.contents > section .text-li h1 {
+  font-size: var(--display-large);
+}
+
+.contents > section .text-li h2 {
+  font-size: var(--display-small);
+}
+
+.contents > section .text-li h3 {
+  font-size: var(--heading-large);
+}
+
+.contents > section .text-li h4,
+.contents > section .text-li h5 {
+  font-size: var(--heading-medium);
+}
+
+.contents > section .text-li h6 {
+  font-size: var(--heading-small);
+}
+
+.contents > section .refer {
+  margin-top: 3em;
+}
+
+.contents > section .refer span {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: rgb(var(--theme-foreground));
+  font-size: 1rem;
+}
+
+.contents > section .refer a {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  font-size: 1rem;
+}
+
+.contents > section .quote {
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  color: var(--palette-gray-900);
+
+  @media (max-width: 767px) {
+    font-size: 1.25rem;
+  }
+}
+
+.contents > section .text .caption {
+  color: rgb(var(--theme-foreground));
+  opacity: 0.7;
+  font-weight: 400;
+  display: inline-block;
+  font-size: 0.8rem;
+  line-height: 1.43;
+}
+
+.contents > section .img-wrap .caption {
+  display: block;
+  margin-top: var(--spacing-normal-small);
+  font-size: var(--caption-medium);
+  color: rgb(var(--theme-foreground));
+  opacity: 0.7;
+  line-height: 1.43;
+  text-align: center;
+  font-style: italic;
+}
+
+.contents > section .img-wrap .caption strong {
+  color: rgba(var(--theme-foreground), 0.7);
+}
+
+.contents > section.full .img-wrap .caption {
+  display: block;
+  text-align: center;
+}
+
+.project-media-captioned figcaption {
+  margin-top: var(--spacing-normal-medium);
+  color: rgb(var(--theme-foreground));
+  opacity: 0.7;
+  font-size: var(--caption-medium);
+  line-height: 1.5;
+  text-align: center;
+  font-style: italic;
+}
+
+.contents > section .content-section .img-wrap .img-in {
+  width: 100%;
+  height: auto;
+}
+
+.contents > section .content-section .img-wrap .img-in + .img-in {
+  margin-top: 3rem;
+
+  @media (max-width: 767px) {
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 1.5rem;
+  }
+}
+
+.contents > section .content-section .text-li .img-wrap .img-in + .img-in {
+  margin-top: 2em;
+}
+
+.contents > section .content-section .img-wrap .img-fit {
+  width: 100%;
+  height: auto;
+}
+
+.contents > section .content-section .img-wrap .img-fit + .img-fit {
+  margin-top: 6rem;
+}
+
+.contents > section .content-section .img-wrap .video-in {
+  width: 100%;
+  height: auto;
+}
+
+.contents > section.full .img-wrap {
+  grid-column: 1/15;
+}
+
+.contents > section.full.margin-top-no .img-wrap {
+  margin-top: 4rem;
+
+  @media (max-width: 767px) {
+    margin-top: 2rem;
+  }
+}
+.img-wrap .img-in {
+  background-color: rgb(var(--theme-background));
+}
+
+.contents > section.full .img-wrap .img-in {
+  width: 100%;
+  height: auto;
+}
+
+.content-section .sub-content {
+  margin-top: 6rem;
+  line-height: 0;
+
+  @media (max-width: 767px) {
+    margin-top: 3em;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 2.5em;
+  }
+}
+
+.content-section .sub-content h6 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+  color: rgb(var(--theme-foreground));
+
+  @media (max-width: 767px) {
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+  }
+}
+
+.content-section .sub-content p {
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: rgb(var(--theme-foreground));
+
+  @media (max-width: 767px) {
+    font-size: 1rem;
+  }
+}
+
+.content-section .sub-content p + p {
+  margin-top: 1.5em;
+}
+
+.content-section .sub-content .img-wrap {
+  margin-top: 6rem;
+
+  @media (max-width: 767px) {
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 2.5rem;
+  }
+}
+
+.content-section .text-li .sub-content .img-wrap {
+  margin-bottom: 6em;
+  line-height: 0;
+}
+
+.contents > section .content-section .sub-content .img-wrap .img-in {
+  width: 100% !important;
+  margin-left: 0;
+}
+
+/* columns - 2단/3단 분할 블록. content-section의 grid.span 배치와 달리 각 칸
+   (.column)이 독립된 컨테이너라 이미지/텍스트 등 어떤 블록이든 자유롭게 담을
+   수 있다. .project-grid-block(main.scss)은 [data-content-grid] 조상이 있을
+   때만 동작하므로 여기서는 관여하지 않고, 순수 CSS grid로 칸을 나눈다. */
+.columns {
+  display: grid;
+  gap: var(--spacing-normal-large);
+  align-items: start;
+  margin-top: var(--spacing-spacious-small);
+}
+
+.columns.columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.columns.columns-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.column {
+  min-width: 0;
+}
+
+.column img,
+.column video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .columns.columns-2,
+  .columns.columns-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* full-max */
+
+.contents > section.full-max {
+  font-size: 0px;
+  position: relative;
+  margin-top: var(--spacing-spacious-large);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition:
+    transform 1.25s cubic-bezier(0, 0.9, 0.1, 1),
+    opacity 0.6s;
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.container > section.full-max.hidden {
+  opacity: 0;
+  transform: translate3d(0, 7rem, 0);
+}
+
+.contents > section.full-max .img-wrap {
+  margin: 0;
+}
+
+.contents > section.full-max .img-wrap .img-in {
+  width: 100%;
+  height: auto;
+  max-height: 1200px;
+}
+
+.contents > section.full-max + .project {
+  margin-top: 0;
+}

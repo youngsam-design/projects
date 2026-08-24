@@ -1,0 +1,58 @@
+// Youngsam Portfolio — layout & legacy tokens
+// This is the deliberate remainder of the old _tokens.scss after migrating
+// color, spacing, radius, motion, typography, font weight, and breakpoints to
+// src/foundation/. Everything still here either has no foundation equivalent
+// (z-index, layout max-widths, shadows) or is a per-project runtime alias
+// (project theme colors), not a shared design token foundation models.
+
+@use "sass:math";
+
+// foundation/layout/layout.ts's `breakpoints` is the source of truth for
+// window-size classes now; nothing here duplicates it (CSS custom properties
+// can't be used in media queries, so a SCSS mirror would just be another
+// copy to keep in sync — see the layout/README.md for how components consume
+// `breakpoints` directly).
+//
+// These two are unrelated to that window-size-class scale: they only bound
+// the fluid() interpolation below (where the linear scaling starts/stops),
+// not a layout breakpoint anyone switches on.
+$breakpoint-fluid-min: 320px;
+$breakpoint-canvas: 1600px;
+
+// Linearly interpolates a property from $min (at $min-vw) to $max (at $max-vw).
+@function fluid($min, $max, $min-vw: $breakpoint-fluid-min, $max-vw: $breakpoint-canvas) {
+  $slope: math.div($max - $min, $max-vw - $min-vw);
+  @return calc(#{$min} + #{$slope} * (100vw - #{$min-vw}));
+}
+
+:root {
+  // Project theme aliases actually consumed as such. Note most components
+  // read the raw --theme-accent/--theme-background/--theme-foreground/--menu-color
+  // custom properties directly (set inline by
+  // WysiwygProjectCanvas.jsx/ProjectEditorPage.jsx) rather than through these
+  // wrappers, so only the two wrappers with real consumers are kept.
+  --color-project-accent: rgb(var(--theme-accent, 29, 29, 31));
+  --color-project-text: rgb(var(--theme-foreground, 29, 29, 31));
+
+  --line-height-body: 1.5;
+  --line-height-relaxed: 1.75;
+
+  // Layout
+  --layout-content-max: 1080px;
+  --layout-project-max: 1268px;
+  --layout-page-gutter: clamp(20px, 4vw, 48px);
+  --layout-grid-gap-mobile: 24px;
+  --layout-grid-gap-desktop: 36px;
+  --size-header: 64px;
+  --size-control: 48px;
+
+  // Elevation. --shadow-sm was an exact match for foundation's
+  // --elevation-medium and has been migrated there; --shadow-control's
+  // bespoke 3-layer shadow has no foundation equivalent.
+  --shadow-control: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px rgb(0 0 0 / 14%), 0 1px 18px rgb(0 0 0 / 12%);
+
+  // Layering
+  --z-header: 1000;
+  --z-overlay: 2000;
+  --z-navigation: 9999;
+}

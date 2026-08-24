@@ -1,0 +1,33 @@
+@use "../layout/breakpoints" as bp;
+
+:root {
+  /* container max-width */
+  --container-xl: 1680px;
+  --container-lg: 1040px;
+  --container-md: 640px;
+  --container-sm: 480px;
+  --container-xs: 360px;
+
+  /* container padding */
+  --container-padding-lg: 5vw;
+  --container-padding-md: 4vw;
+  --container-padding-sm: 3vw;
+
+  /* negative container padding (bleed용) */
+  --negative-container-padding-lg: -5vw;
+  --negative-container-padding-md: -4vw;
+  --negative-container-padding-sm: -3vw;
+}
+
+@media (max-width: bp.$breakpoint-expanded-max) {
+  :root {
+    --container-padding-lg: 32px;
+    --container-padding-md: 20px;
+    --container-padding-sm: 8px;
+
+    /* negative container padding (bleed용) */
+    --negative-container-padding-lg: -32px;
+    --negative-container-padding-md: -20px;
+    --negative-container-padding-sm: -8px;
+  }
+}

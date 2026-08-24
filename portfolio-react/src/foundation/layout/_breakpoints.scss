@@ -1,0 +1,13 @@
+// Sass mirror of the `breakpoints` object in layout.ts. This project has no
+// build-time bridge between TypeScript and Sass, so the two can't share a
+// single literal value - this partial exists so at least the Sass-side
+// consumers (spacing.scss, typography.scss) reference one shared number
+// instead of each hardcoding it. Keep both files in sync by hand.
+$breakpoint-compact-max: 320px;
+$breakpoint-medium-min: 321px;
+$breakpoint-medium-max: 480px;
+$breakpoint-expanded-min: 481px;
+$breakpoint-expanded-max: 767px;
+$breakpoint-large-min: 768px;
+$breakpoint-large-max: 1023px;
+$breakpoint-extra-large-min: 1024px;

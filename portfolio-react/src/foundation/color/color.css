@@ -1,0 +1,231 @@
+/*
+ * CSS custom-property mirror of color/primitiveColor.ts and color/semanticColor.ts.
+ * Those files only export JS objects (no CSS vars), which doesn't fit this codebase's
+ * CSS-Modules + var(--...) styling convention. This file re-exposes the same values as
+ * real custom properties so *.module.scss files can consume them.
+ * Kept in sync by hand until one is generated from the other.
+ * Only the hue families semanticColor.ts actually references are mirrored here
+ * (gray, violet, blue, red, green, orange, pink); add more on demand.
+ */
+
+:root {
+  --palette-black: #000;
+  --palette-white: #fff;
+  --palette-white-alpha-500: rgb(255 255 255 / 50%);
+
+  --palette-gray-50: #f6f7f8;
+  --palette-gray-100: #f0f2f3;
+  --palette-gray-200: #e3e6e9;
+  --palette-gray-300: #cbd1d7;
+  --palette-gray-400: #acb5be;
+  --palette-gray-500: #8a96a3;
+  --palette-gray-600: #707f8f;
+  --palette-gray-700: #55616d;
+  --palette-gray-800: #363e45;
+  --palette-gray-900: #22272b;
+  --palette-gray-950: #121417;
+  --palette-gray-alpha-900: rgb(8 15 23 / 90%);
+  --palette-gray-alpha-800: rgb(4 14 24 / 80%);
+  --palette-gray-alpha-700: rgb(0 16 31 / 66%);
+  --palette-gray-alpha-600: rgb(0 26 50 / 56%);
+  --palette-gray-alpha-500: rgb(0 26 50 / 46%);
+  --palette-gray-alpha-400: rgb(0 30 57 / 33%);
+  --palette-gray-alpha-300: rgb(0 30 57 / 21%);
+  --palette-gray-alpha-200: rgb(0 30 57 / 12%);
+  --palette-gray-alpha-100: rgb(0 30 57 / 6%);
+  --palette-gray-alpha-inverse-900: rgb(251 253 255 / 95%);
+  --palette-gray-alpha-inverse-800: rgb(246 251 255 / 85%);
+  --palette-gray-alpha-inverse-700: rgb(244 249 255 / 75%);
+  --palette-gray-alpha-inverse-600: rgb(240 247 255 / 65%);
+  --palette-gray-alpha-inverse-500: rgb(229 241 255 / 55%);
+  --palette-gray-alpha-inverse-400: rgb(225 238 255 / 45%);
+  --palette-gray-alpha-inverse-300: rgb(211 230 255 / 35%);
+  --palette-gray-alpha-inverse-200: rgb(200 224 255 / 25%);
+  --palette-gray-alpha-inverse-100: rgb(192 220 255 / 15%);
+  --palette-gray-alpha-inverse-50: rgb(189 219 255 / 10%);
+  --palette-gray-alpha-inverse-0: rgb(255 255 255 / 0%);
+
+  --palette-violet-50: #f4f4ff;
+  --palette-violet-100: #f0f0ff;
+  --palette-violet-200: #d4cfff;
+  --palette-violet-300: #bfb9fd;
+  --palette-violet-400: #9b92fc;
+  --palette-violet-500: #7b6ffb;
+  --palette-violet-600: #5e50fa;
+  --palette-violet-700: #4939f3;
+  --palette-violet-800: #3024ad;
+  --palette-violet-900: #1e176d;
+  --palette-violet-950: #120d3f;
+  --palette-violet-alpha-600: rgb(19 0 232 / 67%);
+  --palette-violet-alpha-100: rgb(19 0 232 / 6%);
+
+  --palette-blue-50: #f0f6ff;
+  --palette-blue-100: #e9f3ff;
+  --palette-blue-200: #c7defe;
+  --palette-blue-300: #a3c9ff;
+  --palette-blue-400: #6ca9ff;
+  --palette-blue-500: #3a8cff;
+  --palette-blue-600: #0e72ff;
+  --palette-blue-700: #0062f5;
+  --palette-blue-800: #0049af;
+  --palette-blue-900: #002c68;
+  --palette-blue-950: #001f4b;
+  --palette-blue-alpha-600: rgb(0 77 219 / 78%);
+  --palette-blue-alpha-100: rgb(0 102 255 / 8%);
+
+  --palette-red-50: #fff3f3;
+  --palette-red-100: #ffefef;
+  --palette-red-200: #ffc3c3;
+  --palette-red-300: #ffadad;
+  --palette-red-400: #ff8585;
+  --palette-red-500: #ff5c5c;
+  --palette-red-600: #f91f1f;
+  --palette-red-700: #df0000;
+  --palette-red-800: #a60404;
+  --palette-red-900: #590202;
+  --palette-red-950: #3b0202;
+  --palette-red-alpha-600: rgb(240 0 0 / 80%);
+  --palette-red-alpha-100: rgb(255 0 0 / 6%);
+
+  --palette-green-50: #e9f9f1;
+  --palette-green-100: #e3fbef;
+  --palette-green-200: #c6f1db;
+  --palette-green-300: #a5e9c7;
+  --palette-green-400: #70dba6;
+  --palette-green-500: #3bce85;
+  --palette-green-600: #14b866;
+  --palette-green-700: #009c4f;
+  --palette-green-800: #0c6e3d;
+  --palette-green-900: #084929;
+  --palette-green-950: #052c19;
+  --palette-green-alpha-600: rgb(10 138 74 / 74%);
+  --palette-green-alpha-100: rgb(0 227 114 / 10%);
+
+  --palette-orange-50: #fff6ee;
+  --palette-orange-100: #fff2e5;
+  --palette-orange-200: #ffd6b2;
+  --palette-orange-300: #ffc999;
+  --palette-orange-400: #ffb370;
+  --palette-orange-500: #ff973d;
+  --palette-orange-600: #ff7c0a;
+  --palette-orange-700: #f16d09;
+  --palette-orange-800: #b25300;
+  --palette-orange-900: #763700;
+  --palette-orange-950: #411e00;
+  --palette-orange-alpha-600: rgb(240 88 0 / 72%);
+  --palette-orange-alpha-100: rgb(255 106 0 / 9%);
+
+  --palette-pink-50: #fef1f9;
+  --palette-pink-100: #feecf7;
+  --palette-pink-200: #fddaf0;
+  --palette-pink-300: #fbb6e1;
+  --palette-pink-400: #f986cd;
+  --palette-pink-500: #f65bbb;
+  --palette-pink-600: #ef199d;
+  --palette-pink-700: #d50b88;
+  --palette-pink-800: #93085e;
+  --palette-pink-900: #4a042f;
+  --palette-pink-950: #2d021c;
+  --palette-pink-alpha-600: rgb(232 0 143 / 84%);
+  --palette-pink-alpha-100: rgb(232 0 143 / 7%);
+
+  /* yellow has no semantic role yet — only the step used by mark-highlight is mirrored */
+  --palette-yellow-200: #fff4bf;
+
+  /* Semantic colors — mirrors color/semanticColor.ts */
+  --color-neutral-foreground-main: var(--palette-gray-900);
+  --color-neutral-foreground-low: var(--palette-gray-700);
+  --color-neutral-foreground-lowest: var(--palette-gray-500);
+  --color-neutral-foreground-enabled: var(--palette-gray-300);
+  --color-neutral-foreground-disabled: var(--palette-gray-alpha-400);
+  --color-neutral-foreground-inverse-main: var(--palette-white);
+  --color-neutral-foreground-inverse-disabled: var(--palette-gray-alpha-inverse-400);
+  --color-neutral-background-main: var(--palette-white);
+  --color-neutral-background-lowest: var(--palette-gray-50);
+  --color-neutral-background-low: var(--palette-gray-100);
+  --color-neutral-background-high: var(--palette-gray-200);
+  --color-neutral-background-transparent: var(--palette-gray-alpha-inverse-0);
+  --color-neutral-background-hovered-pressed: var(--palette-gray-alpha-100);
+  --color-neutral-background-disabled-main: var(--palette-gray-200);
+  --color-neutral-background-disabled-low: var(--palette-gray-100);
+  --color-neutral-background-inverse-main: var(--palette-black);
+  --color-neutral-background-inverse-low: var(--palette-gray-900);
+  --color-neutral-background-inverse-hovered-pressed: var(--palette-gray-alpha-inverse-100);
+  --color-neutral-background-inverse-disabled: var(--palette-gray-700);
+  --color-neutral-background-dimmed-main: var(--palette-gray-alpha-700);
+  --color-neutral-background-dimmed-low: var(--palette-gray-alpha-300);
+  --color-neutral-background-blurred-main: var(--palette-white-alpha-500);
+  --color-neutral-border-main: var(--palette-gray-alpha-100);
+  --color-neutral-border-high: var(--palette-gray-alpha-200);
+  --color-neutral-border-highest: var(--palette-gray-alpha-900);
+  --color-neutral-border-disabled: var(--palette-gray-alpha-200);
+
+  --color-primary-foreground-low: var(--palette-violet-400);
+  --color-primary-foreground-main: var(--palette-violet-600);
+  --color-primary-foreground-high: var(--palette-violet-700);
+  --color-primary-foreground-inverse-main: var(--palette-white);
+  --color-primary-background-main: var(--palette-violet-600);
+  --color-primary-background-lowest: var(--palette-violet-50);
+  --color-primary-background-low: var(--palette-violet-100);
+  --color-primary-background-hovered-pressed: var(--palette-violet-alpha-100);
+  --color-primary-border-main: var(--palette-violet-alpha-600);
+
+  --color-secondary-foreground-main: var(--palette-gray-700);
+  --color-secondary-foreground-low: var(--palette-gray-400);
+  --color-secondary-foreground-high: var(--palette-gray-800);
+  --color-secondary-foreground-inverse-main: var(--palette-white);
+  --color-secondary-background-main: var(--palette-gray-800);
+  --color-secondary-background-low: var(--palette-gray-100);
+  --color-secondary-background-hovered-pressed: var(--palette-gray-alpha-100);
+  --color-secondary-border-main: var(--palette-gray-alpha-900);
+
+  --color-error-foreground-low: var(--palette-red-400);
+  --color-error-foreground-main: var(--palette-red-600);
+  --color-error-foreground-high: var(--palette-red-700);
+  --color-error-foreground-inverse-main: var(--palette-white);
+  --color-error-background-main: var(--palette-red-600);
+  --color-error-background-lowest: var(--palette-red-50);
+  --color-error-background-low: var(--palette-red-100);
+  --color-error-background-hovered-pressed: var(--palette-red-alpha-100);
+  --color-error-border-main: var(--palette-red-alpha-600);
+
+  --color-success-foreground-low: var(--palette-green-400);
+  --color-success-foreground-main: var(--palette-green-600);
+  --color-success-foreground-high: var(--palette-green-700);
+  --color-success-foreground-inverse-main: var(--palette-white);
+  --color-success-background-main: var(--palette-green-600);
+  --color-success-background-lowest: var(--palette-green-50);
+  --color-success-background-low: var(--palette-green-100);
+  --color-success-background-hovered-pressed: var(--palette-green-alpha-100);
+  --color-success-border-main: var(--palette-green-alpha-600);
+
+  --color-warning-foreground-low: var(--palette-orange-400);
+  --color-warning-foreground-main: var(--palette-orange-600);
+  --color-warning-foreground-high: var(--palette-orange-700);
+  --color-warning-foreground-inverse-main: var(--palette-white);
+  --color-warning-background-main: var(--palette-orange-600);
+  --color-warning-background-lowest: var(--palette-orange-50);
+  --color-warning-background-low: var(--palette-orange-100);
+  --color-warning-background-hovered-pressed: var(--palette-orange-alpha-100);
+  --color-warning-border-main: var(--palette-orange-alpha-600);
+
+  --color-info-foreground-low: var(--palette-blue-400);
+  --color-info-foreground-main: var(--palette-blue-600);
+  --color-info-foreground-high: var(--palette-blue-700);
+  --color-info-foreground-inverse-main: var(--palette-white);
+  --color-info-background-main: var(--palette-blue-600);
+  --color-info-background-lowest: var(--palette-blue-50);
+  --color-info-background-low: var(--palette-blue-100);
+  --color-info-background-hovered-pressed: var(--palette-blue-alpha-100);
+  --color-info-border-main: var(--palette-blue-alpha-600);
+
+  --color-promo-foreground-low: var(--palette-pink-400);
+  --color-promo-foreground-main: var(--palette-pink-600);
+  --color-promo-foreground-high: var(--palette-pink-700);
+  --color-promo-foreground-inverse-main: var(--palette-white);
+  --color-promo-background-main: var(--palette-pink-600);
+  --color-promo-background-lowest: var(--palette-pink-50);
+  --color-promo-background-low: var(--palette-pink-100);
+  --color-promo-background-hovered-pressed: var(--palette-pink-alpha-100);
+  --color-promo-border-main: var(--palette-pink-alpha-600);
+}

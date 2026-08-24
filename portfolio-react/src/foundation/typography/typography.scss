@@ -1,0 +1,298 @@
+@use "sass:map";
+@use "../layout/breakpoints" as bp;
+
+/* ============================================================
+   Responsive font-size variables
+   ≤ 767px : up to breakpoints.expanded (see foundation/layout)
+   ≥ 768px : breakpoints.large and up
+   ============================================================ */
+
+// Single source of truth for the tiers that step at breakpoints.large. The :root block
+// below generates the CSS custom properties from this map, and other files
+// that want a genuinely fluid (continuously-interpolated, not a single jump)
+// version of the same tier can read the two anchor values straight from here
+// via tier-mobile()/tier-desktop() instead of hardcoding px numbers - see
+// ProjectHero.scss's hero title for an example.
+$tiers: (
+  display-large: (
+    mobile: 32px,
+    desktop: 56px,
+  ),
+  display-medium: (
+    mobile: 26px,
+    desktop: 40px,
+  ),
+  display-small: (
+    mobile: 24px,
+    desktop: 32px,
+  ),
+  heading-large: (
+    mobile: 22px,
+    desktop: 28px,
+  ),
+  heading-medium: (
+    mobile: 20px,
+    desktop: 24px,
+  ),
+  heading-small: (
+    mobile: 18px,
+    desktop: 22px,
+  ),
+);
+
+@function tier-mobile($name) {
+  @return map.get(map.get($tiers, $name), mobile);
+}
+
+@function tier-desktop($name) {
+  @return map.get(map.get($tiers, $name), desktop);
+}
+
+:root {
+  @each $name, $sizes in $tiers {
+    --#{$name}: #{map.get($sizes, mobile)};
+  }
+  --body-large: 17px;
+  --body-medium: 16px;
+  --body-small: 15px;
+  --caption-medium: 14px;
+  --caption-small: 13px;
+  --caption-xsmall: 12px;
+  --label-medium: 16px;
+
+  // Mirrors typography.ts's `fw` object. Only the weights components
+  // actually consume are exposed (fw.medium has no CSS var yet).
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  @media (min-width: bp.$breakpoint-large-min) {
+    @each $name, $sizes in $tiers {
+      --#{$name}: #{map.get($sizes, desktop)};
+    }
+  }
+}
+/* ============================================================
+   Display  (line-height 1.35)
+   ============================================================ */
+
+.display-large-bold,
+.display-large-semibold {
+  font-size: var(--display-large);
+  line-height: 1.35;
+}
+.display-large-bold {
+  font-weight: 700;
+}
+.display-large-semibold {
+  font-weight: 600;
+}
+
+.display-medium-bold,
+.display-medium-semibold {
+  font-size: var(--display-medium);
+  line-height: 1.35;
+}
+.display-medium-bold {
+  font-weight: 700;
+}
+.display-medium-semibold {
+  font-weight: 600;
+}
+
+.display-small-bold,
+.display-small-semibold {
+  font-size: var(--display-small);
+  line-height: 1.35;
+}
+.display-small-bold {
+  font-weight: 700;
+}
+.display-small-semibold {
+  font-weight: 600;
+}
+
+/* ============================================================
+   Heading  (line-height 1.42)
+   ============================================================ */
+
+.heading-large-bold,
+.heading-large-semibold,
+.heading-large-medium {
+  font-size: var(--heading-large);
+  line-height: 1.42;
+}
+.heading-large-bold {
+  font-weight: 700;
+}
+.heading-large-semibold {
+  font-weight: 600;
+}
+.heading-large-medium {
+  font-weight: 500;
+}
+
+.heading-medium-bold,
+.heading-medium-semibold,
+.heading-medium-medium {
+  font-size: var(--heading-medium);
+  line-height: 1.42;
+}
+.heading-medium-bold {
+  font-weight: 700;
+}
+.heading-medium-semibold {
+  font-weight: 600;
+}
+.heading-medium-medium {
+  font-weight: 500;
+}
+
+.heading-small-bold,
+.heading-small-semibold,
+.heading-small-medium {
+  font-size: var(--heading-small);
+  line-height: 1.42;
+}
+.heading-small-bold {
+  font-weight: 700;
+}
+.heading-small-semibold {
+  font-weight: 600;
+}
+.heading-small-medium {
+  font-weight: 500;
+}
+
+/* ============================================================
+   Body  (line-height 1.45)
+   ============================================================ */
+
+.body-large-bold,
+.body-large-semibold,
+.body-large-medium,
+.body-large-regular {
+  font-size: 17px;
+  line-height: 1.45;
+}
+.body-large-bold {
+  font-weight: 700;
+}
+.body-large-semibold {
+  font-weight: 600;
+}
+.body-large-medium {
+  font-weight: 500;
+}
+.body-large-regular {
+  font-weight: 400;
+}
+
+.body-medium-bold,
+.body-medium-semibold,
+.body-medium-medium,
+.body-medium-regular {
+  font-size: 16px;
+  line-height: 1.45;
+}
+.body-medium-bold {
+  font-weight: 700;
+}
+.body-medium-semibold {
+  font-weight: 600;
+}
+.body-medium-medium {
+  font-weight: 500;
+}
+.body-medium-regular {
+  font-weight: 400;
+}
+
+.body-small-bold,
+.body-small-semibold,
+.body-small-medium,
+.body-small-regular {
+  font-size: 15px;
+  line-height: 1.45;
+}
+.body-small-bold {
+  font-weight: 700;
+}
+.body-small-semibold {
+  font-weight: 600;
+}
+.body-small-medium {
+  font-weight: 500;
+}
+.body-small-regular {
+  font-weight: 400;
+}
+
+/* ============================================================
+   Caption  (line-height 1.47)
+   ============================================================ */
+
+.caption-medium-semibold,
+.caption-medium-regular {
+  font-size: 14px;
+  line-height: 1.47;
+}
+.caption-medium-semibold {
+  font-weight: 600;
+}
+.caption-medium-regular {
+  font-weight: 400;
+}
+
+.caption-small-semibold,
+.caption-small-regular {
+  font-size: 13px;
+  line-height: 1.47;
+}
+.caption-small-semibold {
+  font-weight: 600;
+}
+.caption-small-regular {
+  font-weight: 400;
+}
+
+.caption-xsmall-semibold,
+.caption-xsmall-regular {
+  font-size: 12px;
+  line-height: 1.47;
+}
+.caption-xsmall-semibold {
+  font-weight: 600;
+}
+.caption-xsmall-regular {
+  font-weight: 400;
+}
+
+/* ============================================================
+   Label  (line-height은 고정 px)
+   ============================================================ */
+
+.label-large-semibold {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.label-medium-semibold {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.label-small-medium {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.label-xsmall-medium {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 22px;
+}

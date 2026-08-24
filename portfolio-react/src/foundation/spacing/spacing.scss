@@ -1,0 +1,47 @@
+@use "../layout/breakpoints" as bp;
+
+/* ============================================================
+   Responsive spacing variables
+   ≤ 767px : up to breakpoints.expanded (see foundation/layout)
+   ≥ 768px : breakpoints.large and up
+   ============================================================ */
+
+:root {
+  /* Tiny */
+  --spacing-tiny-small: 2px;
+  --spacing-tiny-medium: 4px;
+  --spacing-tiny-large: 8px;
+
+  /* Normal */
+  --spacing-normal-small: 12px;
+  --spacing-normal-medium: 16px;
+  --spacing-normal-large: 24px;
+  --spacing-normal-xlarge: 32px;
+
+  /* Negative */
+  --spacing-negative-normal-medium: -16px;
+
+  /* Spacious */
+  --spacing-spacious-small:  40px;
+  --spacing-spacious-medium: 52px;
+  --spacing-spacious-large:  64px;
+
+  /* Huge */
+  --spacing-huge-small:  80px;
+  --spacing-huge-medium: 100px;
+  --spacing-huge-large:  120px;
+}
+
+@media (min-width: bp.$breakpoint-large-min) {
+  :root {
+    /* Spacious */
+    --spacing-spacious-small:  48px;
+    --spacing-spacious-medium: 64px;
+    --spacing-spacious-large:  80px;
+
+    /* Huge */
+    --spacing-huge-small:  104px;
+    --spacing-huge-medium: 132px;
+    --spacing-huge-large:  160px;
+  }
+}

@@ -1,0 +1,30 @@
+:root {
+  --duration-long-03: 1000ms;
+  --duration-long-02: 700ms;
+  --duration-long-01: 500ms;
+  --duration-medium-03: 300ms;
+  --duration-medium-02: 250ms;
+  --duration-medium-01: 200ms;
+  --duration-short-03: 150ms;
+  --duration-short-02: 100ms;
+  --duration-short-01: 50ms;
+  --easing-linear: linear;
+  --easing-standard: cubic-bezier(0.2, 0, 0, 1);
+  --easing-standard-accelerate: cubic-bezier(0.3, 0, 1, 1);
+  --easing-standard-decelerate: cubic-bezier(0, 0, 0, 1);
+}
+
+.on-screen {
+  transition-duration: var(--duration-medium-03);
+  transition-timing-function: var(--easing-standard);
+}
+
+.enter-screen {
+  transition-duration: var(--duration-medium-02);
+  transition-timing-function: var(--easing-standard-decelerate);
+}
+
+.exit-screen {
+  transition-duration: var(--duration-medium-01);
+  transition-timing-function: var(--easing-standard-accelerate);
+}

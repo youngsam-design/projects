@@ -2,7 +2,8 @@
 
 @font-face {
   font-family: "FreightText";
-  src: url("../fonts/FreightText/3866ef6c-9678-4744-b9cc-320b34a5a66e.woff2") format("woff2"),
+  src:
+    url("../fonts/FreightText/3866ef6c-9678-4744-b9cc-320b34a5a66e.woff2") format("woff2"),
     url("../fonts/FreightText/ccafaace-64a4-4386-ac8d-b91b19487176.woff") format("woff");
   font-weight: bold;
   font-display: swap;
@@ -14,7 +15,9 @@
 
 @font-face {
   font-family: "BZNAV Sans";
-  src: url("../fonts/BZNAVSans/BZNAVSans-Bold.woff2") format("woff2"), url("../fonts/BZNAVSans/BZNAVSans-Bold.woff") format("woff"),
+  src:
+    url("../fonts/BZNAVSans/BZNAVSans-Bold.woff2") format("woff2"),
+    url("../fonts/BZNAVSans/BZNAVSans-Bold.woff") format("woff"),
     url("../fonts/BZNAVSans/BZNAVSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
@@ -23,7 +26,9 @@
 
 @font-face {
   font-family: "BZNAV Sans";
-  src: url("../fonts/BZNAVSans/BZNAVSans-ExtraLight.woff2") format("woff2"), url("../fonts/BZNAVSans/BZNAVSans-ExtraLight.woff") format("woff"),
+  src:
+    url("../fonts/BZNAVSans/BZNAVSans-ExtraLight.woff2") format("woff2"),
+    url("../fonts/BZNAVSans/BZNAVSans-ExtraLight.woff") format("woff"),
     url("../fonts/BZNAVSans/BZNAVSans-ExtraLight.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
@@ -32,7 +37,9 @@
 
 @font-face {
   font-family: "BZNAV Sans";
-  src: url("../fonts/BZNAVSans/BZNAVSans-Light.woff2") format("woff2"), url("../fonts/BZNAVSans/BZNAVSans-Light.woff") format("woff"),
+  src:
+    url("../fonts/BZNAVSans/BZNAVSans-Light.woff2") format("woff2"),
+    url("../fonts/BZNAVSans/BZNAVSans-Light.woff") format("woff"),
     url("../fonts/BZNAVSans/BZNAVSans-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
@@ -41,7 +48,9 @@
 
 @font-face {
   font-family: "BZNAV Sans";
-  src: url("../fonts/BZNAVSans/BZNAVSans-Black.woff2") format("woff2"), url("../fonts/BZNAVSans/BZNAVSans-Black.woff") format("woff"),
+  src:
+    url("../fonts/BZNAVSans/BZNAVSans-Black.woff2") format("woff2"),
+    url("../fonts/BZNAVSans/BZNAVSans-Black.woff") format("woff"),
     url("../fonts/BZNAVSans/BZNAVSans-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
@@ -50,7 +59,9 @@
 
 @font-face {
   font-family: "BZNAV Sans";
-  src: url("../fonts/BZNAVSans/BZNAVSans-Regular.woff2") format("woff2"), url("../fonts/BZNAVSans/BZNAVSans-Regular.woff") format("woff"),
+  src:
+    url("../fonts/BZNAVSans/BZNAVSans-Regular.woff2") format("woff2"),
+    url("../fonts/BZNAVSans/BZNAVSans-Regular.woff") format("woff"),
     url("../fonts/BZNAVSans/BZNAVSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -59,7 +70,9 @@
 
 @font-face {
   font-family: "BZNAV Sans";
-  src: url("../fonts/BZNAVSans/BZNAVSans-Medium.woff2") format("woff2"), url("../fonts/BZNAVSans/BZNAVSans-Medium.woff") format("woff"),
+  src:
+    url("../fonts/BZNAVSans/BZNAVSans-Medium.woff2") format("woff2"),
+    url("../fonts/BZNAVSans/BZNAVSans-Medium.woff") format("woff"),
     url("../fonts/BZNAVSans/BZNAVSans-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
@@ -73,4 +86,14 @@
   src: url("../fonts/TossFace/TossFaceFontMac.ttf") format("truetype");
   font-style: normal;
   font-display: swap;
+}
+
+/* Wanted Sans Variable */
+@font-face {
+  font-family: "Wanted Sans Variable";
+  src: url("../fonts/WantedSans/WantedSansVariable.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  font-feature-settings: "case", "locl", "calt", "clig", "rlig", "cv14", "ss06";
 }

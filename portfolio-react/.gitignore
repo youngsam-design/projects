@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+.env
+.env.local
+.dev.vars
+api/.dev.vars
+.wrangler/
+!.env.example
+!api/.dev.vars.example

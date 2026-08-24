@@ -1,0 +1,32 @@
+{
+  "name": "youngsam-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && cp dist/index.html dist/404.html",
+    "check:content": "node scripts/verify-v2-content.mjs",
+    "check:editor": "node scripts/verify-editor-operations.mjs",
+    "api:dev": "wrangler dev --config api/wrangler.jsonc --port 8787",
+    "api:migrate:local": "wrangler d1 migrations apply youngsam-portfolio-content --local --config api/wrangler.jsonc",
+    "api:migrate:remote": "wrangler d1 migrations apply youngsam-portfolio-content --remote --config api/wrangler.jsonc",
+    "migrate:content": "node scripts/migrate-project-content.mjs",
+    "migrate:content:v2": "node scripts/migrate-1min-to-v2.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "html-react-parser": "^6.1.7",
+    "prettier": "^3.9.6",
+    "prismjs": "^1.30.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "latest",
+    "sass": "latest",
+    "vite": "^6.4.3"
+  },
+  "devDependencies": {
+    "wrangler": "^4.123.0"
+  }
+}

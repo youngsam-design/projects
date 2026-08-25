@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "projectId": "prj_bznav_sans",
   "slug": "bznav-sans",
-  "title": "비즈넵의 프로덕트 폰트, BZNAV Sans",
+  "title": "비즈넵의 프로덕트 폰트, BZNAV SANS",
   "excerpt": "국문·영문·숫자가 모두 잘 어울리는 비즈넵 프로덕트 전용 폰트 BZNAV Sans를 만든 과정",
   "pageMeta": {
     "title": "YS - 비즈넵의 프로덕트 폰트, BZNAV Sans",
@@ -12,7 +12,7 @@
   },
   "hero": {
     "eyebrow": "2020년 10월 16일",
-    "headline": "비즈넵의 프로덕트 폰트, BZNAV Sans",
+    "headline": "비즈넵의 프로덕트 폰트, BZNAV SANS",
     "coverAssetId": "ast_bz_hero",
     "mesh": false,
     "meshWarp": false
@@ -106,7 +106,7 @@
       "thumbnailAssetId": "ast_bz_rel_neumorphic-native-apps"
     }
   ],
-  "version": 1,
+  "version": 22,
   "blocks": [
     {
       "id": "bz-section110",

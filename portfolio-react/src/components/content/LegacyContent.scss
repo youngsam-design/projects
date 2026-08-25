@@ -405,15 +405,17 @@ body.about .container > section.hello .text_wrap p:first-child {
 }
 
 .contents > section a {
-  text-decoration: none;
-  border-bottom: solid 1px rgb(var(--theme-foreground));
-  transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 0.15s;
+  text-decoration: underline;
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.15s;
   color: rgb(var(--theme-foreground));
+  display: inline-block;
+  word-break: break-all;
+  text-underline-offset: 0.3em;
+  cursor: pointer;
 }
 
 .contents > section a:hover {
-  text-decoration: none;
-  border-color: transparent;
+  color: rgb(var(--theme-accent-active));
 }
 
 .title-top-wrap {

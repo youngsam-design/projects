@@ -67,8 +67,8 @@
   // single 744px jump) - reads its two anchor values straight from
   // typography's tier map so it can't drift out of sync with them.
   font-size: layout.fluid(typography.tier-mobile("display-large"), typography.tier-desktop("display-large"));
-  line-height: 1.1;
-  font-weight: 700;
+  line-height: var(--line-height-tight);
+  font-weight: var(--font-weight-bold);
   color: rgb(var(--theme-foreground));
   letter-spacing: -0.0075em;
 }

@@ -34,7 +34,8 @@ $breakpoint-canvas: 1600px;
   --color-project-accent: rgb(var(--theme-accent, 29, 29, 31));
   --color-project-text: rgb(var(--theme-foreground, 29, 29, 31));
 
-  --line-height-body: 1.5;
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
   --line-height-relaxed: 1.75;
 
   // Layout

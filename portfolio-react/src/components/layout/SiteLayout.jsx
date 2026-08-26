@@ -18,8 +18,6 @@ export default function SiteLayout({
   isProject = false,
 }) {
   useEffect(() => {
-    const description = document.querySelector('meta[name="description"]');
-    const previousDescription = description?.getAttribute("content") ?? "";
     const previousThemeValues = Object.fromEntries(
       Object.values(themeVariables).map((variable) => [
         variable,
@@ -30,9 +28,6 @@ export default function SiteLayout({
     document.title = meta.title;
     document.body.className = `${meta.bodyClass} nonav`;
     document.body.setAttribute("style", meta.bodyStyle);
-    if (description && meta.description) {
-      description.setAttribute("content", meta.description);
-    }
     for (const [key, value] of Object.entries(theme)) {
       const variable = themeVariables[key];
       if (variable && value)
@@ -42,7 +37,6 @@ export default function SiteLayout({
     return () => {
       document.body.className = "";
       document.body.removeAttribute("style");
-      if (description) description.setAttribute("content", previousDescription);
       for (const [variable, value] of Object.entries(previousThemeValues)) {
         if (value) document.documentElement.style.setProperty(variable, value);
         else document.documentElement.style.removeProperty(variable);

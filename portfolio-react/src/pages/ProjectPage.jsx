@@ -116,11 +116,7 @@ export default function ProjectPage() {
   if (state.project.kind === "v2") {
     const document = state.project.document;
     return (
-      <SiteLayout
-        meta={{ ...document.pageMeta, description: document.excerpt }}
-        theme={document.theme}
-        isProject
-      >
+      <SiteLayout meta={{ ...document.pageMeta, title: `YS - ${document.title}` }} theme={document.theme} isProject>
         <ProjectRenderer
           document={document}
           before={<ProjectHero document={document} />}

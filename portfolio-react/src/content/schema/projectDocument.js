@@ -34,14 +34,12 @@ export function createProjectDocument({
     title,
     excerpt,
     pageMeta: {
-      title,
       bodyClass: "pages",
       bodyStyle: "",
       styles: "",
     },
     hero: {
       eyebrow: "새 프로젝트",
-      headline: title,
       coverAssetId: suppliedCover?.id ?? coverAsset.id,
       mesh: false,
       meshWarp: false,

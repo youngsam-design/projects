@@ -12,7 +12,7 @@ export default function ProjectHero({ document }) {
         <div className="title">
           <div className="title-head">
             <span className="category-eyebrow">{document.hero.eyebrow}</span>
-            <h1 className="title-content-headline">{document.hero.headline}</h1>
+            <h1 className="title-content-headline">{document.title}</h1>
           </div>
         </div>
         <div className="hero-cover">

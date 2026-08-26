@@ -946,8 +946,16 @@ export default function WysiwygProjectCanvas({
                 <span className="category-eyebrow" contentEditable onBlur={(event) => updateHeroText("eyebrow", event)} suppressContentEditableWarning>
                   {document.hero.eyebrow}
                 </span>
-                <h1 className="title-content-headline" contentEditable onBlur={(event) => updateHeroText("headline", event)} suppressContentEditableWarning>
-                  {document.hero.headline}
+                <h1
+                  className="title-content-headline"
+                  contentEditable
+                  onBlur={(event) => {
+                    const text = event.currentTarget.textContent;
+                    onDocumentChange((current) => ({ ...current, title: text }), "project:title");
+                  }}
+                  suppressContentEditableWarning
+                >
+                  {document.title}
                 </h1>
               </div>
             </div>

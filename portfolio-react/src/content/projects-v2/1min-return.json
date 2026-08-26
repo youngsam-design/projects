@@ -5,14 +5,12 @@
   "title": "1달간 '1분'으로 이뤄낸 것들",
   "excerpt": "근로소득자를 위한 간편 환급 서비스 1분의 브랜딩과 제품 개발",
   "pageMeta": {
-    "title": "YS - 1달간 '1분'으로 이뤄낸 것들",
     "bodyClass": "pages",
     "bodyStyle": "color: #fff",
     "styles": ".contents > section.full-max .img-wrap .img-in {\n        object-fit: cover;\n      }"
   },
   "hero": {
     "eyebrow": "2022년 5월 31일",
-    "headline": "1달간 '1분'으로 이뤄낸 것들",
     "coverAssetId": "ast_1min_010",
     "mesh": false,
     "meshWarp": false

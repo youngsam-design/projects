@@ -278,7 +278,7 @@ function validateBlock(block, path, errors, ids, assets) {
 }
 
 function validatePageData(document, errors, assets) {
-  for (const key of ["title", "bodyClass", "bodyStyle", "styles"]) {
+  for (const key of ["bodyClass", "bodyStyle", "styles"]) {
     if (typeof document?.pageMeta?.[key] !== "string") {
       errors.push(`pageMeta.${key} must be a string`);
     }
@@ -287,9 +287,6 @@ function validatePageData(document, errors, assets) {
   else {
     if (typeof document.hero.eyebrow !== "string")
       errors.push("hero.eyebrow must be a string");
-    if (!document.hero.headline || typeof document.hero.headline !== "string") {
-      errors.push("hero.headline is required");
-    }
     validateAssetReference(
       document.hero,
       "coverAssetId",

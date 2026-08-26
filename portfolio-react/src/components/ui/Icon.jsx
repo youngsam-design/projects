@@ -1,6 +1,7 @@
 import styles from "./Icon.module.scss";
 import icBraket from "../../assets/icon/ic_braket.svg";
 import icCheck from "../../assets/icon/ic_check.svg";
+import icChevronDown from "../../assets/icon/ic_chevron-down.svg";
 import icChevronRight from "../../assets/icon/ic_chevron-right.svg";
 import icCode from "../../assets/icon/ic_code.svg";
 import icColumns2 from "../../assets/icon/ic_columns-2.svg";
@@ -17,6 +18,7 @@ import icLayers3 from "../../assets/icon/ic_layers-3.svg";
 import icListDot from "../../assets/icon/ic_list-dot.svg";
 import icListNumbered from "../../assets/icon/ic_list-numbered.svg";
 import icPhoto from "../../assets/icon/ic_photo.svg";
+import icPlus from "../../assets/icon/ic_plus.svg";
 import icRepeat from "../../assets/icon/ic_repeat.svg";
 import icSettings from "../../assets/icon/ic_settings.svg";
 import icSpacingVertical from "../../assets/icon/ic_spacing-vertical.svg";
@@ -28,10 +30,12 @@ import icZap from "../../assets/icon/ic_zap.svg";
 // so far - add an entry here (rather than importing the raw file elsewhere)
 // whenever a new one is used, to keep a single name -> asset mapping.
 const icons = {
+  add: icPlus,
   bulletList: icListDot,
   callout: icZap,
   caption: icType,
   check: icCheck,
+  chevronDown: icChevronDown,
   chevronRight: icChevronRight,
   codeBlock: icCode,
   columns2: icColumns2,

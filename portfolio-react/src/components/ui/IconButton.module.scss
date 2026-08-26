@@ -1,0 +1,87 @@
+.iconButton {
+  position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--palette-transparent);
+  border-radius: var(--radius-circular);
+  cursor: pointer;
+}
+
+.iconButton:disabled {
+  cursor: not-allowed;
+}
+
+/* Hover/pressed feedback is a separate wash layered over the variant's own
+   base color, not a swap of that color - hidden until :hover/:active reveal
+   it via opacity, per the design system's neutral hovered-pressed token. */
+.iconButton::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: var(--color-neutral-background-hovered-pressed);
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  pointer-events: none;
+}
+
+.iconButton:hover:not(:disabled)::after,
+.iconButton:active:not(:disabled)::after {
+  opacity: 1;
+}
+
+.icon {
+  position: relative;
+  z-index: 1;
+}
+
+.medium {
+  width: 40px;
+  height: 40px;
+}
+
+.medium .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.small {
+  width: 32px;
+  height: 32px;
+}
+
+.small .icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Primary - filled, high emphasis */
+.primary {
+  color: var(--color-neutral-foreground-inverse-main);
+  background: var(--color-info-foreground-main);
+  border-color: var(--color-info-foreground-main);
+}
+
+/* Neutral - filled, medium emphasis */
+.neutral {
+  color: var(--color-neutral-foreground-main);
+  background: var(--color-neutral-background-high);
+}
+
+/* Subtle - borderless until hover, low emphasis */
+.subtle {
+  color: var(--color-neutral-foreground-main);
+  background: var(--palette-transparent);
+}
+
+.iconButton:disabled {
+  color: var(--color-neutral-foreground-disabled);
+  background: var(--color-neutral-background-disabled-main);
+  border-color: var(--color-neutral-border-disabled);
+}
+
+.iconButton:disabled::after {
+  content: none;
+}

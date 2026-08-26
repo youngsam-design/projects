@@ -117,7 +117,6 @@
   gap: var(--spacing-tiny-large);
 }
 
-.editorFooter button,
 .insertToolbar button,
 .blockActions button,
 .markToolbar button {
@@ -152,7 +151,7 @@
 
 .editorLayout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 380px;
+  grid-template-columns: minmax(0, 1fr) 320px;
   gap: 0;
   align-items: start;
 }
@@ -168,11 +167,9 @@
   flex-direction: column;
   height: 100svh;
   margin: 0;
-  padding-left: var(--spacing-normal-medium);
-  padding-right: var(--spacing-normal-medium);
   border-left: 1px solid var(--color-neutral-border-main);
   color: var(--color-neutral-foreground-main);
-  background: var(--color-neutral-background-lowest);
+  background: var(--color-neutral-background-main);
   box-shadow: var(--elevation-small);
 }
 
@@ -180,9 +177,7 @@
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
-  gap: var(--spacing-normal-medium);
   min-height: 0;
-  padding-top: var(--spacing-normal-medium);
   overflow-y: auto;
 }
 
@@ -215,11 +210,6 @@
 
 .sidebarSection {
   display: grid;
-  gap: var(--spacing-normal-small);
-  padding: var(--spacing-normal-medium);
-  border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-small);
-  background: var(--color-neutral-background-main);
 }
 
 .gridControls {
@@ -316,17 +306,6 @@
   background: var(--color-neutral-background-main);
 }
 
-.revisionPanel > button,
-.revisionPanel li button {
-  min-height: 32px;
-  padding-inline: var(--spacing-normal-small);
-  border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-xsmall);
-  color: inherit;
-  background: var(--color-neutral-background-main);
-  cursor: pointer;
-}
-
 .revisionPanel ul {
   display: grid;
   gap: var(--spacing-tiny-large);
@@ -344,14 +323,6 @@
   font-size: var(--caption-medium);
 }
 
-.settings,
-.rootBlock,
-.nestedBlock {
-  border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-small);
-  background: var(--color-neutral-background-main);
-}
-
 .settings {
   margin-bottom: var(--spacing-normal-large);
   overflow: hidden;
@@ -364,15 +335,18 @@
 }
 
 .settingsContent {
-  display: grid;
-  gap: var(--spacing-normal-large);
-  padding: 0 var(--spacing-normal-large) var(--spacing-normal-large);
+  display: flex;
+  flex-direction: column;
+
+  & > .settingsSection:first-child {
+    border: none;
+  }
 }
 
 .settingsSection {
   display: grid;
-  gap: var(--spacing-normal-medium);
-  padding-top: var(--spacing-normal-medium);
+  padding: var(--spacing-tiny-large) var(--spacing-normal-medium) var(--spacing-normal-medium);
+  gap: var(--spacing-tiny-large);
   border-top: 1px solid var(--color-neutral-border-high);
 }
 
@@ -382,26 +356,15 @@
 }
 
 .settingsSection h2 {
-  font-size: var(--label-medium);
+  font-size: var(--caption-medium);
 }
 
 .settingsSectionHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 32px;
   gap: var(--spacing-normal-small);
-}
-
-.settingsSectionHeader button,
-.metaRow button {
-  min-height: 32px;
-  padding-inline: var(--spacing-normal-small);
-  border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-xsmall);
-  color: inherit;
-  font: inherit;
-  background: var(--color-neutral-background-main);
-  cursor: pointer;
 }
 
 .settingsHelp {
@@ -416,16 +379,8 @@
 
 .metaRow {
   display: grid;
-  grid-template-columns: minmax(120px, 0.7fr) minmax(0, 1.3fr) auto;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
   gap: var(--spacing-tiny-large);
-}
-
-.metaRow input {
-  min-width: 0;
-  padding: var(--spacing-normal-small);
-  border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-xsmall);
-  font: inherit;
 }
 
 .themeGrid {
@@ -434,25 +389,24 @@
   gap: var(--spacing-normal-small);
 }
 
-.colorInputRow {
-  display: flex;
-  min-width: 0;
-  gap: var(--spacing-tiny-large);
-}
-
-.colorInputRow input:not([type="color"]) {
-  flex: 1;
-  min-width: 0;
-}
-
-.colorInputRow input.colorSwatch {
-  flex-shrink: 0;
-  width: 44px;
-  height: 44px;
-  padding: 2px;
+.colorSwatchLeading {
+  width: 18px;
+  height: 18px;
+  padding: 0;
   border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-xsmall);
+  border-radius: var(--radius-3xsmall);
   cursor: pointer;
+  appearance: none;
+  background: none;
+}
+
+.colorSwatchLeading::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.colorSwatchLeading::-webkit-color-swatch {
+  border: none;
+  border-radius: inherit;
 }
 
 .field {

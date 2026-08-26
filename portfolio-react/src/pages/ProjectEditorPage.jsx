@@ -5,6 +5,7 @@ import styles from "../components/editor/ProjectEditor.module.scss";
 import ProjectSettingsEditor from "../components/editor/ProjectSettingsEditor";
 import WysiwygProjectCanvas from "../components/editor/WysiwygProjectCanvas";
 import Header from "../components/layout/Header";
+import Button from "../components/ui/Button";
 import { isMediaBlock } from "../components/project/blocks/blockVariants";
 import ProjectHero from "../components/project/ProjectHero";
 import ProjectRenderer from "../components/project/ProjectRenderer";
@@ -25,10 +26,7 @@ import {
   convertBlockType,
   getBlockTypeValue,
 } from "../content/editor/projectBlockFactory";
-import {
-  materializeEditorAssets,
-  removeDocumentEditorAssets,
-} from "../content/editor/editorAssetStorage";
+import { materializeEditorAssets, removeDocumentEditorAssets } from "../content/editor/editorAssetStorage";
 import {
   detachListItemHeading,
   duplicateBlock,
@@ -64,16 +62,7 @@ import useDocumentHistory from "../hooks/useDocumentHistory";
 export default function ProjectEditorPage() {
   const { slug } = useParams();
   const [sourceDocument, setSourceDocument] = useState(null);
-  const {
-    document,
-    canUndo,
-    canRedo,
-    initialize,
-    replace,
-    change,
-    undo,
-    redo,
-  } = useDocumentHistory();
+  const { document, canUndo, canRedo, initialize, replace, change, undo, redo } = useDocumentHistory();
   const [status, setStatus] = useState("loading");
   const [message, setMessage] = useState("");
   const [view, setView] = useState("edit");
@@ -102,13 +91,7 @@ export default function ProjectEditorPage() {
         } catch (error) {
           if (!active) return;
           setMessage(error.message);
-          setStatus(
-            error.status === 401
-              ? "unauthorized"
-              : error.status === 404
-                ? "not-found"
-                : "error",
-          );
+          setStatus(error.status === 401 ? "unauthorized" : error.status === 404 ? "not-found" : "error");
           return;
         }
         if (!source) {
@@ -198,14 +181,7 @@ export default function ProjectEditorPage() {
   }, [document]);
 
   useEffect(() => {
-    if (
-      status !== "ready" ||
-      !document ||
-      saveState !== "dirty" ||
-      busy ||
-      upload
-    )
-      return;
+    if (status !== "ready" || !document || saveState !== "dirty" || busy || upload) return;
     const pendingDocument = document;
     const timer = window.setTimeout(async () => {
       if (saveInFlightRef.current) {
@@ -228,11 +204,7 @@ export default function ProjectEditorPage() {
         setMessage(`자동 저장됨 · 문서 버전 ${saved.version}`);
       } catch (error) {
         setSaveState(error.status === 409 ? "conflict" : "error");
-        setMessage(
-          error.status === 409
-            ? "다른 탭에서 문서가 변경되었습니다. 최신 문서를 다시 불러오세요."
-            : `자동 저장 실패: ${error.message}`,
-        );
+        setMessage(error.status === 409 ? "다른 탭에서 문서가 변경되었습니다. 최신 문서를 다시 불러오세요." : `자동 저장 실패: ${error.message}`);
       } finally {
         saveInFlightRef.current = false;
       }
@@ -241,12 +213,7 @@ export default function ProjectEditorPage() {
   }, [busy, document, replace, saveState, status, upload]);
 
   const hasDraft = useMemo(
-    () =>
-      Boolean(
-        document &&
-        sourceDocument &&
-        JSON.stringify(document) !== JSON.stringify(sourceDocument),
-      ),
+    () => Boolean(document && sourceDocument && JSON.stringify(document) !== JSON.stringify(sourceDocument)),
     [document, sourceDocument],
   );
 
@@ -303,14 +270,7 @@ export default function ProjectEditorPage() {
           <p>{message || "편집을 계속하려면 관리자 비밀번호를 입력하세요."}</p>
           <label className={styles.field}>
             비밀번호
-            <input
-              autoComplete="current-password"
-              autoFocus
-              onChange={(event) => setPassword(event.target.value)}
-              required
-              type="password"
-              value={password}
-            />
+            <input autoComplete="current-password" autoFocus onChange={(event) => setPassword(event.target.value)} required type="password" value={password} />
           </label>
           <button className={styles.primary} type="submit">
             로그인
@@ -327,10 +287,7 @@ export default function ProjectEditorPage() {
     );
   }
 
-  const displayDocument =
-    previewDocument?.assets.length === document.assets.length
-      ? previewDocument
-      : document;
+  const displayDocument = previewDocument?.assets.length === document.assets.length ? previewDocument : document;
 
   const apply = (operation) => {
     try {
@@ -344,10 +301,7 @@ export default function ProjectEditorPage() {
 
   const updateText = (blockId, text) => {
     try {
-      change(
-        (current) => updateBlock(current, blockId, { text }),
-        `text:${blockId}`,
-      );
+      change((current) => updateBlock(current, blockId, { text }), `text:${blockId}`);
       setSaveState("dirty");
     } catch (error) {
       setMessage(error.message);
@@ -355,19 +309,14 @@ export default function ProjectEditorPage() {
   };
   const findTextBlock = (block, last = false) => {
     if (block?.type === "text") return block;
-    const children = last
-      ? [...(block?.children ?? [])].reverse()
-      : (block?.children ?? []);
+    const children = last ? [...(block?.children ?? [])].reverse() : (block?.children ?? []);
     for (const child of children) {
       const text = findTextBlock(child, last);
       if (text) return text;
     }
     return null;
   };
-  const getSiblingBlocks = (parentId) =>
-    parentId === null
-      ? document.blocks
-      : getBlock(document, parentId)?.children;
+  const getSiblingBlocks = (parentId) => (parentId === null ? document.blocks : getBlock(document, parentId)?.children);
   const splitTextBlock = (context, textBlockId, value, start, end) => {
     const { block, parentId, index } = context.current ?? context;
 
@@ -384,10 +333,7 @@ export default function ProjectEditorPage() {
     // separately numbered/bulleted one - which is what pressing Enter while
     // typing a list actually means.
     const isSimpleListItem =
-      block.type === "group" &&
-      block.children?.length === 1 &&
-      (block.variant?.includes("bulletList") ||
-        block.variant?.includes("numberedList"));
+      block.type === "group" && block.children?.length === 1 && (block.variant?.includes("bulletList") || block.variant?.includes("numberedList"));
 
     // Pressing Enter again on an already-empty list item (the classic
     // "blank line exits the list" gesture) should drop it out of the list
@@ -402,10 +348,7 @@ export default function ProjectEditorPage() {
     }
 
     if (isSimpleListItem) {
-      const nextItem = createTextListBlock(
-        value.slice(end),
-        block.variant.includes("numberedList"),
-      );
+      const nextItem = createTextListBlock(value.slice(end), block.variant.includes("numberedList"));
       const nextText = findTextBlock(nextItem);
       change((current) => {
         const updated = updateBlock(current, textBlockId, {
@@ -443,9 +386,7 @@ export default function ProjectEditorPage() {
     if (!Array.isArray(block.children)) return block;
     return {
       ...block,
-      children: block.children.map((child) =>
-        replaceTextInBlock(child, textBlockId, text),
-      ),
+      children: block.children.map((child) => replaceTextInBlock(child, textBlockId, text)),
     };
   };
   const applyMarkdownShortcut = (context, textBlockId, targetType, remainder) => {
@@ -488,14 +429,7 @@ export default function ProjectEditorPage() {
     setSaveState("dirty");
     return { blockId: previousText.id, offset };
   };
-  const pasteBlocks = (
-    context,
-    textBlockId,
-    pastedText,
-    currentText,
-    start,
-    end,
-  ) => {
+  const pasteBlocks = (context, textBlockId, pastedText, currentText, start, end) => {
     const { block } = context.current ?? context;
     const blocks = createBlocksFromPlainText(pastedText);
     if (!blocks.length) return null;
@@ -524,9 +458,7 @@ export default function ProjectEditorPage() {
         clone.marks = [...(child.marks ?? [])];
         return clone;
       });
-      change((current) =>
-        replaceBlockWithBlocks(current, parent.id, plainChildren),
-      );
+      change((current) => replaceBlockWithBlocks(current, parent.id, plainChildren));
       setSaveState("dirty");
       return;
     }
@@ -549,9 +481,7 @@ export default function ProjectEditorPage() {
     } else {
       const block = createTextBlock(selected);
       const hasMark = (textBlock.marks ?? []).includes(format);
-      block.marks = hasMark
-        ? (textBlock.marks ?? []).filter((mark) => mark !== format)
-        : [...new Set([...(textBlock.marks ?? []), format])];
+      block.marks = hasMark ? (textBlock.marks ?? []).filter((mark) => mark !== format) : [...new Set([...(textBlock.marks ?? []), format])];
       replacements.push(block);
     }
     if (after) {
@@ -559,27 +489,17 @@ export default function ProjectEditorPage() {
       block.marks = [...(textBlock.marks ?? [])];
       replacements.push(block);
     }
-    change((current) =>
-      replaceBlockWithBlocks(current, selection.blockId, replacements),
-    );
+    change((current) => replaceBlockWithBlocks(current, selection.blockId, replacements));
     setSaveState("dirty");
   };
-  const updateMarks = (blockId, marks) =>
-    apply((current) => setTextMarks(current, blockId, marks));
+  const updateMarks = (blockId, marks) => apply((current) => setTextMarks(current, blockId, marks));
   const updateMediaBlock = (blockId, update, historyField = null) => {
-    change(
-      (current) => updateBlock(current, blockId, update),
-      historyField ? `media:${blockId}:${historyField}` : null,
-    );
+    change((current) => updateBlock(current, blockId, update), historyField ? `media:${blockId}:${historyField}` : null);
     setSaveState("dirty");
   };
   const uploadMedia = async (file) => {
     if (!file) return;
-    const kind = file.type.startsWith("image/")
-      ? "image"
-      : file.type.startsWith("video/")
-        ? "video"
-        : null;
+    const kind = file.type.startsWith("image/") ? "image" : file.type.startsWith("video/") ? "video" : null;
     if (!kind) {
       setMessage("이미지 또는 영상 파일만 업로드할 수 있습니다.");
       return;
@@ -655,11 +575,7 @@ export default function ProjectEditorPage() {
       replaceMediaBlock(block.id, block.grid);
       return;
     }
-    apply((current) =>
-      updateBlock(current, block.id, (existing) =>
-        convertBlockType(existing, targetType),
-      ),
-    );
+    apply((current) => updateBlock(current, block.id, (existing) => convertBlockType(existing, targetType)));
   };
 
   const duplicateBlockHandler = (blockId) => {
@@ -738,8 +654,7 @@ export default function ProjectEditorPage() {
     }
   };
 
-  const saveOrExport = () =>
-    getProjectRepositoryMode() === "api" ? save() : exportProjectFile();
+  const saveOrExport = () => (getProjectRepositoryMode() === "api" ? save() : exportProjectFile());
 
   const exportProjectFile = async () => {
     setBusy(true);
@@ -776,10 +691,7 @@ export default function ProjectEditorPage() {
   const restoreRevision = async (revisionId) => {
     setBusy(true);
     try {
-      const restored = await restoreProjectRevision(
-        document.projectId,
-        revisionId,
-      );
+      const restored = await restoreProjectRevision(document.projectId, revisionId);
       replace(restored, { clearHistory: true });
       setSaveState("saved");
       setRevisions(await listProjectRevisions(document.projectId));
@@ -851,11 +763,7 @@ export default function ProjectEditorPage() {
             "--menu-color": document.theme.menuColor,
           }}
         >
-          <button
-            className={styles.previewBack}
-            onClick={() => setView("edit")}
-            type="button"
-          >
+          <button className={styles.previewBack} onClick={() => setView("edit")} type="button">
             편집으로 돌아가기
           </button>
           <ProjectHero document={displayDocument} />
@@ -869,13 +777,9 @@ export default function ProjectEditorPage() {
               <WysiwygProjectCanvas
                 document={displayDocument}
                 onBackspace={mergePreviousBlock}
-                onCaptionChange={(blockId, caption) =>
-                  updateMediaBlock(blockId, { caption }, `caption:${blockId}`)
-                }
+                onCaptionChange={(blockId, caption) => updateMediaBlock(blockId, { caption }, `caption:${blockId}`)}
                 onChangeType={changeBlockType}
-                onCodeChange={(blockId, update) =>
-                  updateMediaBlock(blockId, update, `code:${blockId}`)
-                }
+                onCodeChange={(blockId, update) => updateMediaBlock(blockId, update, `code:${blockId}`)}
                 onDelete={deleteBlock}
                 onDocumentChange={updateProjectSettings}
                 onDuplicate={duplicateBlockHandler}
@@ -884,21 +788,11 @@ export default function ProjectEditorPage() {
                 onInlineFormat={formatInlineSelection}
                 onInsert={insertInlineBlock}
                 onMarkdownShortcut={applyMarkdownShortcut}
-                onMove={(blockId, parentId, index) =>
-                  apply((current) =>
-                    moveBlock(current, blockId, { parentId, index }),
-                  )
-                }
+                onMove={(blockId, parentId, index) => apply((current) => moveBlock(current, blockId, { parentId, index }))}
                 onPaste={pasteBlocks}
                 onReplaceMedia={replaceMediaBlock}
                 onUngroup={ungroupBlockHandler}
-                onResize={(blockId, span) =>
-                  updateMediaBlock(
-                    blockId,
-                    { grid: { span } },
-                    `grid:${blockId}`,
-                  )
-                }
+                onResize={(blockId, span) => updateMediaBlock(blockId, { grid: { span } }, `grid:${blockId}`)}
                 onSoftBreak={insertSoftBreak}
                 onTextChange={updateText}
                 renderBlockSettings={(block) => {
@@ -908,19 +802,12 @@ export default function ProjectEditorPage() {
                   // block, etc.), that group's own bounds clip it either way,
                   // so the control has nothing to do.
                   const parent = getBlockParent(displayDocument, block.id);
-                  const hideMediaLayoutControl =
-                    parent?.type === "group" &&
-                    !parent.variant?.includes("contentSection");
+                  const hideMediaLayoutControl = parent?.type === "group" && !parent.variant?.includes("contentSection");
                   return (
                     <>
                       <label className={styles.field}>
                         블록 유형
-                        <select
-                          onChange={(event) =>
-                            changeBlockType(block, event.target.value)
-                          }
-                          value={getBlockTypeValue(block)}
-                        >
+                        <select onChange={(event) => changeBlockType(block, event.target.value)} value={getBlockTypeValue(block)}>
                           <option value="paragraph">텍스트</option>
                           <option value="heading-1">제목 1</option>
                           <option value="heading-2">제목 2</option>
@@ -940,11 +827,7 @@ export default function ProjectEditorPage() {
                           <option value="media">이미지 또는 영상</option>
                         </select>
                       </label>
-                      {isMediaBlock(block) && (
-                        <p className={styles.gridResizeHint}>
-                          블록 좌우의 핸들을 드래그해 너비를 조절하세요.
-                        </p>
-                      )}
+                      {isMediaBlock(block) && <p className={styles.gridResizeHint}>블록 좌우의 핸들을 드래그해 너비를 조절하세요.</p>}
                       <BlockEditor
                         block={block}
                         document={displayDocument}
@@ -962,29 +845,20 @@ export default function ProjectEditorPage() {
               <div className={styles.editorSidebarScroll}>
                 {getProjectRepositoryMode() === "api" && (
                   <section className={styles.revisionPanel}>
-                    <button onClick={toggleRevisions} type="button">
+                    <Button onClick={toggleRevisions} size="small" variant="neutral">
                       {showRevisions ? "버전 기록 닫기" : "버전 기록 보기"}
-                    </button>
+                    </Button>
                     {showRevisions && (
                       <ul>
-                        {revisions.length === 0 && (
-                          <li>저장된 revision이 없습니다.</li>
-                        )}
+                        {revisions.length === 0 && <li>저장된 revision이 없습니다.</li>}
                         {revisions.map((revision) => (
                           <li key={revision.id}>
                             <span>
-                              v{revision.version} · {revision.reason} ·{" "}
-                              {new Date(revision.createdAt).toLocaleString(
-                                "ko-KR",
-                              )}
+                              v{revision.version} · {revision.reason} · {new Date(revision.createdAt).toLocaleString("ko-KR")}
                             </span>
-                            <button
-                              disabled={busy}
-                              onClick={() => restoreRevision(revision.id)}
-                              type="button"
-                            >
+                            <Button disabled={busy} onClick={() => restoreRevision(revision.id)} size="small" variant="neutral">
                               복원
-                            </button>
+                            </Button>
                           </li>
                         ))}
                       </ul>
@@ -993,7 +867,6 @@ export default function ProjectEditorPage() {
                 )}
 
                 <section className={styles.sidebarSection}>
-                  <strong>페이지 관리</strong>
                   <input
                     accept="image/*,video/*"
                     className={styles.fileInput}
@@ -1006,12 +879,9 @@ export default function ProjectEditorPage() {
                       <span>{upload.name}</span>
                       <progress max="100" value={upload.progress} />
                       {upload.error ? (
-                        <button
-                          onClick={() => uploadMedia(upload.file)}
-                          type="button"
-                        >
+                        <Button onClick={() => uploadMedia(upload.file)} size="small" variant="neutral">
                           재시도
-                        </button>
+                        </Button>
                       ) : (
                         <strong>{upload.progress}%</strong>
                       )}
@@ -1019,17 +889,10 @@ export default function ProjectEditorPage() {
                   )}
                 </section>
 
-                <ProjectSettingsEditor
-                  document={document}
-                  onChange={updateProjectSettings}
-                />
+                <ProjectSettingsEditor document={document} onChange={updateProjectSettings} />
               </div>
 
-              <div
-                className={styles.editorFooter}
-                role="toolbar"
-                aria-label="편집 도구"
-              >
+              <div className={styles.editorFooter} role="toolbar" aria-label="편집 도구">
                 <div className={styles.headerTitle}>
                   <strong>{document.title}</strong>
                   <span>{message || `문서 버전 ${document.version}`}</span>
@@ -1042,39 +905,26 @@ export default function ProjectEditorPage() {
                       error: "저장 실패",
                     }[saveState] ?? saveState}
                   </span>
-                  <span className={styles.repositoryMode}>
-                    {getProjectRepositoryMode() === "api"
-                      ? "API 저장"
-                      : "브라우저 저장"}
-                  </span>
+                  <span className={styles.repositoryMode}>{getProjectRepositoryMode() === "api" ? "API 저장" : "브라우저 저장"}</span>
                   {getProjectRepositoryMode() === "api" && (
                     <span className={styles.publicationStatus}>
-                      {publication.status === "published"
-                        ? `발행됨 · v${publication.publishedVersion}`
-                        : "미발행 초안"}
+                      {publication.status === "published" ? `발행됨 · v${publication.publishedVersion}` : "미발행 초안"}
                     </span>
                   )}
                 </div>
                 <p className={styles.notice}>
-                  {getProjectRepositoryMode() === "api"
-                    ? "초안은 검토 후 발행해야 공개 화면에 반영됩니다."
-                    : "초안은 현재 브라우저에 자동 저장됩니다."}
+                  {getProjectRepositoryMode() === "api" ? "초안은 검토 후 발행해야 공개 화면에 반영됩니다." : "초안은 현재 브라우저에 자동 저장됩니다."}
                 </p>
                 <div className={styles.actions}>
-                  <button onClick={() => setView("preview")} type="button">
+                  <Button onClick={() => setView("preview")} size="small" variant="neutral">
                     미리보기
-                  </button>
-                  <button disabled={!hasDraft} onClick={reset} type="button">
+                  </Button>
+                  <Button disabled={!hasDraft} onClick={reset} size="small" variant="neutral">
                     초기화(복원)
-                  </button>
-                  <button
-                    className={styles.primary}
-                    disabled={busy || saveState === "saving"}
-                    onClick={saveOrExport}
-                    type="button"
-                  >
+                  </Button>
+                  <Button disabled={busy || saveState === "saving"} onClick={saveOrExport} size="small" variant="primary">
                     저장(내보내기)
-                  </button>
+                  </Button>
                 </div>
               </div>
             </aside>

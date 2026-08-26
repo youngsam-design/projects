@@ -1,7 +1,8 @@
 /* Mirrors radius/radius.ts. Kept in sync by hand until one is generated from the other. */
 
 :root {
-  --radius-2xsmall: 4px;
+  --radius-3xsmall: 4px;
+  --radius-2xsmall: 6px;
   --radius-xsmall: 8px;
   --radius-small: 12px;
   --radius-medium: 16px;

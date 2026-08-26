@@ -12,6 +12,8 @@
   --palette-black: #000;
   --palette-white: #fff;
   --palette-white-alpha-500: rgb(255 255 255 / 50%);
+  --palette-current: currentcolor;
+  --palette-transparent: transparent;
 
   --palette-gray-50: #f6f7f8;
   --palette-gray-100: #f0f2f3;

@@ -1,4 +1,5 @@
 import {
+  createProjectDraft,
   loadProjectDraft,
   removeProjectDraft,
   saveProjectDraft,
@@ -43,7 +44,7 @@ export async function loadEditableProject(sourceDocument) {
 }
 
 export async function loadEditableProjectBySlug(slug) {
-  if (!hasRemoteContentApi()) return null;
+  if (!hasRemoteContentApi()) return loadProjectDraft(slug);
   const response = await contentApiRequest(
     `/api/admin/projects/by-slug/${encodeURIComponent(slug)}`,
   );
@@ -61,8 +62,11 @@ export async function listEditableProjects() {
 }
 
 export async function createEditableProject(document) {
-  if (!hasRemoteContentApi())
-    throw new Error("새 프로젝트 생성은 API 저장 모드에서 사용할 수 있습니다.");
+  if (!hasRemoteContentApi()) {
+    if (loadProjectDraft(document.slug))
+      throw new Error(`이미 사용 중인 slug입니다: ${document.slug}`);
+    return createProjectDraft(document);
+  }
   const response = await contentApiRequest("/api/admin/projects", {
     method: "POST",
     body: JSON.stringify({ document }),

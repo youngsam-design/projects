@@ -45,20 +45,37 @@
   color: var(--color-neutral-foreground-main);
   font: inherit;
   line-height: var(--line-height-tight);
-  padding: var(--spacing-tiny-large) var(--spacing-tiny-large);
-  font-size: var(--caption-xsmall);
   background: var(--color-neutral-background-high);
   border-radius: var(--radius-2xsmall);
   border: 1px solid var(--palette-transparent);
   resize: vertical;
 }
 
-.field.hasLeading {
+.small .field {
+  padding: var(--spacing-tiny-large) var(--spacing-tiny-large);
+  font-size: var(--caption-xsmall);
+}
+
+.small .field.hasLeading {
   padding-left: 32px;
 }
 
-.field:not(textarea) {
+.small .field:not(textarea) {
   height: 32px;
+}
+
+.medium .field {
+  padding: var(--spacing-normal-small) var(--spacing-normal-small);
+  font-size: var(--caption-medium);
+  border-radius: var(--radius-xsmall);
+}
+
+.medium .field.hasLeading {
+  padding-left: 36px;
+}
+
+.medium .field:not(textarea) {
+  height: 40px;
 }
 
 .field::placeholder {

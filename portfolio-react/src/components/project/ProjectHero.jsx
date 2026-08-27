@@ -1,4 +1,3 @@
-import MeshGradientBox from "./blocks/MeshGradientBox";
 import { getProjectAsset, resolveProjectAssetUrl } from "./projectAssets";
 import "./ProjectHero.scss";
 
@@ -15,15 +14,7 @@ export default function ProjectHero({ document }) {
             <h1 className="title-content-headline">{document.title}</h1>
           </div>
         </div>
-        <div className="hero-cover">
-          {document.hero.mesh ? (
-            <MeshGradientBox colors={document.theme.meshColors} seedKey="hero-cover" warp={document.hero.meshWarp}>
-              {image}
-            </MeshGradientBox>
-          ) : (
-            image
-          )}
-        </div>
+        <div className="hero-cover">{image}</div>
       </div>
     </div>
   );

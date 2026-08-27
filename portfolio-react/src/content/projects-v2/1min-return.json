@@ -11,23 +11,13 @@
   },
   "hero": {
     "eyebrow": "2022년 5월 31일",
-    "coverAssetId": "ast_1min_010",
-    "mesh": false,
-    "meshWarp": false
+    "coverAssetId": "ast_1min_010"
   },
   "theme": {
     "mainColor": "13, 154, 255",
     "backgroundColor": "255, 255, 255",
     "textColor": "16, 37, 61",
-    "menuColor": "255, 255, 255",
-    "meshColors": [
-      "255, 255, 255",
-      "30, 161, 255",
-      "13, 154, 255",
-      "65, 82, 254",
-      "1, 90, 179",
-      "55, 110, 169"
-    ]
+    "menuColor": "255, 255, 255"
   },
   "meta": [
     {
@@ -392,7 +382,6 @@
               "variant": [
                 "contentImage"
               ],
-              "mesh": false,
               "grid": {
                 "span": 12
               }
@@ -425,8 +414,6 @@
               "variant": [
                 "contentImage"
               ],
-              "mesh": false,
-              "meshWarp": false,
               "grid": {
                 "span": 12
               }

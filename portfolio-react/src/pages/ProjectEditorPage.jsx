@@ -201,7 +201,6 @@ export default function ProjectEditorPage() {
           setSaveState("saving");
           queueMicrotask(() => setSaveState("dirty"));
         }
-        setMessage(`자동 저장됨 · 문서 버전 ${saved.version}`);
       } catch (error) {
         setSaveState(error.status === 409 ? "conflict" : "error");
         setMessage(error.status === 409 ? "다른 탭에서 문서가 변경되었습니다. 최신 문서를 다시 불러오세요." : `자동 저장 실패: ${error.message}`);
@@ -293,7 +292,6 @@ export default function ProjectEditorPage() {
     try {
       change(operation);
       setSaveState("dirty");
-      setMessage("변경 사항을 저장할 예정입니다.");
     } catch (error) {
       setMessage(error.message);
     }
@@ -508,6 +506,10 @@ export default function ProjectEditorPage() {
       setMessage("파일 크기는 100MB 이하여야 합니다.");
       return;
     }
+    if (mediaInsertTargetRef.current?.mode === "frame-background" && kind !== "image") {
+      setMessage("배경 이미지는 이미지 파일만 선택할 수 있습니다.");
+      return;
+    }
 
     // Capture (and immediately release) the insertion target before the async
     // upload runs. Reading the ref only after `await uploadProjectAsset` left
@@ -536,6 +538,12 @@ export default function ProjectEditorPage() {
             ...createMediaBlock(asset.id, kind),
             id: existing.id,
             ...(target.grid ? { grid: target.grid } : {}),
+          }));
+        }
+        if (target?.mode === "frame-background") {
+          return updateBlock(withAsset, target.blockId, (existing) => ({
+            ...existing,
+            frameBackgroundAssetId: asset.id,
           }));
         }
         return insertBlock(withAsset, {
@@ -567,6 +575,11 @@ export default function ProjectEditorPage() {
 
   const replaceMediaBlock = (blockId, grid) => {
     mediaInsertTargetRef.current = { mode: "replace", blockId, grid };
+    fileInputRef.current?.click();
+  };
+
+  const pickFrameBackground = (blockId) => {
+    mediaInsertTargetRef.current = { mode: "frame-background", blockId };
     fileInputRef.current?.click();
   };
 
@@ -632,7 +645,6 @@ export default function ProjectEditorPage() {
       const saved = await saveEditableProject(document);
       replace(saved);
       setSaveState("saved");
-      setMessage(`초안을 저장했습니다. 문서 버전 ${saved.version}`);
     } catch (error) {
       setSaveState(error.status === 409 ? "conflict" : "error");
       setMessage(error.message);
@@ -784,12 +796,14 @@ export default function ProjectEditorPage() {
                 onDocumentChange={updateProjectSettings}
                 onDuplicate={duplicateBlockHandler}
                 onEnter={splitTextBlock}
+                onFrameChange={(blockId, patch) => updateMediaBlock(blockId, patch, `frame:${blockId}`)}
                 onGroupBlocks={groupBlocksHandler}
                 onInlineFormat={formatInlineSelection}
                 onInsert={insertInlineBlock}
                 onMarkdownShortcut={applyMarkdownShortcut}
                 onMove={(blockId, parentId, index) => apply((current) => moveBlock(current, blockId, { parentId, index }))}
                 onPaste={pasteBlocks}
+                onPickFrameBackground={pickFrameBackground}
                 onReplaceMedia={replaceMediaBlock}
                 onUngroup={ungroupBlockHandler}
                 onResize={(blockId, span) => updateMediaBlock(blockId, { grid: { span } }, `grid:${blockId}`)}
@@ -842,6 +856,39 @@ export default function ProjectEditorPage() {
               />
             </div>
             <aside className={styles.editorSidebar}>
+              <div className={styles.editorHeader}>
+                <div className={styles.headerTitle}>
+                  <strong>{document.title}</strong>
+                  {message && <span>{message}</span>}
+                  <span className={styles.saveState} data-state={saveState}>
+                    {getProjectRepositoryMode() === "api" ? "API " : "브라우저 "}
+                    {{
+                      saved: "저장됨",
+                      dirty: "저장 대기",
+                      saving: "저장 중…",
+                      conflict: "버전 충돌",
+                      error: "저장 실패",
+                    }[saveState] ?? saveState}
+                    {` · v${document.version}`}
+                  </span>
+                  {getProjectRepositoryMode() === "api" && (
+                    <span className={styles.publicationStatus}>
+                      {publication.status === "published" ? `발행됨 · v${publication.publishedVersion}` : "미발행 초안"}
+                    </span>
+                  )}
+                </div>
+                <div className={styles.actions} role="toolbar" aria-label="편집 도구">
+                  <Button onClick={() => setView("preview")} size="small" variant="neutral">
+                    미리보기
+                  </Button>
+                  <Button disabled={!hasDraft} onClick={reset} size="small" variant="neutral">
+                    초기화
+                  </Button>
+                  <Button disabled={busy || saveState === "saving"} onClick={saveOrExport} size="small" variant="primary">
+                    저장
+                  </Button>
+                </div>
+              </div>
               <div className={styles.editorSidebarScroll}>
                 {getProjectRepositoryMode() === "api" && (
                   <section className={styles.revisionPanel}>
@@ -890,42 +937,6 @@ export default function ProjectEditorPage() {
                 </section>
 
                 <ProjectSettingsEditor document={document} onChange={updateProjectSettings} />
-              </div>
-
-              <div className={styles.editorFooter} role="toolbar" aria-label="편집 도구">
-                <div className={styles.headerTitle}>
-                  <strong>{document.title}</strong>
-                  <span>{message || `문서 버전 ${document.version}`}</span>
-                  <span className={styles.saveState} data-state={saveState}>
-                    {{
-                      saved: "저장됨",
-                      dirty: "저장 대기",
-                      saving: "저장 중…",
-                      conflict: "버전 충돌",
-                      error: "저장 실패",
-                    }[saveState] ?? saveState}
-                  </span>
-                  <span className={styles.repositoryMode}>{getProjectRepositoryMode() === "api" ? "API 저장" : "브라우저 저장"}</span>
-                  {getProjectRepositoryMode() === "api" && (
-                    <span className={styles.publicationStatus}>
-                      {publication.status === "published" ? `발행됨 · v${publication.publishedVersion}` : "미발행 초안"}
-                    </span>
-                  )}
-                </div>
-                <p className={styles.notice}>
-                  {getProjectRepositoryMode() === "api" ? "초안은 검토 후 발행해야 공개 화면에 반영됩니다." : "초안은 현재 브라우저에 자동 저장됩니다."}
-                </p>
-                <div className={styles.actions}>
-                  <Button onClick={() => setView("preview")} size="small" variant="neutral">
-                    미리보기
-                  </Button>
-                  <Button disabled={!hasDraft} onClick={reset} size="small" variant="neutral">
-                    초기화(복원)
-                  </Button>
-                  <Button disabled={busy || saveState === "saving"} onClick={saveOrExport} size="small" variant="primary">
-                    저장(내보내기)
-                  </Button>
-                </div>
               </div>
             </aside>
           </div>

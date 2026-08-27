@@ -18,6 +18,15 @@ export function loadProjectDraft(slug) {
   }
 }
 
+export function createProjectDraft(document) {
+  assertProjectDocument(document);
+  window.localStorage.setItem(
+    getProjectDraftKey(document.slug),
+    JSON.stringify(document),
+  );
+  return document;
+}
+
 export function saveProjectDraft(document) {
   // Do NOT run normalizeProjectDocumentWhitespace here - it's a one-time
   // legacy-import cleanup (collapses stray indentation newlines), not an

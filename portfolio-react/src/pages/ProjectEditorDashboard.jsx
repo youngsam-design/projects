@@ -2,11 +2,9 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { createProjectDocument } from "../content/schema/projectDocument";
 import { contentApiRequest } from "../content/repositories/contentApiClient";
-import {
-  createEditableProject,
-  getProjectRepositoryMode,
-  listEditableProjects,
-} from "../content/repositories/projectRepository";
+import { createEditableProject, getProjectRepositoryMode, listEditableProjects } from "../content/repositories/projectRepository";
+import Button from "../components/ui/Button";
+import Input from "../components/ui/Input";
 import styles from "../components/editor/ProjectDashboard.module.scss";
 
 function normalizeSlug(value) {
@@ -41,7 +39,7 @@ export default function ProjectEditorDashboard() {
 
   useEffect(() => {
     if (getProjectRepositoryMode() !== "api") {
-      setStatus("browser");
+      setStatus("ready");
       return;
     }
     loadProjects();
@@ -92,101 +90,86 @@ export default function ProjectEditorDashboard() {
           <span>Portfolio CMS</span>
           <h1>관리자 로그인</h1>
           <p>{message}</p>
-          <label>
-            비밀번호
-            <input
-              autoComplete="current-password"
-              autoFocus
-              onChange={(event) => setPassword(event.target.value)}
-              required
-              type="password"
-              value={password}
-            />
-          </label>
-          <button type="submit">로그인</button>
+          <Input
+            autoComplete="current-password"
+            autoFocus
+            label="비밀번호"
+            onChange={(event) => setPassword(event.target.value)}
+            required
+            type="password"
+            value={password}
+          />
+          <Button type="submit">로그인</Button>
         </form>
       </main>
     );
   }
 
-  if (status === "browser") {
-    return (
-      <main className={styles.centered}>
-        <div className={styles.card}>
-          <h1>Content API가 필요합니다</h1>
-          <p>
-            프로젝트 목록과 생성 기능은 <code>VITE_CONTENT_API_URL</code>이
-            설정된 API 저장 모드에서 사용할 수 있습니다.
-          </p>
-          <Link to="/editor/1min-return">기존 편집기 열기</Link>
-        </div>
-      </main>
-    );
-  }
+  const isApiMode = getProjectRepositoryMode() === "api";
 
   return (
     <main className={styles.page}>
-      <header>
+      {/* <header>
         <div>
           <span>Portfolio CMS</span>
           <h1>프로젝트</h1>
         </div>
-        <span>{projects.length}개 프로젝트</span>
-      </header>
+        <span>{isApiMode ? `${projects.length}개 프로젝트` : "브라우저 저장 모드"}</span>
+      </header> */}
 
       <form className={styles.createForm} onSubmit={createProject}>
-        <h2>새 프로젝트</h2>
-        <label>
-          프로젝트 제목
-          <input
-            onChange={(event) => {
-              setTitle(event.target.value);
-              if (!slugTouched) setSlug(normalizeSlug(event.target.value));
-            }}
-            required
-            value={title}
-          />
-        </label>
-        <label>
-          URL slug
-          <input
-            onChange={(event) => {
-              setSlugTouched(true);
-              setSlug(normalizeSlug(event.target.value));
-            }}
-            pattern="[a-z0-9]+(?:-[a-z0-9]+)*"
-            placeholder="new-project"
-            required
-            value={slug}
-          />
-        </label>
-        <button disabled={status === "creating"} type="submit">
+        <h3 className={styles.createFormHeading}>새 프로젝트</h3>
+        <Input
+          label="프로젝트 제목"
+          onChange={(event) => {
+            setTitle(event.target.value);
+            if (!slugTouched) setSlug(normalizeSlug(event.target.value));
+          }}
+          required
+          size="medium"
+          value={title}
+        />
+        <Input
+          label="URL slug"
+          onChange={(event) => {
+            setSlugTouched(true);
+            setSlug(normalizeSlug(event.target.value));
+          }}
+          pattern="[a-z0-9]+(?:-[a-z0-9]+)*"
+          placeholder="new-project"
+          required
+          size="medium"
+          value={slug}
+        />
+        <Button className={styles.createButton} disabled={status === "creating"} size="medium" type="submit">
           {status === "creating" ? "생성 중…" : "프로젝트 생성"}
-        </button>
+        </Button>
         {message && <p role="alert">{message}</p>}
       </form>
 
       <section className={styles.projectList}>
-        {status === "loading" && <p>프로젝트를 불러오는 중입니다.</p>}
-        {projects.map((project) => (
-          <article key={project.id}>
-            <div>
-              <span>{project.status === "published" ? "발행됨" : "초안"}</span>
-              <h2>{project.title}</h2>
-              <p>
-                /{project.slug} · 문서 버전 {project.draftVersion}
-              </p>
-            </div>
-            <div className={styles.projectActions}>
-              {project.status === "published" && (
-                <Link target="_blank" to={`/work/${project.slug}`}>
-                  공개 화면
-                </Link>
-              )}
-              <Link to={`/editor/${project.slug}`}>편집</Link>
-            </div>
-          </article>
-        ))}
+        <>
+          {status === "loading" && <p>프로젝트를 불러오는 중입니다.</p>}
+          {projects.map((project) => (
+            <article key={project.id}>
+              <div>
+                <span>{project.status === "published" ? "발행됨" : "초안"}</span>
+                <h2>{project.title}</h2>
+                <p>
+                  /{project.slug} · 문서 버전 {project.draftVersion}
+                </p>
+              </div>
+              <div className={styles.projectActions}>
+                {project.status === "published" && (
+                  <Link target="_blank" to={`/work/${project.slug}`}>
+                    공개 화면
+                  </Link>
+                )}
+                <Link to={`/editor/${project.slug}`}>편집</Link>
+              </div>
+            </article>
+          ))}
+        </>
       </section>
     </main>
   );

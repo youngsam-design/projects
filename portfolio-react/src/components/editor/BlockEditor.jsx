@@ -99,28 +99,6 @@ function MediaEditor({ block, document, hideLayoutControl, onBlockChange }) {
             </select>
           </label>
         )}
-        <label className={styles.checkboxField}>
-          <input
-            checked={block.mesh ?? false}
-            onChange={(event) =>
-              onBlockChange(block.id, { mesh: event.target.checked })
-            }
-            type="checkbox"
-          />
-          메시 그라디언트 배경
-        </label>
-        {block.mesh && (
-          <label className={styles.checkboxField}>
-            <input
-              checked={block.meshWarp ?? false}
-              onChange={(event) =>
-                onBlockChange(block.id, { meshWarp: event.target.checked })
-              }
-              type="checkbox"
-            />
-            노이즈 왜곡 (성능에 영향을 줄 수 있어요)
-          </label>
-        )}
         {block.type === "video" && (
           <fieldset className={styles.playbackFields}>
             <legend>재생 옵션</legend>

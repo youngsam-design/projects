@@ -1,0 +1,44 @@
+.frameBox {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-large);
+}
+
+.frameBackground {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-color: var(--color-neutral-background-low);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.frameContent {
+  position: relative;
+  z-index: 1;
+
+  > img,
+  > video,
+  > figure {
+    overflow: hidden;
+    border-top-left-radius: var(--frame-radius-tl, 0);
+    border-top-right-radius: var(--frame-radius-tr, 0);
+    border-bottom-right-radius: var(--frame-radius-br, 0);
+    border-bottom-left-radius: var(--frame-radius-bl, 0);
+  }
+
+  img,
+  video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+}

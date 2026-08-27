@@ -11,9 +11,7 @@
   },
   "hero": {
     "eyebrow": "2020년 10월 16일",
-    "coverAssetId": "ast_bz_hero",
-    "mesh": false,
-    "meshWarp": false
+    "coverAssetId": "ast_bz_hero"
   },
   "theme": {
     "mainColor": "0, 31, 61",

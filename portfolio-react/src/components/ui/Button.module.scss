@@ -1,14 +1,17 @@
 .button {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: var(--spacing-tiny-large);
-  border: 1px solid var(--palette-transparent);
   border-radius: var(--radius-xsmall);
   font: inherit;
-  font-size: var(--caption-xsmall);
+
+  font-weight: var(--font-weight-semibold);
   line-height: 1;
+  border: none;
   white-space: nowrap;
+  overflow: hidden;
   cursor: pointer;
 }
 
@@ -16,21 +19,47 @@
   cursor: not-allowed;
 }
 
+/* Hover/pressed feedback is a separate wash layered over the variant's own
+   base color, not a swap of that color - hidden until :hover/:active reveal
+   it via opacity, per the design system's neutral hovered-pressed token. */
+.button::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: var(--color-neutral-background-hovered-pressed);
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  pointer-events: none;
+}
+
+.button:hover:not(:disabled)::after,
+.button:active:not(:disabled)::after {
+  opacity: 1;
+}
+
 .medium {
+  font-size: var(--caption-medium);
   padding: var(--spacing-normal-small);
+  height: 40px;
 }
 
 .small {
+  font-size: var(--caption-xsmall);
   padding: var(--spacing-tiny-large);
+  height: 32px;
 }
 
 .label {
+  position: relative;
+  z-index: 1;
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .icon {
+  position: relative;
+  z-index: 1;
   flex-shrink: 0;
   width: 16px;
   height: 16px;
@@ -40,23 +69,12 @@
 .primary {
   color: var(--color-neutral-foreground-inverse-main);
   background: var(--color-info-foreground-main);
-  border-color: var(--color-info-foreground-main);
-}
-
-.primary:hover:not(:disabled) {
-  background: var(--color-info-foreground-high);
-  border-color: var(--color-info-foreground-high);
 }
 
 /* Neutral - filled, medium emphasis */
 .neutral {
   color: var(--color-neutral-foreground-main);
-  background: var(--color-neutral-background-high);
-  border-color: var(--color-neutral-border-high);
-}
-
-.neutral:hover:not(:disabled) {
-  background: var(--color-neutral-border-high);
+  background: var(--color-neutral-background-low);
 }
 
 /* Subtle - borderless until hover, low emphasis */
@@ -65,12 +83,11 @@
   background: var(--palette-transparent);
 }
 
-.subtle:hover:not(:disabled) {
-  border-color: var(--color-neutral-border-main);
-}
-
 .button:disabled {
   color: var(--color-neutral-foreground-disabled);
   background: var(--color-neutral-background-disabled-main);
-  border-color: var(--color-neutral-border-disabled);
+}
+
+.button:disabled::after {
+  content: none;
 }

@@ -12,7 +12,7 @@ import ProjectMeta from "./ProjectMeta";
 import { resolveProjectAssetUrl } from "./projectAssets";
 import "./ProjectRenderer.scss";
 
-function SemanticBlock({ block, contentWidth, meshColors, meta, renderBlock, resolveAssetUrl }) {
+function SemanticBlock({ block, contentWidth, meta, renderBlock, resolveAssetUrl }) {
   const gridProps = getGridProps(block, contentWidth);
   const className = [block.type === "group" && "group", getVariantClassName(block.variant), gridProps.className]
     .filter(Boolean)
@@ -23,23 +23,9 @@ function SemanticBlock({ block, contentWidth, meshColors, meta, renderBlock, res
   if (block.type === "paragraph")
     return <ParagraphBlock block={block} gridProps={gridProps} />;
   if (block.type === "image")
-    return (
-      <ImageBlock
-        block={block}
-        gridProps={gridProps}
-        meshColors={meshColors}
-        resolveAssetUrl={resolveAssetUrl}
-      />
-    );
+    return <ImageBlock block={block} gridProps={gridProps} resolveAssetUrl={resolveAssetUrl} />;
   if (block.type === "video")
-    return (
-      <VideoBlock
-        block={block}
-        gridProps={gridProps}
-        meshColors={meshColors}
-        resolveAssetUrl={resolveAssetUrl}
-      />
-    );
+    return <VideoBlock block={block} gridProps={gridProps} resolveAssetUrl={resolveAssetUrl} />;
   if (block.type === "codeBlock")
     return <CodeBlock block={block} gridProps={gridProps} />;
   if (block.type === "divider")
@@ -111,7 +97,6 @@ export default function ProjectRenderer({ document, after = null, before = null 
       key={block.id}
       block={block}
       contentWidth={document.contentWidth}
-      meshColors={document.theme.meshColors}
       meta={
         block.id === metaTargetId
           ? { contentWidth: document.contentWidth, items: document.meta }

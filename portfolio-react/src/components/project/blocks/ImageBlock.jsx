@@ -1,9 +1,10 @@
 import { useAsset } from "./AssetContext";
 import { getMediaClassName } from "./blockVariants";
-import MeshGradientBox from "./MeshGradientBox";
+import FrameBox from "./FrameBox";
 
-export default function ImageBlock({ block, gridProps = {}, meshColors, resolveAssetUrl }) {
+export default function ImageBlock({ block, gridProps = {}, resolveAssetUrl }) {
   const asset = useAsset(block.assetId);
+  const frameBackground = useAsset(block.frameBackgroundAssetId, { optional: true });
   // The .img-wrap wrapper (not the <img> itself) is what carries grid
   // positioning and the legacy vertical-rhythm rules it shares with the
   // static-HTML projects (see ProjectRenderer.scss) - standalone images and
@@ -27,10 +28,18 @@ export default function ImageBlock({ block, gridProps = {}, meshColors, resolveA
     image
   );
 
-  const content = block.mesh ? (
-    <MeshGradientBox colors={meshColors} seedKey={block.id} warp={block.meshWarp}>
+  const content = block.frame ? (
+    <FrameBox
+      backgroundSrc={frameBackground ? resolveAssetUrl(frameBackground.src) : undefined}
+      padding={{
+        top: block.framePaddingTop,
+        bottom: block.framePaddingBottom,
+        left: block.framePaddingLeft,
+        right: block.framePaddingRight,
+      }}
+    >
       {captioned}
-    </MeshGradientBox>
+    </FrameBox>
   ) : (
     captioned
   );

@@ -1,5 +1,3 @@
-import Button from "../ui/Button";
-import Checkbox from "../ui/Checkbox";
 import IconButton from "../ui/IconButton";
 import Input from "../ui/Input";
 import Select from "../ui/Select";
@@ -96,35 +94,6 @@ export default function ProjectSettingsEditor({ document, onChange }) {
                 </option>
               ))}
           </Select>
-          <Checkbox
-            checked={document.hero.mesh ?? false}
-            label="커버 이미지에 메시 그라디언트 배경 적용"
-            onChange={(event) =>
-              onChange(
-                (current) => ({
-                  ...current,
-                  hero: { ...current.hero, mesh: event.target.checked },
-                }),
-                "hero:mesh",
-              )
-            }
-          />
-          {document.hero.mesh && (
-            <Checkbox
-              checked={document.hero.meshWarp ?? false}
-              description="성능에 영향을 줄 수 있어요"
-              label="노이즈 왜곡"
-              onChange={(event) =>
-                onChange(
-                  (current) => ({
-                    ...current,
-                    hero: { ...current.hero, meshWarp: event.target.checked },
-                  }),
-                  "hero:meshWarp",
-                )
-              }
-            />
-          )}
         </section>
 
         <section className={styles.settingsSection}>
@@ -194,130 +163,45 @@ export default function ProjectSettingsEditor({ document, onChange }) {
             <h2>색상 테마</h2>
           </div>
           <div className={styles.themeGrid}>
-            {Object.entries(document.theme)
-              .filter(([key]) => key !== "meshColors")
-              .map(([key, value]) => (
-                <Input
-                  key={key}
-                  label={key}
-                  leading={
-                    <input
-                      aria-label={`${key} 색상 선택`}
-                      className={styles.colorSwatchLeading}
-                      onChange={(event) =>
-                        onChange(
-                          (current) => ({
-                            ...current,
-                            theme: {
-                              ...current.theme,
-                              [key]: hexToRgbString(event.target.value),
-                            },
-                          }),
-                          `theme:${key}`,
-                        )
-                      }
-                      type="color"
-                      value={rgbStringToHex(value)}
-                    />
-                  }
-                  onChange={(event) =>
-                    onChange(
-                      (current) => ({
-                        ...current,
-                        theme: {
-                          ...current.theme,
-                          [key]: event.target.value,
-                        },
-                      }),
-                      `theme:${key}`,
-                    )
-                  }
-                  placeholder="255, 255, 255"
-                  value={value}
-                />
-              ))}
-          </div>
-        </section>
-
-        <section className={styles.settingsSection}>
-          <div className={styles.settingsSectionHeader}>
-            <h2>메시 그라디언트 색상</h2>
-            <Button
-              onClick={() =>
-                onChange((current) => ({
-                  ...current,
-                  theme: {
-                    ...current.theme,
-                    meshColors: [...(current.theme.meshColors ?? []), "255, 255, 255"],
-                  },
-                }))
-              }
-              size="small"
-              variant="neutral"
-            >
-              + 색상 추가
-            </Button>
-          </div>
-          <p className={styles.settingsHelp}>
-            "메시 그라디언트 배경" 옵션을 켠 이미지/영상/커버에 랜덤하게 배치되는 색상 팔레트입니다. 색상을 추가하거나 뺄 수 있습니다.
-          </p>
-          <div className={styles.metaList}>
-            {(document.theme.meshColors ?? []).map((color, index) => (
-              <div className={styles.metaRow} key={index}>
-                <input
-                  aria-label={`메시 색상 ${index + 1} 선택`}
-                  className={styles.colorSwatch}
-                  onChange={(event) =>
-                    onChange(
-                      (current) => ({
-                        ...current,
-                        theme: {
-                          ...current.theme,
-                          meshColors: current.theme.meshColors.map((existing, existingIndex) =>
-                            existingIndex === index ? hexToRgbString(event.target.value) : existing,
-                          ),
-                        },
-                      }),
-                      `theme:meshColors:${index}`,
-                    )
-                  }
-                  type="color"
-                  value={rgbStringToHex(color)}
-                />
-                <input
-                  aria-label={`메시 색상 ${index + 1}`}
-                  onChange={(event) =>
-                    onChange(
-                      (current) => ({
-                        ...current,
-                        theme: {
-                          ...current.theme,
-                          meshColors: current.theme.meshColors.map((existing, existingIndex) => (existingIndex === index ? event.target.value : existing)),
-                        },
-                      }),
-                      `theme:meshColors:${index}`,
-                    )
-                  }
-                  placeholder="255, 255, 255"
-                  value={color}
-                />
-                <Button
-                  aria-label={`메시 색상 ${index + 1} 삭제`}
-                  onClick={() =>
-                    onChange((current) => ({
+            {Object.entries(document.theme).map(([key, value]) => (
+              <Input
+                key={key}
+                label={key}
+                leading={
+                  <input
+                    aria-label={`${key} 색상 선택`}
+                    className={styles.colorSwatchLeading}
+                    onChange={(event) =>
+                      onChange(
+                        (current) => ({
+                          ...current,
+                          theme: {
+                            ...current.theme,
+                            [key]: hexToRgbString(event.target.value),
+                          },
+                        }),
+                        `theme:${key}`,
+                      )
+                    }
+                    type="color"
+                    value={rgbStringToHex(value)}
+                  />
+                }
+                onChange={(event) =>
+                  onChange(
+                    (current) => ({
                       ...current,
                       theme: {
                         ...current.theme,
-                        meshColors: current.theme.meshColors.filter((_, existingIndex) => existingIndex !== index),
+                        [key]: event.target.value,
                       },
-                    }))
-                  }
-                  size="small"
-                  variant="subtle"
-                >
-                  삭제
-                </Button>
-              </div>
+                    }),
+                    `theme:${key}`,
+                  )
+                }
+                placeholder="255, 255, 255"
+                value={value}
+              />
             ))}
           </div>
         </section>

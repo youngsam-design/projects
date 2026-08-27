@@ -228,11 +228,23 @@ function validateBlock(block, path, errors, ids, assets) {
     ) {
       errors.push(`${path}: caption must be a string or null`);
     }
-    if (block.mesh !== undefined && typeof block.mesh !== "boolean") {
-      errors.push(`${path}: mesh must be a boolean`);
+    if (block.frame !== undefined && typeof block.frame !== "boolean") {
+      errors.push(`${path}: frame must be a boolean`);
     }
-    if (block.meshWarp !== undefined && typeof block.meshWarp !== "boolean") {
-      errors.push(`${path}: meshWarp must be a boolean`);
+    if (block.frameBackgroundAssetId) {
+      validateAssetReference(
+        block,
+        "frameBackgroundAssetId",
+        "image",
+        path,
+        errors,
+        assets,
+      );
+    }
+    for (const field of ["framePaddingTop", "framePaddingBottom", "framePaddingLeft", "framePaddingRight"]) {
+      if (block[field] !== undefined && typeof block[field] !== "boolean") {
+        errors.push(`${path}: ${field} must be a boolean`);
+      }
     }
   }
   if (block.type === "image" && typeof block.alt !== "string") {
@@ -295,18 +307,6 @@ function validatePageData(document, errors, assets) {
       errors,
       assets,
     );
-    if (
-      document.hero.mesh !== undefined &&
-      typeof document.hero.mesh !== "boolean"
-    ) {
-      errors.push("hero.mesh must be a boolean");
-    }
-    if (
-      document.hero.meshWarp !== undefined &&
-      typeof document.hero.meshWarp !== "boolean"
-    ) {
-      errors.push("hero.meshWarp must be a boolean");
-    }
   }
   if (!Array.isArray(document?.relatedProjects))
     errors.push("relatedProjects must be an array");
@@ -359,20 +359,10 @@ export function validateProjectDocument(document) {
       "textColor",
       "accentActiveColor",
       "menuColor",
-      "meshColors",
     ]);
     for (const [key, value] of Object.entries(document.theme)) {
       if (!allowedThemeKeys.has(key))
         errors.push(`theme.${key} is not supported`);
-      if (key === "meshColors") {
-        if (
-          !Array.isArray(value) ||
-          value.some((color) => typeof color !== "string" || !color.trim())
-        ) {
-          errors.push("theme.meshColors must be an array of color strings");
-        }
-        continue;
-      }
       if (typeof value !== "string" || !value.trim()) {
         errors.push(`theme.${key} must be a string`);
       }

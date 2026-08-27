@@ -8,6 +8,10 @@ import icColumns2 from "../../assets/icon/ic_columns-2.svg";
 import icColumns3 from "../../assets/icon/ic_columns-3.svg";
 import icCopy from "../../assets/icon/ic_copy.svg";
 import icDivider from "../../assets/icon/ic_divider.svg";
+import icFlexAlignBottom from "../../assets/icon/ic_flex-align-bottom.svg";
+import icFlexAlignLeft from "../../assets/icon/ic_flex-align-left.svg";
+import icFlexAlignRight from "../../assets/icon/ic_flex-align-right.svg";
+import icFlexAlignTop from "../../assets/icon/ic_flex-align-top.svg";
 import icHeading1 from "../../assets/icon/ic_heading-1.svg";
 import icHeading2 from "../../assets/icon/ic_heading-2.svg";
 import icHeading3 from "../../assets/icon/ic_heading-3.svg";
@@ -22,6 +26,7 @@ import icPlus from "../../assets/icon/ic_plus.svg";
 import icRepeat from "../../assets/icon/ic_repeat.svg";
 import icSettings from "../../assets/icon/ic_settings.svg";
 import icSpacingVertical from "../../assets/icon/ic_spacing-vertical.svg";
+import icSquare from "../../assets/icon/ic_square.svg";
 import icTrash from "../../assets/icon/ic_trash.svg";
 import icType from "../../assets/icon/ic_type.svg";
 import icZap from "../../assets/icon/ic_zap.svg";
@@ -43,6 +48,11 @@ const icons = {
   copy: icCopy,
   delete: icTrash,
   divider: icDivider,
+  frame: icSquare,
+  frameBottom: icFlexAlignBottom,
+  frameLeft: icFlexAlignLeft,
+  frameRight: icFlexAlignRight,
+  frameTop: icFlexAlignTop,
   heading1: icHeading1,
   heading2: icHeading2,
   heading3: icHeading3,

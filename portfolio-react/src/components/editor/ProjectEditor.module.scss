@@ -71,16 +71,7 @@
 .status {
   color: var(--color-neutral-foreground-low);
   font-size: var(--caption-xsmall);
-}
-
-.headerTitle .repositoryMode {
-  display: inline-block;
-  width: fit-content;
   margin-top: var(--spacing-tiny-medium);
-  padding: 2px var(--spacing-tiny-large);
-  border-radius: var(--radius-circular);
-  color: var(--color-info-foreground-main);
-  background: var(--color-info-background-lowest);
 }
 
 .headerTitle .publicationStatus {
@@ -94,7 +85,7 @@
 .headerTitle .saveState {
   display: inline-block;
   width: fit-content;
-  margin-top: var(--spacing-tiny-medium);
+  margin-top: var(--spacing-tiny-large);
   color: var(--color-success-foreground-main);
 }
 
@@ -185,13 +176,12 @@
   flex-shrink: 0;
 }
 
-.editorFooter {
+.editorHeader {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  padding: var(--spacing-normal-medium) 0;
-  border-top: 1px solid var(--color-neutral-border-main);
-  background: var(--color-neutral-background-lowest);
+  padding: var(--spacing-normal-medium);
+  background: var(--color-neutral-background-main);
 }
 
 .editorSidebar .actions {
@@ -240,7 +230,6 @@
   box-shadow: var(--elevation-medium);
 }
 
-.editorSidebar .notice,
 .editorSidebar .revisionPanel,
 .editorSidebar .insertToolbar,
 .editorSidebar .uploadStatus {
@@ -289,15 +278,6 @@
   cursor: pointer;
 }
 
-.notice {
-  margin-bottom: var(--spacing-normal-medium);
-  padding: var(--spacing-normal-small) var(--spacing-normal-medium);
-  border-radius: var(--radius-xsmall);
-  color: var(--color-neutral-foreground-low);
-  font-size: var(--caption-medium);
-  background: var(--color-neutral-background-main);
-}
-
 .revisionPanel {
   margin-bottom: var(--spacing-normal-medium);
   padding: var(--spacing-normal-medium);
@@ -337,10 +317,6 @@
 .settingsContent {
   display: flex;
   flex-direction: column;
-
-  & > .settingsSection:first-child {
-    border: none;
-  }
 }
 
 .settingsSection {

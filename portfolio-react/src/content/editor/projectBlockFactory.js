@@ -177,8 +177,12 @@ export function createMediaBlock(assetId, kind) {
     layout: "content",
     variant: ["contentImage"],
     caption: null,
-    mesh: false,
-    meshWarp: false,
+    frame: false,
+    frameBackgroundAssetId: null,
+    framePaddingTop: false,
+    framePaddingBottom: false,
+    framePaddingLeft: false,
+    framePaddingRight: false,
   };
   if (kind === "image") return { ...base, alt: "" };
   return {

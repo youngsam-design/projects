@@ -8,12 +8,13 @@ export default function Input({
   leading,
   multiline = false,
   rows,
+  size = "small",
   ...rest
 }) {
   const Field = multiline ? "textarea" : "input";
 
   return (
-    <label className={[styles.input, className].filter(Boolean).join(" ")} data-invalid={Boolean(error) || undefined}>
+    <label className={[styles.input, styles[size], className].filter(Boolean).join(" ")} data-invalid={Boolean(error) || undefined}>
       {label && <span className={styles.label}>{label}</span>}
       {description && <span className={styles.description}>{description}</span>}
       <span className={styles.fieldWrap}>

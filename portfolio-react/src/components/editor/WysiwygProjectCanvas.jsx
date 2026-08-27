@@ -4,7 +4,7 @@ import { getCodeLanguageLabel } from "../../content/schema/codeLanguages";
 import { formatCode } from "../../content/editor/formatCode";
 import { getBlockTypeValue } from "../../content/editor/projectBlockFactory";
 import { getProjectAsset, resolveProjectAssetUrl } from "../project/projectAssets";
-import MeshGradientBox from "../project/blocks/MeshGradientBox";
+import FrameBox from "../project/blocks/FrameBox";
 import ProjectMeta from "../project/ProjectMeta";
 import RelatedProjects from "../project/RelatedProjects";
 import { findFirstContentSectionId, getGridProps, getMediaClassName, getVariantClassName, isMediaBlock } from "../project/blocks/blockVariants";
@@ -260,7 +260,7 @@ function EditableText({ block, context, onBackspace, onEnter, onMarkdownShortcut
   );
 }
 
-function Media({ block, document, gridProps, meshColors, onActivate, onCaptionChange, onContextMenu, onSelect }) {
+function Media({ block, document, gridProps, onActivate, onCaptionChange, onContextMenu, onSelect }) {
   const asset = getProjectAsset(document, block.assetId);
   const src = resolveProjectAssetUrl(document, asset.src);
   const hasCaption = block.caption != null;
@@ -310,10 +310,22 @@ function Media({ block, document, gridProps, meshColors, onActivate, onCaptionCh
     media
   );
 
-  const content = block.mesh ? (
-    <MeshGradientBox colors={meshColors} seedKey={block.id} warp={block.meshWarp}>
+  const content = block.frame ? (
+    <FrameBox
+      backgroundSrc={
+        block.frameBackgroundAssetId
+          ? resolveProjectAssetUrl(document, getProjectAsset(document, block.frameBackgroundAssetId).src)
+          : undefined
+      }
+      padding={{
+        top: block.framePaddingTop,
+        bottom: block.framePaddingBottom,
+        left: block.framePaddingLeft,
+        right: block.framePaddingRight,
+      }}
+    >
       {captioned}
-    </MeshGradientBox>
+    </FrameBox>
   ) : (
     captioned
   );
@@ -409,7 +421,6 @@ function EditableBlock({
         block={block}
         document={document}
         gridProps={gridProps}
-        meshColors={document.theme.meshColors}
         onActivate={onActivate ? activate : null}
         onCaptionChange={onCaptionChange}
         onContextMenu={onOpenMenu ? openMenu : undefined}
@@ -598,12 +609,14 @@ export default function WysiwygProjectCanvas({
   onDocumentChange,
   onDuplicate,
   onEnter,
+  onFrameChange,
   onGroupBlocks,
   onInlineFormat,
   onInsert,
   onMarkdownShortcut,
   onMove,
   onPaste,
+  onPickFrameBackground,
   onReplaceMedia,
   onResize,
   onSelect = () => {},
@@ -839,6 +852,20 @@ export default function WysiwygProjectCanvas({
     setActiveBlock(null);
     closeMediaMenu();
   };
+  const handleToggleFrame = () => {
+    if (!liveMenuBlock) return;
+    onFrameChange(liveMenuBlock.id, { frame: !liveMenuBlock.frame });
+  };
+  const handleToggleFramePadding = (side) => {
+    if (!liveMenuBlock) return;
+    const field = `framePadding${side}`;
+    onFrameChange(liveMenuBlock.id, { [field]: !liveMenuBlock[field] });
+  };
+  const handlePickFrameBackground = () => {
+    if (!liveMenuBlock) return;
+    onPickFrameBackground(liveMenuBlock.id);
+    closeMediaMenu();
+  };
   const handleToggleCaption = () => {
     if (!liveMenuBlock || (liveMenuBlock.type !== "image" && liveMenuBlock.type !== "video")) return;
     if (liveMenuBlock.caption == null) onCaptionChange(liveMenuBlock.id, "");
@@ -960,13 +987,7 @@ export default function WysiwygProjectCanvas({
               </div>
             </div>
             <div className="hero-cover">
-              {document.hero.mesh ? (
-                <MeshGradientBox colors={document.theme.meshColors} seedKey="hero-cover" warp={document.hero.meshWarp}>
-                  <img alt="" className="hero-cover-image" src={resolveProjectAssetUrl(document, cover.src)} />
-                </MeshGradientBox>
-              ) : (
-                <img alt="" className="hero-cover-image" src={resolveProjectAssetUrl(document, cover.src)} />
-              )}
+              <img alt="" className="hero-cover-image" src={resolveProjectAssetUrl(document, cover.src)} />
             </div>
           </div>
         </div>
@@ -1226,6 +1247,39 @@ export default function WysiwygProjectCanvas({
             <MenuItem icon={<Icon name="caption" />} label="캡션" onSelect={handleToggleCaption} />
             <MenuItem icon={<Icon name="copy" />} label="복제" onSelect={handleDuplicateMedia} />
             <MenuItem danger icon={<Icon name="delete" />} label="삭제" onSelect={handleDeleteMedia} />
+          </MenuSection>
+          <MenuSeparator />
+          <MenuSection>
+            <MenuItem checked={Boolean(liveMenuBlock.frame)} icon={<Icon name="frame" />} label="감싸기" onSelect={handleToggleFrame} />
+            {liveMenuBlock.frame && (
+              <>
+                <MenuItem icon={<Icon name="media" />} label="배경 이미지 선택" onSelect={handlePickFrameBackground} />
+                <MenuItem
+                  checked={Boolean(liveMenuBlock.framePaddingTop)}
+                  icon={<Icon name="frameTop" />}
+                  label="위쪽 패딩"
+                  onSelect={() => handleToggleFramePadding("Top")}
+                />
+                <MenuItem
+                  checked={Boolean(liveMenuBlock.framePaddingBottom)}
+                  icon={<Icon name="frameBottom" />}
+                  label="아래쪽 패딩"
+                  onSelect={() => handleToggleFramePadding("Bottom")}
+                />
+                <MenuItem
+                  checked={Boolean(liveMenuBlock.framePaddingLeft)}
+                  icon={<Icon name="frameLeft" />}
+                  label="왼쪽 패딩"
+                  onSelect={() => handleToggleFramePadding("Left")}
+                />
+                <MenuItem
+                  checked={Boolean(liveMenuBlock.framePaddingRight)}
+                  icon={<Icon name="frameRight" />}
+                  label="오른쪽 패딩"
+                  onSelect={() => handleToggleFramePadding("Right")}
+                />
+              </>
+            )}
           </MenuSection>
         </Menu>
       )}

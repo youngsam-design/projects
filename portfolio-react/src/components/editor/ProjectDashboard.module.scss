@@ -10,6 +10,10 @@
 }
 
 .page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 0 var(--layout-page-gutter) var(--spacing-huge-medium);
 }
 
@@ -46,8 +50,9 @@
 .createForm,
 .projectList article {
   border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-small);
-  background: var(--color-neutral-background-main);
+  border-radius: var(--radius-large);
+  background: var(--color-neutral-background-backdrop);
+  backdrop-filter: var(--backdrop-filter-blur);
 }
 
 .card {
@@ -57,25 +62,6 @@
   padding: var(--spacing-normal-xlarge);
 }
 
-.card label,
-.createForm label {
-  display: grid;
-  gap: var(--spacing-tiny-large);
-  font-size: var(--caption-medium);
-  font-weight: var(--font-weight-bold);
-}
-
-.card input,
-.createForm input {
-  min-height: 44px;
-  padding-inline: var(--spacing-normal-small);
-  border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-xsmall);
-  font: inherit;
-}
-
-.card button,
-.createForm button,
 .projectActions a {
   display: inline-grid;
   min-height: 40px;
@@ -91,21 +77,21 @@
 }
 
 .createForm {
-  display: grid;
-  grid-template-columns: 1fr 1fr auto;
-  gap: var(--spacing-normal-medium);
-  align-items: end;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-normal-small);
   margin-bottom: var(--spacing-normal-large);
-  padding: var(--spacing-normal-large);
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
+  padding: var(--spacing-spacious-small);
+  max-width: var(--container-sm);
 }
 
-.createForm h2,
-.createForm p {
-  grid-column: 1 / -1;
+.createFormHeading {
+  font-size: var(--heading-large);
+  margin-bottom: var(--spacing-normal-small);
+}
+
+.createButton {
+  margin-top: var(--spacing-normal-medium);
 }
 
 .projectList {
@@ -138,6 +124,10 @@
 .projectList p {
   color: var(--color-neutral-foreground-low);
   font-size: var(--caption-medium);
+  max-width: var(--container-sm);
+  padding-left: var(--container-padding-sm);
+  padding-right: var(--container-padding-sm);
+  margin-inline: auto;
 }
 
 .projectActions {

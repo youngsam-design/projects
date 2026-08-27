@@ -11,7 +11,6 @@ export function createProjectDocument({
     textColor: "28, 28, 31",
     accentActiveColor: "88, 148, 255",
     menuColor: "28, 28, 31",
-    meshColors: ["42, 108, 242", "88, 148, 255", "255, 255, 255"],
   },
   meta = [],
   assets = [],
@@ -41,8 +40,6 @@ export function createProjectDocument({
     hero: {
       eyebrow: "새 프로젝트",
       coverAssetId: suppliedCover?.id ?? coverAsset.id,
-      mesh: false,
-      meshWarp: false,
     },
     theme,
     meta,

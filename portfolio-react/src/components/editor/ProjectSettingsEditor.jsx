@@ -1,3 +1,4 @@
+import Checkbox from "../ui/Checkbox";
 import IconButton from "../ui/IconButton";
 import Input from "../ui/Input";
 import Select from "../ui/Select";
@@ -30,6 +31,15 @@ function hexToRgbString(hex) {
     .join(", ");
 }
 
+const themeColorLabels = {
+  accentColor: "Accent Color",
+  mainBackgroundColor: "Main Background Color",
+  mainForegroundColor: "Main Foreground Color",
+  accentActiveColor: "Accent Active Color",
+  subBackgroundColor: "Sub Background Color",
+  subForegroundColor: "Sub Foreground Color",
+};
+
 export default function ProjectSettingsEditor({ document, onChange }) {
   const updateMeta = (id, field, value) =>
     onChange(
@@ -39,6 +49,41 @@ export default function ProjectSettingsEditor({ document, onChange }) {
       }),
       `meta:${id}:${field}`,
     );
+
+  const renderColorInput = (key, value) => (
+    <Input
+      key={key}
+      label={themeColorLabels[key] ?? key}
+      leading={
+        <input
+          aria-label={`${key} 색상 선택`}
+          className={styles.colorSwatchLeading}
+          onChange={(event) =>
+            onChange(
+              (current) => ({
+                ...current,
+                theme: { ...current.theme, [key]: hexToRgbString(event.target.value) },
+              }),
+              `theme:${key}`,
+            )
+          }
+          type="color"
+          value={rgbStringToHex(value)}
+        />
+      }
+      onChange={(event) =>
+        onChange(
+          (current) => ({
+            ...current,
+            theme: { ...current.theme, [key]: event.target.value },
+          }),
+          `theme:${key}`,
+        )
+      }
+      placeholder="255, 255, 255"
+      value={value}
+    />
+  );
 
   return (
     <div className={styles.settings}>
@@ -163,46 +208,30 @@ export default function ProjectSettingsEditor({ document, onChange }) {
             <h2>색상 테마</h2>
           </div>
           <div className={styles.themeGrid}>
-            {Object.entries(document.theme).map(([key, value]) => (
-              <Input
-                key={key}
-                label={key}
-                leading={
-                  <input
-                    aria-label={`${key} 색상 선택`}
-                    className={styles.colorSwatchLeading}
-                    onChange={(event) =>
-                      onChange(
-                        (current) => ({
-                          ...current,
-                          theme: {
-                            ...current.theme,
-                            [key]: hexToRgbString(event.target.value),
-                          },
-                        }),
-                        `theme:${key}`,
-                      )
-                    }
-                    type="color"
-                    value={rgbStringToHex(value)}
-                  />
-                }
+            <div className={styles.accentColorField}>
+              <Checkbox
+                checked={document.theme.accentColor !== undefined}
+                label="Accent Color 사용"
                 onChange={(event) =>
                   onChange(
-                    (current) => ({
-                      ...current,
-                      theme: {
-                        ...current.theme,
-                        [key]: event.target.value,
-                      },
-                    }),
-                    `theme:${key}`,
+                    (current) => {
+                      const nextTheme = { ...current.theme };
+                      if (event.target.checked) {
+                        nextTheme.accentColor = current.theme.mainForegroundColor ?? "0, 0, 0";
+                      } else {
+                        delete nextTheme.accentColor;
+                      }
+                      return { ...current, theme: nextTheme };
+                    },
+                    "theme:accentColor:enabled",
                   )
                 }
-                placeholder="255, 255, 255"
-                value={value}
               />
-            ))}
+              {document.theme.accentColor !== undefined && renderColorInput("accentColor", document.theme.accentColor)}
+            </div>
+            {Object.entries(document.theme)
+              .filter(([key]) => key !== "accentColor")
+              .map(([key, value]) => renderColorInput(key, value))}
           </div>
         </section>
       </div>

@@ -229,12 +229,6 @@ body .container .contents {
   clear: both;
 }
 
-.contents > section.intro > h1,
-.contents > section.intro > h2,
-.contents > section.intro > h3,
-.contents > section.intro > h4,
-.contents > section.intro > h5,
-.contents > section.intro > h6,
 .contents > section .content-section > h1,
 .contents > section .content-section > h2,
 .contents > section .content-section > h3,
@@ -251,6 +245,42 @@ body .container .contents {
   word-break: keep-all;
   color: rgb(var(--theme-foreground));
   line-height: 1.35;
+}
+
+.contents > section .custom-group {
+  /* Every "theme-foreground" text rule elsewhere in this file reads
+     rgb(var(--theme-foreground)) and matches descendants directly (headings,
+     .text, captions, ...), so it beats a plain `color` set here on specificity
+     - overriding the custom property itself instead means every one of those
+     rules resolves to the sub color automatically, no matter how deeply
+     nested or which selector matched. */
+  --theme-foreground: var(--group-foreground);
+  color: rgb(var(--group-foreground));
+  background-color: rgb(var(--group-background));
+  margin-top: var(--spacing-spacious-large);
+  padding: calc(2 * var(--layout-grid-gap-desktop));
+  text-align: center;
+  border-radius: none;
+}
+
+.contents > section .custom-group > h1,
+.contents > section .custom-group > h2,
+.contents > section .custom-group > h3,
+.contents > section .custom-group > h4,
+.contents > section .custom-group > h5,
+.contents > section .custom-group > h6 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Wanted Sans Variable";
+  margin-bottom: 0;
+  letter-spacing: 0;
+  word-break: keep-all;
+  line-height: 1.35;
+}
+
+.contents > section .custom-group .text {
+  margin-top: var(--spacing-normal-medium);
 }
 
 /* 레벨별 크기 — 지금까지는 이 값이 없어서 브라우저 기본 h1~h4 배율(em)이
@@ -736,6 +766,11 @@ body .container .contents {
     grid-template-columns: 1fr;
   }
 }
+
+/* custom-group - 사용자가 여러 블록을 선택해 직접 묶은 그룹(다른 group
+   용도인 columns/column/textList/contentSection 등과는 구분됨). 배경/글자
+   색은 프로젝트 설정의 색상 테마(groupBackgroundColor/groupTextColor)에서
+   가져온다. */
 
 /* full-max */
 

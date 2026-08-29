@@ -3,13 +3,18 @@ import Footer from "./Footer";
 import Header from "./Header";
 import "./SiteLayout.scss";
 
+// `accentColor` is intentionally excluded here - it's optional (see
+// ProjectSettingsEditor's "Accent Color 사용" checkbox), and when unset the
+// header nav should read as mainForegroundColor instead, so it's resolved
+// separately below rather than just skipped when absent.
 const themeVariables = {
-  mainColor: "--theme-accent",
-  backgroundColor: "--theme-background",
-  textColor: "--theme-foreground",
+  mainBackgroundColor: "--theme-background",
+  mainForegroundColor: "--theme-foreground",
   accentActiveColor: "--theme-accent-active",
-  menuColor: "--menu-color",
+  subBackgroundColor: "--group-background",
+  subForegroundColor: "--group-foreground",
 };
+const accentVariable = "--theme-accent";
 
 export default function SiteLayout({
   children,
@@ -18,8 +23,9 @@ export default function SiteLayout({
   isProject = false,
 }) {
   useEffect(() => {
+    const trackedVariables = [...Object.values(themeVariables), accentVariable];
     const previousThemeValues = Object.fromEntries(
-      Object.values(themeVariables).map((variable) => [
+      trackedVariables.map((variable) => [
         variable,
         document.documentElement.style.getPropertyValue(variable),
       ]),
@@ -33,6 +39,8 @@ export default function SiteLayout({
       if (variable && value)
         document.documentElement.style.setProperty(variable, value);
     }
+    const accentColor = theme.accentColor || theme.mainForegroundColor;
+    if (accentColor) document.documentElement.style.setProperty(accentVariable, accentColor);
 
     return () => {
       document.body.className = "";

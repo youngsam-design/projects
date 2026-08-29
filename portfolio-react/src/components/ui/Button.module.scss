@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: var(--spacing-tiny-large);
-  border-radius: var(--radius-xsmall);
+  user-select: none;
   font: inherit;
 
   font-weight: var(--font-weight-semibold);
@@ -38,15 +38,17 @@
 }
 
 .medium {
-  font-size: var(--caption-medium);
-  padding: var(--spacing-normal-small);
+  font-size: var(--body-small);
+  padding: var(--spacing-normal-small) var(--spacing-normal-large);
   height: 40px;
+  border-radius: var(--radius-circular);
 }
 
 .small {
   font-size: var(--caption-xsmall);
   padding: var(--spacing-tiny-large);
   height: 32px;
+  border-radius: var(--radius-xsmall);
 }
 
 .label {
@@ -89,5 +91,11 @@
 }
 
 .button:disabled::after {
+  content: none;
+}
+
+// The custom cursor already provides hover feedback on the pages where it's
+// active (see useCursorActive in Cursor.jsx) - the wash would be redundant.
+.cursorActive::after {
   content: none;
 }

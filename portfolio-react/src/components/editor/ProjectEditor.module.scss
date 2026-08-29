@@ -365,6 +365,11 @@
   gap: var(--spacing-normal-small);
 }
 
+.accentColorField {
+  display: grid;
+  gap: var(--spacing-tiny-large);
+}
+
 .colorSwatchLeading {
   width: 18px;
   height: 18px;

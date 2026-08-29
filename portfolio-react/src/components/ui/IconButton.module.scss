@@ -85,3 +85,7 @@
 .iconButton:disabled::after {
   content: none;
 }
+
+.cursorActive::after {
+  content: none;
+}

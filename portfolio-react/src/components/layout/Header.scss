@@ -22,15 +22,15 @@ header.sticky {
 }
 
 header.sticky:after {
-  content: "";
+  // content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: calc(100% * 2);
   transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
-  backdrop-filter: var(--blur-large);
-  background-color: rgba(var(--theme-background), 0.88);
+  // backdrop-filter: var(--blur-large);
+  // background-color: rgba(var(--theme-background), 0.88);
 }
 
 header.sticky.focusout {
@@ -46,21 +46,11 @@ header.sticky.focusout {
   }
 }
 
-header.sticky nav a.logo h1 {
-  color: rgb(var(--theme-accent));
-}
-
-body.nav header.sticky nav a.logo h1 {
-  color: rgb(var(--theme-accent));
-}
-
-header.sticky nav ul li a {
-  color: rgb(var(--theme-accent));
-}
-
-header.sticky nav ul li a:after {
-  background-color: rgb(var(--theme-accent));
-}
+// Nav text/icons are a fixed black regardless of the project's theme or the
+// header's sticky/nav-open state - see the unconditional rules further down
+// (header nav a.logo h1 / header nav ul li a / header nav button.burger
+// rect). `mix-blend-mode: exclusion` on black is a no-op (it just shows
+// whatever's behind it), so it can't be combined with a literal black here.
 
 header.offscreen {
   position: sticky;
@@ -117,6 +107,7 @@ header nav {
   justify-content: space-between;
   padding-left: var(--container-padding-md);
   padding-right: var(--container-padding-md);
+  background: rgb(var(--theme-background));
 }
 
 header nav .download {
@@ -138,7 +129,7 @@ header nav ul {
 }
 
 header nav ul li {
-  margin-left: 36px;
+  margin-left: var(--spacing-normal-medium);
 }
 header nav ul li:first-child {
   margin-left: 0;
@@ -146,6 +137,7 @@ header nav ul li:first-child {
 
 header nav a.logo {
   align-self: center;
+  mix-blend-mode: exclusion;
 }
 
 header nav a.logo h1 {
@@ -156,59 +148,21 @@ header nav a.logo h1 {
   letter-spacing: -0.075rem;
   font-size: 26px;
   user-select: none;
-}
-
-body.nav header nav a.logo h1 {
-  color: var(--palette-gray-900);
-}
-
-body.pages.nonav header:not(.sticky) nav a.logo h1 {
-  color: rgb(var(--menu-color));
-}
-
-body.pages.nav header:not(.sticky) nav a.logo h1 {
-  color: var(--color-neutral-foreground-inverse-main);
+  // White is the correct source color for exclusion to actually invert
+  // (see .logo's mix-blend-mode above) - black+exclusion is a no-op, which
+  // is why the earlier #000 here never showed any inversion.
+  color: #fff;
 }
 
 header nav ul li a {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  text-transform: uppercase;
-  line-height: 1.5;
-  height: 1.5rem;
-  font-weight: 500;
-  letter-spacing: 0.07rem;
-  user-select: none;
+  color: #fff !important;
+  mix-blend-mode: exclusion;
 }
 
-body.pages header:not(.sticky) nav ul li a {
-  color: rgb(var(--menu-color));
-}
-
-header nav ul li a:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background-color: var(--palette-gray-900);
-  transform: translateX(calc(-100% - 0.1rem));
-  animation: 0.25s cubic-bezier(0.28, 0.44, 0.49, 1) 0s trace-out forwards;
-}
-
-body.pages header:not(.sticky) nav ul li a:after {
-  background-color: rgb(var(--menu-color));
-}
-
-header nav ul li a:hover:after {
-  opacity: 1;
-  -webkit-animation: 0.25s cubic-bezier(0.28, 0.44, 0.49, 1) 0s trace-in forwards;
-  animation: 0.25s cubic-bezier(0.28, 0.44, 0.49, 1) 0s trace-in forwards;
-}
-
+// header nav ul li a's old underline-trace styling moved out - those two
+// items are Button components now (pill hover wash instead of an
+// underline). The trace-in/trace-out keyframes below stay: LegacyContent.scss
+// still references them by name for its own (non-Button) nav-style links.
 @keyframes trace-out {
   0% {
     transform: translateZ(0);
@@ -239,6 +193,7 @@ header nav button.burger {
   border-radius: 0;
   padding: 0 !important;
   background: none;
+  mix-blend-mode: exclusion;
 
   @media (min-width: 768px) {
     display: none;
@@ -246,21 +201,9 @@ header nav button.burger {
 }
 
 header nav button.burger rect {
-  fill: var(--palette-gray-900);
+  fill: #fff;
   rx: 1.5px;
   transition: all 0.2s;
-}
-
-body.nav header button.burger rect {
-  fill: var(--palette-gray-900);
-}
-
-body.pages.nav header:not(.sticky) button.burger rect {
-  fill: var(--color-neutral-foreground-inverse-main);
-}
-
-body.pages header.sticky button.burger rect {
-  fill: rgb(var(--theme-accent));
 }
 /* end header */
 
@@ -450,20 +393,19 @@ body .container div.mobile_nav ul.secondary a:after {
 .progress-container {
   position: absolute;
   width: 100%;
-  height: 4px;
-  background: transparent;
-  bottom: -4px;
-  opacity: 0;
+  height: 2px;
+  bottom: 0;
+  z-index: var(--z-navigation);
+  mix-blend-mode: exclusion;
 }
 
 .progress-container:before {
   content: "";
   position: absolute;
   width: 100%;
+  height: 2px;
   top: 0;
-  height: 1px;
-  background: var(--color-neutral-border-high);
-  z-index: 1;
+  z-index: 0;
 }
 
 .progress-container.up {
@@ -477,5 +419,5 @@ body.nav .progress-container.up {
 /* The progress bar (scroll indicator) */
 .progress-bar {
   height: 2px;
-  background-color: rgb(var(--theme-accent));
+  background: var(--palette-white);
 }

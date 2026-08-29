@@ -7,6 +7,17 @@
   min-height: 100%;
 }
 
+// Toggled on <html> (not <body> - see Cursor.jsx) while the custom cursor is
+// active, so the native OS pointer doesn't show alongside it. `*` +
+// !important is necessary because most interactive elements (links, buttons,
+// inputs) get their own explicit `cursor` value from the browser/component
+// styles rather than inheriting body's - a plain `html { cursor: none }`
+// would be overridden by every one of those.
+html.hide-native-cursor,
+html.hide-native-cursor * {
+  cursor: none !important;
+}
+
 button,
 a {
   -webkit-tap-highlight-color: transparent;

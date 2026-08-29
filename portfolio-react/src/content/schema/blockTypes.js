@@ -41,6 +41,7 @@ export const allowedVariants = Object.freeze([
   "fullMax",
   "contentSection",
   "subContent",
+  "customGroup",
   "media",
   "text",
   "caption",

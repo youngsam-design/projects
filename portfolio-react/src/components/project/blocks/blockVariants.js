@@ -5,6 +5,7 @@ const variantClasses = {
   fullMax: "full-max",
   contentSection: "content-section",
   subContent: "sub-content",
+  customGroup: "custom-group",
   media: "img-wrap",
   text: "text",
   caption: "caption",
@@ -33,6 +34,13 @@ export function getMediaClassName(variants, layout) {
 
 export function isMediaBlock(block) {
   return block.type === "image" || block.type === "video";
+}
+
+// Media blocks and manually-grouped ("custom") groups are the only blocks
+// that keep their own per-block width instead of the shared "본문 너비"
+// preset, so they're the only ones that get the drag-to-resize handles.
+export function isResizableBlock(block) {
+  return isMediaBlock(block) || Boolean(block.variant?.includes("customGroup"));
 }
 
 // The project meta (summary) list renders inside the first content-section
@@ -65,7 +73,7 @@ export function getTextGridProps(contentWidth = "large") {
 }
 
 export function getGridProps(block, contentWidth = "large") {
-  if (!isMediaBlock(block)) return getTextGridProps(contentWidth);
+  if (!isResizableBlock(block)) return getTextGridProps(contentWidth);
 
   const span = Math.min(14, Math.max(1, block.grid?.span ?? 14));
   const start = Math.floor((14 - span) / 2) + 1;

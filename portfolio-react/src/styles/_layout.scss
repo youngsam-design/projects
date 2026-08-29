@@ -26,8 +26,25 @@ $breakpoint-canvas: 1600px;
 }
 
 :root {
+  // Site-wide fallback for the project-theme custom properties. SiteLayout
+  // only sets --theme-*/--group-* inline (element.style) when a page passes
+  // it a real project `theme` (see ProjectPage.jsx) - non-project pages
+  // (Home, About) pass none, so without a default here these are simply
+  // unset there, and every component reading them directly (header nav
+  // background, etc.) silently gets an invalid/empty value instead of a
+  // real color. Inline styles always win over this :root rule regardless of
+  // specificity, so a project's own theme still overrides these normally -
+  // this only fills the gap where nothing else sets them. Values mirror
+  // createProjectDocument's own factory defaults for a new project.
+  --theme-background: 255, 255, 255;
+  --theme-foreground: 28, 28, 31;
+  --theme-accent: 28, 28, 31;
+  --theme-accent-active: 88, 148, 255;
+  --group-background: 255, 255, 255;
+  --group-foreground: 28, 28, 31;
+
   // Project theme aliases actually consumed as such. Note most components
-  // read the raw --theme-accent/--theme-background/--theme-foreground/--menu-color
+  // read the raw --theme-accent/--theme-background/--theme-foreground
   // custom properties directly (set inline by
   // WysiwygProjectCanvas.jsx/ProjectEditorPage.jsx) rather than through these
   // wrappers, so only the two wrappers with real consumers are kept.

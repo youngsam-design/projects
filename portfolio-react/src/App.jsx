@@ -5,11 +5,13 @@ import NotFoundPage from "./pages/NotFoundPage";
 import ProjectPage from "./pages/ProjectPage";
 import ProjectEditorPage from "./pages/ProjectEditorPage";
 import ProjectEditorDashboard from "./pages/ProjectEditorDashboard";
+import { Cursor } from "./components/effects/Cursor";
 import ScrollToTop from "./components/effects/ScrollToTop";
 
 export default function App() {
   return (
     <>
+      <Cursor />
       <ScrollToTop />
       <Routes>
         <Route index element={<HomePage />} />

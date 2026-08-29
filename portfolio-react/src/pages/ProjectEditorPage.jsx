@@ -147,8 +147,8 @@ export default function ProjectEditorPage() {
     } else {
       window.document.body.removeAttribute("style");
     }
-    if (document.theme.backgroundColor) {
-      window.document.body.style.backgroundColor = `rgb(${document.theme.backgroundColor})`;
+    if (document.theme.mainBackgroundColor) {
+      window.document.body.style.backgroundColor = `rgb(${document.theme.mainBackgroundColor})`;
     }
     return () => {
       window.document.title = previousTitle;
@@ -159,7 +159,7 @@ export default function ProjectEditorPage() {
         window.document.body.setAttribute("style", previousBodyStyle);
       }
     };
-  }, [document?.pageMeta, document?.title, document?.theme?.backgroundColor]);
+  }, [document?.pageMeta, document?.title, document?.theme?.mainBackgroundColor]);
 
   useEffect(() => {
     if (!document) return;
@@ -753,11 +753,12 @@ export default function ProjectEditorPage() {
       onDragOver={(event) => event.preventDefault()}
       onDrop={handleDrop}
       style={{
-        "--theme-accent": document.theme.mainColor,
-        "--theme-background": document.theme.backgroundColor,
-        "--theme-foreground": document.theme.textColor,
+        "--theme-accent": document.theme.accentColor || document.theme.mainForegroundColor,
+        "--theme-background": document.theme.mainBackgroundColor,
+        "--theme-foreground": document.theme.mainForegroundColor,
         "--theme-accent-active": document.theme.accentActiveColor,
-        "--menu-color": document.theme.menuColor,
+        "--group-background": document.theme.subBackgroundColor,
+        "--group-foreground": document.theme.subForegroundColor,
       }}
     >
       {dragActive && (
@@ -769,10 +770,9 @@ export default function ProjectEditorPage() {
         <div
           className={styles.preview}
           style={{
-            "--main-color": document.theme.mainColor,
-            "--bg-color": document.theme.backgroundColor,
-            "--text-color": document.theme.textColor,
-            "--menu-color": document.theme.menuColor,
+            "--main-color": document.theme.accentColor || document.theme.mainForegroundColor,
+            "--bg-color": document.theme.mainBackgroundColor,
+            "--text-color": document.theme.mainForegroundColor,
           }}
         >
           <button className={styles.previewBack} onClick={() => setView("edit")} type="button">

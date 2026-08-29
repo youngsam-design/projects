@@ -86,8 +86,8 @@ import styles from './Component.module.scss';
 // 사용자가 편집한 테마 색상을 문서 데이터에서 읽어와 그대로 주입하는 경우
 <div
   style={{
-    "--theme-accent": document.theme.mainColor,
-    "--theme-background": document.theme.backgroundColor,
+    "--theme-accent": document.theme.accentColor,
+    "--theme-background": document.theme.mainBackgroundColor,
   }}
 >
   프로젝트 콘텐츠

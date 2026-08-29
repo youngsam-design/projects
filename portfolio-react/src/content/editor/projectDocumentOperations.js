@@ -166,7 +166,7 @@ export function groupBlocks(document, blockIds) {
   const newGroup = {
     id: createId("group"),
     type: "group",
-    variant: [],
+    variant: ["customGroup"],
     children: selectedEntries.map(({ block }) => block),
   };
 

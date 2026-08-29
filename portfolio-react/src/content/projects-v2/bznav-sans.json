@@ -14,10 +14,11 @@
     "coverAssetId": "ast_bz_hero"
   },
   "theme": {
-    "mainColor": "0, 31, 61",
-    "backgroundColor": "255, 255, 255",
-    "textColor": "0, 36, 71",
-    "menuColor": "0, 31, 61"
+    "accentColor": "0, 31, 61",
+    "mainBackgroundColor": "255, 255, 255",
+    "mainForegroundColor": "0, 36, 71",
+    "subBackgroundColor": "255, 255, 255",
+    "subForegroundColor": "0, 36, 71"
   },
   "contentWidth": "medium",
   "meta": [

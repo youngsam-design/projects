@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
+import Button from "../ui/Button";
 import "./Header.scss";
 import styles from "./Header.module.scss";
 
@@ -21,9 +22,7 @@ export default function Header({ isProject }) {
         // global footer that follows it) - so measure up to where .project
         // starts instead of the whole document's height.
         const relatedProjects = document.querySelector("#contents > .project");
-        const contentBottom = relatedProjects
-          ? relatedProjects.getBoundingClientRect().top + window.scrollY
-          : document.documentElement.scrollHeight;
+        const contentBottom = relatedProjects ? relatedProjects.getBoundingClientRect().top + window.scrollY : document.documentElement.scrollHeight;
         const scrollableHeight = contentBottom - window.innerHeight;
         const progress = scrollableHeight > 0 ? (window.scrollY / scrollableHeight) * 100 : 0;
         progressRef.current.style.width = `${Math.min(progress, 100)}%`;
@@ -46,11 +45,7 @@ export default function Header({ isProject }) {
   }, [menuOpen]);
 
   const closeMenu = () => setMenuOpen(false);
-  const headerClassName = isProject
-    ? "sticky focusout"
-    : scrolled
-      ? "sticky focusout"
-      : "";
+  const headerClassName = isProject ? "sticky focusout" : scrolled ? "sticky focusout" : "";
 
   return (
     <>
@@ -60,16 +55,18 @@ export default function Header({ isProject }) {
             <h1>Youngsam</h1>
           </NavLink>
           <ul>
-            <li><NavLink className="hover-target" to="/">WORK</NavLink></li>
-            <li><NavLink className="hover-target" to="/about">ABOUT</NavLink></li>
+            <li>
+              <Button as={NavLink} className="hover-target" size="medium" to="/" variant="subtle">
+                WORK
+              </Button>
+            </li>
+            <li>
+              <Button as={NavLink} className="hover-target" size="medium" to="/about" variant="subtle">
+                ABOUT
+              </Button>
+            </li>
           </ul>
-          <button
-            className="burger"
-            type="button"
-            aria-label="메뉴 열기"
-            aria-expanded={menuOpen}
-            onClick={() => setMenuOpen((open) => !open)}
-          >
+          <button className="burger" type="button" aria-label="메뉴 열기" aria-expanded={menuOpen} onClick={() => setMenuOpen((open) => !open)}>
             <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
               <rect y="7" width="24" height="2" />
               <rect y="15" width="24" height="2" />
@@ -85,8 +82,16 @@ export default function Header({ isProject }) {
       <div className={`mobile_nav ${styles.mobileNav}`} aria-hidden={!menuOpen}>
         <div>
           <ul className="primary">
-            <li><NavLink to="/" onClick={closeMenu}>WORK</NavLink></li>
-            <li><NavLink to="/about" onClick={closeMenu}>ABOUT</NavLink></li>
+            <li>
+              <NavLink to="/" onClick={closeMenu}>
+                WORK
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/about" onClick={closeMenu}>
+                ABOUT
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>

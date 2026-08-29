@@ -7,7 +7,14 @@ import { getProjectAsset, resolveProjectAssetUrl } from "../project/projectAsset
 import FrameBox from "../project/blocks/FrameBox";
 import ProjectMeta from "../project/ProjectMeta";
 import RelatedProjects from "../project/RelatedProjects";
-import { findFirstContentSectionId, getGridProps, getMediaClassName, getVariantClassName, isMediaBlock } from "../project/blocks/blockVariants";
+import {
+  findFirstContentSectionId,
+  getGridProps,
+  getMediaClassName,
+  getVariantClassName,
+  isMediaBlock,
+  isResizableBlock,
+} from "../project/blocks/blockVariants";
 import Footer from "../layout/Footer";
 import Icon from "../ui/Icon";
 import Menu, { MenuHeader, MenuItem, MenuSection, MenuSeparator } from "../ui/Menu";
@@ -312,11 +319,7 @@ function Media({ block, document, gridProps, onActivate, onCaptionChange, onCont
 
   const content = block.frame ? (
     <FrameBox
-      backgroundSrc={
-        block.frameBackgroundAssetId
-          ? resolveProjectAssetUrl(document, getProjectAsset(document, block.frameBackgroundAssetId).src)
-          : undefined
-      }
+      backgroundSrc={block.frameBackgroundAssetId ? resolveProjectAssetUrl(document, getProjectAsset(document, block.frameBackgroundAssetId).src) : undefined}
       padding={{
         top: block.framePaddingTop,
         bottom: block.framePaddingBottom,
@@ -376,9 +379,7 @@ function EditableBlock({
     />
   ));
   const gridProps = getGridProps(block, document.contentWidth);
-  const className = [block.type === "group" && "group", getVariantClassName(block.variant), gridProps.className]
-    .filter(Boolean)
-    .join(" ");
+  const className = [block.type === "group" && "group", getVariantClassName(block.variant), gridProps.className].filter(Boolean).join(" ");
   const activate = (event) => {
     event.stopPropagation();
     if ((event.metaKey || event.ctrlKey) && onToggleSelect) {
@@ -881,7 +882,7 @@ export default function WysiwygProjectCanvas({
   const startResize = (side, event) => {
     event.preventDefault();
     event.stopPropagation();
-    if (!liveActiveBlock || !isMediaBlock(liveActiveBlock)) return;
+    if (!liveActiveBlock || !isResizableBlock(liveActiveBlock)) return;
 
     const element = window.document.querySelector(`[data-editor-block-id="${CSS.escape(liveActiveBlock.id)}"]`);
     const grid = element?.closest("[data-content-grid]");
@@ -956,11 +957,12 @@ export default function WysiwygProjectCanvas({
       onContextMenu={handleCanvasContextMenu}
       onMouseDown={handleCanvasMouseDown}
       style={{
-        "--theme-accent": document.theme.mainColor,
-        "--theme-background": document.theme.backgroundColor,
-        "--theme-foreground": document.theme.textColor,
+        "--theme-accent": document.theme.accentColor || document.theme.mainForegroundColor,
+        "--theme-background": document.theme.mainBackgroundColor,
+        "--theme-foreground": document.theme.mainForegroundColor,
         "--theme-accent-active": document.theme.accentActiveColor,
-        "--menu-color": document.theme.menuColor,
+        "--group-background": document.theme.subBackgroundColor,
+        "--group-foreground": document.theme.subForegroundColor,
       }}
     >
       {document.pageMeta.styles && <style>{document.pageMeta.styles}</style>}
@@ -1125,7 +1127,7 @@ export default function WysiwygProjectCanvas({
           }}
         />
       )}
-      {activeBlock && liveActiveBlock && isMediaBlock(liveActiveBlock) && (
+      {activeBlock && liveActiveBlock && isResizableBlock(liveActiveBlock) && (
         <div
           className={styles.resizeFrame}
           style={{
@@ -1158,6 +1160,7 @@ export default function WysiwygProjectCanvas({
           }}
         >
           <button
+            className={styles.addBlockButton}
             aria-label="블록 추가"
             onClick={() => {
               setReplaceMode(false);
@@ -1168,6 +1171,7 @@ export default function WysiwygProjectCanvas({
             +
           </button>
           <button
+            className={styles.dragHandle}
             aria-label="블록 이동 또는 설정"
             draggable
             onClick={() => setPopover(popover === "settings" ? null : "settings")}

@@ -111,7 +111,6 @@ body .container .contents {
   grid-template-columns: repeat(14, minmax(0, 1fr));
   column-gap: var(--layout-grid-gap-desktop);
   min-width: 0;
-  counter-reset: project-numbered-list;
 
   @media (max-width: 767px) {
     display: flex;
@@ -124,13 +123,18 @@ body .container .contents {
 .contents > section .text-li.numbered-list {
   position: relative;
   padding-left: var(--spacing-normal-large);
-  margin-top: var(--spacing-normal-small);
+  margin-top: var(--spacing-tiny-large);
 
   & + .text-li {
     margin-top: var(--spacing-tiny-large);
   }
 
-  & > *:first-of-type {
+  // Zeroes the gap above the item's own opening content (its paragraph, or a
+  // heading for a "heading-led" item - see the .text-li h1~h6 rules below).
+  // Excludes a nested .text-li specifically: that's a child list item added
+  // via Tab/indent, and it should keep its own margin-top (below) rather than
+  // sit flush against the text right above it.
+  & > *:first-of-type:not(.text-li) {
     margin-top: 0;
   }
 }
@@ -150,12 +154,26 @@ body .container .contents {
   content: "•";
 }
 
-.contents > section .text-li.numbered-list {
-  counter-increment: project-numbered-list;
+// The item's own position among its numberedList siblings is computed in JS
+// (getNumberedListPosition) from the real document tree and passed down as
+// data-list-number, rather than via a CSS counter - nested list items (Tab
+// indent) live in their own parent's children array, so a plain counter would
+// need conflicting counter-reset+counter-increment on the very same element
+// to restart per nesting level, which browsers resolve by always showing "1".
+.contents > section .text-li.numbered-list::before {
+  content: attr(data-list-number) ".";
 }
 
-.contents > section .text-li.numbered-list::before {
-  content: counter(project-numbered-list) ".";
+// A nested item (added via Tab/indent) keeps the same marker size/position as
+// a top-level one, but is visually a level down: a hollow bullet instead of a
+// filled one, and both marker styles dimmed slightly, so the hierarchy reads
+// at a glance even before you notice the indent itself.
+.contents > section .text-li.bullet-list.nested::before {
+  content: "◦";
+}
+
+.contents > section .text-li.nested::before {
+  opacity: 0.6;
 }
 
 /* The marker should match whatever actually sits next to it, not the list

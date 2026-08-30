@@ -11,7 +11,7 @@
 .row {
   display: flex;
   align-items: center;
-  gap: var(--spacing-normal-small);
+  gap: var(--spacing-tiny-large);
 }
 
 .box {
@@ -22,8 +22,8 @@
   height: 16px;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-2xsmall);
+  border: 1px solid var(--color-neutral-border-high);
+  border-radius: var(--radius-3xsmall);
   background: var(--color-neutral-background-main);
 }
 

@@ -1,6 +1,6 @@
 /* Mirrors elevation/elevation.ts. Kept in sync by hand until one is generated from the other. */
 
 :root {
-  --elevation-small: 0px 2px 4px 0px rgb(0 0 0 / 6%);
-  --elevation-medium: 0px 2px 8px 0px rgb(0 0 0 / 8%);
+  --elevation-sm: 0px 2px 4px 0px rgb(0 0 0 / 6%);
+  --elevation-md: 0px 2px 8px 0px rgb(0 0 0 / 8%);
 }

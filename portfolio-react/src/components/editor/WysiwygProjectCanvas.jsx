@@ -11,6 +11,7 @@ import {
   findFirstContentSectionId,
   getGridProps,
   getMediaClassName,
+  getNumberedListPosition,
   getVariantClassName,
   isMediaBlock,
   isResizableBlock,
@@ -25,19 +26,19 @@ function getTextClassName(marks = []) {
 }
 
 const blockTypeOptions = [
-  { value: "paragraph", label: "텍스트", icon: "text", shortcut: "" },
-  { value: "heading-1", label: "제목 1", icon: "heading1", shortcut: "#" },
-  { value: "heading-2", label: "제목 2", icon: "heading2", shortcut: "##" },
-  { value: "heading-3", label: "제목 3", icon: "heading3", shortcut: "###" },
-  { value: "heading-4", label: "제목 4", icon: "heading4", shortcut: "####" },
-  { value: "heading-5", label: "제목 5", icon: "heading5", shortcut: "" },
-  { value: "heading-6", label: "제목 6", icon: "heading6", shortcut: "" },
-  { value: "bullet-list", label: "글머리 기호 목록", icon: "bulletList", shortcut: "-" },
-  { value: "numbered-list", label: "번호 매기기 목록", icon: "numberedList", shortcut: "1." },
-  { value: "quote", label: "인용", icon: "quote", shortcut: "" },
-  { value: "callout", label: "콜아웃", icon: "callout", shortcut: "" },
-  { value: "codeBlock", label: "코드 블록", icon: "codeBlock", shortcut: "" },
-  { value: "divider", label: "구분선", icon: "divider", shortcut: "" },
+  { value: "paragraph", label: "텍스트", icon: "text", shortcut: "", keyShortcut: "⇧⌘0" },
+  { value: "heading-1", label: "제목 1", icon: "heading1", shortcut: "#", keyShortcut: "⇧⌘1" },
+  { value: "heading-2", label: "제목 2", icon: "heading2", shortcut: "##", keyShortcut: "⇧⌘2" },
+  { value: "heading-3", label: "제목 3", icon: "heading3", shortcut: "###", keyShortcut: "⇧⌘3" },
+  { value: "heading-4", label: "제목 4", icon: "heading4", shortcut: "####", keyShortcut: "⇧⌘4" },
+  { value: "heading-5", label: "제목 5", icon: "heading5", shortcut: "", keyShortcut: "⇧⌘5" },
+  { value: "heading-6", label: "제목 6", icon: "heading6", shortcut: "", keyShortcut: "⇧⌘6" },
+  { value: "bullet-list", label: "글머리 기호 목록", icon: "bulletList", shortcut: "-", keyShortcut: "⇧⌘8" },
+  { value: "numbered-list", label: "번호 매기기 목록", icon: "numberedList", shortcut: "1.", keyShortcut: "⇧⌘7" },
+  { value: "quote", label: "인용", icon: "quote", shortcut: "", keyShortcut: "⇧⌘9" },
+  { value: "callout", label: "콜아웃", icon: "callout", shortcut: "", keyShortcut: "⇧⌘O" },
+  { value: "codeBlock", label: "코드 블록", icon: "codeBlock", shortcut: "", keyShortcut: "⇧⌘C" },
+  { value: "divider", label: "구분선", icon: "divider", shortcut: "", keyShortcut: "⇧⌘-" },
   { value: "spacer", label: "간격", icon: "spacer", shortcut: "" },
   { value: "media", label: "이미지 또는 영상", icon: "media", shortcut: "" },
   { value: "columns-2", label: "2단 분할", icon: "columns2", shortcut: "" },
@@ -51,6 +52,30 @@ function matchMarkdownShortcut(prefix) {
   if (prefix === ">") return "quote";
   return null;
 }
+
+// Keyed by event.code (physical key, layout-independent) rather than
+// event.key, since Shift+digit reports a shifted symbol (e.g. "!") on some
+// layouts - the physical Digit1 key is what should trigger heading-1
+// regardless of keyboard layout. Held with Cmd (or Ctrl) + Shift; mirrors the
+// same block types matchMarkdownShortcut already covers, plus the block
+// types that don't have a markdown trigger of their own (callout, codeBlock,
+// divider). Media/columns/spacer are excluded, same as markdown shortcuts -
+// they aren't "convert this line of text" conversions.
+const blockTypeShortcutsByCode = {
+  Digit0: "paragraph",
+  Digit1: "heading-1",
+  Digit2: "heading-2",
+  Digit3: "heading-3",
+  Digit4: "heading-4",
+  Digit5: "heading-5",
+  Digit6: "heading-6",
+  Digit7: "numbered-list",
+  Digit8: "bullet-list",
+  Digit9: "quote",
+  KeyO: "callout",
+  KeyC: "codeBlock",
+  Minus: "divider",
+};
 
 function findBlock(blocks, blockId) {
   for (const block of blocks) {
@@ -176,7 +201,7 @@ function readLiveText(element) {
   return (element.textContent ?? "").replaceAll(softBreakCaretAnchor, "");
 }
 
-function EditableText({ block, context, onBackspace, onEnter, onMarkdownShortcut, onPaste, onSlash, onSoftBreak, onTextChange, onTextSelection }) {
+function EditableText({ block, context, onBackspace, onEnter, onIndent, onMarkdownShortcut, onOutdent, onPaste, onSlash, onSoftBreak, onTextChange, onTextSelection }) {
   const text = getBlockText(block);
   const skipBlurRef = useRef(false);
 
@@ -229,6 +254,31 @@ function EditableText({ block, context, onBackspace, onEnter, onMarkdownShortcut
             skipBlurRef.current = true;
             context.setPendingFocus(focus);
           }
+        } else if (event.key === "Tab" && context.current?.block?.type === "group" && context.current.block.variant?.includes("textList")) {
+          // Notion-style: Tab/Shift+Tab change a list item's nesting depth
+          // instead of moving focus to the next focusable element. Outside a
+          // list item, Tab keeps the browser's normal focus-navigation.
+          //
+          // Indenting/outdenting reparents this text's block under a
+          // different React parent, which remounts this span - so the live,
+          // not-yet-blurred DOM text has to be read and persisted here (like
+          // onEnter/onBackspace already do), or it's lost when the fresh
+          // instance mounts from the (still unsynced) document state.
+          event.preventDefault();
+          skipBlurRef.current = true;
+          const focus = event.shiftKey ? onOutdent(context, block.id, value, selection.start) : onIndent(context, block.id, value, selection.start);
+          if (focus) context.setPendingFocus(focus);
+        } else if ((event.metaKey || event.ctrlKey) && event.shiftKey && blockTypeShortcutsByCode[event.code]) {
+          // Converts the current block's type in place, wherever the caret
+          // is - not just at the start of an empty line like the markdown
+          // triggers above. Reuses onMarkdownShortcut (not a new handler):
+          // it already does exactly "convert this block, using the given
+          // text as the new content" - passing the whole live value (instead
+          // of markdown shortcut's post-caret remainder) fits it precisely.
+          event.preventDefault();
+          skipBlurRef.current = true;
+          const focus = onMarkdownShortcut(context, block.id, blockTypeShortcutsByCode[event.code], value);
+          if (focus) context.setPendingFocus(focus);
         }
       }}
       onMouseUp={(event) => {
@@ -352,6 +402,8 @@ function Media({ block, document, gridProps, onActivate, onCaptionChange, onCont
 function EditableBlock({
   block,
   document,
+  isNested,
+  listNumber,
   onActivate,
   onCaptionChange,
   onCodeChange,
@@ -365,21 +417,32 @@ function EditableBlock({
   ownerContext,
   selected,
 }) {
-  const children = block.children?.map((child) => (
-    <EditableBlock
-      block={child}
-      document={document}
-      key={child.id}
-      onCaptionChange={onCaptionChange}
-      onCodeChange={onCodeChange}
-      onSelect={onSelect}
-      onTextAction={onTextAction}
-      onTextChange={onTextChange}
-      ownerContext={ownerContext}
-    />
-  ));
+  const isListItem = block.type === "group" && block.variant?.includes("textList");
+  const children = block.children?.map((child, childIndex) => {
+    // A list item nested inside another (after Tab/indent) needs its own
+    // ownerContext.current pointing at itself - otherwise Enter/Backspace/Tab
+    // on its text would act on the outer item's position instead of its own.
+    const isNestedListItem = isListItem && child.type === "group" && child.variant?.includes("textList");
+    return (
+      <EditableBlock
+        block={child}
+        document={document}
+        isNested={isNestedListItem}
+        key={child.id}
+        listNumber={child.variant?.includes("numberedList") ? getNumberedListPosition(block.children, childIndex) : undefined}
+        onCaptionChange={onCaptionChange}
+        onCodeChange={onCodeChange}
+        onSelect={onSelect}
+        onTextAction={onTextAction}
+        onTextChange={onTextChange}
+        ownerContext={isNestedListItem ? { ...ownerContext, current: { block: child, parentId: block.id, index: childIndex } } : ownerContext}
+      />
+    );
+  });
   const gridProps = getGridProps(block, document.contentWidth);
-  const className = [block.type === "group" && "group", getVariantClassName(block.variant), gridProps.className].filter(Boolean).join(" ");
+  const className = [block.type === "group" && "group", getVariantClassName(block.variant), isNested && "nested", gridProps.className]
+    .filter(Boolean)
+    .join(" ");
   const activate = (event) => {
     event.stopPropagation();
     if ((event.metaKey || event.ctrlKey) && onToggleSelect) {
@@ -518,7 +581,13 @@ function EditableBlock({
   };
   const Tag = tags[block.type];
   return Tag ? (
-    <Tag className={className} data-block-type={block.type} style={gridProps.style} {...interactionProps}>
+    <Tag
+      className={className}
+      data-block-type={block.type}
+      data-list-number={block.variant?.includes("numberedList") ? listNumber : undefined}
+      style={gridProps.style}
+      {...interactionProps}
+    >
       {children}
     </Tag>
   ) : null;
@@ -580,6 +649,7 @@ function EditableBlockList({
         block={block}
         document={document}
         key={block.id}
+        listNumber={block.variant?.includes("numberedList") ? getNumberedListPosition(blocks, index) : undefined}
         onActivate={(event) => onActivate(block, parentId, index, event.currentTarget)}
         onCaptionChange={onCaptionChange}
         onCodeChange={onCodeChange}
@@ -612,10 +682,12 @@ export default function WysiwygProjectCanvas({
   onEnter,
   onFrameChange,
   onGroupBlocks,
+  onIndent,
   onInlineFormat,
   onInsert,
   onMarkdownShortcut,
   onMove,
+  onOutdent,
   onPaste,
   onPickFrameBackground,
   onReplaceMedia,
@@ -931,7 +1003,9 @@ export default function WysiwygProjectCanvas({
   const textActions = {
     onBackspace,
     onEnter,
+    onIndent,
     onMarkdownShortcut,
+    onOutdent,
     onPaste,
     onSlash: openSlashMenu,
     onSoftBreak,
@@ -1074,6 +1148,7 @@ export default function WysiwygProjectCanvas({
                               setInlineTypeMenuOpen(false);
                               setInlineSelection(null);
                             }}
+                            shortcut={option.keyShortcut}
                           />
                         ))}
                       </MenuSection>
@@ -1237,6 +1312,7 @@ export default function WysiwygProjectCanvas({
                       onChangeType(liveActiveBlock, option.value);
                       setPopover(null);
                     }}
+                    shortcut={option.keyShortcut}
                   />
                 ))}
               </MenuSection>

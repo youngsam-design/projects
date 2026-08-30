@@ -32,6 +32,21 @@ export function getMediaClassName(variants, layout) {
   return [getVariantClassName(variants), `media-layout-${layout}`].filter(Boolean).join(" ");
 }
 
+// A numbered list item's displayed number ("1.", "2.", ...) is its 1-based
+// position among the numberedList siblings that precede it in the SAME
+// children array. Since nested list items (added via Tab/indent) live in
+// their own list item's `children`, this naturally restarts at 1 for each
+// nesting level while still counting continuously across other block types
+// at the top level - no CSS counter-scoping involved.
+export function getNumberedListPosition(siblings, index) {
+  let position = 1;
+  for (let i = 0; i < index; i += 1) {
+    const sibling = siblings[i];
+    if (sibling?.type === "group" && sibling.variant?.includes("numberedList")) position += 1;
+  }
+  return position;
+}
+
 export function isMediaBlock(block) {
   return block.type === "image" || block.type === "video";
 }

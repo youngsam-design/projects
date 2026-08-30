@@ -33,9 +33,11 @@ import {
   getBlock,
   getBlockParent,
   groupBlocks,
+  indentListItem,
   insertBlock,
   mergeBlockWithPrevious,
   moveBlock,
+  outdentListItem,
   removeBlock,
   replaceBlockWithBlocks,
   setTextMarks,
@@ -427,6 +429,29 @@ export default function ProjectEditorPage() {
     setSaveState("dirty");
     return { blockId: previousText.id, offset };
   };
+  // Indenting/outdenting reparents the list item's whole subtree under a
+  // different React parent, which remounts its text span - so the caret's
+  // live, not-yet-blurred DOM text (`value`) has to be written into the
+  // document as part of this same update, or the freshly-mounted span falls
+  // back to the last-blurred (stale) text and the in-progress edit is lost.
+  const indentCurrentListItem = (context, textBlockId, value, offset) => {
+    const { block, parentId, index } = context.current ?? context;
+    if (index === 0) return null;
+    const previous = getSiblingBlocks(parentId)?.[index - 1];
+    if (previous?.type !== "group" || !previous.variant?.includes("textList")) return null;
+    change((current) => indentListItem(updateBlock(current, textBlockId, { text: value }), block.id));
+    setSaveState("dirty");
+    return { blockId: textBlockId, offset };
+  };
+  const outdentCurrentListItem = (context, textBlockId, value, offset) => {
+    const { block, parentId } = context.current ?? context;
+    if (parentId === null) return null;
+    const parent = getBlock(document, parentId);
+    if (parent?.type !== "group" || !parent.variant?.includes("textList")) return null;
+    change((current) => outdentListItem(updateBlock(current, textBlockId, { text: value }), block.id));
+    setSaveState("dirty");
+    return { blockId: textBlockId, offset };
+  };
   const pasteBlocks = (context, textBlockId, pastedText, currentText, start, end) => {
     const { block } = context.current ?? context;
     const blocks = createBlocksFromPlainText(pastedText);
@@ -798,10 +823,12 @@ export default function ProjectEditorPage() {
                 onEnter={splitTextBlock}
                 onFrameChange={(blockId, patch) => updateMediaBlock(blockId, patch, `frame:${blockId}`)}
                 onGroupBlocks={groupBlocksHandler}
+                onIndent={indentCurrentListItem}
                 onInlineFormat={formatInlineSelection}
                 onInsert={insertInlineBlock}
                 onMarkdownShortcut={applyMarkdownShortcut}
                 onMove={(blockId, parentId, index) => apply((current) => moveBlock(current, blockId, { parentId, index }))}
+                onOutdent={outdentCurrentListItem}
                 onPaste={pasteBlocks}
                 onPickFrameBackground={pickFrameBackground}
                 onReplaceMedia={replaceMediaBlock}

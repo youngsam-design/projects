@@ -7,14 +7,14 @@ import ImageBlock from "./blocks/ImageBlock";
 import ParagraphBlock from "./blocks/ParagraphBlock";
 import RichContent from "./blocks/RichContent";
 import VideoBlock from "./blocks/VideoBlock";
-import { findFirstContentSectionId, getGridProps, getVariantClassName } from "./blocks/blockVariants";
+import { findFirstContentSectionId, getGridProps, getNumberedListPosition, getVariantClassName } from "./blocks/blockVariants";
 import ProjectMeta from "./ProjectMeta";
 import { resolveProjectAssetUrl } from "./projectAssets";
 import "./ProjectRenderer.scss";
 
-function SemanticBlock({ block, contentWidth, meta, renderBlock, resolveAssetUrl }) {
+function SemanticBlock({ block, contentWidth, isNested, listNumber, meta, renderBlock, resolveAssetUrl }) {
   const gridProps = getGridProps(block, contentWidth);
-  const className = [block.type === "group" && "group", getVariantClassName(block.variant), gridProps.className]
+  const className = [block.type === "group" && "group", getVariantClassName(block.variant), isNested && "nested", gridProps.className]
     .filter(Boolean)
     .join(" ");
 
@@ -68,6 +68,7 @@ function SemanticBlock({ block, contentWidth, meta, renderBlock, resolveAssetUrl
     {
       className,
       "data-block-type": block.type,
+      "data-list-number": block.variant?.includes("numberedList") ? listNumber : undefined,
       style: gridProps.style,
       ...(block.variant?.some((variant) => ["intro", "contentSection"].includes(variant))
         ? { "data-content-grid": true }
@@ -81,7 +82,14 @@ function SemanticBlock({ block, contentWidth, meta, renderBlock, resolveAssetUrl
           key="meta"
         />
       ),
-      ...(block.children?.map((child) => renderBlock(child)) ?? []),
+      ...(block.children?.map((child, index) =>
+        renderBlock(
+          child,
+          block.children,
+          index,
+          block.type === "group" && block.variant?.includes("textList") && child.type === "group" && child.variant?.includes("textList"),
+        ),
+      ) ?? []),
     ],
   );
 }
@@ -92,11 +100,13 @@ export default function ProjectRenderer({ document, after = null, before = null 
   const resolveAssetUrl = (src) => resolveProjectAssetUrl(document, src);
   const metaTargetId = findFirstContentSectionId(document.blocks);
 
-  const renderBlock = (block) => (
+  const renderBlock = (block, siblings = document.blocks, index = siblings.indexOf(block), isNested = false) => (
     <SemanticBlock
       key={block.id}
       block={block}
       contentWidth={document.contentWidth}
+      isNested={isNested}
+      listNumber={block.variant?.includes("numberedList") ? getNumberedListPosition(siblings, index) : undefined}
       meta={
         block.id === metaTargetId
           ? { contentWidth: document.contentWidth, items: document.meta }
@@ -111,7 +121,7 @@ export default function ProjectRenderer({ document, after = null, before = null 
     <AssetProvider assets={document.assets}>
       <div className="contents" id="contents">
         {before}
-        {document.blocks.map(renderBlock)}
+        {document.blocks.map((block, index) => renderBlock(block, document.blocks, index))}
         {after}
       </div>
     </AssetProvider>

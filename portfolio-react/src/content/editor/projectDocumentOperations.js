@@ -225,6 +225,45 @@ export function moveBlock(document, blockId, { parentId = null, index }) {
   return assertProjectDocument(nextDocument);
 }
 
+function isListItemBlock(block) {
+  return block?.type === "group" && block.variant?.includes("textList");
+}
+
+// Notion-style Tab: nests a list item as the last child of the sibling list
+// item right above it. A no-op (returns the document unchanged) when there's
+// no previous sibling or that sibling isn't itself a list item - callers are
+// expected to check applicability themselves (see ProjectEditorPage's
+// indent/outdent handlers) before deciding whether to record history.
+export function indentListItem(document, blockId) {
+  const nextDocument = cloneDocument(document);
+  const location = findLocation(nextDocument.blocks, blockId);
+  if (!location) throw new Error(`Unknown block '${blockId}'`);
+  if (location.index === 0) return nextDocument;
+  const previousSibling = location.blocks[location.index - 1];
+  if (!isListItemBlock(previousSibling)) return nextDocument;
+
+  const [block] = location.blocks.splice(location.index, 1);
+  if (!Array.isArray(previousSibling.children)) previousSibling.children = [];
+  previousSibling.children.push(block);
+  return assertProjectDocument(nextDocument);
+}
+
+// Shift+Tab: pulls a list item out of its parent list item, placing it right
+// after that parent among the parent's own siblings. A no-op when the item
+// isn't nested inside another list item (already at the top level).
+export function outdentListItem(document, blockId) {
+  const nextDocument = cloneDocument(document);
+  const location = findLocation(nextDocument.blocks, blockId);
+  if (!location) throw new Error(`Unknown block '${blockId}'`);
+  if (location.parentId === null) return nextDocument;
+  const parentLocation = findLocation(nextDocument.blocks, location.parentId);
+  if (!parentLocation || !isListItemBlock(parentLocation.block)) return nextDocument;
+
+  const [block] = location.blocks.splice(location.index, 1);
+  parentLocation.blocks.splice(parentLocation.index + 1, 0, block);
+  return assertProjectDocument(nextDocument);
+}
+
 export function setTextMarks(document, blockId, marks) {
   if (
     !Array.isArray(marks) ||

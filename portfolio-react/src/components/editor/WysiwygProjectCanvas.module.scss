@@ -79,15 +79,28 @@
 }
 
 .canvas [data-selected="true"] {
-  outline: 2px solid var(--color-info-foreground-main);
-  outline-offset: 2px;
+  position: relative;
+}
+
+.canvas [data-selected="true"]:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -6px;
+  width: calc(100% + 12px);
+  height: 100%;
+  pointer-events: none;
   border-radius: var(--radius-xsmall);
+  background: var(--color-info-background-hovered-pressed);
+  opacity: 0.3;
+  mix-blend-mode: difference;
+  z-index: 0;
 }
 
 .marquee {
   position: fixed;
   z-index: calc(var(--z-overlay) + 5);
-  border: 1px solid var(--color-info-foreground-main);
+
   background: rgb(35 131 226 / 10%);
   pointer-events: none;
 }

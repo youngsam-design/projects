@@ -11,7 +11,15 @@
 :root {
   --palette-black: #000;
   --palette-white: #fff;
+  --palette-white-alpha-900: rgb(255 255 255 / 90%);
+  --palette-white-alpha-800: rgb(255 255 255 / 80%);
+  --palette-white-alpha-700: rgb(255 255 255 / 70%);
+  --palette-white-alpha-600: rgb(255 255 255 / 60%);
   --palette-white-alpha-500: rgb(255 255 255 / 50%);
+  --palette-white-alpha-400: rgb(255 255 255 / 40%);
+  --palette-white-alpha-300: rgb(255 255 255 / 30%);
+  --palette-white-alpha-200: rgb(255 255 255 / 20%);
+  --palette-white-alpha-100: rgb(255 255 255 / 10%);
   --palette-current: currentcolor;
   --palette-transparent: transparent;
 
@@ -156,7 +164,7 @@
   --color-neutral-background-inverse-disabled: var(--palette-gray-700);
   --color-neutral-background-dimmed-main: var(--palette-gray-alpha-700);
   --color-neutral-background-dimmed-low: var(--palette-gray-alpha-300);
-  --color-neutral-background-blurred-main: var(--palette-white-alpha-500);
+  --color-neutral-background-blurred-main: var(--palette-white-alpha-200);
   --color-neutral-border-main: var(--palette-gray-alpha-100);
   --color-neutral-border-high: var(--palette-gray-alpha-200);
   --color-neutral-border-highest: var(--palette-gray-alpha-900);

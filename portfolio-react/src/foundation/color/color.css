@@ -239,3 +239,109 @@
   --color-promo-background-hovered-pressed: var(--palette-pink-alpha-100);
   --color-promo-border-main: var(--palette-pink-alpha-600);
 }
+
+/*
+ * Dark counterpart of the semantic block above - mirrors color/semanticColor.ts's
+ * `dark` object (see that file for the derivation rule each value follows).
+ * Scoped to [data-theme="dark"] rather than flipped at :root, since only
+ * whatever sets that attribute (currently WysiwygProjectCanvas, one project's
+ * own background color at a time) should get these values - the rest of the
+ * app's chrome stays on the light set above regardless.
+ */
+[data-theme="dark"] {
+  --color-neutral-foreground-main: var(--palette-gray-100);
+  --color-neutral-foreground-low: var(--palette-gray-300);
+  --color-neutral-foreground-lowest: var(--palette-gray-500);
+  --color-neutral-foreground-enabled: var(--palette-gray-700);
+  --color-neutral-foreground-disabled: var(--palette-gray-alpha-inverse-400);
+  --color-neutral-foreground-inverse-main: var(--palette-gray-900);
+  --color-neutral-foreground-inverse-disabled: var(--palette-gray-alpha-400);
+  --color-neutral-background-main: var(--palette-gray-900);
+  --color-neutral-background-lowest: var(--palette-gray-950);
+  --color-neutral-background-low: var(--palette-gray-800);
+  --color-neutral-background-high: var(--palette-gray-700);
+  --color-neutral-background-transparent: var(--palette-gray-alpha-inverse-0);
+  --color-neutral-background-hovered-pressed: var(--palette-gray-alpha-inverse-100);
+  --color-neutral-background-disabled-main: var(--palette-gray-800);
+  --color-neutral-background-disabled-low: var(--palette-gray-900);
+  --color-neutral-background-inverse-main: var(--palette-white);
+  --color-neutral-background-inverse-low: var(--palette-gray-100);
+  --color-neutral-background-inverse-hovered-pressed: var(--palette-gray-alpha-100);
+  --color-neutral-background-inverse-disabled: var(--palette-gray-300);
+  --color-neutral-background-dimmed-main: var(--palette-gray-alpha-700);
+  --color-neutral-background-dimmed-low: var(--palette-gray-alpha-300);
+  --color-neutral-background-blurred-main: var(--palette-gray-alpha-900);
+  --color-neutral-border-main: var(--palette-gray-alpha-inverse-100);
+  --color-neutral-border-high: var(--palette-gray-alpha-inverse-200);
+  --color-neutral-border-highest: var(--palette-gray-alpha-inverse-900);
+  --color-neutral-border-disabled: var(--palette-gray-alpha-inverse-200);
+
+  --color-primary-foreground-low: var(--palette-violet-600);
+  --color-primary-foreground-main: var(--palette-violet-400);
+  --color-primary-foreground-high: var(--palette-violet-300);
+  --color-primary-foreground-inverse-main: var(--palette-white);
+  --color-primary-background-main: var(--palette-violet-400);
+  --color-primary-background-lowest: var(--palette-violet-950);
+  --color-primary-background-low: var(--palette-violet-900);
+  --color-primary-background-hovered-pressed: var(--palette-violet-alpha-100);
+  --color-primary-border-main: var(--palette-violet-alpha-600);
+
+  --color-secondary-foreground-main: var(--palette-gray-300);
+  --color-secondary-foreground-low: var(--palette-gray-600);
+  --color-secondary-foreground-high: var(--palette-gray-200);
+  --color-secondary-foreground-inverse-main: var(--palette-gray-900);
+  --color-secondary-background-main: var(--palette-gray-200);
+  --color-secondary-background-low: var(--palette-gray-900);
+  --color-secondary-background-hovered-pressed: var(--palette-gray-alpha-inverse-100);
+  --color-secondary-border-main: var(--palette-gray-alpha-inverse-900);
+
+  --color-error-foreground-low: var(--palette-red-600);
+  --color-error-foreground-main: var(--palette-red-400);
+  --color-error-foreground-high: var(--palette-red-300);
+  --color-error-foreground-inverse-main: var(--palette-white);
+  --color-error-background-main: var(--palette-red-400);
+  --color-error-background-lowest: var(--palette-red-950);
+  --color-error-background-low: var(--palette-red-900);
+  --color-error-background-hovered-pressed: var(--palette-red-alpha-100);
+  --color-error-border-main: var(--palette-red-alpha-600);
+
+  --color-success-foreground-low: var(--palette-green-600);
+  --color-success-foreground-main: var(--palette-green-400);
+  --color-success-foreground-high: var(--palette-green-300);
+  --color-success-foreground-inverse-main: var(--palette-white);
+  --color-success-background-main: var(--palette-green-400);
+  --color-success-background-lowest: var(--palette-green-950);
+  --color-success-background-low: var(--palette-green-900);
+  --color-success-background-hovered-pressed: var(--palette-green-alpha-100);
+  --color-success-border-main: var(--palette-green-alpha-600);
+
+  --color-warning-foreground-low: var(--palette-orange-600);
+  --color-warning-foreground-main: var(--palette-orange-400);
+  --color-warning-foreground-high: var(--palette-orange-300);
+  --color-warning-foreground-inverse-main: var(--palette-white);
+  --color-warning-background-main: var(--palette-orange-400);
+  --color-warning-background-lowest: var(--palette-orange-950);
+  --color-warning-background-low: var(--palette-orange-900);
+  --color-warning-background-hovered-pressed: var(--palette-orange-alpha-100);
+  --color-warning-border-main: var(--palette-orange-alpha-600);
+
+  --color-info-foreground-low: var(--palette-blue-600);
+  --color-info-foreground-main: var(--palette-blue-400);
+  --color-info-foreground-high: var(--palette-blue-300);
+  --color-info-foreground-inverse-main: var(--palette-white);
+  --color-info-background-main: var(--palette-blue-400);
+  --color-info-background-lowest: var(--palette-blue-950);
+  --color-info-background-low: var(--palette-blue-900);
+  --color-info-background-hovered-pressed: var(--palette-blue-alpha-100);
+  --color-info-border-main: var(--palette-blue-alpha-600);
+
+  --color-promo-foreground-low: var(--palette-pink-600);
+  --color-promo-foreground-main: var(--palette-pink-400);
+  --color-promo-foreground-high: var(--palette-pink-300);
+  --color-promo-foreground-inverse-main: var(--palette-white);
+  --color-promo-background-main: var(--palette-pink-400);
+  --color-promo-background-lowest: var(--palette-pink-950);
+  --color-promo-background-low: var(--palette-pink-900);
+  --color-promo-background-hovered-pressed: var(--palette-pink-alpha-100);
+  --color-promo-border-main: var(--palette-pink-alpha-600);
+}

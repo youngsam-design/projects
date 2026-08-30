@@ -82,6 +82,11 @@
   position: relative;
 }
 
+// A project's own background is whatever color its author picked (see
+// isDarkBackground in WysiwygProjectCanvas.jsx), so a highlight tuned only for
+// a light canvas can wash out or vanish against a dark one. [data-theme] on
+// the canvas root picks a color already tuned for that brightness instead of
+// leaning on a mix-blend-mode trick to fake adaptiveness.
 .canvas [data-selected="true"]:after {
   position: absolute;
   content: "";
@@ -91,10 +96,12 @@
   height: 100%;
   pointer-events: none;
   border-radius: var(--radius-xsmall);
-  background: var(--color-info-background-hovered-pressed);
-  opacity: 0.3;
-  mix-blend-mode: difference;
+  background: rgb(35 131 226 / 25%);
   z-index: 0;
+}
+
+.canvas[data-theme="dark"] [data-selected="true"]:after {
+  background: rgb(163 201 255 / 35%);
 }
 
 .marquee {
@@ -103,6 +110,10 @@
 
   background: rgb(35 131 226 / 10%);
   pointer-events: none;
+}
+
+.canvas[data-theme="dark"] .marquee {
+  background: rgb(163 201 255 / 18%);
 }
 
 .selectionBar {
@@ -145,7 +156,6 @@
   position: fixed;
   z-index: calc(var(--z-overlay) + 2);
   display: flex;
-  gap: 4px;
 }
 
 .resizeFrame {
@@ -191,68 +201,46 @@
   right: -5px;
 }
 
-.inlineToolbar {
+// Carries the actual position (from inlineSelection.rect) so the toolbar
+// Menu and its sibling .inlineTypeMenu share a positioned ancestor - the same
+// role .blockToolbar plays for .settingsMenu/.settingsDetailMenu - letting
+// .inlineTypeMenu's left be a plain CSS calc against the toolbar's own width
+// instead of resolving against the viewport. The toolbar Menu itself needs no
+// class of its own now (Menu's `width` prop sizes it, Menu's own .menu class
+// supplies the card look) - it just sits in normal flow inside this wrapper.
+.inlineToolbarWrap {
   position: fixed;
   z-index: calc(var(--z-overlay) + 4);
+}
+
+.inlineIconRow {
   display: flex;
-  gap: 2px;
-  padding: 4px;
-  border-radius: var(--radius-xsmall);
-  background: var(--color-neutral-background-inverse-low);
-  box-shadow: 0 8px 24px rgb(0 0 0 / 20%);
-}
-
-.inlineToolbar button {
-  min-height: 30px;
-  padding: 0 10px;
-  border: 0;
-  border-radius: 4px;
-  color: var(--color-neutral-foreground-inverse-main);
-  font: inherit;
-  font-size: var(--caption-xsmall);
-  background: transparent;
-  cursor: pointer;
-}
-
-.inlineToolbar button:hover {
-  background: var(--palette-gray-alpha-inverse-100);
+  flex-wrap: wrap;
+  gap: var(--spacing-tiny-medium);
 }
 
 .inlineActive {
-  color: var(--color-neutral-background-main);
-  background: var(--color-info-foreground-main);
+  color: var(--color-neutral-foreground-inverse-main) !important;
+  background: var(--color-info-foreground-main) !important;
 }
 
 .inlineActive:hover {
   background: var(--color-info-foreground-main) !important;
 }
 
-.inlineBold {
-  font-weight: 700;
-}
-
-.inlineItalic {
-  font-style: italic;
-}
-
-.inlineStrike {
-  text-decoration: line-through;
-}
-
-.inlineCode {
-  font-family: monospace;
-}
-
-.inlineTypeSwitch {
-  position: relative;
-}
-
+// A sibling of the toolbar Menu inside .inlineToolbarWrap, positioned to its
+// side the same way .settingsDetailMenu sits beside .settingsMenu: relative
+// to that shared positioned wrapper (not the viewport), left is a plain calc
+// against the toolbar's own fixed 200px width, top:0 lines its top up with
+// the toolbar's (.inlineToolbarWrap's own top already matches the toolbar's).
 .inlineTypeMenu {
   position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1;
-  margin-top: 4px;
+  top: 0;
+  left: calc(200px + var(--spacing-tiny-small));
+  z-index: calc(var(--z-overlay) + 1);
+  max-height: min(560px, calc(100vh - 120px));
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 .dropIndicator {
@@ -277,28 +265,10 @@
   transform: translateY(-50%);
 }
 
-.blockToolbar > button {
-  display: grid;
-  width: 32px;
-  height: 32px;
-  padding: 0;
-  border: 0;
-  border-radius: var(--radius-xsmall);
-  color: var(--palette-gray-600);
-  font: inherit;
-  font-size: 22px;
-  background: var(--palette-gray-alpha-inverse-900);
-  cursor: pointer;
-  place-items: center;
-}
-
-.blockToolbar > button[draggable="true"] {
+// IconButton owns its own look (size/variant props) - this is just the one
+// thing it has no prop for.
+.dragHandle {
   cursor: grab;
-}
-
-.blockToolbar > button:hover {
-  color: var(--color-neutral-foreground-main);
-  background: var(--color-neutral-background-low);
 }
 
 .insertMenu {
@@ -321,7 +291,7 @@
 .settingsDetailMenu {
   position: absolute;
   top: 40px;
-  left: calc(240px + var(--spacing-tiny-small));
+  left: calc(200px + var(--spacing-tiny-small));
   z-index: calc(var(--z-overlay) + 3);
   max-height: min(560px, calc(100vh - 120px));
   overflow-y: auto;

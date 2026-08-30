@@ -78,6 +78,23 @@ export function removeBlock(document, blockId) {
   return assertProjectDocument(nextDocument);
 }
 
+// Removes several blocks as one document update (one history entry), for the
+// multi-select toolbar's "delete" action - looping removeBlock per id from
+// the caller would instead record N separate undo steps. Re-finds each
+// block's location fresh rather than resolving indices up front, so removing
+// an earlier sibling doesn't invalidate a later one's index; a block that no
+// longer exists (e.g. a child whose selected parent was already spliced out)
+// is silently skipped rather than treated as an error - deleting a selection
+// that includes both a group and its own child should just remove the group.
+export function removeBlocks(document, blockIds) {
+  const nextDocument = cloneDocument(document);
+  for (const blockId of blockIds) {
+    const location = findLocation(nextDocument.blocks, blockId);
+    if (location) location.blocks.splice(location.index, 1);
+  }
+  return assertProjectDocument(nextDocument);
+}
+
 function withFreshIds(block) {
   return {
     ...block,

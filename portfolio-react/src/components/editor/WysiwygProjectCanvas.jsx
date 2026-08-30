@@ -18,11 +18,28 @@ import {
 } from "../project/blocks/blockVariants";
 import Footer from "../layout/Footer";
 import Icon from "../ui/Icon";
+import IconButton from "../ui/IconButton";
 import Menu, { MenuHeader, MenuItem, MenuSection, MenuSeparator } from "../ui/Menu";
 import styles from "./WysiwygProjectCanvas.module.scss";
 
 function getTextClassName(marks = []) {
   return marks.map((mark) => `mark-${mark}`).join(" ");
+}
+
+// document.theme colors are stored as bare "R, G, B" strings (no rgb()/hex
+// wrapper - see ProjectSettingsEditor's rgbStringToHex/hexToRgbString), meant
+// to be dropped straight into rgb(var(--theme-background)). A project's
+// background is whatever color its own author picked, so the floating
+// overlays drawn on top of the canvas (selection highlight, drag marquee)
+// can't assume it's light - this classifies it so WysiwygProjectCanvas can
+// pick colors that stay visible either way, via a plain [data-theme] switch
+// instead of a mix-blend-mode trick.
+function isDarkBackground(rgbString) {
+  const channels = (rgbString ?? "").split(",").map((part) => Number(part.trim()));
+  if (channels.length !== 3 || channels.some((value) => Number.isNaN(value))) return false;
+  const [r, g, b] = channels;
+  const perceivedBrightness = (r * 299 + g * 587 + b * 114) / 1000;
+  return perceivedBrightness < 128;
 }
 
 const blockTypeOptions = [
@@ -33,8 +50,8 @@ const blockTypeOptions = [
   { value: "heading-4", label: "제목 4", icon: "heading4", shortcut: "####", keyShortcut: "⇧⌘4" },
   { value: "heading-5", label: "제목 5", icon: "heading5", shortcut: "", keyShortcut: "⇧⌘5" },
   { value: "heading-6", label: "제목 6", icon: "heading6", shortcut: "", keyShortcut: "⇧⌘6" },
-  { value: "bullet-list", label: "글머리 기호 목록", icon: "bulletList", shortcut: "-", keyShortcut: "⇧⌘8" },
   { value: "numbered-list", label: "번호 매기기 목록", icon: "numberedList", shortcut: "1.", keyShortcut: "⇧⌘7" },
+  { value: "bullet-list", label: "글머리 기호 목록", icon: "bulletList", shortcut: "-", keyShortcut: "⇧⌘8" },
   { value: "quote", label: "인용", icon: "quote", shortcut: "", keyShortcut: "⇧⌘9" },
   { value: "callout", label: "콜아웃", icon: "callout", shortcut: "", keyShortcut: "⇧⌘O" },
   { value: "codeBlock", label: "코드 블록", icon: "codeBlock", shortcut: "", keyShortcut: "⇧⌘C" },
@@ -201,7 +218,20 @@ function readLiveText(element) {
   return (element.textContent ?? "").replaceAll(softBreakCaretAnchor, "");
 }
 
-function EditableText({ block, context, onBackspace, onEnter, onIndent, onMarkdownShortcut, onOutdent, onPaste, onSlash, onSoftBreak, onTextChange, onTextSelection }) {
+function EditableText({
+  block,
+  context,
+  onBackspace,
+  onEnter,
+  onIndent,
+  onMarkdownShortcut,
+  onOutdent,
+  onPaste,
+  onSlash,
+  onSoftBreak,
+  onTextChange,
+  onTextSelection,
+}) {
   const text = getBlockText(block);
   const skipBlurRef = useRef(false);
 
@@ -677,6 +707,7 @@ export default function WysiwygProjectCanvas({
   onChangeType,
   onCodeChange,
   onDelete,
+  onDeleteBlocks,
   onDocumentChange,
   onDuplicate,
   onEnter,
@@ -719,6 +750,35 @@ export default function WysiwygProjectCanvas({
       const parents = [...selectedBlockIds].map((id) => findParentBlock(document.blocks, id)?.id ?? null);
       return parents.every((parentIdValue) => parentIdValue === parents[0]);
     })();
+  // Menu's own .menu class clips overflow, so a submenu positioned outside
+  // its trigger's box (settingsDetailMenu/inlineTypeMenu are both siblings of
+  // their own Menu card, not nested inside it) can't rely on "shared DOM
+  // subtree keeps mouseleave from firing" the way a nested submenu would.
+  // A short close delay does the same job across two separate elements:
+  // moving from the trigger into the submenu re-enters before the timer
+  // fires and cancels it, so the gap between them doesn't cause a flicker-close.
+  const settingsDetailCloseTimer = useRef(null);
+  const openSettingsDetail = () => {
+    if (settingsDetailCloseTimer.current) {
+      window.clearTimeout(settingsDetailCloseTimer.current);
+      settingsDetailCloseTimer.current = null;
+    }
+    setSettingsDetailOpen(true);
+  };
+  const scheduleCloseSettingsDetail = () => {
+    settingsDetailCloseTimer.current = window.setTimeout(() => setSettingsDetailOpen(false), 150);
+  };
+  const inlineTypeMenuCloseTimer = useRef(null);
+  const openInlineTypeMenu = () => {
+    if (inlineTypeMenuCloseTimer.current) {
+      window.clearTimeout(inlineTypeMenuCloseTimer.current);
+      inlineTypeMenuCloseTimer.current = null;
+    }
+    setInlineTypeMenuOpen(true);
+  };
+  const scheduleCloseInlineTypeMenu = () => {
+    inlineTypeMenuCloseTimer.current = window.setTimeout(() => setInlineTypeMenuOpen(false), 150);
+  };
   useEffect(() => {
     if (popover !== "settings") setSettingsDetailOpen(false);
   }, [popover]);
@@ -806,6 +866,11 @@ export default function WysiwygProjectCanvas({
     });
     setPopover(null);
     setReplaceMode(false);
+    // Mirrors toggleSelect clearing activeBlock on multi-select: without
+    // this, a plain click during an active multi-select leaves both states
+    // set, so both toolbars (and both Delete-key handlers below) end up live
+    // at once.
+    setSelectedBlockIds(new Set());
     onSelect(block.id);
   };
   const insertAfter = (kind) => {
@@ -843,6 +908,37 @@ export default function WysiwygProjectCanvas({
     onGroupBlocks([...selectedBlockIds]);
     clearSelection();
   };
+  const handleDeleteSelected = () => {
+    onDeleteBlocks([...selectedBlockIds]);
+    clearSelection();
+  };
+  // Delete/Backspace with a block "active" (its floating toolbar showing)
+  // deletes that block - but not while the target is a text field or other
+  // interactive control, where the same keys mean "edit this text"/"delete
+  // this character" instead (mirrors the guard handleCanvasMouseDown already
+  // uses to tell "clicked a block" from "clicked into its editable content").
+  useEffect(() => {
+    if (!activeBlock) return;
+    const handleKeyDown = (event) => {
+      if (event.key !== "Delete" && event.key !== "Backspace") return;
+      if (event.target.closest?.("[contenteditable], input, select, textarea")) return;
+      event.preventDefault();
+      deleteActiveBlock();
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [activeBlock]);
+  useEffect(() => {
+    if (selectedBlockIds.size === 0) return;
+    const handleKeyDown = (event) => {
+      if (event.key !== "Delete" && event.key !== "Backspace") return;
+      if (event.target.closest?.("[contenteditable], input, select, textarea")) return;
+      event.preventDefault();
+      handleDeleteSelected();
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedBlockIds]);
   const handleCanvasMouseDown = (event) => {
     if (event.button !== 0) return;
     if (event.target.closest("[data-editor-block], [contenteditable], button, a, input, select, textarea, [data-media-menu]")) {
@@ -1028,6 +1124,7 @@ export default function WysiwygProjectCanvas({
   return (
     <div
       className={styles.canvas}
+      data-theme={isDarkBackground(document.theme.mainBackgroundColor) ? "dark" : "light"}
       onContextMenu={handleCanvasContextMenu}
       onMouseDown={handleCanvasMouseDown}
       style={{
@@ -1108,86 +1205,105 @@ export default function WysiwygProjectCanvas({
           const typeTarget = findConvertibleAncestor(document.blocks, inlineSelection.blockId);
           const currentTypeValue = typeTarget ? getBlockTypeValue(typeTarget) : null;
           const currentTypeLabel = blockTypeOptions.find((option) => option.value === currentTypeValue)?.label ?? "텍스트";
-          const markButtons = [
-            { format: "bold", label: "B", className: styles.inlineBold },
-            { format: "italic", label: "I", className: styles.inlineItalic },
-            { format: "strike", label: "S", className: styles.inlineStrike },
-            { format: "code", label: "</>", className: styles.inlineCode },
-            { format: "highlight", label: "Highlight" },
+          const iconMarkButtons = [
+            { format: "bold", icon: "bold", label: "굵게" },
+            { format: "italic", icon: "italic", label: "기울임" },
+            { format: "underline", icon: "underline", label: "밑줄" },
+            { format: "strike", icon: "strike", label: "취소선" },
+            { format: "code", icon: "codeBlock", label: "코드" },
+            { format: "highlight", icon: "highlight", label: "하이라이트" },
           ];
+          const toolbarTop = Math.max(8, inlineSelection.rect.top - 44);
           return (
-            <div
-              className={styles.inlineToolbar}
-              style={{
-                top: Math.max(8, inlineSelection.rect.top - 44),
-                left: inlineSelection.rect.left,
-              }}
-            >
-              {typeTarget && (
-                <div className={styles.inlineTypeSwitch}>
-                  <button
-                    aria-expanded={inlineTypeMenuOpen}
+            <div className={styles.inlineToolbarWrap} style={{ top: toolbarTop, left: inlineSelection.rect.left }}>
+              <Menu width="200px">
+                {typeTarget && (
+                  <>
+                    <MenuSection onMouseEnter={openInlineTypeMenu} onMouseLeave={scheduleCloseInlineTypeMenu}>
+                      <MenuItem
+                        active={inlineTypeMenuOpen}
+                        chevron
+                        label={currentTypeLabel}
+                        onMouseDown={(event) => event.preventDefault()}
+                        onSelect={() => setInlineTypeMenuOpen((open) => !open)}
+                      />
+                    </MenuSection>
+                    <MenuSeparator />
+                  </>
+                )}
+                <div className={styles.inlineIconRow}>
+                  {iconMarkButtons.map(({ format, icon, label }) => (
+                    <IconButton
+                      aria-pressed={selectionMarks.includes(format)}
+                      className={selectionMarks.includes(format) ? styles.inlineActive : undefined}
+                      icon={icon}
+                      key={format}
+                      label={label}
+                      onMouseDown={(event) => event.preventDefault()}
+                      onClick={() => {
+                        onInlineFormat(inlineSelection, format);
+                        setInlineSelection(null);
+                      }}
+                      size="small"
+                      variant="subtle"
+                    />
+                  ))}
+                  <IconButton
+                    aria-label={isLinked ? "링크 해제" : "링크"}
+                    aria-pressed={isLinked}
+                    className={isLinked ? styles.inlineActive : undefined}
+                    icon={isLinked ? "unlink" : "link"}
+                    label={isLinked ? "링크 해제" : "링크"}
                     onMouseDown={(event) => event.preventDefault()}
-                    onClick={() => setInlineTypeMenuOpen((open) => !open)}
-                    type="button"
-                  >
-                    {currentTypeLabel} ▾
-                  </button>
-                  {inlineTypeMenuOpen && (
-                    <Menu className={styles.inlineTypeMenu} width="220px">
-                      <MenuSection>
-                        {blockTypeOptions.map((option) => (
-                          <MenuItem
-                            checked={option.value === currentTypeValue}
-                            icon={<Icon name={option.icon} />}
-                            key={option.value}
-                            label={option.label}
-                            onMouseDown={(event) => event.preventDefault()}
-                            onSelect={() => {
-                              onChangeType(typeTarget, option.value);
-                              setInlineTypeMenuOpen(false);
-                              setInlineSelection(null);
-                            }}
-                            shortcut={option.keyShortcut}
-                          />
-                        ))}
-                      </MenuSection>
-                    </Menu>
-                  )}
+                    onClick={() => {
+                      if (isLinked) {
+                        onInlineFormat(inlineSelection, "unlink");
+                      } else {
+                        const href = window.prompt("링크 주소를 입력하세요", "https://");
+                        if (href) onInlineFormat(inlineSelection, "link", href);
+                      }
+                      setInlineSelection(null);
+                    }}
+                    size="small"
+                    variant="subtle"
+                  />
                 </div>
-              )}
-              {markButtons.map(({ format, label, className }) => (
-                <button
-                  aria-pressed={selectionMarks.includes(format)}
-                  className={[className, selectionMarks.includes(format) ? styles.inlineActive : undefined].filter(Boolean).join(" ")}
-                  key={format}
-                  onMouseDown={(event) => event.preventDefault()}
-                  onClick={() => {
-                    onInlineFormat(inlineSelection, format);
-                    setInlineSelection(null);
-                  }}
-                  type="button"
+              </Menu>
+              {/* A sibling of inlineToolbar (both children of
+                  .inlineToolbarWrap, which carries the actual position), not
+                  nested inside it - same overflow-clipping reason as
+                  settingsDetailMenu/settingsMenu. Sharing that positioned
+                  wrapper is what lets .inlineTypeMenu's left be a plain CSS
+                  calc against the toolbar's fixed width, the same way
+                  .settingsDetailMenu's is against .settingsMenu - a fixed
+                  toolbar width but no shared ancestor would leave .inlineTypeMenu's
+                  "left" resolving against the viewport instead. */}
+              {typeTarget && inlineTypeMenuOpen && (
+                <Menu
+                  className={styles.inlineTypeMenu}
+                  onMouseEnter={openInlineTypeMenu}
+                  onMouseLeave={scheduleCloseInlineTypeMenu}
+                  width="220px"
                 >
-                  {label}
-                </button>
-              ))}
-              <button
-                aria-pressed={isLinked}
-                className={isLinked ? styles.inlineActive : undefined}
-                onMouseDown={(event) => event.preventDefault()}
-                onClick={() => {
-                  if (isLinked) {
-                    onInlineFormat(inlineSelection, "unlink");
-                  } else {
-                    const href = window.prompt("링크 주소를 입력하세요", "https://");
-                    if (href) onInlineFormat(inlineSelection, "link", href);
-                  }
-                  setInlineSelection(null);
-                }}
-                type="button"
-              >
-                {isLinked ? "Unlink" : "Link"}
-              </button>
+                  <MenuSection>
+                    {blockTypeOptions.map((option) => (
+                      <MenuItem
+                        checked={option.value === currentTypeValue}
+                        icon={<Icon name={option.icon} />}
+                        key={option.value}
+                        label={option.label}
+                        onMouseDown={(event) => event.preventDefault()}
+                        onSelect={() => {
+                          onChangeType(typeTarget, option.value);
+                          setInlineTypeMenuOpen(false);
+                          setInlineSelection(null);
+                        }}
+                        shortcut={option.keyShortcut}
+                      />
+                    ))}
+                  </MenuSection>
+                </Menu>
+              )}
             </div>
           );
         })()}
@@ -1234,21 +1350,21 @@ export default function WysiwygProjectCanvas({
             left: Math.max(8, activeBlock.left - 76),
           }}
         >
-          <button
-            className={styles.addBlockButton}
-            aria-label="블록 추가"
+          <IconButton
+            icon="add"
+            label="블록 추가"
             onClick={() => {
               setReplaceMode(false);
               setPopover(popover === "insert" ? null : "insert");
             }}
-            type="button"
-          >
-            +
-          </button>
-          <button
+            size="small"
+            variant="subtle"
+          />
+          <IconButton
             className={styles.dragHandle}
-            aria-label="블록 이동 또는 설정"
             draggable
+            icon="drag"
+            label="블록 이동 또는 설정"
             onClick={() => setPopover(popover === "settings" ? null : "settings")}
             onDragStart={(event) => {
               event.dataTransfer.effectAllowed = "move";
@@ -1260,10 +1376,9 @@ export default function WysiwygProjectCanvas({
               setDraggedBlockId(null);
               setDropIndicator(null);
             }}
-            type="button"
-          >
-            ⠿
-          </button>
+            size="small"
+            variant="subtle"
+          />
           {popover === "insert" && (
             <Menu className={styles.insertMenu} width="240px">
               <MenuSection>
@@ -1280,7 +1395,7 @@ export default function WysiwygProjectCanvas({
             </Menu>
           )}
           {popover === "settings" && (
-            <Menu className={styles.settingsMenu} width="240px">
+            <Menu className={styles.settingsMenu} width="200px">
               <MenuSection>
                 <MenuItem ariaLabel="블록 삭제" danger icon={<Icon name="delete" />} label="삭제" onSelect={deleteActiveBlock} shortcut="Del" />
                 {isUngroupableGroup(liveActiveBlock) && (
@@ -1288,7 +1403,7 @@ export default function WysiwygProjectCanvas({
                 )}
               </MenuSection>
               <MenuSeparator />
-              <MenuSection>
+              <MenuSection onMouseEnter={openSettingsDetail} onMouseLeave={scheduleCloseSettingsDetail}>
                 <MenuItem
                   active={settingsDetailOpen}
                   chevron
@@ -1299,8 +1414,13 @@ export default function WysiwygProjectCanvas({
               </MenuSection>
             </Menu>
           )}
+          {/* A sibling of settingsMenu, not nested inside it - Menu's own
+              .menu class clips overflow, so a submenu positioned outside its
+              trigger's box would render with a real position/size and still
+              never actually paint (see openSettingsDetail above for how
+              hover is kept working without shared DOM nesting). */}
           {popover === "settings" && settingsDetailOpen && (
-            <Menu className={styles.settingsDetailMenu} width="240px">
+            <Menu className={styles.settingsDetailMenu} onMouseEnter={openSettingsDetail} onMouseLeave={scheduleCloseSettingsDetail} width="240px">
               <MenuSection>
                 {blockTypeOptions.map((option) => (
                   <MenuItem
@@ -1379,6 +1499,9 @@ export default function WysiwygProjectCanvas({
           <span>{selectedBlockIds.size}개 선택됨</span>
           <button disabled={!canGroupSelection} onClick={handleGroupSelected} type="button">
             그룹으로 묶기
+          </button>
+          <button onClick={handleDeleteSelected} type="button">
+            삭제
           </button>
           <button onClick={clearSelection} type="button">
             선택 해제

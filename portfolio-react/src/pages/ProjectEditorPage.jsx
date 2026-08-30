@@ -39,6 +39,7 @@ import {
   moveBlock,
   outdentListItem,
   removeBlock,
+  removeBlocks,
   replaceBlockWithBlocks,
   setTextMarks,
   ungroupBlock,
@@ -661,6 +662,10 @@ export default function ProjectEditorPage() {
     apply((current) => removeBlock(current, blockId));
   };
 
+  const deleteBlocksHandler = (blockIds) => {
+    apply((current) => removeBlocks(current, blockIds));
+  };
+
   const save = async () => {
     if (saveInFlightRef.current) return;
     saveInFlightRef.current = true;
@@ -818,6 +823,7 @@ export default function ProjectEditorPage() {
                 onChangeType={changeBlockType}
                 onCodeChange={(blockId, update) => updateMediaBlock(blockId, update, `code:${blockId}`)}
                 onDelete={deleteBlock}
+                onDeleteBlocks={deleteBlocksHandler}
                 onDocumentChange={updateProjectSettings}
                 onDuplicate={duplicateBlockHandler}
                 onEnter={splitTextBlock}

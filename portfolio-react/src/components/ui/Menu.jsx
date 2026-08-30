@@ -54,8 +54,12 @@ export function MenuHeader({ eyebrow, title }) {
   );
 }
 
-export function MenuSection({ children }) {
-  return <div className={styles.section}>{children}</div>;
+export function MenuSection({ children, ...rest }) {
+  return (
+    <div className={styles.section} {...rest}>
+      {children}
+    </div>
+  );
 }
 
 export function MenuSeparator() {
@@ -97,7 +101,10 @@ export function MenuItem({
       <span className={styles.body}>
         <span className={styles.row}>
           <span className={styles.label}>{label}</span>
-          {shortcut && <span className={styles.shortcut}>{shortcut}</span>}
+          {/* Checked already means "this is the current one" - the shortcut
+              that would apply it has nothing left to offer here, and showing
+              both at once just clutters the row. */}
+          {shortcut && !checked && <span className={styles.shortcut}>{shortcut}</span>}
           {checked && <Icon className={styles.check} name="check" />}
           {chevron && <Icon className={styles.chevron} name="chevronRight" />}
         </span>

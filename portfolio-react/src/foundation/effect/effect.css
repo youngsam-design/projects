@@ -1,7 +1,7 @@
 /* Mirrors effect/effect.ts. Kept in sync by hand until one is generated from the other. */
 
 :root {
-  --blur-small: blur(8px);
-  --blur-medium: blur(12px);
-  --blur-large: saturate(180%) blur(20px);
+  --blur-sm: blur(8px);
+  --blur-md: blur(12px);
+  --blur-lg: saturate(180%) blur(20px);
 }

@@ -8,10 +8,10 @@
 
 ## 토큰 구조
 
-| 토큰 | CSS 변수 | 값 | 용도 |
-|------|---------|----|------|
-| `elevation.small` | `--elevation-small` | `0px 2px 4px 0px rgba(0, 0, 0, 0.06)` | 카드, 드롭다운 등 낮은 층위 |
-| `elevation.medium` | `--elevation-medium` | `0px 2px 8px 0px rgba(0, 0, 0, 0.08)` | 모달, 패널 등 중간 층위 |
+| 토큰               | CSS 변수         | 값                                    | 용도                        |
+| ------------------ | ---------------- | ------------------------------------- | --------------------------- |
+| `elevation.small`  | `--elevation-sm` | `0px 2px 4px 0px rgba(0, 0, 0, 0.06)` | 카드, 드롭다운 등 낮은 층위 |
+| `elevation.medium` | `--elevation-md` | `0px 2px 8px 0px rgba(0, 0, 0, 0.08)` | 모달, 패널 등 중간 층위     |
 
 ---
 
@@ -20,16 +20,16 @@
 ```scss
 /* Component.module.scss */
 .card {
-  box-shadow: var(--elevation-small);
-  border-radius: var(--radius-small);
+  box-shadow: var(--elevation-sm);
+  border-radius: var(--radius-sm);
 }
 
 .interactive {
-  box-shadow: var(--elevation-small);
+  box-shadow: var(--elevation-sm);
   transition: box-shadow var(--duration-short-03) var(--easing-standard);
 
   &:hover {
-    box-shadow: var(--elevation-medium);
+    box-shadow: var(--elevation-md);
   }
 }
 ```
@@ -52,9 +52,7 @@ import { elevation } from '../../foundation';
 
 const isElevated = someRuntimeCondition;
 
-<div style={{ boxShadow: isElevated ? elevation.medium : elevation.small }}>
-  상태에 따라 달라지는 그림자
-</div>
+<div style={{ boxShadow: isElevated ? elevation.medium : elevation.small }}>상태에 따라 달라지는 그림자</div>;
 ```
 
 정적인 elevation 값을 인라인으로 쓸 이유는 없습니다 — CSS Modules에서 `var(--elevation-...)`로 참조하는 쪽을 기본으로 합니다.

@@ -56,9 +56,9 @@
 }
 
 .carousel-title h4 {
-  font-size: var(--display-medium);
+  font-size: var(--display-md);
   color: var(--color-neutral-foreground-inverse-main) !important;
-  font-family: "FreightText";
+  font-family: 'FreightText';
   letter-spacing: -0.1rem;
 
   @media (max-width: 767px) {
@@ -183,7 +183,7 @@
 }
 
 .card-in .title-content-text .title-head .title-content-headline {
-  font-size: var(--body-large);
+  font-size: var(--body-lg);
   line-height: 1.2;
   margin-top: 4px;
   word-break: keep-all;
@@ -216,7 +216,7 @@
 }
 
 #prev:before {
-  content: "";
+  content: '';
   font-size: 24px;
   position: absolute;
   left: calc(50% - 1px);
@@ -227,7 +227,7 @@
 }
 
 #next:before {
-  content: "";
+  content: '';
   font-size: 24px;
   position: absolute;
   left: calc(50% + 1px);

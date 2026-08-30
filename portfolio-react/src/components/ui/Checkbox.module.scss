@@ -11,7 +11,7 @@
 .row {
   display: flex;
   align-items: center;
-  gap: var(--spacing-tiny-large);
+  gap: var(--spacing-tiny-lg);
 }
 
 .box {
@@ -23,7 +23,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid var(--color-neutral-border-high);
-  border-radius: var(--radius-3xsmall);
+  border-radius: var(--radius-3xs);
   background: var(--color-neutral-background-main);
 }
 
@@ -70,7 +70,7 @@
 
 .label {
   color: var(--color-neutral-foreground-main);
-  font-size: var(--caption-xsmall);
+  font-size: var(--caption-xs);
   line-height: var(--line-height-tight);
 }
 
@@ -81,7 +81,7 @@
 .descriptionRow {
   display: flex;
   align-items: flex-start;
-  gap: var(--spacing-normal-small);
+  gap: var(--spacing-normal-sm);
 }
 
 .spacer {
@@ -91,7 +91,7 @@
 
 .description {
   color: var(--color-neutral-foreground-low);
-  font-size: var(--caption-xsmall);
+  font-size: var(--caption-xs);
   line-height: var(--line-height-tight);
 }
 

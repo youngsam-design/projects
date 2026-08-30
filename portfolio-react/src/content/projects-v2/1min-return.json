@@ -14,8 +14,8 @@
     "coverAssetId": "ast_1min_010"
   },
   "theme": {
-    "mainBackgroundColor": "137, 29, 19",
-    "mainForegroundColor": "255, 255, 255",
+    "mainBackgroundColor": "255, 255, 255",
+    "mainForegroundColor": "0, 39, 78",
     "subBackgroundColor": "231, 245, 255",
     "subForegroundColor": "0, 39, 78"
   },
@@ -1310,7 +1310,7 @@
                 }
               ],
               "grid": {
-                "span": 10
+                "span": 12
               }
             },
             {
@@ -1437,6 +1437,6 @@
       ]
     }
   ],
-  "version": 545,
+  "version": 567,
   "contentWidth": "medium"
 }

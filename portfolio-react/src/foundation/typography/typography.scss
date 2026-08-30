@@ -1,5 +1,5 @@
-@use "sass:map";
-@use "../layout/breakpoints" as bp;
+@use 'sass:map';
+@use '../layout/breakpoints' as bp;
 
 /* ============================================================
    Responsive font-size variables
@@ -14,27 +14,27 @@
 // via tier-mobile()/tier-desktop() instead of hardcoding px numbers - see
 // ProjectHero.scss's hero title for an example.
 $tiers: (
-  display-large: (
+  display-lg: (
     mobile: 32px,
     desktop: 56px,
   ),
-  display-medium: (
+  display-md: (
     mobile: 26px,
     desktop: 40px,
   ),
-  display-small: (
+  display-sm: (
     mobile: 24px,
     desktop: 32px,
   ),
-  heading-large: (
+  heading-lg: (
     mobile: 22px,
     desktop: 28px,
   ),
-  heading-medium: (
+  heading-md: (
     mobile: 20px,
     desktop: 24px,
   ),
-  heading-small: (
+  heading-sm: (
     mobile: 18px,
     desktop: 22px,
   ),
@@ -52,13 +52,13 @@ $tiers: (
   @each $name, $sizes in $tiers {
     --#{$name}: #{map.get($sizes, mobile)};
   }
-  --body-large: 17px;
-  --body-medium: 16px;
-  --body-small: 15px;
-  --caption-medium: 14px;
-  --caption-small: 13px;
-  --caption-xsmall: 12px;
-  --label-medium: 16px;
+  --body-lg: 17px;
+  --body-md: 16px;
+  --body-sm: 15px;
+  --caption-md: 14px;
+  --caption-sm: 13px;
+  --caption-xs: 12px;
+  --label-md: 16px;
 
   // Mirrors typography.ts's `fw` object. Only the weights components
   // actually consume are exposed (fw.medium has no CSS var yet).
@@ -77,39 +77,39 @@ $tiers: (
    Display  (line-height 1.35)
    ============================================================ */
 
-.display-large-bold,
-.display-large-semibold {
-  font-size: var(--display-large);
+.display-lg-bold,
+.display-lg-semibold {
+  font-size: var(--display-lg);
   line-height: 1.35;
 }
-.display-large-bold {
+.display-lg-bold {
   font-weight: 700;
 }
-.display-large-semibold {
+.display-lg-semibold {
   font-weight: 600;
 }
 
-.display-medium-bold,
-.display-medium-semibold {
-  font-size: var(--display-medium);
+.display-md-bold,
+.display-md-semibold {
+  font-size: var(--display-md);
   line-height: 1.35;
 }
-.display-medium-bold {
+.display-md-bold {
   font-weight: 700;
 }
-.display-medium-semibold {
+.display-md-semibold {
   font-weight: 600;
 }
 
-.display-small-bold,
-.display-small-semibold {
-  font-size: var(--display-small);
+.display-sm-bold,
+.display-sm-semibold {
+  font-size: var(--display-sm);
   line-height: 1.35;
 }
-.display-small-bold {
+.display-sm-bold {
   font-weight: 700;
 }
-.display-small-semibold {
+.display-sm-semibold {
   font-weight: 600;
 }
 
@@ -117,51 +117,51 @@ $tiers: (
    Heading  (line-height 1.42)
    ============================================================ */
 
-.heading-large-bold,
-.heading-large-semibold,
-.heading-large-medium {
-  font-size: var(--heading-large);
+.heading-lg-bold,
+.heading-lg-semibold,
+.heading-lg-medium {
+  font-size: var(--heading-lg);
   line-height: 1.42;
 }
-.heading-large-bold {
+.heading-lg-bold {
   font-weight: 700;
 }
-.heading-large-semibold {
+.heading-lg-semibold {
   font-weight: 600;
 }
-.heading-large-medium {
+.heading-lg-medium {
   font-weight: 500;
 }
 
-.heading-medium-bold,
-.heading-medium-semibold,
-.heading-medium-medium {
-  font-size: var(--heading-medium);
+.heading-md-bold,
+.heading-md-semibold,
+.heading-md-medium {
+  font-size: var(--heading-md);
   line-height: 1.42;
 }
-.heading-medium-bold {
+.heading-md-bold {
   font-weight: 700;
 }
-.heading-medium-semibold {
+.heading-md-semibold {
   font-weight: 600;
 }
-.heading-medium-medium {
+.heading-md-medium {
   font-weight: 500;
 }
 
-.heading-small-bold,
-.heading-small-semibold,
-.heading-small-medium {
-  font-size: var(--heading-small);
+.heading-sm-bold,
+.heading-sm-semibold,
+.heading-sm-medium {
+  font-size: var(--heading-sm);
   line-height: 1.42;
 }
-.heading-small-bold {
+.heading-sm-bold {
   font-weight: 700;
 }
-.heading-small-semibold {
+.heading-sm-semibold {
   font-weight: 600;
 }
-.heading-small-medium {
+.heading-sm-medium {
   font-weight: 500;
 }
 
@@ -169,63 +169,63 @@ $tiers: (
    Body  (line-height 1.45)
    ============================================================ */
 
-.body-large-bold,
-.body-large-semibold,
-.body-large-medium,
-.body-large-regular {
+.body-lg-bold,
+.body-lg-semibold,
+.body-lg-medium,
+.body-lg-regular {
   font-size: 17px;
   line-height: 1.45;
 }
-.body-large-bold {
+.body-lg-bold {
   font-weight: 700;
 }
-.body-large-semibold {
+.body-lg-semibold {
   font-weight: 600;
 }
-.body-large-medium {
+.body-lg-medium {
   font-weight: 500;
 }
-.body-large-regular {
+.body-lg-regular {
   font-weight: 400;
 }
 
-.body-medium-bold,
-.body-medium-semibold,
-.body-medium-medium,
-.body-medium-regular {
+.body-md-bold,
+.body-md-semibold,
+.body-md-medium,
+.body-md-regular {
   font-size: 16px;
   line-height: 1.45;
 }
-.body-medium-bold {
+.body-md-bold {
   font-weight: 700;
 }
-.body-medium-semibold {
+.body-md-semibold {
   font-weight: 600;
 }
-.body-medium-medium {
+.body-md-medium {
   font-weight: 500;
 }
-.body-medium-regular {
+.body-md-regular {
   font-weight: 400;
 }
 
-.body-small-bold,
-.body-small-semibold,
-.body-small-medium,
-.body-small-regular {
+.body-sm-bold,
+.body-sm-semibold,
+.body-sm-medium,
+.body-sm-regular {
   font-size: 15px;
   line-height: 1.45;
 }
-.body-small-bold {
+.body-sm-bold {
   font-weight: 700;
 }
-.body-small-semibold {
+.body-sm-semibold {
   font-weight: 600;
 }
-.body-small-medium {
+.body-sm-medium {
   font-weight: 500;
 }
-.body-small-regular {
+.body-sm-regular {
   font-weight: 400;
 }
 
@@ -233,39 +233,39 @@ $tiers: (
    Caption  (line-height 1.47)
    ============================================================ */
 
-.caption-medium-semibold,
-.caption-medium-regular {
+.caption-md-semibold,
+.caption-md-regular {
   font-size: 14px;
   line-height: 1.47;
 }
-.caption-medium-semibold {
+.caption-md-semibold {
   font-weight: 600;
 }
-.caption-medium-regular {
+.caption-md-regular {
   font-weight: 400;
 }
 
-.caption-small-semibold,
-.caption-small-regular {
+.caption-sm-semibold,
+.caption-sm-regular {
   font-size: 13px;
   line-height: 1.47;
 }
-.caption-small-semibold {
+.caption-sm-semibold {
   font-weight: 600;
 }
-.caption-small-regular {
+.caption-sm-regular {
   font-weight: 400;
 }
 
-.caption-xsmall-semibold,
-.caption-xsmall-regular {
+.caption-xs-semibold,
+.caption-xs-regular {
   font-size: 12px;
   line-height: 1.47;
 }
-.caption-xsmall-semibold {
+.caption-xs-semibold {
   font-weight: 600;
 }
-.caption-xsmall-regular {
+.caption-xs-regular {
   font-weight: 400;
 }
 
@@ -273,25 +273,25 @@ $tiers: (
    Label  (line-height은 고정 px)
    ============================================================ */
 
-.label-large-semibold {
+.label-lg-semibold {
   font-size: 17px;
   font-weight: 600;
   line-height: 26px;
 }
 
-.label-medium-semibold {
+.label-md-semibold {
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
 }
 
-.label-small-medium {
+.label-sm-medium {
   font-size: 15px;
   font-weight: 500;
   line-height: 22px;
 }
 
-.label-xsmall-medium {
+.label-xs-medium {
   font-size: 13px;
   font-weight: 500;
   line-height: 22px;

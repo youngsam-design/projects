@@ -1,28 +1,28 @@
 .project-code-block {
   overflow: hidden;
-  border-radius: var(--radius-medium);
+  border-radius: var(--radius-md);
   background: var(--palette-gray-900);
 }
 
 .project-code-block-label {
-  padding: var(--spacing-tiny-large) var(--spacing-normal-medium);
+  padding: var(--spacing-tiny-lg) var(--spacing-normal-md);
   border-bottom: 1px solid var(--palette-gray-alpha-inverse-100);
   color: var(--palette-gray-400);
-  font-size: var(--caption-small);
-  font-family: "Wanted Sans Variable", sans-serif;
+  font-size: var(--caption-sm);
+  font-family: 'Wanted Sans Variable', sans-serif;
 }
 
 .project-code-block pre {
   margin: 0;
-  padding: var(--spacing-normal-medium);
+  padding: var(--spacing-normal-md);
   overflow-x: auto;
 }
 
 .project-code-block code {
   display: block;
   color: var(--palette-gray-100);
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-  font-size: var(--caption-medium);
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: var(--caption-md);
   line-height: 1.6;
   white-space: pre;
   tab-size: 2;

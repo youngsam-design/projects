@@ -14,7 +14,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 var(--layout-page-gutter) var(--spacing-huge-medium);
+  padding: 0 var(--layout-page-gutter) var(--spacing-huge-md);
 }
 
 .page > header,
@@ -28,7 +28,7 @@
   display: flex;
   align-items: end;
   justify-content: space-between;
-  margin-bottom: var(--spacing-normal-xlarge);
+  margin-bottom: var(--spacing-normal-xl);
 }
 
 .page h1,
@@ -43,31 +43,31 @@
 .card > span,
 .projectList span {
   color: var(--color-neutral-foreground-low);
-  font-size: var(--caption-medium);
+  font-size: var(--caption-md);
 }
 
 .card,
 .createForm,
 .projectList article {
   border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-large);
+  border-radius: var(--radius-lg);
   background: var(--color-neutral-background-backdrop);
   backdrop-filter: var(--backdrop-filter-blur);
 }
 
 .card {
   display: grid;
-  gap: var(--spacing-normal-medium);
+  gap: var(--spacing-normal-md);
   width: min(100%, 420px);
-  padding: var(--spacing-normal-xlarge);
+  padding: var(--spacing-normal-xl);
 }
 
 .projectActions a {
   display: inline-grid;
   min-height: 40px;
-  padding-inline: var(--spacing-normal-medium);
+  padding-inline: var(--spacing-normal-md);
   border: 1px solid var(--color-info-foreground-main);
-  border-radius: var(--radius-xsmall);
+  border-radius: var(--radius-xs);
   color: var(--color-neutral-foreground-inverse-main);
   font: inherit;
   text-decoration: none;
@@ -79,32 +79,32 @@
 .createForm {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-normal-small);
-  margin-bottom: var(--spacing-normal-large);
-  padding: var(--spacing-spacious-small);
+  gap: var(--spacing-normal-sm);
+  margin-bottom: var(--spacing-normal-lg);
+  padding: var(--spacing-spacious-sm);
   max-width: var(--container-sm);
 }
 
 .createFormHeading {
-  font-size: var(--heading-large);
-  margin-bottom: var(--spacing-normal-small);
+  font-size: var(--heading-lg);
+  margin-bottom: var(--spacing-normal-sm);
 }
 
 .createButton {
-  margin-top: var(--spacing-normal-medium);
+  margin-top: var(--spacing-normal-md);
 }
 
 .projectList {
   display: grid;
-  gap: var(--spacing-normal-small);
+  gap: var(--spacing-normal-sm);
 }
 
 .projectList article {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--spacing-normal-medium);
-  padding: var(--spacing-normal-large);
+  gap: var(--spacing-normal-md);
+  padding: var(--spacing-normal-lg);
 
   @media (max-width: 768px) {
     align-items: flex-start;
@@ -114,16 +114,16 @@
 
 .projectList article > div:first-child {
   display: grid;
-  gap: var(--spacing-tiny-medium);
+  gap: var(--spacing-tiny-md);
 }
 
 .projectList h2 {
-  font-size: var(--heading-small);
+  font-size: var(--heading-sm);
 }
 
 .projectList p {
   color: var(--color-neutral-foreground-low);
-  font-size: var(--caption-medium);
+  font-size: var(--caption-md);
   max-width: var(--container-sm);
   padding-left: var(--container-padding-sm);
   padding-right: var(--container-padding-sm);
@@ -132,7 +132,7 @@
 
 .projectActions {
   display: flex;
-  gap: var(--spacing-tiny-large);
+  gap: var(--spacing-tiny-lg);
 }
 
 .projectActions a:first-child:not(:last-child) {

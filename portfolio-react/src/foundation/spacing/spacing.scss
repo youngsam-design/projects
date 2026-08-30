@@ -1,4 +1,4 @@
-@use "../layout/breakpoints" as bp;
+@use '../layout/breakpoints' as bp;
 
 /* ============================================================
    Responsive spacing variables
@@ -8,40 +8,40 @@
 
 :root {
   /* Tiny */
-  --spacing-tiny-small: 2px;
-  --spacing-tiny-medium: 4px;
-  --spacing-tiny-large: 8px;
+  --spacing-tiny-sm: 2px;
+  --spacing-tiny-md: 4px;
+  --spacing-tiny-lg: 8px;
 
   /* Normal */
-  --spacing-normal-small: 12px;
-  --spacing-normal-medium: 16px;
-  --spacing-normal-large: 24px;
-  --spacing-normal-xlarge: 32px;
+  --spacing-normal-sm: 12px;
+  --spacing-normal-md: 16px;
+  --spacing-normal-lg: 24px;
+  --spacing-normal-xl: 32px;
 
   /* Negative */
   --spacing-negative-normal-medium: -16px;
 
   /* Spacious */
-  --spacing-spacious-small:  40px;
-  --spacing-spacious-medium: 52px;
-  --spacing-spacious-large:  64px;
+  --spacing-spacious-sm: 40px;
+  --spacing-spacious-md: 52px;
+  --spacing-spacious-lg: 64px;
 
   /* Huge */
-  --spacing-huge-small:  80px;
-  --spacing-huge-medium: 100px;
-  --spacing-huge-large:  120px;
+  --spacing-huge-sm: 80px;
+  --spacing-huge-md: 100px;
+  --spacing-huge-lg: 120px;
 }
 
 @media (min-width: bp.$breakpoint-large-min) {
   :root {
     /* Spacious */
-    --spacing-spacious-small:  48px;
-    --spacing-spacious-medium: 64px;
-    --spacing-spacious-large:  80px;
+    --spacing-spacious-sm: 48px;
+    --spacing-spacious-md: 64px;
+    --spacing-spacious-lg: 80px;
 
     /* Huge */
-    --spacing-huge-small:  104px;
-    --spacing-huge-medium: 132px;
-    --spacing-huge-large:  160px;
+    --spacing-huge-sm: 104px;
+    --spacing-huge-md: 132px;
+    --spacing-huge-lg: 160px;
   }
 }

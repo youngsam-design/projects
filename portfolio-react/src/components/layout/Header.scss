@@ -29,7 +29,7 @@ header.sticky:after {
   width: 100%;
   height: calc(100% * 2);
   transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
-  // backdrop-filter: var(--blur-large);
+  // backdrop-filter: var(--blur-lg);
   // background-color: rgba(var(--theme-background), 0.88);
 }
 
@@ -64,14 +64,14 @@ header.offscreen {
 }
 
 header.offscreen:after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: calc(100% * 2);
   transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
-  backdrop-filter: var(--blur-large);
+  backdrop-filter: var(--blur-lg);
   background-color: var(--palette-gray-alpha-inverse-800);
 }
 
@@ -129,7 +129,7 @@ header nav ul {
 }
 
 header nav ul li {
-  margin-left: var(--spacing-normal-medium);
+  margin-left: var(--spacing-normal-md);
 }
 header nav ul li:first-child {
   margin-left: 0;
@@ -144,7 +144,7 @@ header nav a.logo h1 {
   position: relative;
   font-weight: 700;
   top: -1px;
-  font-family: "FreightText";
+  font-family: 'FreightText';
   letter-spacing: -0.075rem;
   font-size: 26px;
   user-select: none;
@@ -212,7 +212,7 @@ body.nav {
 }
 
 body.nav:before {
-  content: "";
+  content: '';
   position: fixed;
   width: 100%;
   height: 100%;
@@ -318,7 +318,7 @@ body .container div.mobile_nav {
   transform: translate3d(0, -100%, 0);
 }
 body .container div.mobile_nav:after {
-  content: " ";
+  content: ' ';
   display: block;
   width: 100%;
   height: 100%;
@@ -327,8 +327,8 @@ body .container div.mobile_nav:after {
   left: 0;
   top: 0;
   background-color: var(--color-neutral-background-main);
-  backdrop-filter: var(--blur-large);
-  -webkit-backdrop-filter: var(--blur-large);
+  backdrop-filter: var(--blur-lg);
+  -webkit-backdrop-filter: var(--blur-lg);
   opacity: 0;
   pointer-events: none;
 }
@@ -354,7 +354,7 @@ body .container div.mobile_nav ul.primary li:last-child {
 }
 
 body .container div.mobile_nav ul.primary a {
-  font-size: var(--heading-small);
+  font-size: var(--heading-sm);
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: underline;
@@ -377,7 +377,7 @@ body .container div.mobile_nav ul.secondary a {
   padding: 0.25em 0;
 }
 body .container div.mobile_nav ul.secondary a:after {
-  content: " ";
+  content: ' ';
   width: 32px;
   height: 24px;
   /* background-image: url(/assets/img/arrow.svg); */
@@ -400,7 +400,7 @@ body .container div.mobile_nav ul.secondary a:after {
 }
 
 .progress-container:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 2px;

@@ -1,5 +1,5 @@
-@use "../../styles/layout";
-@use "../../foundation/typography/typography";
+@use '../../styles/layout';
+@use '../../foundation/typography/typography';
 
 /* hero: title block first, then a contained cover image below (no overlap) */
 #slider {
@@ -7,7 +7,7 @@
   margin: 0 auto;
   padding-left: var(--container-padding-md);
   padding-right: var(--container-padding-md);
-  padding-top: var(--spacing-spacious-large);
+  padding-top: var(--spacing-spacious-lg);
 }
 
 #slider .title-sec {
@@ -43,7 +43,7 @@
 #slider .title .title-head {
   display: grid;
   text-align: center;
-  gap: var(--spacing-tiny-large);
+  gap: var(--spacing-tiny-lg);
   animation-name: fadeIn;
   animation-duration: 0.5s;
   animation-delay: 0.2s;
@@ -54,7 +54,7 @@
   display: inline-block;
   color: rgb(var(--theme-foreground));
   opacity: 0.6;
-  font-size: var(--caption-small);
+  font-size: var(--caption-sm);
   font-weight: var(--font-weight-semibold);
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -62,11 +62,11 @@
 
 #slider .title .title-head .title-content-headline {
   margin: 0;
-  font-family: "Wanted Sans Variable", sans-serif;
+  font-family: 'Wanted Sans Variable', sans-serif;
   // Genuinely continuous fluid scaling (not the foundation tokens' own
   // single 744px jump) - reads its two anchor values straight from
   // typography's tier map so it can't drift out of sync with them.
-  font-size: layout.fluid(typography.tier-mobile("display-large"), typography.tier-desktop("display-large"));
+  font-size: layout.fluid(typography.tier-mobile('display-lg'), typography.tier-desktop('display-lg'));
   line-height: var(--line-height-tight);
   font-weight: var(--font-weight-bold);
   color: rgb(var(--theme-foreground));
@@ -75,7 +75,7 @@
 
 #slider .hero-cover {
   grid-column: 1/16;
-  margin-top: var(--spacing-spacious-small);
+  margin-top: var(--spacing-spacious-sm);
 }
 
 #slider .hero-cover-image {
@@ -118,8 +118,8 @@
 .contents section.summary .sp-title {
   display: block;
   color: rgb(var(--theme-foreground));
-  font-size: var(--body-medium);
-  margin-bottom: var(--spacing-tiny-large);
+  font-size: var(--body-md);
+  margin-bottom: var(--spacing-tiny-lg);
   font-weight: var(--font-weight-semibold);
 }
 
@@ -130,6 +130,6 @@
 .contents section.summary .sp-text {
   display: block;
   color: rgb(var(--theme-foreground));
-  font-size: var(--caption-medium);
+  font-size: var(--caption-md);
   font-weight: 400;
 }

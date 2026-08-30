@@ -5,7 +5,7 @@
 `typography.{group}.{size}` — `fontSize` + `lineHeight`의 JS 레퍼런스(값 확인용)
 `typography.{group}.{size}.{weight}` — `fontSize` + `lineHeight` + `fontWeight`의 JS 레퍼런스
 
-실제 값은 `typography/typography.scss`에 CSS 커스텀 프로퍼티(`--display-*`, `--heading-*`는 반응형, `--body-*`/`--caption-*`/`--label-medium`은 고정값)와, 그대로 적용 가능한 유틸리티 클래스(`.display-large-bold` 등)로도 노출되어 있습니다.
+실제 값은 `typography/typography.scss`에 CSS 커스텀 프로퍼티(`--display-*`, `--heading-*`는 반응형, `--body-*`/`--caption-*`/`--label-md`은 고정값)와, 그대로 적용 가능한 유틸리티 클래스(`.display-lg-bold` 등)로도 노출되어 있습니다.
 
 ---
 
@@ -14,12 +14,12 @@
 `typography.scss`에 정의된 유틸리티 클래스를 그대로 적용합니다. 클래스명은 `{group}-{size}-{weight}` 형태입니다.
 
 ```tsx
-<p className="body-large-bold">텍스트</p>
-<p className="body-large-regular">텍스트</p>
-<h1 className="display-large-bold">제목</h1>
-<h2 className="heading-medium-semibold">소제목</h2>
-<span className="caption-small-regular">캡션</span>
-<label className="label-medium-semibold">레이블</label>
+<p className="body-lg-bold">텍스트</p>
+<p className="body-lg-regular">텍스트</p>
+<h1 className="display-lg-bold">제목</h1>
+<h2 className="heading-md-semibold">소제목</h2>
+<span className="caption-sm-regular">캡션</span>
+<label className="label-md-semibold">레이블</label>
 ```
 
 ---
@@ -31,20 +31,20 @@
 ```scss
 /* Component.module.scss */
 .title {
-  font-size: var(--display-large); /* 반응형: ≤767px 기본값, ≥768px 확대값 */
+  font-size: var(--display-lg); /* 반응형: ≤767px 기본값, ≥768px 확대값 */
   line-height: 1.35;
   font-weight: var(--font-weight-bold);
 }
 
 .body {
-  font-size: var(--body-medium); /* 고정값, 반응형 아님 */
+  font-size: var(--body-md); /* 고정값, 반응형 아님 */
   line-height: 1.45;
   font-weight: var(--font-weight-regular);
   color: var(--color-neutral-foreground-main);
 }
 
 .caption {
-  font-size: var(--caption-small);
+  font-size: var(--caption-sm);
   line-height: 1.47;
   font-weight: var(--font-weight-semibold);
 }
@@ -68,30 +68,30 @@ import styles from './Component.module.scss';
 import { typography } from '../../foundation';
 
 // 서버에서 받은 값에 따라 굵기를 결정하는 경우 등
-<p style={typography.body.large[weightFromServer]}>텍스트</p>
+<p style={typography.body.large[weightFromServer]}>텍스트</p>;
 ```
 
 ---
 
 ## 토큰 구조
 
-| group   | size                            | weight 키                          | lineHeight |
-|---------|---------------------------------|------------------------------------|------------|
-| display | large · medium · small          | bold · semibold                    | 1.35       |
-| heading | large · medium · small          | bold · semibold · medium           | 1.42       |
-| body    | large · medium · small          | bold · semibold · medium · regular | 1.45       |
-| caption | medium · small · xsmall         | semibold · regular                 | 1.47       |
-| label   | large · medium (semibold) · small · xsmall (medium) | — | 고정 px |
+| group   | size                                                | weight 키                          | lineHeight |
+| ------- | --------------------------------------------------- | ---------------------------------- | ---------- |
+| display | large · medium · small                              | bold · semibold                    | 1.35       |
+| heading | large · medium · small                              | bold · semibold · medium           | 1.42       |
+| body    | large · medium · small                              | bold · semibold · medium · regular | 1.45       |
+| caption | medium · small · xsmall                             | semibold · regular                 | 1.47       |
+| label   | large · medium (semibold) · small · xsmall (medium) | —                                  | 고정 px    |
 
 ---
 
 ## 반응형
 
-Display · Heading의 `fontSize`는 CSS 변수(`var(--display-large)` 등)로, 뷰포트 너비에 따라 자동으로 변경됩니다. Body · Caption · Label은 고정값이라 반응형이 아닙니다.
+Display · Heading의 `fontSize`는 CSS 변수(`var(--display-lg)` 등)로, 뷰포트 너비에 따라 자동으로 변경됩니다. Body · Caption · Label은 고정값이라 반응형이 아닙니다.
 
-| 구간 | 조건 |
-|------|------|
+| 구간   | 조건                                  |
+| ------ | ------------------------------------- |
 | 기본값 | ≤ 767px (`breakpoints.expanded` 이하) |
-| 확대값 | ≥ 768px (`breakpoints.large` 이상) |
+| 확대값 | ≥ 768px (`breakpoints.large` 이상)    |
 
 모든 방식(className · CSS Modules · inline style)에서 동일하게 반응형이 동작합니다.

@@ -10,34 +10,34 @@
 
 ### 고정 px 값
 
-| 토큰 | CSS 변수 | 값 | 용도 예시 |
-|------|---------|----|---------|
-| `spacing['spacing-tiny-small']` | `--spacing-tiny-small` | `2px` | 아이콘 간격, 미세 여백 |
-| `spacing['spacing-tiny-medium']` | `--spacing-tiny-medium` | `4px` | 배지, 태그 내부 여백 |
-| `spacing['spacing-tiny-large']` | `--spacing-tiny-large` | `8px` | 버튼 내부 수직 여백 |
-| `spacing['spacing-normal-small']` | `--spacing-normal-small` | `12px` | 소형 컴포넌트 여백 |
-| `spacing['spacing-normal-medium']` | `--spacing-normal-medium` | `16px` | 기본 여백 (카드, 인풋) |
-| `spacing['spacing-normal-large']` | `--spacing-normal-large` | `24px` | 섹션 내부 여백 |
-| `spacing['spacing-normal-xlarge']` | `--spacing-normal-xlarge` | `32px` | 섹션 간 여백 |
+| 토큰                           | CSS 변수              | 값     | 용도 예시              |
+| ------------------------------ | --------------------- | ------ | ---------------------- |
+| `spacing['spacing-tiny-sm']`   | `--spacing-tiny-sm`   | `2px`  | 아이콘 간격, 미세 여백 |
+| `spacing['spacing-tiny-md']`   | `--spacing-tiny-md`   | `4px`  | 배지, 태그 내부 여백   |
+| `spacing['spacing-tiny-lg']`   | `--spacing-tiny-lg`   | `8px`  | 버튼 내부 수직 여백    |
+| `spacing['spacing-normal-sm']` | `--spacing-normal-sm` | `12px` | 소형 컴포넌트 여백     |
+| `spacing['spacing-normal-md']` | `--spacing-normal-md` | `16px` | 기본 여백 (카드, 인풋) |
+| `spacing['spacing-normal-lg']` | `--spacing-normal-lg` | `24px` | 섹션 내부 여백         |
+| `spacing['spacing-normal-xl']` | `--spacing-normal-xl` | `32px` | 섹션 간 여백           |
 
 ### 음수 여백
 
-| 토큰 | CSS 변수 | 값 | 용도 예시 |
-|------|---------|----|---------|
-| `spacing['spacing-negative-normal-medium']` | `--spacing-negative-normal-medium` | `-16px` | 오버랩 레이아웃, 네거티브 마진 |
+| 토큰                                    | CSS 변수                       | 값      | 용도 예시                      |
+| --------------------------------------- | ------------------------------ | ------- | ------------------------------ |
+| `spacing['spacing-negative-normal-md']` | `--spacing-negative-normal-md` | `-16px` | 오버랩 레이아웃, 네거티브 마진 |
 
 ### CSS 변수 기반 (반응형)
 
 `spacing-spacious-*`, `spacing-huge-*` 토큰은 뷰포트에 따라 자동으로 크기가 변합니다(≤767px 기본값, ≥768px 확대값 — `spacing/spacing.scss` 참고).
 
-| 토큰 | CSS 변수 | 설명 |
-|------|---------|------|
-| `spacing['spacing-spacious-small']` | `--spacing-spacious-small` | 반응형 여백 (소) |
-| `spacing['spacing-spacious-medium']` | `--spacing-spacious-medium` | 반응형 여백 (중) |
-| `spacing['spacing-spacious-large']` | `--spacing-spacious-large` | 반응형 여백 (대) |
-| `spacing['spacing-huge-small']` | `--spacing-huge-small` | 대형 반응형 여백 (소) |
-| `spacing['spacing-huge-medium']` | `--spacing-huge-medium` | 대형 반응형 여백 (중) |
-| `spacing['spacing-huge-large']` | `--spacing-huge-large` | 대형 반응형 여백 (대) |
+| 토큰                             | CSS 변수                | 설명                  |
+| -------------------------------- | ----------------------- | --------------------- |
+| `spacing['spacing-spacious-sm']` | `--spacing-spacious-sm` | 반응형 여백 (소)      |
+| `spacing['spacing-spacious-md']` | `--spacing-spacious-md` | 반응형 여백 (중)      |
+| `spacing['spacing-spacious-lg']` | `--spacing-spacious-lg` | 반응형 여백 (대)      |
+| `spacing['spacing-huge-sm']`     | `--spacing-huge-sm`     | 대형 반응형 여백 (소) |
+| `spacing['spacing-huge-md']`     | `--spacing-huge-md`     | 대형 반응형 여백 (중) |
+| `spacing['spacing-huge-lg']`     | `--spacing-huge-lg`     | 대형 반응형 여백 (대) |
 
 ---
 
@@ -46,17 +46,17 @@
 ```scss
 /* Component.module.scss */
 .card {
-  padding: var(--spacing-normal-medium);
+  padding: var(--spacing-normal-md);
 }
 
 .row {
   display: flex;
-  gap: var(--spacing-normal-small);
+  gap: var(--spacing-normal-sm);
 }
 
 .hero {
   /* spacious-*, huge-* 는 반응형 CSS 변수라 그대로 사용 가능 */
-  padding: var(--spacing-huge-large);
+  padding: var(--spacing-huge-lg);
 }
 
 .overlap {

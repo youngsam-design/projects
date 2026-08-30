@@ -164,7 +164,7 @@
   --color-neutral-background-inverse-disabled: var(--palette-gray-700);
   --color-neutral-background-dimmed-main: var(--palette-gray-alpha-700);
   --color-neutral-background-dimmed-low: var(--palette-gray-alpha-300);
-  --color-neutral-background-blurred-main: var(--palette-white-alpha-200);
+  --color-neutral-background-blurred-main: var(--palette-white-alpha-500);
   --color-neutral-border-main: var(--palette-gray-alpha-100);
   --color-neutral-border-high: var(--palette-gray-alpha-200);
   --color-neutral-border-highest: var(--palette-gray-alpha-900);
@@ -248,7 +248,7 @@
  * own background color at a time) should get these values - the rest of the
  * app's chrome stays on the light set above regardless.
  */
-[data-theme="dark"] {
+[data-theme='dark'] {
   --color-neutral-foreground-main: var(--palette-gray-100);
   --color-neutral-foreground-low: var(--palette-gray-300);
   --color-neutral-foreground-lowest: var(--palette-gray-500);
@@ -270,7 +270,7 @@
   --color-neutral-background-inverse-disabled: var(--palette-gray-300);
   --color-neutral-background-dimmed-main: var(--palette-gray-alpha-700);
   --color-neutral-background-dimmed-low: var(--palette-gray-alpha-300);
-  --color-neutral-background-blurred-main: var(--palette-gray-alpha-900);
+  --color-neutral-background-blurred-main: var(--palette-gray-alpha-700);
   --color-neutral-border-main: var(--palette-gray-alpha-inverse-100);
   --color-neutral-border-high: var(--palette-gray-alpha-inverse-200);
   --color-neutral-border-highest: var(--palette-gray-alpha-inverse-900);

@@ -8,14 +8,14 @@
 
 ## 토큰 구조
 
-| 토큰 | CSS 변수 | 값 | 용도 예시 |
-|------|---------|----|---------|
-| `radius['radius-2xsmall']` | `--radius-2xsmall` | `4px` | 배지, 태그 |
-| `radius['radius-xsmall']` | `--radius-xsmall` | `8px` | 인풋, 버튼 (소형) |
-| `radius['radius-small']` | `--radius-small` | `12px` | 버튼, 카드 (소형) |
-| `radius['radius-medium']` | `--radius-medium` | `16px` | 카드, 패널 |
-| `radius['radius-large']` | `--radius-large` | `22px` | 바텀시트, 모달 |
-| `radius['radius-xlarge']` | `--radius-xlarge` | `28px` | 대형 카드, 팝업 |
+| 토큰                        | CSS 변수            | 값       | 용도 예시             |
+| --------------------------- | ------------------- | -------- | --------------------- |
+| `radius['radius-2xsmall']`  | `--radius-2xs`      | `4px`    | 배지, 태그            |
+| `radius['radius-xsmall']`   | `--radius-xs`       | `8px`    | 인풋, 버튼 (소형)     |
+| `radius['radius-small']`    | `--radius-sm`       | `12px`   | 버튼, 카드 (소형)     |
+| `radius['radius-medium']`   | `--radius-md`       | `16px`   | 카드, 패널            |
+| `radius['radius-large']`    | `--radius-lg`       | `22px`   | 바텀시트, 모달        |
+| `radius['radius-xlarge']`   | `--radius-xl`       | `28px`   | 대형 카드, 팝업       |
 | `radius['radius-circular']` | `--radius-circular` | `1000px` | 칩, 아바타, 원형 버튼 |
 
 ---
@@ -25,12 +25,12 @@
 ```scss
 /* Component.module.scss */
 .card {
-  border-radius: var(--radius-medium);
+  border-radius: var(--radius-md);
   padding: 16px;
 }
 
 .button {
-  border-radius: var(--radius-small);
+  border-radius: var(--radius-sm);
 }
 
 .chip {
@@ -39,8 +39,8 @@
 
 /* 특정 모서리만 적용 */
 .topSheet {
-  border-top-left-radius: var(--radius-large);
-  border-top-right-radius: var(--radius-large);
+  border-top-left-radius: var(--radius-lg);
+  border-top-right-radius: var(--radius-lg);
 }
 ```
 

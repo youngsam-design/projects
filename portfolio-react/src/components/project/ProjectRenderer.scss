@@ -1,5 +1,5 @@
-@use "../../styles/layout";
-@use "../../foundation/typography/typography";
+@use '../../styles/layout';
+@use '../../foundation/typography/typography';
 
 /* contents */
 
@@ -43,7 +43,7 @@ body .container .contents {
 }
 
 .contents > section {
-  margin: var(--spacing-spacious-small) auto 0;
+  margin: var(--spacing-spacious-sm) auto 0;
 
   &:not(.full-max) {
     @media (min-width: 768px) {
@@ -70,13 +70,13 @@ body .container .contents {
 
    대상               | 기본 margin-top       | 주요 예외(선행 요소 → 값)
    -------------------|------------------------|--------------------------------
-   heading(h1~h4)      | spacing-spacious-large | content-section 첫 자식 → 축소
+   heading(h1~h4)      | spacing-spacious-lg | content-section 첫 자식 → 축소
    .text(문단)          | 6rem                   | heading 다음 → 0
                         |                        | .element 다음 → 4rem
-                        |                        | .text 다음 → spacing-normal-medium
+                        |                        | .text 다음 → spacing-normal-md
                         |                        | .text-li 안 h6 다음 → 0
    ul.text(레거시 목록)  | 6rem                   | .text 다음 → 6rem(모바일 4~5rem)
-   .text-li             | spacing-spacious-small | 앞선 .text-li 다음 → spacing-normal-small
+   .text-li             | spacing-spacious-sm | 앞선 .text-li 다음 → spacing-normal-sm
    .img-wrap(이미지)     | 5rem(모바일 3rem)       | content-section 직속 자식 → 1.5~2rem
                         |                        | 다른 .img-wrap 다음 → 5rem(모바일도 동일)
                         |                        | .text-li 안 → 3em(+ 마지막 항목 0)
@@ -100,7 +100,7 @@ body .container .contents {
 
 .contents > section.content {
   max-width: var(--container-lg);
-  margin: var(--spacing-spacious-small) auto;
+  margin: var(--spacing-spacious-sm) auto;
   padding-left: var(--container-padding-md);
   padding-right: var(--container-padding-md);
 }
@@ -122,11 +122,11 @@ body .container .contents {
 .contents > section .text-li.bullet-list,
 .contents > section .text-li.numbered-list {
   position: relative;
-  padding-left: var(--spacing-normal-large);
-  margin-top: var(--spacing-tiny-large);
+  padding-left: var(--spacing-normal-lg);
+  margin-top: var(--spacing-tiny-lg);
 
   & + .text-li {
-    margin-top: var(--spacing-tiny-large);
+    margin-top: var(--spacing-tiny-lg);
   }
 
   // Zeroes the gap above the item's own opening content (its paragraph, or a
@@ -145,13 +145,13 @@ body .container .contents {
   top: 0;
   left: 0;
   color: rgb(var(--theme-foreground));
-  font-size: var(--body-large);
+  font-size: var(--body-lg);
   line-height: 1.6;
   font-weight: var(--font-weight-semibold);
 }
 
 .contents > section .text-li.bullet-list::before {
-  content: "•";
+  content: '•';
 }
 
 // The item's own position among its numberedList siblings is computed in JS
@@ -161,7 +161,7 @@ body .container .contents {
 // need conflicting counter-reset+counter-increment on the very same element
 // to restart per nesting level, which browsers resolve by always showing "1".
 .contents > section .text-li.numbered-list::before {
-  content: attr(data-list-number) ".";
+  content: attr(data-list-number) '.';
 }
 
 // A nested item (added via Tab/indent) keeps the same marker size/position as
@@ -169,7 +169,7 @@ body .container .contents {
 // filled one, and both marker styles dimmed slightly, so the hierarchy reads
 // at a glance even before you notice the indent itself.
 .contents > section .text-li.bullet-list.nested::before {
-  content: "◦";
+  content: '◦';
 }
 
 .contents > section .text-li.nested::before {
@@ -182,22 +182,22 @@ body .container .contents {
    mirror each heading level's own font-size (see the h1~h4 rules above and
    the .text-li h6 rule below) so the two stay in sync automatically.
    h5 has no dedicated size anywhere else in this file, so it shares h4's
-   tier (--heading-medium) rather than inventing a new value. */
+   tier (--heading-md) rather than inventing a new value. */
 .contents > section .text-li.bullet-list:has(h1)::before,
 .contents > section .text-li.numbered-list:has(h1)::before {
-  font-size: var(--display-large);
+  font-size: var(--display-lg);
   line-height: 1.35;
 }
 
 .contents > section .text-li.bullet-list:has(h2)::before,
 .contents > section .text-li.numbered-list:has(h2)::before {
-  font-size: var(--display-small);
+  font-size: var(--display-sm);
   line-height: 1.35;
 }
 
 .contents > section .text-li.bullet-list:has(h3)::before,
 .contents > section .text-li.numbered-list:has(h3)::before {
-  font-size: var(--heading-large);
+  font-size: var(--heading-lg);
   line-height: 1.35;
 }
 
@@ -205,13 +205,13 @@ body .container .contents {
 .contents > section .text-li.numbered-list:has(h4)::before,
 .contents > section .text-li.bullet-list:has(h5)::before,
 .contents > section .text-li.numbered-list:has(h5)::before {
-  font-size: var(--heading-medium);
+  font-size: var(--heading-md);
   line-height: 1.35;
 }
 
 .contents > section .text-li.bullet-list:has(h6)::before,
 .contents > section .text-li.numbered-list:has(h6)::before {
-  font-size: var(--heading-small);
+  font-size: var(--heading-sm);
   line-height: 1.35;
 }
 
@@ -242,7 +242,7 @@ body .container .contents {
 }
 
 .contents > section .content-section q::before {
-  content: "Q.";
+  content: 'Q.';
   display: block;
   clear: both;
 }
@@ -256,8 +256,8 @@ body .container .contents {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  font-family: "Wanted Sans Variable";
-  margin-top: 3em;
+  font-family: 'Wanted Sans Variable';
+  margin-top: 4em;
   margin-bottom: 1.25em;
   letter-spacing: 0;
   word-break: keep-all;
@@ -275,7 +275,8 @@ body .container .contents {
   --theme-foreground: var(--group-foreground);
   color: rgb(var(--group-foreground));
   background-color: rgb(var(--group-background));
-  margin-top: var(--spacing-spacious-large);
+  margin-top: var(--spacing-huge-lg);
+  margin-bottom: var(--spacing-huge-sm);
   padding: calc(2 * var(--layout-grid-gap-desktop));
   text-align: center;
   border-radius: none;
@@ -290,7 +291,7 @@ body .container .contents {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  font-family: "Wanted Sans Variable";
+  font-family: 'Wanted Sans Variable';
   margin-bottom: 0;
   letter-spacing: 0;
   word-break: keep-all;
@@ -298,7 +299,7 @@ body .container .contents {
 }
 
 .contents > section .custom-group .text {
-  margin-top: var(--spacing-normal-medium);
+  margin-top: var(--spacing-normal-md);
 }
 
 /* 레벨별 크기 — 지금까지는 이 값이 없어서 브라우저 기본 h1~h4 배율(em)이
@@ -307,13 +308,13 @@ body .container .contents {
    레벨마다 명시적인 값을 준다. */
 
 .contents > section .content-section > h1 {
-  font-size: layout.fluid(typography.tier-mobile("display-large"), typography.tier-desktop("display-large"));
+  font-size: layout.fluid(typography.tier-mobile('display-lg'), typography.tier-desktop('display-lg'));
   font-weight: var(--font-weight-bold);
   text-align: center;
 }
 
 .contents > section .content-section > h2 {
-  font-size: layout.fluid(typography.tier-mobile("display-medium"), typography.tier-desktop("display-medium"));
+  font-size: layout.fluid(typography.tier-mobile('display-md'), typography.tier-desktop('display-md'));
   font-weight: var(--font-weight-bold);
   text-align: center;
 
@@ -323,26 +324,26 @@ body .container .contents {
 }
 
 .contents > section .content-section > h3 {
-  font-size: layout.fluid(typography.tier-mobile("display-small"), typography.tier-desktop("display-small"));
+  font-size: layout.fluid(typography.tier-mobile('display-sm'), typography.tier-desktop('display-sm'));
   font-weight: var(--font-weight-bold);
 }
 
 .contents > section .content-section > h4 {
-  font-size: layout.fluid(typography.tier-mobile("heading-large"), typography.tier-desktop("heading-large"));
+  font-size: layout.fluid(typography.tier-mobile('heading-lg'), typography.tier-desktop('heading-lg'));
   font-weight: var(--font-weight-semibold);
 }
 
-/* h5/h6 have no dedicated foundation tier smaller than --heading-medium,
-   so both share --heading-small (same tradeoff already made for the
+/* h5/h6 have no dedicated foundation tier smaller than --heading-md,
+   so both share --heading-sm (same tradeoff already made for the
    .text-li marker sizes above). These mainly show up when a list item's
    title (see detachListItemHeading) gets pulled out to the top level. */
 .contents > section .content-section > h5 {
-  font-size: layout.fluid(typography.tier-mobile("heading-medium"), typography.tier-desktop("heading-medium"));
+  font-size: layout.fluid(typography.tier-mobile('heading-md'), typography.tier-desktop('heading-md'));
   font-weight: var(--font-weight-semibold);
 }
 
 .contents > section .content-section > h6 {
-  font-size: layout.fluid(typography.tier-mobile("heading-small"), typography.tier-desktop("heading-small"));
+  font-size: layout.fluid(typography.tier-mobile('heading-sm'), typography.tier-desktop('heading-sm'));
   font-weight: var(--font-weight-semibold);
 }
 
@@ -363,14 +364,14 @@ body .container .contents {
    아래 .text/.img-wrap 통합 블록의 어떤 예외보다도 이 규칙이 우선한다
    (셀렉터 우선순위가 더 높음). */
 .contents > section .content-section > *:nth-child(1) {
-  margin-top: var(--spacing-tiny-large);
+  margin-top: var(--spacing-tiny-lg);
 
   @media (min-width: 768px) {
-    margin-top: var(--spacing-normal-medium);
+    margin-top: var(--spacing-normal-md);
   }
 
   @media (min-width: 1080px) {
-    margin-top: var(--spacing-normal-large);
+    margin-top: var(--spacing-normal-lg);
   }
 }
 
@@ -382,9 +383,9 @@ body .container .contents {
    ========================================================================== */
 
 .contents > section .text {
-  font-size: var(--body-large);
+  font-size: var(--body-lg);
   line-height: var(--line-height-relaxed);
-  margin-top: var(--spacing-normal-xlarge);
+  margin-top: var(--spacing-normal-xl);
   color: rgb(var(--theme-foreground));
 }
 
@@ -404,7 +405,7 @@ body .container .contents {
 }
 
 .contents > section .element + .text {
-  margin-top: var(--spacing-spacious-large);
+  margin-top: var(--spacing-spacious-lg);
 }
 
 /* :not(.text) here isn't filtering anything meaningful on its own (this
@@ -424,14 +425,14 @@ body .container .contents {
    if either value ever changes independently, re-check that assumption. */
 
 .contents > section .text-li > .text {
-  margin-top: var(--spacing-normal-medium);
+  margin-top: var(--spacing-normal-md);
   color: rgb(var(--theme-foreground));
-  font-size: var(--body-large);
+  font-size: var(--body-lg);
   line-height: 1.6;
 }
 
 .contents > section .text + .text {
-  margin-top: var(--spacing-normal-large);
+  margin-top: var(--spacing-normal-lg);
 }
 
 .contents > section .text + ul.text {
@@ -455,7 +456,7 @@ body .container .contents {
    ========================================================================== */
 
 .contents > section .img-wrap {
-  margin: var(--spacing-spacious-large) 0;
+  margin: var(--spacing-spacious-lg) 0;
 }
 
 .contents > section .img-wrap + .img-wrap {
@@ -525,7 +526,7 @@ body .container .contents {
 .contents > section .text-li h5,
 .contents > section .text-li h6 {
   margin-top: 0;
-  margin-bottom: var(--spacing-tiny-large);
+  margin-bottom: var(--spacing-tiny-lg);
   line-height: 1.35;
   font-weight: 700;
   color: rgb(var(--theme-foreground));
@@ -533,24 +534,24 @@ body .container .contents {
 }
 
 .contents > section .text-li h1 {
-  font-size: var(--display-large);
+  font-size: var(--display-lg);
 }
 
 .contents > section .text-li h2 {
-  font-size: var(--display-small);
+  font-size: var(--display-sm);
 }
 
 .contents > section .text-li h3 {
-  font-size: var(--heading-large);
+  font-size: var(--heading-lg);
 }
 
 .contents > section .text-li h4,
 .contents > section .text-li h5 {
-  font-size: var(--heading-medium);
+  font-size: var(--heading-md);
 }
 
 .contents > section .text-li h6 {
-  font-size: var(--heading-small);
+  font-size: var(--heading-sm);
 }
 
 .contents > section .refer {
@@ -596,8 +597,8 @@ body .container .contents {
 
 .contents > section .img-wrap .caption {
   display: block;
-  margin-top: var(--spacing-normal-small);
-  font-size: var(--caption-medium);
+  margin-top: var(--spacing-normal-sm);
+  font-size: var(--caption-md);
   color: rgb(var(--theme-foreground));
   opacity: 0.7;
   line-height: 1.43;
@@ -615,10 +616,10 @@ body .container .contents {
 }
 
 .project-media-captioned figcaption {
-  margin-top: var(--spacing-normal-medium);
+  margin-top: var(--spacing-normal-md);
   color: rgb(var(--theme-foreground));
   opacity: 0.7;
-  font-size: var(--caption-medium);
+  font-size: var(--caption-md);
   line-height: 1.5;
   text-align: center;
   font-style: italic;
@@ -754,9 +755,9 @@ body .container .contents {
    때만 동작하므로 여기서는 관여하지 않고, 순수 CSS grid로 칸을 나눈다. */
 .columns {
   display: grid;
-  gap: var(--spacing-normal-large);
+  gap: var(--spacing-normal-lg);
   align-items: start;
-  margin-top: var(--spacing-spacious-small);
+  margin-top: var(--spacing-spacious-sm);
 }
 
 .columns.columns-2 {
@@ -795,7 +796,7 @@ body .container .contents {
 .contents > section.full-max {
   font-size: 0px;
   position: relative;
-  margin-top: var(--spacing-spacious-large);
+  margin-top: var(--spacing-spacious-lg);
   width: 100%;
   display: flex;
   flex-direction: column;

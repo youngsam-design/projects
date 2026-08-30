@@ -2,7 +2,7 @@
   display: flex;
   min-width: 0;
   flex-direction: column;
-  gap: var(--spacing-tiny-medium);
+  gap: var(--spacing-tiny-md);
 }
 
 .input:has(.field:disabled) {
@@ -11,7 +11,7 @@
 
 .label {
   color: var(--color-neutral-foreground-low);
-  font-size: var(--caption-xsmall);
+  font-size: var(--caption-xs);
   line-height: var(--line-height-tight);
 }
 
@@ -21,7 +21,7 @@
 
 .description {
   color: var(--color-neutral-foreground-low);
-  font-size: var(--body-medium);
+  font-size: var(--body-md);
   line-height: 1.4;
 }
 
@@ -33,7 +33,7 @@
 
 .leading {
   position: absolute;
-  left: var(--spacing-tiny-large);
+  left: var(--spacing-tiny-lg);
   top: 50%;
   display: flex;
   transform: translateY(-50%);
@@ -46,14 +46,14 @@
   font: inherit;
   line-height: var(--line-height-tight);
   background: var(--color-neutral-background-high);
-  border-radius: var(--radius-2xsmall);
+  border-radius: var(--radius-2xs);
   border: 1px solid var(--palette-transparent);
   resize: vertical;
 }
 
 .small .field {
-  padding: var(--spacing-tiny-large) var(--spacing-tiny-large);
-  font-size: var(--caption-xsmall);
+  padding: var(--spacing-tiny-lg) var(--spacing-tiny-lg);
+  font-size: var(--caption-xs);
 }
 
 .small .field.hasLeading {
@@ -65,9 +65,9 @@
 }
 
 .medium .field {
-  padding: var(--spacing-normal-small) var(--spacing-normal-small);
-  font-size: var(--caption-medium);
-  border-radius: var(--radius-xsmall);
+  padding: var(--spacing-normal-sm) var(--spacing-normal-sm);
+  font-size: var(--caption-md);
+  border-radius: var(--radius-xs);
 }
 
 .medium .field.hasLeading {
@@ -94,12 +94,12 @@
   cursor: not-allowed;
 }
 
-.input[data-invalid="true"] .field {
+.input[data-invalid='true'] .field {
   border-color: var(--color-error-border-main);
 }
 
 .error {
   color: var(--color-error-foreground-main);
-  font-size: var(--body-medium);
+  font-size: var(--body-md);
   line-height: 1.4;
 }

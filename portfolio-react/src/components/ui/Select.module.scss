@@ -2,7 +2,7 @@
   display: flex;
   min-width: 0;
   flex-direction: column;
-  gap: var(--spacing-tiny-medium);
+  gap: var(--spacing-tiny-md);
 }
 
 .select:has(.field:disabled) {
@@ -11,7 +11,7 @@
 
 .label {
   color: var(--color-neutral-foreground-low);
-  font-size: var(--caption-xsmall);
+  font-size: var(--caption-xs);
   line-height: var(--line-height-tight);
 }
 
@@ -21,7 +21,7 @@
 
 .description {
   color: var(--color-neutral-foreground-low);
-  font-size: var(--body-medium);
+  font-size: var(--body-md);
   line-height: 1.4;
 }
 
@@ -36,12 +36,13 @@
   width: 100%;
   min-width: 0;
   appearance: none;
-  padding: var(--spacing-tiny-large) calc(var(--spacing-normal-large) + var(--spacing-tiny-large)) var(--spacing-tiny-large) var(--spacing-tiny-large);
+  padding: var(--spacing-tiny-lg) calc(var(--spacing-normal-lg) + var(--spacing-tiny-lg)) var(--spacing-tiny-lg)
+    var(--spacing-tiny-lg);
   border: 1px solid var(--palette-transparent);
-  border-radius: var(--radius-2xsmall);
+  border-radius: var(--radius-2xs);
   color: var(--color-neutral-foreground-main);
   font: inherit;
-  font-size: var(--caption-xsmall);
+  font-size: var(--caption-xs);
   line-height: var(--line-height-tight);
   background: var(--color-neutral-background-high);
   cursor: pointer;
@@ -59,13 +60,13 @@
   cursor: not-allowed;
 }
 
-.select[data-invalid="true"] .field {
+.select[data-invalid='true'] .field {
   border-color: var(--color-error-border-main);
 }
 
 .chevron {
   position: absolute;
-  right: var(--spacing-tiny-large);
+  right: var(--spacing-tiny-lg);
   width: 16px;
   height: 16px;
   color: var(--color-neutral-foreground-low);
@@ -78,6 +79,6 @@
 
 .error {
   color: var(--color-error-foreground-main);
-  font-size: var(--body-medium);
+  font-size: var(--body-md);
   line-height: 1.4;
 }

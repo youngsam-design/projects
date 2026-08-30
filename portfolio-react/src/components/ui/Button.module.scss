@@ -3,7 +3,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: var(--spacing-tiny-large);
+  gap: var(--spacing-tiny-lg);
   user-select: none;
   font: inherit;
 
@@ -23,7 +23,7 @@
    base color, not a swap of that color - hidden until :hover/:active reveal
    it via opacity, per the design system's neutral hovered-pressed token. */
 .button::after {
-  content: "";
+  content: '';
   position: absolute;
   inset: -1px;
   background: var(--color-neutral-background-hovered-pressed);
@@ -38,17 +38,17 @@
 }
 
 .medium {
-  font-size: var(--body-small);
-  padding: var(--spacing-normal-small) var(--spacing-normal-large);
+  font-size: var(--body-sm);
+  padding: var(--spacing-normal-sm) var(--spacing-normal-lg);
   height: 40px;
   border-radius: var(--radius-circular);
 }
 
 .small {
-  font-size: var(--caption-xsmall);
-  padding: var(--spacing-tiny-large);
+  font-size: var(--caption-xs);
+  padding: var(--spacing-tiny-lg);
   height: 32px;
-  border-radius: var(--radius-xsmall);
+  border-radius: var(--radius-xs);
 }
 
 .label {

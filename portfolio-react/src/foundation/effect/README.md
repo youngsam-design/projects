@@ -8,11 +8,11 @@
 
 ## 토큰 구조
 
-| 토큰 | CSS 변수 | 값 | 용도 예시 |
-|------|---------|----|---------|
-| `effect.blur.small` | `--blur-small` | `blur(8px)` | 작은 배지·툴팁 위의 가벼운 블러 |
-| `effect.blur.medium` | `--blur-medium` | `blur(12px)` | 에디터 툴바 등 중간 톤 블러 |
-| `effect.blur.large` | `--blur-large` | `saturate(180%) blur(20px)` | 팝오버 메뉴, 스크롤에 고정되는 헤더처럼 아래 콘텐츠 색이 배어나오는 유리 패널 |
+| 토큰                 | CSS 변수    | 값                          | 용도 예시                                                                     |
+| -------------------- | ----------- | --------------------------- | ----------------------------------------------------------------------------- |
+| `effect.blur.small`  | `--blur-sm` | `blur(8px)`                 | 작은 배지·툴팁 위의 가벼운 블러                                               |
+| `effect.blur.medium` | `--blur-md` | `blur(12px)`                | 에디터 툴바 등 중간 톤 블러                                                   |
+| `effect.blur.large`  | `--blur-lg` | `saturate(180%) blur(20px)` | 팝오버 메뉴, 스크롤에 고정되는 헤더처럼 아래 콘텐츠 색이 배어나오는 유리 패널 |
 
 블러 효과는 대부분 반투명 배경과 짝을 이룹니다 — 배경 토큰은 `foundation/color`의 `--color-neutral-background-blurred-main` 등을 참고하세요.
 
@@ -24,13 +24,13 @@
 /* Component.module.scss */
 .popover {
   background: var(--color-neutral-background-blurred-main);
-  backdrop-filter: var(--blur-large);
+  backdrop-filter: var(--blur-lg);
 }
 
 .stickyHeader {
   background-color: rgba(var(--theme-background), 0.88);
-  backdrop-filter: var(--blur-large);
-  -webkit-backdrop-filter: var(--blur-large);
+  backdrop-filter: var(--blur-lg);
+  -webkit-backdrop-filter: var(--blur-lg);
 }
 ```
 
@@ -52,7 +52,7 @@ import { effect } from '../../foundation';
 
 <div style={{ backdropFilter: isFocused ? effect.blur.large : effect.blur.small }}>
   포커스 상태에 따라 블러 강도가 달라지는 패널
-</div>
+</div>;
 ```
 
 정적인 blur 값을 인라인으로 쓸 이유는 없습니다 — CSS Modules에서 `var(--blur-...)`로 참조하는 쪽을 기본으로 합니다.

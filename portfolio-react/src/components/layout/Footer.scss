@@ -39,7 +39,7 @@
 }
 
 footer .copyright {
-  font-size: var(--caption-xsmall);
+  font-size: var(--caption-xs);
   font-weight: 400;
   color: var(--palette-gray-900);
   user-select: none;
@@ -58,7 +58,7 @@ footer .copyright {
 }
 
 footer .mylogo {
-  font-family: "FreightText";
+  font-family: 'FreightText';
   color: inherit;
 }
 
@@ -85,7 +85,7 @@ footer .description ul li {
 }
 
 footer .description ul li p {
-  font-size: var(--caption-xsmall);
+  font-size: var(--caption-xs);
   font-weight: 400;
   color: var(--palette-gray-900);
   user-select: none;

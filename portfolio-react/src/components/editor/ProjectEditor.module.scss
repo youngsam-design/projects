@@ -8,10 +8,10 @@
   display: grid;
   border: 3px dashed var(--color-info-foreground-main);
   color: var(--color-info-foreground-main);
-  font-size: var(--heading-small);
+  font-size: var(--heading-sm);
   font-weight: var(--font-weight-bold);
   background: rgb(238 244 255 / 94%);
-  inset: var(--spacing-normal-medium);
+  inset: var(--spacing-normal-md);
   place-items: center;
   pointer-events: none;
 }
@@ -27,13 +27,13 @@
 
 .loginCard {
   display: grid;
-  gap: var(--spacing-normal-medium);
+  gap: var(--spacing-normal-md);
   width: min(100%, 420px);
-  padding: var(--spacing-normal-xlarge);
+  padding: var(--spacing-normal-xl);
   border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-medium);
+  border-radius: var(--radius-md);
   background: var(--color-neutral-background-main);
-  box-shadow: var(--elevation-medium);
+  box-shadow: var(--elevation-md);
 }
 
 .loginCard h1,
@@ -44,13 +44,13 @@
 .loginCard > span,
 .loginCard p {
   color: var(--color-neutral-foreground-low);
-  font-size: var(--caption-medium);
+  font-size: var(--caption-md);
 }
 
 .loginCard button {
   min-height: var(--size-control);
   border: 0;
-  border-radius: var(--radius-xsmall);
+  border-radius: var(--radius-xs);
   font: inherit;
   cursor: pointer;
 }
@@ -70,32 +70,32 @@
 .headerTitle span,
 .status {
   color: var(--color-neutral-foreground-low);
-  font-size: var(--caption-xsmall);
-  margin-top: var(--spacing-tiny-medium);
+  font-size: var(--caption-xs);
+  margin-top: var(--spacing-tiny-md);
 }
 
 .headerTitle .publicationStatus {
   display: inline-block;
   width: fit-content;
-  margin-top: var(--spacing-tiny-medium);
-  margin-left: var(--spacing-tiny-medium);
+  margin-top: var(--spacing-tiny-md);
+  margin-left: var(--spacing-tiny-md);
   color: var(--color-neutral-foreground-main);
 }
 
 .headerTitle .saveState {
   display: inline-block;
   width: fit-content;
-  margin-top: var(--spacing-tiny-large);
+  margin-top: var(--spacing-tiny-lg);
   color: var(--color-success-foreground-main);
 }
 
-.headerTitle .saveState[data-state="dirty"],
-.headerTitle .saveState[data-state="saving"] {
+.headerTitle .saveState[data-state='dirty'],
+.headerTitle .saveState[data-state='saving'] {
   color: var(--color-warning-foreground-main);
 }
 
-.headerTitle .saveState[data-state="conflict"],
-.headerTitle .saveState[data-state="error"] {
+.headerTitle .saveState[data-state='conflict'],
+.headerTitle .saveState[data-state='error'] {
   color: var(--color-error-foreground-main);
 }
 
@@ -105,19 +105,19 @@
 .markToolbar {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-tiny-large);
+  gap: var(--spacing-tiny-lg);
 }
 
 .insertToolbar button,
 .blockActions button,
 .markToolbar button {
   min-height: 36px;
-  padding: 0 var(--spacing-normal-small);
+  padding: 0 var(--spacing-normal-sm);
   border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-xsmall);
+  border-radius: var(--radius-xs);
   color: inherit;
   font: inherit;
-  font-size: var(--caption-medium);
+  font-size: var(--caption-md);
   text-decoration: none;
   background: var(--color-neutral-background-main);
   cursor: pointer;
@@ -161,7 +161,7 @@
   border-left: 1px solid var(--color-neutral-border-main);
   color: var(--color-neutral-foreground-main);
   background: var(--color-neutral-background-main);
-  box-shadow: var(--elevation-small);
+  box-shadow: var(--elevation-sm);
 }
 
 .editorSidebarScroll {
@@ -180,7 +180,7 @@
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  padding: var(--spacing-normal-medium);
+  padding: var(--spacing-normal-md);
   background: var(--color-neutral-background-main);
 }
 
@@ -188,7 +188,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   width: 100%;
-  margin-top: var(--spacing-normal-small);
+  margin-top: var(--spacing-normal-sm);
 }
 
 .editorSidebar .actions > * {
@@ -205,29 +205,29 @@
 .gridControls {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: var(--spacing-normal-small);
-  padding-bottom: var(--spacing-normal-small);
+  gap: var(--spacing-normal-sm);
+  padding-bottom: var(--spacing-normal-sm);
   border-bottom: 1px solid var(--color-neutral-border-main);
 }
 
 .gridResizeHint {
   margin: 0;
-  padding: var(--spacing-normal-small);
-  border-radius: var(--radius-xsmall);
+  padding: var(--spacing-normal-sm);
+  border-radius: var(--radius-xs);
   color: var(--color-neutral-foreground-low);
-  font-size: var(--caption-xsmall);
+  font-size: var(--caption-xs);
   line-height: 1.5;
   background: var(--color-neutral-background-low);
 }
 
 .wysiwygInspector {
   display: grid;
-  gap: var(--spacing-normal-small);
-  padding: var(--spacing-normal-medium);
+  gap: var(--spacing-normal-sm);
+  padding: var(--spacing-normal-md);
   border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-small);
+  border-radius: var(--radius-sm);
   background: var(--color-neutral-background-main);
-  box-shadow: var(--elevation-medium);
+  box-shadow: var(--elevation-md);
 }
 
 .editorSidebar .revisionPanel,
@@ -246,12 +246,12 @@
 .wysiwygInspector > p {
   margin: 0;
   color: var(--color-neutral-foreground-low);
-  font-size: var(--caption-xsmall);
+  font-size: var(--caption-xs);
   overflow-wrap: anywhere;
 }
 
 .wysiwygInspector summary {
-  padding-block: var(--spacing-tiny-large);
+  padding-block: var(--spacing-tiny-lg);
   font-weight: var(--font-weight-semibold);
   cursor: pointer;
 }
@@ -265,31 +265,31 @@
 .previewBack {
   position: fixed;
   z-index: calc(var(--z-overlay) + 2);
-  top: var(--spacing-normal-medium);
-  right: var(--spacing-normal-medium);
+  top: var(--spacing-normal-md);
+  right: var(--spacing-normal-md);
   min-height: 40px;
-  padding-inline: var(--spacing-normal-medium);
+  padding-inline: var(--spacing-normal-md);
   border: 1px solid var(--color-neutral-border-main);
   border-radius: var(--radius-circular);
   color: var(--color-neutral-foreground-main);
   font: inherit;
   background: var(--palette-gray-alpha-inverse-900);
-  box-shadow: var(--elevation-medium);
+  box-shadow: var(--elevation-md);
   cursor: pointer;
 }
 
 .revisionPanel {
-  margin-bottom: var(--spacing-normal-medium);
-  padding: var(--spacing-normal-medium);
+  margin-bottom: var(--spacing-normal-md);
+  padding: var(--spacing-normal-md);
   border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-small);
+  border-radius: var(--radius-sm);
   background: var(--color-neutral-background-main);
 }
 
 .revisionPanel ul {
   display: grid;
-  gap: var(--spacing-tiny-large);
-  margin: var(--spacing-normal-medium) 0 0;
+  gap: var(--spacing-tiny-lg);
+  margin: var(--spacing-normal-md) 0 0;
   padding: 0;
   list-style: none;
 }
@@ -298,19 +298,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--spacing-normal-small);
+  gap: var(--spacing-normal-sm);
   color: var(--color-neutral-foreground-low);
-  font-size: var(--caption-medium);
+  font-size: var(--caption-md);
 }
 
 .settings {
-  margin-bottom: var(--spacing-normal-large);
+  margin-bottom: var(--spacing-normal-lg);
   overflow: hidden;
 }
 
 .settingsHeading {
   margin: 0;
-  padding: var(--spacing-normal-medium) var(--spacing-normal-large);
+  padding: var(--spacing-normal-md) var(--spacing-normal-lg);
   font-weight: var(--font-weight-bold);
 }
 
@@ -321,8 +321,8 @@
 
 .settingsSection {
   display: grid;
-  padding: var(--spacing-tiny-large) var(--spacing-normal-medium) var(--spacing-normal-medium);
-  gap: var(--spacing-tiny-large);
+  padding: var(--spacing-tiny-lg) var(--spacing-normal-md) var(--spacing-normal-md);
+  gap: var(--spacing-tiny-lg);
   border-top: 1px solid var(--color-neutral-border-high);
 }
 
@@ -332,7 +332,7 @@
 }
 
 .settingsSection h2 {
-  font-size: var(--caption-medium);
+  font-size: var(--caption-md);
 }
 
 .settingsSectionHeader {
@@ -340,34 +340,34 @@
   align-items: center;
   justify-content: space-between;
   height: 32px;
-  gap: var(--spacing-normal-small);
+  gap: var(--spacing-normal-sm);
 }
 
 .settingsHelp {
   color: var(--color-neutral-foreground-low);
-  font-size: var(--caption-medium);
+  font-size: var(--caption-md);
 }
 
 .metaList {
   display: grid;
-  gap: var(--spacing-tiny-large);
+  gap: var(--spacing-tiny-lg);
 }
 
 .metaRow {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
-  gap: var(--spacing-tiny-large);
+  gap: var(--spacing-tiny-lg);
 }
 
 .themeGrid {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: var(--spacing-normal-small);
+  gap: var(--spacing-normal-sm);
 }
 
 .accentColorField {
   display: grid;
-  gap: var(--spacing-tiny-large);
+  gap: var(--spacing-tiny-lg);
 }
 
 .colorSwatchLeading {
@@ -375,7 +375,7 @@
   height: 18px;
   padding: 0;
   border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-3xsmall);
+  border-radius: var(--radius-3xs);
   cursor: pointer;
   appearance: none;
   background: none;
@@ -392,8 +392,8 @@
 
 .field {
   display: grid;
-  gap: var(--spacing-tiny-large);
-  font-size: var(--caption-medium);
+  gap: var(--spacing-tiny-lg);
+  font-size: var(--caption-md);
   font-weight: var(--font-weight-bold);
 }
 
@@ -402,9 +402,9 @@
 .field select,
 .textarea {
   width: 100%;
-  padding: var(--spacing-normal-small);
+  padding: var(--spacing-normal-sm);
   border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-xsmall);
+  border-radius: var(--radius-xs);
   color: var(--color-neutral-foreground-main);
   font: inherit;
   font-weight: var(--font-weight-regular);
@@ -415,7 +415,7 @@
 
 .insertToolbar {
   align-items: center;
-  margin-bottom: var(--spacing-normal-medium);
+  margin-bottom: var(--spacing-normal-md);
 }
 
 .editorSidebar .insertToolbar {
@@ -429,7 +429,7 @@
 
 .editorSidebar .insertToolbar button {
   width: 100%;
-  padding-inline: var(--spacing-tiny-large);
+  padding-inline: var(--spacing-tiny-lg);
 }
 
 .fileInput {
@@ -444,13 +444,13 @@
 .uploadStatus {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(120px, 240px) auto;
-  gap: var(--spacing-normal-small);
+  gap: var(--spacing-normal-sm);
   align-items: center;
-  margin-bottom: var(--spacing-normal-medium);
-  padding: var(--spacing-normal-small) var(--spacing-normal-medium);
+  margin-bottom: var(--spacing-normal-md);
+  padding: var(--spacing-normal-sm) var(--spacing-normal-md);
   border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-xsmall);
-  font-size: var(--caption-medium);
+  border-radius: var(--radius-xs);
+  font-size: var(--caption-md);
   background: var(--color-neutral-background-main);
 }
 
@@ -471,9 +471,9 @@
 
 .uploadStatus button {
   min-height: 32px;
-  padding-inline: var(--spacing-normal-small);
+  padding-inline: var(--spacing-normal-sm);
   border: 1px solid var(--color-info-foreground-main);
-  border-radius: var(--radius-xsmall);
+  border-radius: var(--radius-xs);
   color: var(--color-info-foreground-main);
   background: var(--color-neutral-background-main);
   cursor: pointer;
@@ -489,7 +489,7 @@
 }
 
 .rootBlock {
-  padding: var(--spacing-normal-medium);
+  padding: var(--spacing-normal-md);
   transition:
     opacity var(--duration-short-03) var(--easing-standard),
     border-color var(--duration-short-03) var(--easing-standard);
@@ -500,7 +500,7 @@
 }
 
 .blockDropZone {
-  height: var(--spacing-normal-medium);
+  height: var(--spacing-normal-md);
   border-radius: var(--radius-circular);
   transition: background var(--duration-short-03) var(--easing-standard);
 }
@@ -513,19 +513,19 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: var(--spacing-tiny-large);
-  margin-top: var(--spacing-normal-medium);
-  padding-top: var(--spacing-normal-small);
+  gap: var(--spacing-tiny-lg);
+  margin-top: var(--spacing-normal-md);
+  padding-top: var(--spacing-normal-sm);
   border-top: 1px solid var(--color-neutral-border-high);
   color: var(--color-neutral-foreground-lowest);
-  font-size: var(--caption-xsmall);
+  font-size: var(--caption-xs);
 }
 
 .blockInsert button {
   min-height: 28px;
-  padding-inline: var(--spacing-tiny-large);
+  padding-inline: var(--spacing-tiny-lg);
   border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-xsmall);
+  border-radius: var(--radius-xs);
   color: inherit;
   font: inherit;
   background: var(--color-neutral-background-main);
@@ -536,42 +536,42 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--spacing-normal-small);
-  margin-bottom: var(--spacing-normal-small);
+  gap: var(--spacing-normal-sm);
+  margin-bottom: var(--spacing-normal-sm);
   color: var(--color-neutral-foreground-low);
-  font-size: var(--caption-xsmall);
+  font-size: var(--caption-xs);
 }
 
 .blockActions button {
   min-height: 30px;
-  padding-inline: var(--spacing-tiny-large);
+  padding-inline: var(--spacing-tiny-lg);
 }
 
 .nestedBlock {
-  padding: var(--spacing-normal-small);
+  padding: var(--spacing-normal-sm);
   border-color: var(--color-neutral-border-high);
 }
 
 .blockChildren {
   display: grid;
-  gap: var(--spacing-normal-small);
-  margin-top: var(--spacing-tiny-large);
+  gap: var(--spacing-normal-sm);
+  margin-top: var(--spacing-tiny-lg);
 }
 
 .blockLabel {
   color: var(--color-neutral-foreground-lowest);
-  font-size: var(--caption-xsmall);
+  font-size: var(--caption-xs);
 }
 
 .textEditor {
   display: grid;
-  gap: var(--spacing-tiny-large);
+  gap: var(--spacing-tiny-lg);
 }
 
 .markToolbar button {
   min-height: 28px;
-  padding-inline: var(--spacing-tiny-large);
-  font-size: var(--caption-xsmall);
+  padding-inline: var(--spacing-tiny-lg);
+  font-size: var(--caption-xs);
 }
 
 .markToolbar .markActive {
@@ -583,49 +583,49 @@
 .mediaBlock {
   display: grid;
   grid-template-columns: 112px 1fr;
-  gap: var(--spacing-normal-small);
+  gap: var(--spacing-normal-sm);
   align-items: center;
   margin: 0;
   overflow: hidden;
-  border-radius: var(--radius-xsmall);
+  border-radius: var(--radius-xs);
   background: var(--color-neutral-background-low);
 }
 
 .mediaEditor {
   display: grid;
-  gap: var(--spacing-normal-medium);
+  gap: var(--spacing-normal-md);
 }
 
 .mediaFields {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(140px, 220px);
-  gap: var(--spacing-normal-small);
+  gap: var(--spacing-normal-sm);
 }
 
 .headingEditor {
   display: grid;
-  gap: var(--spacing-normal-small);
+  gap: var(--spacing-normal-sm);
 }
 
 .headingEditor > label {
   display: flex;
   align-items: center;
-  gap: var(--spacing-tiny-large);
+  gap: var(--spacing-tiny-lg);
   color: var(--color-neutral-foreground-low);
-  font-size: var(--caption-medium);
+  font-size: var(--caption-md);
 }
 
 .headingEditor select {
   min-height: 32px;
-  padding-inline: var(--spacing-tiny-large);
+  padding-inline: var(--spacing-tiny-lg);
   border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-xsmall);
+  border-radius: var(--radius-xs);
   font: inherit;
   background: var(--color-neutral-background-main);
 }
 
 .editorDivider {
-  margin: var(--spacing-normal-large) 0;
+  margin: var(--spacing-normal-lg) 0;
   border: 0;
   border-top: 1px solid var(--color-neutral-border-main);
 }
@@ -633,42 +633,42 @@
 .spacerEditor {
   display: flex;
   align-items: center;
-  gap: var(--spacing-tiny-large);
-  min-height: var(--spacing-spacious-small);
-  padding: var(--spacing-normal-small);
+  gap: var(--spacing-tiny-lg);
+  min-height: var(--spacing-spacious-sm);
+  padding: var(--spacing-normal-sm);
   border: 1px dashed var(--color-neutral-border-main);
-  border-radius: var(--radius-xsmall);
+  border-radius: var(--radius-xs);
   color: var(--color-neutral-foreground-low);
-  font-size: var(--caption-medium);
+  font-size: var(--caption-md);
 }
 
 .spacerEditor select {
   min-height: 32px;
-  padding-inline: var(--spacing-tiny-large);
+  padding-inline: var(--spacing-tiny-lg);
   border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-xsmall);
+  border-radius: var(--radius-xs);
   font: inherit;
   background: var(--color-neutral-background-main);
 }
 
-.nestedBlock[data-block-type="callout"] {
+.nestedBlock[data-block-type='callout'] {
   border-left: 4px solid var(--color-info-foreground-main);
   background: var(--color-info-background-lowest);
 }
 
 .linkEditor {
   display: grid;
-  gap: var(--spacing-normal-small);
-  padding: var(--spacing-normal-small);
+  gap: var(--spacing-normal-sm);
+  padding: var(--spacing-normal-sm);
   border: 1px solid var(--color-neutral-border-high);
-  border-radius: var(--radius-xsmall);
+  border-radius: var(--radius-xs);
   background: var(--color-info-background-lowest);
 }
 
 .linkFields {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  gap: var(--spacing-normal-small);
+  gap: var(--spacing-normal-sm);
   align-items: end;
 }
 
@@ -676,84 +676,84 @@
 .checkboxField {
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-tiny-large);
+  gap: var(--spacing-tiny-lg);
   min-height: 44px;
   color: var(--color-neutral-foreground-low);
-  font-size: var(--caption-medium);
+  font-size: var(--caption-md);
 }
 
 .playbackFields {
   display: flex;
   grid-column: 1 / -1;
   flex-wrap: wrap;
-  gap: var(--spacing-normal-small);
+  gap: var(--spacing-normal-sm);
   margin: 0;
-  padding: var(--spacing-normal-small);
+  padding: var(--spacing-normal-sm);
   border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-xsmall);
-  font-size: var(--caption-medium);
+  border-radius: var(--radius-xs);
+  font-size: var(--caption-md);
 }
 
 .playbackFields legend {
-  padding-inline: var(--spacing-tiny-medium);
+  padding-inline: var(--spacing-tiny-md);
   font-weight: var(--font-weight-bold);
 }
 
 .playbackFields label {
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-tiny-medium);
+  gap: var(--spacing-tiny-md);
 }
 
 .listEditor {
   display: grid;
-  gap: var(--spacing-normal-small);
+  gap: var(--spacing-normal-sm);
 }
 
 .listTypeControl {
   display: flex;
   align-items: center;
-  gap: var(--spacing-tiny-large);
+  gap: var(--spacing-tiny-lg);
   color: var(--color-neutral-foreground-low);
-  font-size: var(--caption-medium);
+  font-size: var(--caption-md);
 }
 
 .listTypeControl select {
   min-height: 32px;
-  padding-inline: var(--spacing-tiny-large);
+  padding-inline: var(--spacing-tiny-lg);
   border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-xsmall);
+  border-radius: var(--radius-xs);
   font: inherit;
   background: var(--color-neutral-background-main);
 }
 
 .listItems {
   display: grid;
-  gap: var(--spacing-tiny-large);
+  gap: var(--spacing-tiny-lg);
 }
 
 .listItemEditor {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
-  gap: var(--spacing-tiny-large);
+  gap: var(--spacing-tiny-lg);
   align-items: start;
 }
 
 .listItemEditor > span {
-  padding-top: var(--spacing-normal-small);
+  padding-top: var(--spacing-normal-sm);
   color: var(--color-neutral-foreground-lowest);
-  font-size: var(--caption-medium);
+  font-size: var(--caption-md);
 }
 
 .listItemEditor > button,
 .addListItem {
   min-height: 32px;
-  padding-inline: var(--spacing-normal-small);
+  padding-inline: var(--spacing-normal-sm);
   border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-xsmall);
+  border-radius: var(--radius-xs);
   color: inherit;
   font: inherit;
-  font-size: var(--caption-medium);
+  font-size: var(--caption-md);
   background: var(--color-neutral-background-main);
   cursor: pointer;
 }
@@ -771,12 +771,12 @@
 
 .mediaBlock figcaption {
   display: grid;
-  gap: var(--spacing-tiny-medium);
+  gap: var(--spacing-tiny-md);
   min-width: 0;
-  padding-right: var(--spacing-normal-small);
+  padding-right: var(--spacing-normal-sm);
   overflow-wrap: anywhere;
   color: var(--color-neutral-foreground-low);
-  font-size: var(--caption-xsmall);
+  font-size: var(--caption-xs);
 }
 
 .mediaBlock figcaption span {
@@ -785,7 +785,7 @@
 }
 
 .empty {
-  padding: var(--spacing-spacious-small);
+  padding: var(--spacing-spacious-sm);
   text-align: center;
   color: var(--color-neutral-foreground-low);
 }

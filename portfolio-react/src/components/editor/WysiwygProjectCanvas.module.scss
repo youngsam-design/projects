@@ -7,28 +7,28 @@
 
 .codeBlock {
   overflow: hidden;
-  border-radius: var(--radius-medium);
+  border-radius: var(--radius-md);
   background: var(--palette-gray-900);
 }
 
 .codeBlockLabel {
-  padding: var(--spacing-tiny-large) var(--spacing-normal-medium);
+  padding: var(--spacing-tiny-lg) var(--spacing-normal-md);
   border-bottom: 1px solid var(--palette-gray-alpha-inverse-100);
   color: var(--palette-gray-400);
-  font-size: var(--caption-small);
+  font-size: var(--caption-sm);
 }
 
 .codeBlock pre {
   margin: 0;
-  padding: var(--spacing-normal-medium);
+  padding: var(--spacing-normal-md);
   overflow-x: auto;
 }
 
 .codeBlock code {
   display: block;
   color: var(--palette-gray-100);
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-  font-size: var(--caption-medium);
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: var(--caption-md);
   line-height: 1.6;
   white-space: pre;
   tab-size: 2;
@@ -43,42 +43,42 @@
 .canvasLabel {
   position: absolute;
   z-index: calc(var(--z-header) + 1);
-  top: var(--spacing-tiny-large);
-  right: var(--spacing-normal-small);
-  padding: var(--spacing-tiny-large) var(--spacing-normal-medium);
+  top: var(--spacing-tiny-lg);
+  right: var(--spacing-normal-sm);
+  padding: var(--spacing-tiny-lg) var(--spacing-normal-md);
   border: 1px solid var(--color-neutral-border-main);
   border-radius: var(--radius-circular);
   color: var(--color-neutral-foreground-low);
-  font-size: var(--caption-xsmall);
+  font-size: var(--caption-xs);
   background: var(--palette-gray-alpha-inverse-900);
-  backdrop-filter: var(--blur-small);
+  backdrop-filter: var(--blur-sm);
 }
 
-.canvas :global(#slider [contenteditable="true"]) {
+.canvas :global(#slider [contenteditable='true']) {
   display: block;
   cursor: text;
 }
 
-.canvas :global(#slider [contenteditable="true"]:focus) {
+.canvas :global(#slider [contenteditable='true']:focus) {
   outline: none;
 }
 
-.canvas [contenteditable="true"] {
+.canvas [contenteditable='true'] {
   cursor: text;
   white-space: pre-wrap;
 }
 
-.canvas [contenteditable="true"]:focus {
+.canvas [contenteditable='true']:focus {
   outline: none;
 }
 
-.canvas [contenteditable="true"]:empty::before {
+.canvas [contenteditable='true']:empty::before {
   color: var(--color-neutral-foreground-lowest);
   content: attr(data-placeholder);
   pointer-events: none;
 }
 
-.canvas [data-selected="true"] {
+.canvas [data-selected='true'] {
   position: relative;
 }
 
@@ -87,20 +87,20 @@
 // a light canvas can wash out or vanish against a dark one. [data-theme] on
 // the canvas root picks a color already tuned for that brightness instead of
 // leaning on a mix-blend-mode trick to fake adaptiveness.
-.canvas [data-selected="true"]:after {
+.canvas [data-selected='true']:after {
   position: absolute;
-  content: "";
+  content: '';
   top: 0;
   left: -6px;
   width: calc(100% + 12px);
   height: 100%;
   pointer-events: none;
-  border-radius: var(--radius-xsmall);
+  border-radius: var(--radius-xs);
   background: rgb(35 131 226 / 25%);
   z-index: 0;
 }
 
-.canvas[data-theme="dark"] [data-selected="true"]:after {
+.canvas[data-theme='dark'] [data-selected='true']:after {
   background: rgb(163 201 255 / 35%);
 }
 
@@ -112,22 +112,22 @@
   pointer-events: none;
 }
 
-.canvas[data-theme="dark"] .marquee {
+.canvas[data-theme='dark'] .marquee {
   background: rgb(163 201 255 / 18%);
 }
 
 .selectionBar {
   position: fixed;
   z-index: calc(var(--z-overlay) + 4);
-  bottom: var(--spacing-normal-large);
+  bottom: var(--spacing-normal-lg);
   left: 50%;
   display: flex;
   align-items: center;
-  gap: var(--spacing-normal-small);
-  padding: var(--spacing-tiny-large) var(--spacing-normal-medium);
+  gap: var(--spacing-normal-sm);
+  padding: var(--spacing-tiny-lg) var(--spacing-normal-md);
   border-radius: var(--radius-circular);
   color: var(--color-neutral-foreground-inverse-main);
-  font-size: var(--caption-medium);
+  font-size: var(--caption-md);
   background: var(--color-neutral-background-inverse-low);
   box-shadow: 0 8px 24px rgb(0 0 0 / 24%);
   transform: translateX(-50%);
@@ -136,7 +136,7 @@
 .selectionBar button {
   padding: 6px 12px;
   border: 0;
-  border-radius: var(--radius-xsmall);
+  border-radius: var(--radius-xs);
   color: var(--color-neutral-foreground-inverse-main);
   font: inherit;
   background: var(--palette-gray-alpha-inverse-100);
@@ -189,7 +189,7 @@
   height: 18px;
   border-radius: var(--radius-circular);
   background: rgb(35 131 226 / 65%);
-  content: "";
+  content: '';
   transform: translate(-50%, -50%);
 }
 
@@ -216,7 +216,7 @@
 .inlineIconRow {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-tiny-medium);
+  gap: var(--spacing-tiny-md);
 }
 
 .inlineActive {
@@ -236,7 +236,7 @@
 .inlineTypeMenu {
   position: absolute;
   top: 0;
-  left: calc(200px + var(--spacing-tiny-small));
+  left: calc(200px + var(--spacing-tiny-sm));
   z-index: calc(var(--z-overlay) + 1);
   max-height: min(560px, calc(100vh - 120px));
   overflow-y: auto;
@@ -261,7 +261,7 @@
   height: 8px;
   border-radius: 50%;
   background: inherit;
-  content: "";
+  content: '';
   transform: translateY(-50%);
 }
 
@@ -291,7 +291,7 @@
 .settingsDetailMenu {
   position: absolute;
   top: 40px;
-  left: calc(200px + var(--spacing-tiny-small));
+  left: calc(200px + var(--spacing-tiny-sm));
   z-index: calc(var(--z-overlay) + 3);
   max-height: min(560px, calc(100vh - 120px));
   overflow-y: auto;

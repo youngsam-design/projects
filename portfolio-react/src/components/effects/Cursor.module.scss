@@ -12,9 +12,8 @@
   // `--theme-foreground` is only ever set where SiteLayout actually receives
   // a project theme (see SiteLayout.jsx) - everywhere else (e.g. /about)
   // it's simply absent, so var()'s own fallback (not a JS check) covers it.
-  border: 1px solid rgb(var(--theme-foreground, 255, 255, 255));
-  border-radius: 420px;
-  background-color: rgb(var(--theme-foreground, 255, 255, 255));
+  border-radius: var(--radius-circular);
+  background-color: var(--palette-white);
   mix-blend-mode: exclusion;
   transform: translate3d(-50%, -50%, 0);
   pointer-events: none;

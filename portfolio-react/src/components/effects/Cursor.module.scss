@@ -13,7 +13,7 @@
   // a project theme (see SiteLayout.jsx) - everywhere else (e.g. /about)
   // it's simply absent, so var()'s own fallback (not a JS check) covers it.
   border-radius: var(--radius-circular);
-  background-color: var(--palette-white);
+  background-color: var(--palette-white-main);
   mix-blend-mode: exclusion;
   transform: translate3d(-50%, -50%, 0);
   pointer-events: none;

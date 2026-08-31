@@ -9,8 +9,17 @@
  */
 
 :root {
-  --palette-black: #000;
-  --palette-white: #fff;
+  --palette-black-main: #000;
+  --palette-black-alpha-900: rgb(0 0 0 / 90%);
+  --palette-black-alpha-800: rgb(0 0 0 /80%);
+  --palette-black-alpha-700: rgb(0 0 0 /70%);
+  --palette-black-alpha-600: rgb(0 0 0 /60%);
+  --palette-black-alpha-500: rgb(0 0 0 /50%);
+  --palette-black-alpha-400: rgb(0 0 0 /40%);
+  --palette-black-alpha-300: rgb(0 0 0 /30%);
+  --palette-black-alpha-200: rgb(0 0 0 /20%);
+  --palette-black-alpha-100: rgb(0 0 0 /10%);
+  --palette-white-main: #fff;
   --palette-white-alpha-900: rgb(255 255 255 / 90%);
   --palette-white-alpha-800: rgb(255 255 255 / 80%);
   --palette-white-alpha-700: rgb(255 255 255 / 70%);
@@ -148,9 +157,9 @@
   --color-neutral-foreground-lowest: var(--palette-gray-500);
   --color-neutral-foreground-enabled: var(--palette-gray-300);
   --color-neutral-foreground-disabled: var(--palette-gray-alpha-400);
-  --color-neutral-foreground-inverse-main: var(--palette-white);
+  --color-neutral-foreground-inverse-main: var(--palette-white-main);
   --color-neutral-foreground-inverse-disabled: var(--palette-gray-alpha-inverse-400);
-  --color-neutral-background-main: var(--palette-white);
+  --color-neutral-background-main: var(--palette-white-main);
   --color-neutral-background-lowest: var(--palette-gray-50);
   --color-neutral-background-low: var(--palette-gray-100);
   --color-neutral-background-high: var(--palette-gray-200);
@@ -158,7 +167,7 @@
   --color-neutral-background-hovered-pressed: var(--palette-gray-alpha-100);
   --color-neutral-background-disabled-main: var(--palette-gray-200);
   --color-neutral-background-disabled-low: var(--palette-gray-100);
-  --color-neutral-background-inverse-main: var(--palette-black);
+  --color-neutral-background-inverse-main: var(--palette-black-main);
   --color-neutral-background-inverse-low: var(--palette-gray-900);
   --color-neutral-background-inverse-hovered-pressed: var(--palette-gray-alpha-inverse-100);
   --color-neutral-background-inverse-disabled: var(--palette-gray-700);
@@ -173,7 +182,7 @@
   --color-primary-foreground-low: var(--palette-violet-400);
   --color-primary-foreground-main: var(--palette-violet-600);
   --color-primary-foreground-high: var(--palette-violet-700);
-  --color-primary-foreground-inverse-main: var(--palette-white);
+  --color-primary-foreground-inverse-main: var(--palette-white-main);
   --color-primary-background-main: var(--palette-violet-600);
   --color-primary-background-lowest: var(--palette-violet-50);
   --color-primary-background-low: var(--palette-violet-100);
@@ -183,7 +192,7 @@
   --color-secondary-foreground-main: var(--palette-gray-700);
   --color-secondary-foreground-low: var(--palette-gray-400);
   --color-secondary-foreground-high: var(--palette-gray-800);
-  --color-secondary-foreground-inverse-main: var(--palette-white);
+  --color-secondary-foreground-inverse-main: var(--palette-white-main);
   --color-secondary-background-main: var(--palette-gray-800);
   --color-secondary-background-low: var(--palette-gray-100);
   --color-secondary-background-hovered-pressed: var(--palette-gray-alpha-100);
@@ -192,7 +201,7 @@
   --color-error-foreground-low: var(--palette-red-400);
   --color-error-foreground-main: var(--palette-red-600);
   --color-error-foreground-high: var(--palette-red-700);
-  --color-error-foreground-inverse-main: var(--palette-white);
+  --color-error-foreground-inverse-main: var(--palette-white-main);
   --color-error-background-main: var(--palette-red-600);
   --color-error-background-lowest: var(--palette-red-50);
   --color-error-background-low: var(--palette-red-100);
@@ -202,7 +211,7 @@
   --color-success-foreground-low: var(--palette-green-400);
   --color-success-foreground-main: var(--palette-green-600);
   --color-success-foreground-high: var(--palette-green-700);
-  --color-success-foreground-inverse-main: var(--palette-white);
+  --color-success-foreground-inverse-main: var(--palette-white-main);
   --color-success-background-main: var(--palette-green-600);
   --color-success-background-lowest: var(--palette-green-50);
   --color-success-background-low: var(--palette-green-100);
@@ -212,7 +221,7 @@
   --color-warning-foreground-low: var(--palette-orange-400);
   --color-warning-foreground-main: var(--palette-orange-600);
   --color-warning-foreground-high: var(--palette-orange-700);
-  --color-warning-foreground-inverse-main: var(--palette-white);
+  --color-warning-foreground-inverse-main: var(--palette-white-main);
   --color-warning-background-main: var(--palette-orange-600);
   --color-warning-background-lowest: var(--palette-orange-50);
   --color-warning-background-low: var(--palette-orange-100);
@@ -222,7 +231,7 @@
   --color-info-foreground-low: var(--palette-blue-400);
   --color-info-foreground-main: var(--palette-blue-600);
   --color-info-foreground-high: var(--palette-blue-700);
-  --color-info-foreground-inverse-main: var(--palette-white);
+  --color-info-foreground-inverse-main: var(--palette-white-main);
   --color-info-background-main: var(--palette-blue-600);
   --color-info-background-lowest: var(--palette-blue-50);
   --color-info-background-low: var(--palette-blue-100);
@@ -232,7 +241,7 @@
   --color-promo-foreground-low: var(--palette-pink-400);
   --color-promo-foreground-main: var(--palette-pink-600);
   --color-promo-foreground-high: var(--palette-pink-700);
-  --color-promo-foreground-inverse-main: var(--palette-white);
+  --color-promo-foreground-inverse-main: var(--palette-white-main);
   --color-promo-background-main: var(--palette-pink-600);
   --color-promo-background-lowest: var(--palette-pink-50);
   --color-promo-background-low: var(--palette-pink-100);
@@ -248,7 +257,7 @@
  * own background color at a time) should get these values - the rest of the
  * app's chrome stays on the light set above regardless.
  */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --color-neutral-foreground-main: var(--palette-gray-100);
   --color-neutral-foreground-low: var(--palette-gray-300);
   --color-neutral-foreground-lowest: var(--palette-gray-500);
@@ -264,7 +273,7 @@
   --color-neutral-background-hovered-pressed: var(--palette-gray-alpha-inverse-100);
   --color-neutral-background-disabled-main: var(--palette-gray-800);
   --color-neutral-background-disabled-low: var(--palette-gray-900);
-  --color-neutral-background-inverse-main: var(--palette-white);
+  --color-neutral-background-inverse-main: var(--palette-white-main);
   --color-neutral-background-inverse-low: var(--palette-gray-100);
   --color-neutral-background-inverse-hovered-pressed: var(--palette-gray-alpha-100);
   --color-neutral-background-inverse-disabled: var(--palette-gray-300);
@@ -279,7 +288,7 @@
   --color-primary-foreground-low: var(--palette-violet-600);
   --color-primary-foreground-main: var(--palette-violet-400);
   --color-primary-foreground-high: var(--palette-violet-300);
-  --color-primary-foreground-inverse-main: var(--palette-white);
+  --color-primary-foreground-inverse-main: var(--palette-white-main);
   --color-primary-background-main: var(--palette-violet-400);
   --color-primary-background-lowest: var(--palette-violet-950);
   --color-primary-background-low: var(--palette-violet-900);
@@ -298,7 +307,7 @@
   --color-error-foreground-low: var(--palette-red-600);
   --color-error-foreground-main: var(--palette-red-400);
   --color-error-foreground-high: var(--palette-red-300);
-  --color-error-foreground-inverse-main: var(--palette-white);
+  --color-error-foreground-inverse-main: var(--palette-white-main);
   --color-error-background-main: var(--palette-red-400);
   --color-error-background-lowest: var(--palette-red-950);
   --color-error-background-low: var(--palette-red-900);
@@ -308,7 +317,7 @@
   --color-success-foreground-low: var(--palette-green-600);
   --color-success-foreground-main: var(--palette-green-400);
   --color-success-foreground-high: var(--palette-green-300);
-  --color-success-foreground-inverse-main: var(--palette-white);
+  --color-success-foreground-inverse-main: var(--palette-white-main);
   --color-success-background-main: var(--palette-green-400);
   --color-success-background-lowest: var(--palette-green-950);
   --color-success-background-low: var(--palette-green-900);
@@ -318,7 +327,7 @@
   --color-warning-foreground-low: var(--palette-orange-600);
   --color-warning-foreground-main: var(--palette-orange-400);
   --color-warning-foreground-high: var(--palette-orange-300);
-  --color-warning-foreground-inverse-main: var(--palette-white);
+  --color-warning-foreground-inverse-main: var(--palette-white-main);
   --color-warning-background-main: var(--palette-orange-400);
   --color-warning-background-lowest: var(--palette-orange-950);
   --color-warning-background-low: var(--palette-orange-900);
@@ -328,7 +337,7 @@
   --color-info-foreground-low: var(--palette-blue-600);
   --color-info-foreground-main: var(--palette-blue-400);
   --color-info-foreground-high: var(--palette-blue-300);
-  --color-info-foreground-inverse-main: var(--palette-white);
+  --color-info-foreground-inverse-main: var(--palette-white-main);
   --color-info-background-main: var(--palette-blue-400);
   --color-info-background-lowest: var(--palette-blue-950);
   --color-info-background-low: var(--palette-blue-900);
@@ -338,7 +347,7 @@
   --color-promo-foreground-low: var(--palette-pink-600);
   --color-promo-foreground-main: var(--palette-pink-400);
   --color-promo-foreground-high: var(--palette-pink-300);
-  --color-promo-foreground-inverse-main: var(--palette-white);
+  --color-promo-foreground-inverse-main: var(--palette-white-main);
   --color-promo-background-main: var(--palette-pink-400);
   --color-promo-background-lowest: var(--palette-pink-950);
   --color-promo-background-low: var(--palette-pink-900);

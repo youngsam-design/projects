@@ -1,5 +1,5 @@
-@use '../../styles/layout';
-@use '../../foundation/typography/typography';
+@use "../../styles/layout";
+@use "../../foundation/typography/typography";
 
 /* contents */
 
@@ -37,9 +37,25 @@ body .container .contents {
 
   * {
     @media (max-width: 480px) {
-      word-break: break-all;
+      // break-all would slice straight through a word like "BZNAV SANS"
+      // wherever it hits the edge, even though a space to wrap at was right
+      // there - break-word only forces a mid-word break when a single word
+      // (or an unbroken run like a long URL) doesn't fit on its own line.
+      overflow-wrap: break-word;
     }
   }
+}
+
+/* Shift+Enter in the editor inserts a literal "\n" into the text (see
+   insertSoftBreak in ProjectEditorPage.jsx) rather than a <br> - the editor
+   canvas only shows it as a line break because its contentEditable elements
+   use white-space: pre-wrap (WysiwygProjectCanvas.module.scss). Matching that
+   here is what makes the same soft break actually show up on the published
+   page instead of collapsing to a single space. */
+.contents [data-block-type="paragraph"],
+.contents [data-block-type="heading"],
+.contents [data-block-type="quote"] {
+  white-space: pre-wrap;
 }
 
 .contents > section {
@@ -151,7 +167,7 @@ body .container .contents {
 }
 
 .contents > section .text-li.bullet-list::before {
-  content: '•';
+  content: "•";
 }
 
 // The item's own position among its numberedList siblings is computed in JS
@@ -161,7 +177,7 @@ body .container .contents {
 // need conflicting counter-reset+counter-increment on the very same element
 // to restart per nesting level, which browsers resolve by always showing "1".
 .contents > section .text-li.numbered-list::before {
-  content: attr(data-list-number) '.';
+  content: attr(data-list-number) ".";
 }
 
 // A nested item (added via Tab/indent) keeps the same marker size/position as
@@ -169,7 +185,7 @@ body .container .contents {
 // filled one, and both marker styles dimmed slightly, so the hierarchy reads
 // at a glance even before you notice the indent itself.
 .contents > section .text-li.bullet-list.nested::before {
-  content: '◦';
+  content: "◦";
 }
 
 .contents > section .text-li.nested::before {
@@ -242,7 +258,7 @@ body .container .contents {
 }
 
 .contents > section .content-section q::before {
-  content: 'Q.';
+  content: "Q.";
   display: block;
   clear: both;
 }
@@ -256,7 +272,7 @@ body .container .contents {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  font-family: 'Wanted Sans Variable';
+  font-family: "Wanted Sans Variable";
   margin-top: 4em;
   margin-bottom: 1.25em;
   letter-spacing: 0;
@@ -291,7 +307,7 @@ body .container .contents {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  font-family: 'Wanted Sans Variable';
+  font-family: "Wanted Sans Variable";
   margin-bottom: 0;
   letter-spacing: 0;
   word-break: keep-all;
@@ -308,13 +324,13 @@ body .container .contents {
    레벨마다 명시적인 값을 준다. */
 
 .contents > section .content-section > h1 {
-  font-size: layout.fluid(typography.tier-mobile('display-lg'), typography.tier-desktop('display-lg'));
+  font-size: layout.fluid(typography.tier-mobile("display-lg"), typography.tier-desktop("display-lg"));
   font-weight: var(--font-weight-bold);
   text-align: center;
 }
 
 .contents > section .content-section > h2 {
-  font-size: layout.fluid(typography.tier-mobile('display-md'), typography.tier-desktop('display-md'));
+  font-size: layout.fluid(typography.tier-mobile("display-md"), typography.tier-desktop("display-md"));
   font-weight: var(--font-weight-bold);
   text-align: center;
 
@@ -324,12 +340,12 @@ body .container .contents {
 }
 
 .contents > section .content-section > h3 {
-  font-size: layout.fluid(typography.tier-mobile('display-sm'), typography.tier-desktop('display-sm'));
+  font-size: layout.fluid(typography.tier-mobile("display-sm"), typography.tier-desktop("display-sm"));
   font-weight: var(--font-weight-bold);
 }
 
 .contents > section .content-section > h4 {
-  font-size: layout.fluid(typography.tier-mobile('heading-lg'), typography.tier-desktop('heading-lg'));
+  font-size: layout.fluid(typography.tier-mobile("heading-lg"), typography.tier-desktop("heading-lg"));
   font-weight: var(--font-weight-semibold);
 }
 
@@ -338,12 +354,12 @@ body .container .contents {
    .text-li marker sizes above). These mainly show up when a list item's
    title (see detachListItemHeading) gets pulled out to the top level. */
 .contents > section .content-section > h5 {
-  font-size: layout.fluid(typography.tier-mobile('heading-md'), typography.tier-desktop('heading-md'));
+  font-size: layout.fluid(typography.tier-mobile("heading-md"), typography.tier-desktop("heading-md"));
   font-weight: var(--font-weight-semibold);
 }
 
 .contents > section .content-section > h6 {
-  font-size: layout.fluid(typography.tier-mobile('heading-sm'), typography.tier-desktop('heading-sm'));
+  font-size: layout.fluid(typography.tier-mobile("heading-sm"), typography.tier-desktop("heading-sm"));
   font-weight: var(--font-weight-semibold);
 }
 
@@ -456,7 +472,7 @@ body .container .contents {
    ========================================================================== */
 
 .contents > section .img-wrap {
-  margin: var(--spacing-spacious-lg) 0;
+  margin: var(--spacing-spacious-md) 0;
 }
 
 .contents > section .img-wrap + .img-wrap {
@@ -617,6 +633,7 @@ body .container .contents {
 
 .project-media-captioned figcaption {
   margin-top: var(--spacing-normal-md);
+  padding-inline: var(--spacing-tiny-lg);
   color: rgb(var(--theme-foreground));
   opacity: 0.7;
   font-size: var(--caption-md);

@@ -1,4 +1,6 @@
 import styles from "./Icon.module.scss";
+import icArrowLeft from "../../assets/icon/ic_arrow-left.svg";
+import icArrowRight from "../../assets/icon/ic_arrow-right.svg";
 import icBold from "../../assets/icon/ic_bold.svg";
 import icBraket from "../../assets/icon/ic_braket.svg";
 import icBrokenLink from "../../assets/icon/ic_broken-link.svg";
@@ -27,16 +29,19 @@ import icLink from "../../assets/icon/ic_link.svg";
 import icListDot from "../../assets/icon/ic_list-dot.svg";
 import icListNumbered from "../../assets/icon/ic_list-numbered.svg";
 import icPhoto from "../../assets/icon/ic_photo.svg";
+import icPlaySquare from "../../assets/icon/ic_play-square.svg";
 import icPlus from "../../assets/icon/ic_plus.svg";
 import icRepeat from "../../assets/icon/ic_repeat.svg";
 import icSettings from "../../assets/icon/ic_settings.svg";
 import icSpacingVertical from "../../assets/icon/ic_spacing-vertical.svg";
 import icSquare from "../../assets/icon/ic_square.svg";
 import icStrikethrough from "../../assets/icon/ic_strikethrough.svg";
+import icSwitchHorizontal from "../../assets/icon/ic_switch-horizontal.svg";
 import icTrash from "../../assets/icon/ic_trash.svg";
 import icType from "../../assets/icon/ic_type.svg";
 import icTypeSquare from "../../assets/icon/ic_type-square.svg";
 import icUnderline from "../../assets/icon/ic_underline.svg";
+import icVolumeX from "../../assets/icon/ic_volume-x.svg";
 import icZap from "../../assets/icon/ic_zap.svg";
 
 // Registry of the icon set at src/assets/icon actually wired into components
@@ -44,6 +49,8 @@ import icZap from "../../assets/icon/ic_zap.svg";
 // whenever a new one is used, to keep a single name -> asset mapping.
 const icons = {
   add: icPlus,
+  arrowLeft: icArrowLeft,
+  arrowRight: icArrowRight,
   bold: icBold,
   bulletList: icListDot,
   callout: icTypeSquare,
@@ -72,10 +79,13 @@ const icons = {
   highlight: icZap,
   italic: icItalic,
   link: icLink,
+  loop: icRepeat,
   media: icPhoto,
+  mute: icVolumeX,
   numberedList: icListNumbered,
+  play: icPlaySquare,
   quote: icBraket,
-  replace: icRepeat,
+  replace: icSwitchHorizontal,
   settings: icSettings,
   spacer: icSpacingVertical,
   strike: icStrikethrough,

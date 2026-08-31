@@ -3,7 +3,7 @@ import { getBlockText, isBlankTextBlock } from "../../content/schema/blockText";
 import { getCodeLanguageLabel } from "../../content/schema/codeLanguages";
 import { formatCode } from "../../content/editor/formatCode";
 import { getBlockTypeValue } from "../../content/editor/projectBlockFactory";
-import { getProjectAsset, resolveProjectAssetUrl } from "../project/projectAssets";
+import { getAssetLabel, getProjectAsset, resolveProjectAssetUrl } from "../project/projectAssets";
 import FrameBox from "../project/blocks/FrameBox";
 import ProjectMeta from "../project/ProjectMeta";
 import RelatedProjects from "../project/RelatedProjects";
@@ -218,20 +218,7 @@ function readLiveText(element) {
   return (element.textContent ?? "").replaceAll(softBreakCaretAnchor, "");
 }
 
-function EditableText({
-  block,
-  context,
-  onBackspace,
-  onEnter,
-  onIndent,
-  onMarkdownShortcut,
-  onOutdent,
-  onPaste,
-  onSlash,
-  onSoftBreak,
-  onTextChange,
-  onTextSelection,
-}) {
+function EditableText({ block, context, onBackspace, onEnter, onIndent, onMarkdownShortcut, onOutdent, onPaste, onSlash, onSoftBreak, onTextChange }) {
   const text = getBlockText(block);
   const skipBlurRef = useRef(false);
 
@@ -311,21 +298,6 @@ function EditableText({
           if (focus) context.setPendingFocus(focus);
         }
       }}
-      onMouseUp={(event) => {
-        const value = readLiveText(event.currentTarget);
-        const rawSelection = getSelectionOffsets(event.currentTarget);
-        const selection = {
-          start: Math.min(rawSelection.start, value.length),
-          end: Math.min(rawSelection.end, value.length),
-        };
-        if (selection.start !== selection.end) {
-          onTextSelection({
-            blockId: block.id,
-            ...selection,
-            rect: window.getSelection().getRangeAt(0).getBoundingClientRect(),
-          });
-        }
-      }}
       onPaste={(event) => {
         event.preventDefault();
         skipBlurRef.current = true;
@@ -347,7 +319,7 @@ function EditableText({
   );
 }
 
-function Media({ block, document, gridProps, onActivate, onCaptionChange, onContextMenu, onSelect }) {
+function Media({ block, document, gridProps, onActivate, onCaptionChange, onContextMenu, onDragOverBlock, onDropBlock, onSelect }) {
   const asset = getProjectAsset(document, block.assetId);
   const src = resolveProjectAssetUrl(document, asset.src);
   const hasCaption = block.caption != null;
@@ -421,6 +393,14 @@ function Media({ block, document, gridProps, onActivate, onCaptionChange, onCont
       onContextMenu={(event) => {
         event.stopPropagation();
         onContextMenu?.(event);
+      }}
+      onDragOver={(event) => {
+        event.preventDefault();
+        onDragOverBlock?.(event);
+      }}
+      onDrop={(event) => {
+        event.preventDefault();
+        onDropBlock?.(event);
       }}
       style={gridProps.style}
     >
@@ -518,6 +498,8 @@ function EditableBlock({
         onActivate={onActivate ? activate : null}
         onCaptionChange={onCaptionChange}
         onContextMenu={onOpenMenu ? openMenu : undefined}
+        onDragOverBlock={onDragOverBlock}
+        onDropBlock={onDropBlock}
         onSelect={onSelect}
       />
     );
@@ -721,7 +703,9 @@ export default function WysiwygProjectCanvas({
   onOutdent,
   onPaste,
   onPickFrameBackground,
+  onPlaybackChange,
   onReplaceMedia,
+  onReplaceMediaWithAsset,
   onResize,
   onSelect = () => {},
   onSoftBreak,
@@ -735,15 +719,36 @@ export default function WysiwygProjectCanvas({
   const [inlineSelection, setInlineSelection] = useState(null);
   const [inlineTypeMenuOpen, setInlineTypeMenuOpen] = useState(false);
   const [mediaMenu, setMediaMenu] = useState(null);
+  const [mediaReplaceOpen, setMediaReplaceOpen] = useState(false);
   const [pendingCaptionFocus, setPendingCaptionFocus] = useState(null);
   const [pendingFocus, setPendingFocus] = useState(null);
   const [popover, setPopover] = useState(null);
   const [replaceMode, setReplaceMode] = useState(false);
+  // Every floating menu below (block toolbar, media context menu, inline
+  // toolbar) stores its anchor position as an absolute document coordinate
+  // (viewport rect + the scrollY at capture time) rather than a viewport
+  // rect - that's what lets it be repositioned by simply subtracting the
+  // current scrollY at render time, so it stays visually pinned to the
+  // content it belongs to as the page scrolls, instead of staying fixed on
+  // screen while its target scrolls away underneath it.
+  const [scrollY, setScrollY] = useState(() => window.scrollY);
   const [settingsDetailOpen, setSettingsDetailOpen] = useState(false);
   const [selectedBlockIds, setSelectedBlockIds] = useState(() => new Set());
   const cover = getProjectAsset(document, document.hero.coverAssetId);
   const liveActiveBlock = activeBlock ? findBlock(document.blocks, activeBlock.block.id) : null;
   const liveMenuBlock = mediaMenu ? findBlock(document.blocks, mediaMenu.blockId) : null;
+  // Hides a floating menu (without closing it) once its whole anchor has
+  // scrolled past the viewport, and lets it reappear once scrolling brings
+  // it back - rather than either staying fixed on screen detached from the
+  // content it refers to, or being discarded outright and needing a re-open.
+  const isRangeOffscreen = (documentTop, height = 0) => {
+    const viewportTop = documentTop - scrollY;
+    return viewportTop + height < 0 || viewportTop > window.innerHeight;
+  };
+  const activeBlockOffscreen =
+    Boolean(activeBlock) && !draggedBlockId && isRangeOffscreen(activeBlock.top, activeBlock.height ?? 0);
+  const mediaMenuOffscreen = Boolean(mediaMenu) && isRangeOffscreen(mediaMenu.top);
+  const inlineSelectionOffscreen = Boolean(inlineSelection) && isRangeOffscreen(inlineSelection.rect.bottom);
   const canGroupSelection =
     selectedBlockIds.size >= 2 &&
     (() => {
@@ -779,17 +784,27 @@ export default function WysiwygProjectCanvas({
   const scheduleCloseInlineTypeMenu = () => {
     inlineTypeMenuCloseTimer.current = window.setTimeout(() => setInlineTypeMenuOpen(false), 150);
   };
+  const mediaReplaceCloseTimer = useRef(null);
+  const openMediaReplace = () => {
+    if (mediaReplaceCloseTimer.current) {
+      window.clearTimeout(mediaReplaceCloseTimer.current);
+      mediaReplaceCloseTimer.current = null;
+    }
+    setMediaReplaceOpen(true);
+  };
+  const scheduleCloseMediaReplace = () => {
+    mediaReplaceCloseTimer.current = window.setTimeout(() => setMediaReplaceOpen(false), 150);
+  };
   useEffect(() => {
     if (popover !== "settings") setSettingsDetailOpen(false);
   }, [popover]);
   useEffect(() => {
-    const closeToolbar = () => {
-      setActiveBlock(null);
-      setPopover(null);
-      setDropIndicator(null);
-    };
-    window.addEventListener("scroll", closeToolbar, { passive: true });
-    return () => window.removeEventListener("scroll", closeToolbar);
+    if (!mediaMenu) setMediaReplaceOpen(false);
+  }, [mediaMenu]);
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   useEffect(() => {
     if (!inlineSelection) return undefined;
@@ -802,6 +817,42 @@ export default function WysiwygProjectCanvas({
     window.document.addEventListener("selectionchange", handleSelectionChange);
     return () => window.document.removeEventListener("selectionchange", handleSelectionChange);
   }, [inlineSelection]);
+  useEffect(() => {
+    // A per-span onMouseUp only fires when the drag ends back over the SAME
+    // span it started in - dragging a selection across a paragraph boundary
+    // (a completely ordinary thing to do) releases the mouse over a
+    // different span (or no text span at all, e.g. an image), so nothing
+    // fired and the toolbar silently never appeared despite a real,
+    // non-collapsed selection existing. A single document-level listener,
+    // driven by the live selection's own focus node (where the drag ended)
+    // rather than by whichever element happens to catch the event, works
+    // regardless of where the selection started or ended.
+    const handleMouseUp = () => {
+      const selection = window.getSelection();
+      if (!selection || selection.isCollapsed || selection.rangeCount === 0) return;
+      const focusNode = selection.focusNode;
+      const focusElement = focusNode?.nodeType === Node.TEXT_NODE ? focusNode.parentElement : focusNode;
+      const span = focusElement?.closest?.("[data-text-block-id]");
+      if (!span) return;
+      const value = readLiveText(span);
+      const rawSelection = getSelectionOffsets(span);
+      const textSelection = {
+        start: Math.min(rawSelection.start, value.length),
+        end: Math.min(rawSelection.end, value.length),
+      };
+      if (textSelection.start === textSelection.end) return;
+      setPopover(null);
+      setMediaMenu(null);
+      const rect = selection.getRangeAt(0).getBoundingClientRect();
+      setInlineSelection({
+        blockId: span.getAttribute("data-text-block-id"),
+        ...textSelection,
+        rect: { bottom: rect.bottom + window.scrollY, right: rect.right },
+      });
+    };
+    window.document.addEventListener("mouseup", handleMouseUp);
+    return () => window.document.removeEventListener("mouseup", handleMouseUp);
+  }, []);
   useEffect(() => {
     if (!pendingFocus) return;
     const frame = window.requestAnimationFrame(() => {
@@ -853,16 +904,30 @@ export default function WysiwygProjectCanvas({
       `hero:${field}`,
     );
   };
+  // Only one dropdown menu (insert/settings popover, media context menu,
+  // inline formatting toolbar) should be visible at a time - each one that
+  // opens closes the others. Submenus (settingsDetailOpen, inlineTypeMenuOpen)
+  // are exempt since they only exist alongside their own parent menu.
+  const closeInlineSelection = () => {
+    setInlineSelection(null);
+    setInlineTypeMenuOpen(false);
+  };
   const activateBlock = (block, parentId, index, element) => {
     const rect = element.getBoundingClientRect();
+    // The toolbar should sit centered on the block's first line of text, not
+    // the whole (possibly multi-line, or image-height-tall) block - line-height
+    // is the same for every line, so it doubles as "first line" height here.
+    const parsedLineHeight = Number.parseFloat(window.getComputedStyle(element).lineHeight);
+    const lineHeight = Number.isFinite(parsedLineHeight) ? Math.min(parsedLineHeight, rect.height) : rect.height;
     setActiveBlock({
       block,
       parentId,
       index,
-      top: rect.top,
+      top: rect.top + window.scrollY,
       left: rect.left,
       width: rect.width,
       height: rect.height,
+      lineHeight,
     });
     setPopover(null);
     setReplaceMode(false);
@@ -984,7 +1049,8 @@ export default function WysiwygProjectCanvas({
   };
   const openMediaMenu = (block, parentId, index, event) => {
     activateBlock(block, parentId, index, event.currentTarget);
-    setMediaMenu({ blockId: block.id, top: event.clientY, left: event.clientX });
+    closeInlineSelection();
+    setMediaMenu({ blockId: block.id, top: event.clientY + window.scrollY, left: event.clientX });
   };
   const closeMediaMenu = () => setMediaMenu(null);
   // Media nested more than one level deep (e.g. an image group inside a list
@@ -1003,7 +1069,8 @@ export default function WysiwygProjectCanvas({
     if (!block) return;
     event.preventDefault();
     activateBlock(block, null, 0, idHolder);
-    setMediaMenu({ blockId: block.id, top: event.clientY, left: event.clientX });
+    closeInlineSelection();
+    setMediaMenu({ blockId: block.id, top: event.clientY + window.scrollY, left: event.clientX });
   };
   const handleReplaceMedia = () => {
     if (!liveMenuBlock) return;
@@ -1035,6 +1102,19 @@ export default function WysiwygProjectCanvas({
     onPickFrameBackground(liveMenuBlock.id);
     closeMediaMenu();
   };
+  const handleTogglePlayback = (option) => {
+    if (!liveMenuBlock || liveMenuBlock.type !== "video") return;
+    const nextValue = !liveMenuBlock.playback[option];
+    onPlaybackChange(liveMenuBlock.id, {
+      playback: {
+        ...liveMenuBlock.playback,
+        [option]: nextValue,
+        // Browsers block autoplay on unmuted video, so turning autoplay on
+        // without also muting would silently do nothing.
+        ...(option === "autoplay" && nextValue ? { muted: true } : {}),
+      },
+    });
+  };
   const handleToggleCaption = () => {
     if (!liveMenuBlock || (liveMenuBlock.type !== "image" && liveMenuBlock.type !== "video")) return;
     if (liveMenuBlock.caption == null) onCaptionChange(liveMenuBlock.id, "");
@@ -1043,8 +1123,10 @@ export default function WysiwygProjectCanvas({
   };
   const openSlashMenu = (context, element) => {
     const rect = element.closest("[data-editor-block]")?.getBoundingClientRect() ?? element.getBoundingClientRect();
-    setActiveBlock({ ...context.current, top: rect.top, left: rect.left });
+    setActiveBlock({ ...context.current, top: rect.top + window.scrollY, left: rect.left });
     setReplaceMode(true);
+    setMediaMenu(null);
+    closeInlineSelection();
     setPopover("insert");
   };
   const startResize = (side, event) => {
@@ -1105,7 +1187,6 @@ export default function WysiwygProjectCanvas({
     onPaste,
     onSlash: openSlashMenu,
     onSoftBreak,
-    onTextSelection: setInlineSelection,
     setPendingFocus,
   };
   const getDropTarget = (block, parentId, index, event) => {
@@ -1198,6 +1279,7 @@ export default function WysiwygProjectCanvas({
       </div>
       <Footer />
       {inlineSelection &&
+        !inlineSelectionOffscreen &&
         (() => {
           const selectionBlock = findBlock(document.blocks, inlineSelection.blockId);
           const selectionMarks = selectionBlock?.marks ?? [];
@@ -1211,12 +1293,18 @@ export default function WysiwygProjectCanvas({
             { format: "underline", icon: "underline", label: "밑줄" },
             { format: "strike", icon: "strike", label: "취소선" },
             { format: "code", icon: "codeBlock", label: "코드" },
-            { format: "highlight", icon: "highlight", label: "하이라이트" },
+            // { format: "highlight", icon: "highlight", label: "하이라이트" },
           ];
-          const toolbarTop = Math.max(8, inlineSelection.rect.top - 44);
+          // Bottom-right of the selection's bounding box - lands near where
+          // the cursor naturally ends up after a drag-select, and grows away
+          // from the selection (down-right) instead of over it. Menu's own
+          // viewport clamp (useClampToViewport) still nudges it back on-screen
+          // if that position would run past the window's bottom/right edge.
+          const toolbarTop = inlineSelection.rect.bottom - scrollY + 8;
+          const toolbarLeft = inlineSelection.rect.right;
           return (
-            <div className={styles.inlineToolbarWrap} style={{ top: toolbarTop, left: inlineSelection.rect.left }}>
-              <Menu width="200px">
+            <div className={styles.inlineToolbarWrap} style={{ top: toolbarTop, left: toolbarLeft }}>
+              <Menu width="220px">
                 {typeTarget && (
                   <>
                     <MenuSection onMouseEnter={openInlineTypeMenu} onMouseLeave={scheduleCloseInlineTypeMenu}>
@@ -1279,12 +1367,7 @@ export default function WysiwygProjectCanvas({
                   toolbar width but no shared ancestor would leave .inlineTypeMenu's
                   "left" resolving against the viewport instead. */}
               {typeTarget && inlineTypeMenuOpen && (
-                <Menu
-                  className={styles.inlineTypeMenu}
-                  onMouseEnter={openInlineTypeMenu}
-                  onMouseLeave={scheduleCloseInlineTypeMenu}
-                  width="220px"
-                >
+                <Menu className={styles.inlineTypeMenu} onMouseEnter={openInlineTypeMenu} onMouseLeave={scheduleCloseInlineTypeMenu} width="220px">
                   <MenuSection>
                     {blockTypeOptions.map((option) => (
                       <MenuItem
@@ -1318,11 +1401,11 @@ export default function WysiwygProjectCanvas({
           }}
         />
       )}
-      {activeBlock && liveActiveBlock && isResizableBlock(liveActiveBlock) && (
+      {activeBlock && !activeBlockOffscreen && liveActiveBlock && isResizableBlock(liveActiveBlock) && (
         <div
           className={styles.resizeFrame}
           style={{
-            top: activeBlock.top,
+            top: activeBlock.top - scrollY,
             left: activeBlock.left,
             width: activeBlock.width,
             height: activeBlock.height,
@@ -1342,11 +1425,14 @@ export default function WysiwygProjectCanvas({
           />
         </div>
       )}
-      {activeBlock && (
+      {activeBlock && !activeBlockOffscreen && (
         <div
           className={styles.blockToolbar}
           style={{
-            top: Math.max(72, activeBlock.top),
+            // 32px matches IconButton's "small" size (see IconButton.module.scss) -
+            // the toolbar's own rendered height, needed to center it against
+            // the first line rather than align its top edge to the block's.
+            top: Math.max(72, activeBlock.top - scrollY + (activeBlock.lineHeight - 32) / 2),
             left: Math.max(8, activeBlock.left - 76),
           }}
         >
@@ -1355,6 +1441,8 @@ export default function WysiwygProjectCanvas({
             label="블록 추가"
             onClick={() => {
               setReplaceMode(false);
+              setMediaMenu(null);
+              closeInlineSelection();
               setPopover(popover === "insert" ? null : "insert");
             }}
             size="small"
@@ -1365,7 +1453,11 @@ export default function WysiwygProjectCanvas({
             draggable
             icon="drag"
             label="블록 이동 또는 설정"
-            onClick={() => setPopover(popover === "settings" ? null : "settings")}
+            onClick={() => {
+              setMediaMenu(null);
+              closeInlineSelection();
+              setPopover(popover === "settings" ? null : "settings");
+            }}
             onDragStart={(event) => {
               event.dataTransfer.effectAllowed = "move";
               event.dataTransfer.setData("application/x-portfolio-block", activeBlock.block.id);
@@ -1380,7 +1472,7 @@ export default function WysiwygProjectCanvas({
             variant="subtle"
           />
           {popover === "insert" && (
-            <Menu className={styles.insertMenu} width="240px">
+            <Menu className={styles.insertMenu} width="220px">
               <MenuSection>
                 {blockTypeOptions.map(({ value, label, icon, shortcut }) => (
                   <MenuItem
@@ -1395,22 +1487,22 @@ export default function WysiwygProjectCanvas({
             </Menu>
           )}
           {popover === "settings" && (
-            <Menu className={styles.settingsMenu} width="200px">
+            <Menu className={styles.settingsMenu} width="220px">
+              <MenuSection onMouseEnter={openSettingsDetail} onMouseLeave={scheduleCloseSettingsDetail}>
+                <MenuItem
+                  active={settingsDetailOpen}
+                  chevron
+                  icon={<Icon name="replace" />}
+                  label="바꾸기"
+                  onSelect={() => setSettingsDetailOpen((open) => !open)}
+                />
+              </MenuSection>
+              <MenuSeparator />
               <MenuSection>
                 <MenuItem ariaLabel="블록 삭제" danger icon={<Icon name="delete" />} label="삭제" onSelect={deleteActiveBlock} shortcut="Del" />
                 {isUngroupableGroup(liveActiveBlock) && (
                   <MenuItem ariaLabel="그룹 해제" icon={<Icon name="ungroup" />} label="그룹 해제" onSelect={handleUngroup} />
                 )}
-              </MenuSection>
-              <MenuSeparator />
-              <MenuSection onMouseEnter={openSettingsDetail} onMouseLeave={scheduleCloseSettingsDetail}>
-                <MenuItem
-                  active={settingsDetailOpen}
-                  chevron
-                  icon={<Icon name="settings" />}
-                  label="블록 설정"
-                  onSelect={() => setSettingsDetailOpen((open) => !open)}
-                />
               </MenuSection>
             </Menu>
           )}
@@ -1420,7 +1512,7 @@ export default function WysiwygProjectCanvas({
               never actually paint (see openSettingsDetail above for how
               hover is kept working without shared DOM nesting). */}
           {popover === "settings" && settingsDetailOpen && (
-            <Menu className={styles.settingsDetailMenu} onMouseEnter={openSettingsDetail} onMouseLeave={scheduleCloseSettingsDetail} width="240px">
+            <Menu className={styles.settingsDetailMenu} onMouseEnter={openSettingsDetail} onMouseLeave={scheduleCloseSettingsDetail} width="220px">
               <MenuSection>
                 {blockTypeOptions.map((option) => (
                   <MenuItem
@@ -1440,48 +1532,136 @@ export default function WysiwygProjectCanvas({
           )}
         </div>
       )}
-      {mediaMenu && liveMenuBlock && (
-        <Menu className={styles.mediaContextMenu} data-media-menu style={{ top: mediaMenu.top, left: mediaMenu.left }} width="200px">
-          <MenuSection>
-            <MenuItem icon={<Icon name="replace" />} label="바꾸기" onSelect={handleReplaceMedia} />
-            <MenuItem icon={<Icon name="caption" />} label="캡션" onSelect={handleToggleCaption} />
-            <MenuItem icon={<Icon name="copy" />} label="복제" onSelect={handleDuplicateMedia} />
-            <MenuItem danger icon={<Icon name="delete" />} label="삭제" onSelect={handleDeleteMedia} />
-          </MenuSection>
-          <MenuSeparator />
-          <MenuSection>
-            <MenuItem checked={Boolean(liveMenuBlock.frame)} icon={<Icon name="frame" />} label="감싸기" onSelect={handleToggleFrame} />
-            {liveMenuBlock.frame && (
+      {mediaMenu && !mediaMenuOffscreen && liveMenuBlock && (
+        <div className={styles.mediaMenuWrap} data-media-menu style={{ top: mediaMenu.top - scrollY, left: mediaMenu.left }}>
+          <Menu width="200px">
+            <MenuSection onMouseEnter={openMediaReplace} onMouseLeave={scheduleCloseMediaReplace}>
+              <MenuItem active={mediaReplaceOpen} chevron icon={<Icon name="replace" />} label="바꾸기" onSelect={() => setMediaReplaceOpen((open) => !open)} />
+            </MenuSection>
+            <MenuSection>
+              <MenuItem icon={<Icon name="caption" />} label="캡션" onSelect={handleToggleCaption} />
+              <MenuItem icon={<Icon name="copy" />} label="복제" onSelect={handleDuplicateMedia} />
+              <MenuItem danger icon={<Icon name="delete" />} label="삭제" onSelect={handleDeleteMedia} />
+            </MenuSection>
+            <MenuSeparator />
+            <MenuSection>
+              <MenuItem checked={Boolean(liveMenuBlock.frame)} icon={<Icon name="frame" />} label="감싸기" onSelect={handleToggleFrame} />
+              {liveMenuBlock.frame && (
+                <>
+                  <MenuItem icon={<Icon name="media" />} label="배경 이미지 선택" onSelect={handlePickFrameBackground} />
+                  <MenuItem
+                    checked={Boolean(liveMenuBlock.framePaddingTop)}
+                    icon={<Icon name="frameTop" />}
+                    label="위쪽 패딩"
+                    onSelect={() => handleToggleFramePadding("Top")}
+                  />
+                  <MenuItem
+                    checked={Boolean(liveMenuBlock.framePaddingBottom)}
+                    icon={<Icon name="frameBottom" />}
+                    label="아래쪽 패딩"
+                    onSelect={() => handleToggleFramePadding("Bottom")}
+                  />
+                  <MenuItem
+                    checked={Boolean(liveMenuBlock.framePaddingLeft)}
+                    icon={<Icon name="frameLeft" />}
+                    label="왼쪽 패딩"
+                    onSelect={() => handleToggleFramePadding("Left")}
+                  />
+                  <MenuItem
+                    checked={Boolean(liveMenuBlock.framePaddingRight)}
+                    icon={<Icon name="frameRight" />}
+                    label="오른쪽 패딩"
+                    onSelect={() => handleToggleFramePadding("Right")}
+                  />
+                </>
+              )}
+            </MenuSection>
+            {liveMenuBlock.type === "video" && (
               <>
-                <MenuItem icon={<Icon name="media" />} label="배경 이미지 선택" onSelect={handlePickFrameBackground} />
-                <MenuItem
-                  checked={Boolean(liveMenuBlock.framePaddingTop)}
-                  icon={<Icon name="frameTop" />}
-                  label="위쪽 패딩"
-                  onSelect={() => handleToggleFramePadding("Top")}
-                />
-                <MenuItem
-                  checked={Boolean(liveMenuBlock.framePaddingBottom)}
-                  icon={<Icon name="frameBottom" />}
-                  label="아래쪽 패딩"
-                  onSelect={() => handleToggleFramePadding("Bottom")}
-                />
-                <MenuItem
-                  checked={Boolean(liveMenuBlock.framePaddingLeft)}
-                  icon={<Icon name="frameLeft" />}
-                  label="왼쪽 패딩"
-                  onSelect={() => handleToggleFramePadding("Left")}
-                />
-                <MenuItem
-                  checked={Boolean(liveMenuBlock.framePaddingRight)}
-                  icon={<Icon name="frameRight" />}
-                  label="오른쪽 패딩"
-                  onSelect={() => handleToggleFramePadding("Right")}
-                />
+                <MenuSeparator />
+                <MenuSection>
+                  <MenuItem
+                    checked={liveMenuBlock.playback.autoplay}
+                    icon={<Icon name="play" />}
+                    label="자동재생"
+                    onSelect={() => handleTogglePlayback("autoplay")}
+                  />
+                  <MenuItem
+                    checked={liveMenuBlock.playback.loop}
+                    icon={<Icon name="loop" />}
+                    label="반복재생"
+                    onSelect={() => handleTogglePlayback("loop")}
+                  />
+                  <MenuItem
+                    checked={liveMenuBlock.playback.muted}
+                    icon={<Icon name="mute" />}
+                    label="음소거"
+                    onSelect={() => handleTogglePlayback("muted")}
+                  />
+                  <MenuItem
+                    checked={liveMenuBlock.playback.controls}
+                    icon={<Icon name="settings" />}
+                    label="컨트롤 표시"
+                    onSelect={() => handleTogglePlayback("controls")}
+                  />
+                </MenuSection>
               </>
             )}
-          </MenuSection>
-        </Menu>
+          </Menu>
+          {/* A sibling of mediaContextMenu, not nested inside it - same
+              overflow-clipping reason as settingsDetailMenu/inlineTypeMenu. */}
+          {mediaReplaceOpen && (
+            <Menu
+              className={styles.mediaReplaceMenu}
+              onMouseEnter={openMediaReplace}
+              onMouseLeave={scheduleCloseMediaReplace}
+              width="220px"
+            >
+              <MenuSection>
+                <MenuItem
+                  icon={<Icon name={liveMenuBlock.type === "video" ? "play" : "media"} />}
+                  label={liveMenuBlock.type === "video" ? "새 영상 업로드" : "새 이미지 업로드"}
+                  onSelect={() => {
+                    handleReplaceMedia();
+                    setMediaReplaceOpen(false);
+                  }}
+                />
+              </MenuSection>
+              <MenuSeparator />
+              <MenuSection>
+                {document.assets
+                  .filter((asset) => asset.kind === liveMenuBlock.type)
+                  .map((asset) => (
+                    <MenuItem
+                      checked={asset.id === liveMenuBlock.assetId}
+                      icon={
+                        // Video files can't render as an <img> - pointing one at a
+                        // .mp4 just shows the browser's broken-image glyph, so
+                        // video rows get an empty (but still reserved) icon slot
+                        // instead, keeping labels aligned with the image rows.
+                        asset.kind === "image" ? (
+                          <img
+                            alt=""
+                            src={resolveProjectAssetUrl(document, asset.src)}
+                            style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: 2 }}
+                          />
+                        ) : (
+                          <span />
+                        )
+                      }
+                      key={asset.id}
+                      label={getAssetLabel(asset)}
+                      onSelect={() => {
+                        onReplaceMediaWithAsset(liveMenuBlock.id, asset.id, liveMenuBlock.grid);
+                        setMediaReplaceOpen(false);
+                        closeMediaMenu();
+                      }}
+                    />
+                  ))}
+              </MenuSection>
+            </Menu>
+          )}
+        </div>
       )}
       {dragSelect && (
         <div

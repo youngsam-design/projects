@@ -604,6 +604,18 @@ export default function ProjectEditorPage() {
     fileInputRef.current?.click();
   };
 
+  const replaceMediaWithExistingAsset = (blockId, assetId, grid) => {
+    const asset = document.assets.find((item) => item.id === assetId);
+    if (!asset) return;
+    apply((current) =>
+      updateBlock(current, blockId, (existing) => ({
+        ...createMediaBlock(assetId, asset.kind),
+        id: existing.id,
+        ...(grid ? { grid } : {}),
+      })),
+    );
+  };
+
   const pickFrameBackground = (blockId) => {
     mediaInsertTargetRef.current = { mode: "frame-background", blockId };
     fileInputRef.current?.click();
@@ -837,7 +849,9 @@ export default function ProjectEditorPage() {
                 onOutdent={outdentCurrentListItem}
                 onPaste={pasteBlocks}
                 onPickFrameBackground={pickFrameBackground}
+                onPlaybackChange={(blockId, patch) => updateMediaBlock(blockId, patch, `playback:${blockId}`)}
                 onReplaceMedia={replaceMediaBlock}
+                onReplaceMediaWithAsset={replaceMediaWithExistingAsset}
                 onUngroup={ungroupBlockHandler}
                 onResize={(blockId, span) => updateMediaBlock(blockId, { grid: { span } }, `grid:${blockId}`)}
                 onSoftBreak={insertSoftBreak}

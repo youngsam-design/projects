@@ -1,3 +1,4 @@
+import { getAssetLabel } from "../project/projectAssets";
 import Checkbox from "../ui/Checkbox";
 import IconButton from "../ui/IconButton";
 import Input from "../ui/Input";
@@ -135,7 +136,7 @@ export default function ProjectSettingsEditor({ document, onChange }) {
               .filter((asset) => asset.kind === "image")
               .map((asset) => (
                 <option key={asset.id} value={asset.id}>
-                  {asset.name ?? asset.id}
+                  {getAssetLabel(asset)}
                 </option>
               ))}
           </Select>

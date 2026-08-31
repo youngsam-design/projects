@@ -1,5 +1,17 @@
 export const primitiveColor = {
-  black: "#000000",
+  black: {
+    main: "#000000",
+    "alpha-900": "rgba(0, 0, 0, 0.90)",
+    "alpha-800": "rgba(0, 0, 0, 0.80)",
+    "alpha-700": "rgba(0, 0, 0, 0.70)",
+    "alpha-600": "rgba(0, 0, 0, 0.60)",
+    "alpha-500": "rgba(0, 0, 0, 0.50)",
+    "alpha-400": "rgba(0, 0, 0, 0.40)",
+    "alpha-300": "rgba(0, 0, 0, 0.30)",
+    "alpha-200": "rgba(0, 0, 0, 0.20)",
+    "alpha-100": "rgba(0, 0, 0, 0.10)",
+    "alpha-50": "rgba(0, 0, 0, 0.05)",
+  },
   white: {
     main: "#FFFFFF",
     "alpha-900": "rgba(255, 255, 255, 0.90)",

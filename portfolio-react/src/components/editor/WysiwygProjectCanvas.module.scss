@@ -27,7 +27,7 @@
 .codeBlock code {
   display: block;
   color: var(--palette-gray-100);
-  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
   font-size: var(--caption-md);
   line-height: 1.6;
   white-space: pre;
@@ -54,31 +54,31 @@
   backdrop-filter: var(--blur-sm);
 }
 
-.canvas :global(#slider [contenteditable='true']) {
+.canvas :global(#slider [contenteditable="true"]) {
   display: block;
   cursor: text;
 }
 
-.canvas :global(#slider [contenteditable='true']:focus) {
+.canvas :global(#slider [contenteditable="true"]:focus) {
   outline: none;
 }
 
-.canvas [contenteditable='true'] {
+.canvas [contenteditable="true"] {
   cursor: text;
   white-space: pre-wrap;
 }
 
-.canvas [contenteditable='true']:focus {
+.canvas [contenteditable="true"]:focus {
   outline: none;
 }
 
-.canvas [contenteditable='true']:empty::before {
+.canvas [contenteditable="true"]:empty::before {
   color: var(--color-neutral-foreground-lowest);
   content: attr(data-placeholder);
   pointer-events: none;
 }
 
-.canvas [data-selected='true'] {
+.canvas [data-selected="true"] {
   position: relative;
 }
 
@@ -87,9 +87,9 @@
 // a light canvas can wash out or vanish against a dark one. [data-theme] on
 // the canvas root picks a color already tuned for that brightness instead of
 // leaning on a mix-blend-mode trick to fake adaptiveness.
-.canvas [data-selected='true']:after {
+.canvas [data-selected="true"]:after {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: -6px;
   width: calc(100% + 12px);
@@ -100,7 +100,7 @@
   z-index: 0;
 }
 
-.canvas[data-theme='dark'] [data-selected='true']:after {
+.canvas[data-theme="dark"] [data-selected="true"]:after {
   background: rgb(163 201 255 / 35%);
 }
 
@@ -112,7 +112,7 @@
   pointer-events: none;
 }
 
-.canvas[data-theme='dark'] .marquee {
+.canvas[data-theme="dark"] .marquee {
   background: rgb(163 201 255 / 18%);
 }
 
@@ -189,7 +189,7 @@
   height: 18px;
   border-radius: var(--radius-circular);
   background: rgb(35 131 226 / 65%);
-  content: '';
+  content: "";
   transform: translate(-50%, -50%);
 }
 
@@ -216,7 +216,7 @@
 .inlineIconRow {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-tiny-md);
+  gap: var(--spacing-tiny-sm);
 }
 
 .inlineActive {
@@ -236,7 +236,7 @@
 .inlineTypeMenu {
   position: absolute;
   top: 0;
-  left: calc(200px + var(--spacing-tiny-sm));
+  left: calc(220px + var(--spacing-tiny-sm));
   z-index: calc(var(--z-overlay) + 1);
   max-height: min(560px, calc(100vh - 120px));
   overflow-y: auto;
@@ -261,7 +261,7 @@
   height: 8px;
   border-radius: 50%;
   background: inherit;
-  content: '';
+  content: "";
   transform: translateY(-50%);
 }
 
@@ -269,6 +269,7 @@
 // thing it has no prop for.
 .dragHandle {
   cursor: grab;
+  width: 24px;
 }
 
 .insertMenu {
@@ -291,16 +292,29 @@
 .settingsDetailMenu {
   position: absolute;
   top: 40px;
-  left: calc(200px + var(--spacing-tiny-sm));
+  left: calc(220px + var(--spacing-tiny-sm));
   z-index: calc(var(--z-overlay) + 3);
   max-height: min(560px, calc(100vh - 120px));
   overflow-y: auto;
   overscroll-behavior: contain;
 }
 
-.mediaContextMenu {
+// Carries the actual position so mediaContextMenu and its sibling
+// mediaReplaceMenu share a positioned ancestor - same role .blockToolbar
+// plays for .settingsMenu/.settingsDetailMenu.
+.mediaMenuWrap {
   position: fixed;
   z-index: calc(var(--z-overlay) + 4);
+}
+
+.mediaReplaceMenu {
+  position: absolute;
+  top: 0;
+  left: calc(200px + var(--spacing-tiny-sm));
+  z-index: calc(var(--z-overlay) + 1);
+  max-height: min(560px, calc(100vh - 120px));
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 /* Inline mark visuals (bold/semibold/italic/underline/strike/code/highlight)

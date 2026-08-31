@@ -1,6 +1,6 @@
 .menu {
   display: flex;
-  width: 240px;
+  width: 220px;
   flex-direction: column;
   align-items: stretch;
   overflow: hidden;
@@ -40,6 +40,7 @@
   display: flex;
   width: 100%;
   flex-direction: column;
+  flex-shrink: 0;
   align-items: stretch;
   overflow: hidden;
   border-radius: var(--radius-xs);
@@ -48,6 +49,7 @@
 .separatorWrap {
   display: flex;
   width: 100%;
+  flex-shrink: 0;
   justify-content: center;
   padding: var(--spacing-tiny-md) var(--spacing-tiny-lg);
 }
@@ -79,17 +81,8 @@
 }
 
 .item:focus-visible:not(:disabled) {
-  background: var(--color-neutral-background-inverse-low);
+  background: var(--color-neutral-background-hovered-pressed);
   outline: none;
-}
-
-.item:focus-visible:not(:disabled) .label,
-.item:focus-visible:not(:disabled) .description,
-.item:focus-visible:not(:disabled) .shortcut,
-.item:focus-visible:not(:disabled) .icon,
-.item:focus-visible:not(:disabled) .chevron,
-.item:focus-visible:not(:disabled) .check {
-  color: var(--color-neutral-foreground-inverse-main);
 }
 
 .item:disabled {
@@ -105,20 +98,46 @@
   color: var(--color-neutral-foreground-disabled);
 }
 
+// A submenu's open trigger row (e.g. the "바꾸기"/type-switch chevron rows)
+// sets active=true for as long as the submenu stays open - it used to get a
+// dark inverse pill (like a pressed button), but that read as a stray
+// black-background-white-text block once every other state here (hover,
+// focus-visible) was normalized to the same light wash. Same treatment here:
+// a slightly stronger wash than plain hover so "this one's open" is still
+// visible, with normal per-element text colors.
 .item.active {
-  background: var(--color-neutral-background-inverse-low);
+  background: var(--color-neutral-background-hovered-pressed);
 }
 
 .item.active .label,
+.item.active .check,
+.item:focus-visible:not(:disabled) .label,
+.item:focus-visible:not(:disabled) .check {
+  color: var(--color-neutral-foreground-main);
+}
+
 .item.active .description,
-.item.active .shortcut,
 .item.active .icon,
+.item:focus-visible:not(:disabled) .description,
+.item:focus-visible:not(:disabled) .icon {
+  color: var(--color-neutral-foreground-low);
+}
+
+.item.active .shortcut,
 .item.active .chevron,
-.item.active .check {
-  color: var(--color-neutral-foreground-inverse-main);
+.item:focus-visible:not(:disabled) .shortcut,
+.item:focus-visible:not(:disabled) .chevron {
+  color: var(--color-neutral-foreground-lowest);
 }
 
 .item.danger .label {
+  color: var(--color-neutral-foreground-main);
+}
+
+.item.danger:hover:not(:disabled) .label,
+.item.danger:hover:not(:disabled) .icon,
+.item.danger:active:not(:disabled) .label,
+.item.danger:active:not(:disabled) .icon {
   color: var(--color-error-foreground-main);
 }
 

@@ -59,13 +59,6 @@ a[aria-current='page']:after {
   width: 100%;
 }
 
-.project-media-captioned figcaption {
-  padding-inline: var(--spacing-tiny-lg);
-  color: var(--color-neutral-foreground-low);
-  font-size: var(--caption-md);
-  line-height: var(--line-height-normal);
-}
-
 .project-divider {
   width: min(100%, var(--layout-content-max));
   margin: var(--spacing-spacious-sm) auto;

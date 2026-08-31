@@ -64,7 +64,7 @@ header.offscreen {
 }
 
 header.offscreen:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -144,7 +144,7 @@ header nav a.logo h1 {
   position: relative;
   font-weight: 700;
   top: -1px;
-  font-family: 'FreightText';
+  font-family: "FreightText";
   letter-spacing: -0.075rem;
   font-size: 26px;
   user-select: none;
@@ -212,7 +212,7 @@ body.nav {
 }
 
 body.nav:before {
-  content: '';
+  content: "";
   position: fixed;
   width: 100%;
   height: 100%;
@@ -318,7 +318,7 @@ body .container div.mobile_nav {
   transform: translate3d(0, -100%, 0);
 }
 body .container div.mobile_nav:after {
-  content: ' ';
+  content: " ";
   display: block;
   width: 100%;
   height: 100%;
@@ -377,7 +377,7 @@ body .container div.mobile_nav ul.secondary a {
   padding: 0.25em 0;
 }
 body .container div.mobile_nav ul.secondary a:after {
-  content: ' ';
+  content: " ";
   width: 32px;
   height: 24px;
   /* background-image: url(/assets/img/arrow.svg); */
@@ -397,10 +397,11 @@ body .container div.mobile_nav ul.secondary a:after {
   bottom: 0;
   z-index: var(--z-navigation);
   mix-blend-mode: exclusion;
+  background: var(--palette-gray-950);
 }
 
 .progress-container:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
@@ -419,5 +420,5 @@ body.nav .progress-container.up {
 /* The progress bar (scroll indicator) */
 .progress-bar {
   height: 2px;
-  background: var(--palette-white);
+  background: var(--palette-white-main);
 }

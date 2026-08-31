@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import useProjectCarousel from "../../hooks/useProjectCarousel";
+import Icon from "../ui/Icon";
 import { getProjectAsset, resolveProjectAssetUrl } from "./projectAssets";
 import "./RelatedProjects.scss";
 
@@ -55,13 +56,17 @@ export default function RelatedProjects({ document }) {
             className="no-drag no"
             type="button"
             aria-label="이전 프로젝트 보기"
-          />
+          >
+            <Icon className="nav-icon" name="arrowLeft" />
+          </button>
           <button
             id="next"
             className="no-drag"
             type="button"
             aria-label="다음 프로젝트 보기"
-          />
+          >
+            <Icon className="nav-icon" name="arrowRight" />
+          </button>
         </div>
       </div>
     </div>

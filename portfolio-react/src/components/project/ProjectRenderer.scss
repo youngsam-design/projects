@@ -472,7 +472,11 @@ body .container .contents {
    ========================================================================== */
 
 .contents > section .img-wrap {
-  margin: var(--spacing-spacious-md) 0;
+  margin-top: var(--spacing-spacious-md);
+}
+
+.contents > section .img-wrap + .text {
+  margin-top: var(--spacing-spacious-md);
 }
 
 .contents > section .img-wrap + .img-wrap {

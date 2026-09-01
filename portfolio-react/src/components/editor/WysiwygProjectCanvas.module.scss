@@ -72,6 +72,24 @@
   outline: none;
 }
 
+// Keyboard-only focus indicator for blocks with no text of their own (media,
+// divider, spacer, columns, ...) - a text block already gets a visible caret
+// the instant it's focused (click or Tab alike), so [contenteditable="true"]
+// is deliberately excluded here: browsers treat text-editing surfaces as
+// "always focus-visible", which would otherwise draw this same outline on
+// every plain mouse click into text, not just keyboard navigation. Reuses
+// the same blue as the click-to-select highlight ([data-selected="true"]:after
+// below) so it reads as one system.
+.canvas [data-editor-block]:focus-visible {
+  outline: 2px solid rgb(35 131 226 / 60%);
+  outline-offset: 2px;
+  border-radius: var(--radius-2xs);
+}
+
+.canvas[data-theme="dark"] [data-editor-block]:focus-visible {
+  outline-color: rgb(163 201 255 / 70%);
+}
+
 .canvas [contenteditable="true"]:empty::before {
   color: var(--color-neutral-foreground-lowest);
   content: attr(data-placeholder);
@@ -80,6 +98,35 @@
 
 .canvas [data-selected="true"] {
   position: relative;
+}
+
+.embedBlock {
+  display: grid;
+  gap: var(--spacing-tiny-lg);
+}
+
+.embedUrlInput {
+  width: 100%;
+  min-height: 32px;
+  padding-inline: var(--spacing-tiny-lg);
+  border: 1px solid var(--color-neutral-border-main);
+  border-radius: var(--radius-xs);
+  color: inherit;
+  font: inherit;
+  font-size: var(--caption-md);
+  background: var(--color-neutral-background-main);
+}
+
+.embedPlaceholder {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed var(--color-neutral-border-main);
+  border-radius: var(--radius-md);
+  color: var(--color-neutral-foreground-lowest);
+  font-size: var(--caption-md);
+  cursor: default;
 }
 
 // A project's own background is whatever color its author picked (see

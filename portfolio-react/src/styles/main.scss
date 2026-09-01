@@ -78,6 +78,34 @@ a[aria-current='page']:after {
   height: var(--spacing-huge-md);
 }
 
+.project-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background: var(--color-neutral-background-low);
+}
+
+.project-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+table[data-block-type='table'] {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td[data-block-type='tableCell'] {
+  padding: var(--spacing-tiny-lg) var(--spacing-normal-sm);
+  border: 1px solid var(--color-neutral-border-main);
+  vertical-align: top;
+}
+
 .contents aside:not(.project-related) {
   width: min(100%, var(--layout-content-max));
   margin: var(--spacing-normal-xl) auto;

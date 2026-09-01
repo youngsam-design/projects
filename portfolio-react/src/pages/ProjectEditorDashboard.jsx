@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { createProjectDocument } from "../content/schema/projectDocument";
 import { contentApiRequest } from "../content/repositories/contentApiClient";
-import { createEditableProject, getProjectRepositoryMode, listEditableProjects } from "../content/repositories/projectRepository";
+import { createEditableProject, deleteEditableProject, getProjectRepositoryMode, listEditableProjects } from "../content/repositories/projectRepository";
 import Button from "../components/ui/Button";
 import Input from "../components/ui/Input";
 import styles from "../components/editor/ProjectDashboard.module.scss";
@@ -38,10 +38,6 @@ export default function ProjectEditorDashboard() {
       });
 
   useEffect(() => {
-    if (getProjectRepositoryMode() !== "api") {
-      setStatus("ready");
-      return;
-    }
     loadProjects();
   }, []);
 
@@ -55,6 +51,16 @@ export default function ProjectEditorDashboard() {
       setPassword("");
       setStatus("loading");
       loadProjects();
+    } catch (error) {
+      setMessage(error.message);
+    }
+  };
+
+  const deleteProject = async (project) => {
+    if (!window.confirm(`"${project.title}" 프로젝트를 삭제합니다. 되돌릴 수 없습니다. 계속할까요?`)) return;
+    try {
+      await deleteEditableProject(project.id, project.slug);
+      await loadProjects();
     } catch (error) {
       setMessage(error.message);
     }
@@ -166,6 +172,9 @@ export default function ProjectEditorDashboard() {
                   </Link>
                 )}
                 <Link to={`/editor/${project.slug}`}>편집</Link>
+                <Button onClick={() => deleteProject(project)} size="small" variant="neutral">
+                  삭제
+                </Button>
               </div>
             </article>
           ))}

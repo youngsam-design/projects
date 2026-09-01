@@ -762,6 +762,52 @@
   justify-self: start;
 }
 
+.tableEditor {
+  display: grid;
+  gap: var(--spacing-normal-sm);
+}
+
+.tableEditorActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-tiny-lg);
+}
+
+.tableEditorActions button {
+  min-height: 32px;
+  padding-inline: var(--spacing-normal-sm);
+  border: 1px solid var(--color-neutral-border-main);
+  border-radius: var(--radius-xs);
+  color: inherit;
+  font: inherit;
+  font-size: var(--caption-md);
+  background: var(--color-neutral-background-main);
+  cursor: pointer;
+}
+
+.tableEditorActions button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.tableRowEditor {
+  display: flex;
+  align-items: start;
+  gap: var(--spacing-tiny-lg);
+}
+
+.tableRowEditor > span {
+  flex: 0 0 auto;
+  padding-top: var(--spacing-normal-sm);
+  color: var(--color-neutral-foreground-lowest);
+  font-size: var(--caption-md);
+}
+
+.tableRowEditor > :not(span) {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
 .mediaBlock img,
 .mediaBlock video {
   width: 112px;

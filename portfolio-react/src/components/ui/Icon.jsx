@@ -4,6 +4,7 @@ import icArrowRight from "../../assets/icon/ic_arrow-right.svg";
 import icBold from "../../assets/icon/ic_bold.svg";
 import icBraket from "../../assets/icon/ic_braket.svg";
 import icBrokenLink from "../../assets/icon/ic_broken-link.svg";
+import icBrowser from "../../assets/icon/ic_browser.svg";
 import icCheck from "../../assets/icon/ic_check.svg";
 import icChevronDown from "../../assets/icon/ic_chevron-down.svg";
 import icChevronRight from "../../assets/icon/ic_chevron-right.svg";
@@ -37,6 +38,7 @@ import icSpacingVertical from "../../assets/icon/ic_spacing-vertical.svg";
 import icSquare from "../../assets/icon/ic_square.svg";
 import icStrikethrough from "../../assets/icon/ic_strikethrough.svg";
 import icSwitchHorizontal from "../../assets/icon/ic_switch-horizontal.svg";
+import icTable from "../../assets/icon/ic_table.svg";
 import icTrash from "../../assets/icon/ic_trash.svg";
 import icType from "../../assets/icon/ic_type.svg";
 import icTypeSquare from "../../assets/icon/ic_type-square.svg";
@@ -64,6 +66,7 @@ const icons = {
   copy: icCopy,
   delete: icTrash,
   divider: icDivider,
+  embed: icBrowser,
   drag: icGridDots,
   frame: icSquare,
   frameBottom: icFlexAlignBottom,
@@ -89,6 +92,7 @@ const icons = {
   settings: icSettings,
   spacer: icSpacingVertical,
   strike: icStrikethrough,
+  table: icTable,
   text: icType,
   underline: icUnderline,
   ungroup: icLayers3,

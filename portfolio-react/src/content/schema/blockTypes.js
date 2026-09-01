@@ -16,6 +16,10 @@ export const blockTypes = Object.freeze([
   "spacer",
   "callout",
   "codeBlock",
+  "table",
+  "tableRow",
+  "tableCell",
+  "embed",
 ]);
 
 export const blockTypeSet = new Set(blockTypes);

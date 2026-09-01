@@ -10,9 +10,9 @@ const assetKindSet = new Set(assetKinds);
 const assetProviderSet = new Set(assetProviders);
 const codeLanguageValueSet = new Set(codeLanguageValues);
 const richContentTypes = new Set(["text", "span", "link", "lineBreak"]);
-const rootTypes = new Set(["section", "group", "heading", "paragraph", "quote", "list", "image", "video", "text", "divider", "spacer", "callout", "codeBlock"]);
-const containerTypes = new Set(["section", "group", "listItem", "callout"]);
-const leafTypes = new Set(["text", "image", "video", "lineBreak", "divider", "spacer", "codeBlock"]);
+const rootTypes = new Set(["section", "group", "heading", "paragraph", "quote", "list", "image", "video", "text", "divider", "spacer", "callout", "codeBlock", "table", "embed"]);
+const containerTypes = new Set(["section", "group", "listItem", "callout", "tableCell"]);
+const leafTypes = new Set(["text", "image", "video", "lineBreak", "divider", "spacer", "codeBlock", "embed"]);
 
 const isObject = (value) => Boolean(value) && typeof value === "object" && !Array.isArray(value);
 
@@ -69,6 +69,14 @@ function validateChildType(parent, child, path, errors) {
     if (child.type !== "listItem" && !(child.type === "text" && !child.text?.trim())) {
       errors.push(`${path}: list can only contain listItem blocks`);
     }
+    return;
+  }
+  if (parent.type === "table") {
+    if (child.type !== "tableRow") errors.push(`${path}: table can only contain tableRow blocks`);
+    return;
+  }
+  if (parent.type === "tableRow") {
+    if (child.type !== "tableCell") errors.push(`${path}: tableRow can only contain tableCell blocks`);
     return;
   }
   if (containerTypes.has(parent.type) && child.type === "text" && child.text?.trim()) {
@@ -136,6 +144,17 @@ function validateBlock(block, path, errors, ids, assets) {
     if (!block.href || typeof block.href !== "string") errors.push(`${path}: href is required`);
     else if (/^(?:javascript|data):/i.test(block.href)) errors.push(`${path}: unsafe href protocol`);
     if (typeof block.newTab !== "boolean") errors.push(`${path}: newTab must be a boolean`);
+  }
+  if (block.type === "embed") {
+    // Freshly inserted via the "+" menu, an embed has no url yet - the
+    // editor shows a placeholder until one is set in the block settings
+    // panel, so an empty string has to stay valid or every fresh insert
+    // would fail validation before the author gets to fill it in.
+    if (typeof block.url !== "string") errors.push(`${path}: url must be a string`);
+    else if (block.url && /^(?:javascript|data):/i.test(block.url)) errors.push(`${path}: unsafe url protocol`);
+    if (block.aspectRatio !== undefined && typeof block.aspectRatio !== "number") {
+      errors.push(`${path}: aspectRatio must be a number when provided`);
+    }
   }
   if (["image", "video"].includes(block.type)) {
     validateAssetReference(block, "assetId", block.type, path, errors, assets);

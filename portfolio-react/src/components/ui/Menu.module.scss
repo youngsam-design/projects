@@ -39,8 +39,8 @@
 .section {
   display: flex;
   width: 100%;
-  flex-direction: column;
   flex-shrink: 0;
+  flex-direction: column;
   align-items: stretch;
   overflow: hidden;
   border-radius: var(--radius-xs);

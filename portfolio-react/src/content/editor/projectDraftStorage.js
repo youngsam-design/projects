@@ -49,6 +49,26 @@ export function removeProjectDraft(slug) {
   window.localStorage.removeItem(getProjectDraftKey(slug));
 }
 
+// Browser-mode drafts have no server-side index to list from - each one only
+// exists as a `localStorage` entry keyed by its own slug, which you'd
+// already need to know to look it up. Scanning the keys directly is the only
+// way to resurface previously created drafts (e.g. for the dashboard list).
+export function listLocalProjectDrafts() {
+  const drafts = [];
+  for (let index = 0; index < window.localStorage.length; index += 1) {
+    const key = window.localStorage.key(index);
+    if (!key?.startsWith(storagePrefix)) continue;
+    try {
+      const document = assertProjectDocument(JSON.parse(window.localStorage.getItem(key)));
+      drafts.push({ id: document.projectId, slug: document.slug, title: document.title, draftVersion: document.version });
+    } catch {
+      // A corrupt/foreign entry under this prefix shouldn't hide every other
+      // valid draft from the list.
+    }
+  }
+  return drafts;
+}
+
 export function downloadProjectDocument(document) {
   const blob = new Blob([`${JSON.stringify(document, null, 2)}\n`], {
     type: "application/json",

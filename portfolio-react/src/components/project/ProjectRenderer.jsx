@@ -7,7 +7,7 @@ import ImageBlock from "./blocks/ImageBlock";
 import ParagraphBlock from "./blocks/ParagraphBlock";
 import RichContent from "./blocks/RichContent";
 import VideoBlock from "./blocks/VideoBlock";
-import { findFirstContentSectionId, getGridProps, getNumberedListPosition, getVariantClassName } from "./blocks/blockVariants";
+import { findFirstContentSectionId, getBlockTag, getGridProps, getNumberedListPosition, getVariantClassName } from "./blocks/blockVariants";
 import ProjectMeta from "./ProjectMeta";
 import { resolveProjectAssetUrl } from "./projectAssets";
 import "./ProjectRenderer.scss";
@@ -52,16 +52,29 @@ function SemanticBlock({ block, contentWidth, isNested, listNumber, meta, render
         <RichContent blocks={block.children} />
       </blockquote>
     );
+  if (block.type === "embed")
+    return (
+      <div
+        className={`project-embed ${gridProps.className ?? ""}`}
+        data-block-type="embed"
+        style={{ ...gridProps.style, aspectRatio: block.aspectRatio || undefined }}
+      >
+        <iframe allowFullScreen loading="lazy" src={block.url} title={block.url} />
+      </div>
+    );
 
-  const tags = {
-    section: "section",
-    group: "div",
-    list: block.ordered ? "ol" : "ul",
-    listItem: "li",
-    callout: "aside",
-  };
-  const Tag = tags[block.type];
+  const Tag = getBlockTag(block);
   if (!Tag) return null;
+
+  const renderedChildren =
+    block.children?.map((child, index) =>
+      renderBlock(
+        child,
+        block.children,
+        index,
+        block.type === "group" && block.variant?.includes("textList") && child.type === "group" && child.variant?.includes("textList"),
+      ),
+    ) ?? [];
 
   return createElement(
     Tag,
@@ -82,14 +95,10 @@ function SemanticBlock({ block, contentWidth, isNested, listNumber, meta, render
           key="meta"
         />
       ),
-      ...(block.children?.map((child, index) =>
-        renderBlock(
-          child,
-          block.children,
-          index,
-          block.type === "group" && block.variant?.includes("textList") && child.type === "group" && child.variant?.includes("textList"),
-        ),
-      ) ?? []),
+      // React requires an explicit <tbody> - unlike raw HTML parsing, it
+      // won't insert one implicitly, so <table><tr>...</tr></table> renders
+      // with a DOM-nesting warning (and a mismatched tree on updates).
+      block.type === "table" ? <tbody key="tbody">{renderedChildren}</tbody> : renderedChildren,
     ],
   );
 }

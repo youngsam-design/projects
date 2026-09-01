@@ -144,6 +144,48 @@ for (const file of files) {
     },
     "exactly one contentSection",
   );
+  expectInvalid(
+    document,
+    `${file} unsafe embed url`,
+    (draft) => {
+      draft.blocks.push({
+        id: "invalid-embed",
+        type: "embed",
+        url: "javascript:alert(1)",
+        variant: [],
+      });
+    },
+    "unsafe url protocol",
+  );
+  expectInvalid(
+    document,
+    `${file} table row with a non-cell child`,
+    (draft) => {
+      draft.blocks.push({
+        id: "invalid-table",
+        type: "table",
+        variant: [],
+        children: [
+          {
+            id: "invalid-table-row",
+            type: "tableRow",
+            variant: [],
+            children: [
+              {
+                id: "invalid-table-child",
+                type: "paragraph",
+                variant: [],
+                children: [
+                  { id: "invalid-table-text", type: "text", text: "bad", marks: [] },
+                ],
+              },
+            ],
+          },
+        ],
+      });
+    },
+    "tableRow can only contain tableCell blocks",
+  );
 
   console.log(
     `${file}: ${document.blocks.length} blocks, ${document.assets.length} assets`,

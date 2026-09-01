@@ -122,6 +122,37 @@ export function createColumnsBlock(count = 2) {
   };
 }
 
+export function createTableCellBlock() {
+  return {
+    id: createId("tableCell"),
+    type: "tableCell",
+    variant: [],
+    children: [createParagraphBlock()],
+  };
+}
+
+export function createTableRowBlock(columns = 2) {
+  return {
+    id: createId("tableRow"),
+    type: "tableRow",
+    variant: [],
+    children: Array.from({ length: columns }, createTableCellBlock),
+  };
+}
+
+export function createTableBlock(rows = 2, columns = 2) {
+  return {
+    id: createId("table"),
+    type: "table",
+    variant: [],
+    children: Array.from({ length: rows }, () => createTableRowBlock(columns)),
+  };
+}
+
+export function createEmbedBlock(url = "") {
+  return { id: createId("embed"), type: "embed", url, variant: [] };
+}
+
 export function createLinkedParagraphBlock() {
   return {
     id: createId("paragraph"),
@@ -299,6 +330,19 @@ export function convertBlockType(block, targetType) {
   if (targetType === "codeBlock") {
     return { ...shared, type: "codeBlock", language: "javascript", code: text, variant: [] };
   }
+  if (targetType === "table") {
+    const table = createTableBlock();
+    if (text.trim()) {
+      table.children[0].children[0] = {
+        ...table.children[0].children[0],
+        children: richChildren(),
+      };
+    }
+    return { ...table, ...shared };
+  }
+  if (targetType === "embed") {
+    return { ...shared, type: "embed", url: "", variant: [] };
+  }
 
   throw new Error(`지원하지 않는 블록 유형 '${targetType}'입니다.`);
 }
@@ -317,7 +361,11 @@ export function createUploadedAsset(file, kind) {
   };
 }
 
-export function duplicateBlock(block) {
+// Duplicates a bare block (no document/parent context needed) - distinct
+// from projectDocumentOperations.js's duplicateBlock(document, blockId),
+// which is the one the editor UI actually calls to duplicate a block in
+// place within a document.
+export function duplicateBlockNode(block) {
   const duplicate = structuredClone(block);
   const renewIds = (current) => {
     current.id = createId(current.type);

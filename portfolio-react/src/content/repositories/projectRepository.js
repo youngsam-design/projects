@@ -1,9 +1,11 @@
 import {
   createProjectDraft,
+  listLocalProjectDrafts,
   loadProjectDraft,
   removeProjectDraft,
   saveProjectDraft,
 } from "../editor/projectDraftStorage";
+import { removeDocumentEditorAssets } from "../editor/editorAssetStorage";
 import { normalizeListItemParagraphVariant } from "../editor/projectDocumentOperations";
 import { assertProjectDocument } from "../schema/validateProjectDocument";
 import { normalizeProjectDocumentWhitespace } from "../schema/blockText";
@@ -56,9 +58,21 @@ export async function loadEditableProjectBySlug(slug) {
 }
 
 export async function listEditableProjects() {
-  if (!hasRemoteContentApi()) return [];
+  if (!hasRemoteContentApi()) return listLocalProjectDrafts();
   const response = await contentApiRequest("/api/admin/projects");
   return response.projects;
+}
+
+export async function deleteEditableProject(projectId, slug) {
+  if (!hasRemoteContentApi()) {
+    const draft = loadProjectDraft(slug);
+    if (draft) await removeDocumentEditorAssets(draft);
+    removeProjectDraft(slug);
+    return;
+  }
+  await contentApiRequest(`/api/admin/projects/${encodeURIComponent(projectId)}`, {
+    method: "DELETE",
+  });
 }
 
 export async function createEditableProject(document) {

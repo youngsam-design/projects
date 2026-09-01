@@ -31,12 +31,34 @@ function useClampToViewport() {
   return { ref, style: offset ? { transform: `translate(${offset.dx}px, ${offset.dy}px)` } : undefined };
 }
 
+// Arrow-key/Home/End navigation among this menu's items, queried live off
+// the DOM rather than tracked in state - these menus are small and often
+// re-rendered (checked/active items change on every selection), so reading
+// role="menuitem" nodes at keydown time is simpler and cheaper than keeping
+// a parallel index in sync. Each item keeps its own default tabIndex (still
+// individually Tab-reachable) - this only adds the arrow-key layer on top.
+function handleMenuKeyDown(event) {
+  if (!["ArrowDown", "ArrowUp", "Home", "End"].includes(event.key)) return;
+  const items = Array.from(event.currentTarget.querySelectorAll('[role="menuitem"]:not(:disabled)'));
+  if (!items.length) return;
+  const currentIndex = items.indexOf(window.document.activeElement);
+  let nextIndex;
+  if (event.key === "ArrowDown") nextIndex = currentIndex < 0 ? 0 : (currentIndex + 1) % items.length;
+  else if (event.key === "ArrowUp") nextIndex = currentIndex < 0 ? items.length - 1 : (currentIndex - 1 + items.length) % items.length;
+  else if (event.key === "Home") nextIndex = 0;
+  else nextIndex = items.length - 1;
+  event.preventDefault();
+  items[nextIndex]?.focus();
+}
+
 export default function Menu({ children, className, style, width, ...rest }) {
   const { ref, style: clampStyle } = useClampToViewport();
   return (
     <div
       className={[styles.menu, className].filter(Boolean).join(" ")}
+      onKeyDown={handleMenuKeyDown}
       ref={ref}
+      role="menu"
       style={width ? { width, ...style, ...clampStyle } : { ...style, ...clampStyle }}
       {...rest}
     >
@@ -95,6 +117,7 @@ export function MenuItem({
       disabled={disabled}
       onClick={onSelect}
       onMouseDown={onMouseDown}
+      role="menuitem"
       type="button"
     >
       {icon && <span className={styles.icon}>{icon}</span>}

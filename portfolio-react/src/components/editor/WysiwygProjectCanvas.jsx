@@ -9,6 +9,7 @@ import ProjectMeta from "../project/ProjectMeta";
 import RelatedProjects from "../project/RelatedProjects";
 import {
   findFirstContentSectionId,
+  getBlockTag,
   getGridProps,
   getMediaClassName,
   getNumberedListPosition,
@@ -60,6 +61,8 @@ const blockTypeOptions = [
   { value: "media", label: "이미지 또는 영상", icon: "media", shortcut: "" },
   { value: "columns-2", label: "2단 분할", icon: "columns2", shortcut: "" },
   { value: "columns-3", label: "3단 분할", icon: "columns3", shortcut: "" },
+  { value: "table", label: "표", icon: "table", shortcut: "" },
+  { value: "embed", label: "임베드", icon: "embed", shortcut: "" },
 ];
 
 function matchMarkdownShortcut(prefix) {
@@ -419,6 +422,7 @@ function EditableBlock({
   onCodeChange,
   onDragOverBlock,
   onDropBlock,
+  onEmbedUrlChange,
   onOpenMenu,
   onSelect,
   onTextAction,
@@ -442,6 +446,7 @@ function EditableBlock({
         listNumber={child.variant?.includes("numberedList") ? getNumberedListPosition(block.children, childIndex) : undefined}
         onCaptionChange={onCaptionChange}
         onCodeChange={onCodeChange}
+        onEmbedUrlChange={onEmbedUrlChange}
         onSelect={onSelect}
         onTextAction={onTextAction}
         onTextChange={onTextChange}
@@ -472,7 +477,18 @@ function EditableBlock({
         "data-editor-block": true,
         "data-editor-block-id": block.id,
         "data-selected": selected || undefined,
+        tabIndex: 0,
         onClick: activate,
+        onFocus: activate,
+        onKeyDown: (event) => {
+          // Only react when the wrapper itself is focused, not a focusable
+          // descendant (contenteditable text, a nested button) bubbling its
+          // own Enter/Space handling up - those already do their own thing.
+          if (event.target !== event.currentTarget) return;
+          if (event.key !== "Enter" && event.key !== " ") return;
+          event.preventDefault();
+          activate(event);
+        },
         onDragOver: (event) => {
           event.preventDefault();
           onDragOverBlock?.(event);
@@ -582,16 +598,35 @@ function EditableBlock({
       />
     );
   }
+  if (block.type === "embed") {
+    return (
+      <div
+        className={`${styles.embedBlock} ${gridProps.className ?? ""}`}
+        data-block-type="embed"
+        style={gridProps.style}
+        {...interactionProps}
+      >
+        <input
+          className={styles.embedUrlInput}
+          inputMode="url"
+          onChange={(event) => onEmbedUrlChange?.(block.id, event.target.value)}
+          onClick={(event) => event.stopPropagation()}
+          placeholder="임베드 URL (https://...)"
+          type="url"
+          value={block.url}
+        />
+        <div className="project-embed" style={{ aspectRatio: block.aspectRatio || undefined }}>
+          {block.url ? (
+            <iframe loading="lazy" src={block.url} title={block.url} />
+          ) : (
+            <span className={styles.embedPlaceholder}>임베드 URL을 위에 입력하세요</span>
+          )}
+        </div>
+      </div>
+    );
+  }
 
-  const tags = {
-    section: "section",
-    group: "div",
-    list: block.ordered ? "ol" : "ul",
-    listItem: "li",
-    callout: "aside",
-    span: "span",
-  };
-  const Tag = tags[block.type];
+  const Tag = getBlockTag(block);
   return Tag ? (
     <Tag
       className={className}
@@ -600,7 +635,7 @@ function EditableBlock({
       style={gridProps.style}
       {...interactionProps}
     >
-      {children}
+      {block.type === "table" ? <tbody>{children}</tbody> : children}
     </Tag>
   ) : null;
 }
@@ -614,6 +649,7 @@ function EditableBlockList({
   onCodeChange,
   onDragOverBlock,
   onDropBlock,
+  onEmbedUrlChange,
   onOpenMenu,
   onSelect,
   onTextAction,
@@ -645,6 +681,7 @@ function EditableBlockList({
             onCodeChange={onCodeChange}
             onDragOverBlock={onDragOverBlock}
             onDropBlock={onDropBlock}
+            onEmbedUrlChange={onEmbedUrlChange}
             onOpenMenu={onOpenMenu}
             onToggleSelect={onToggleSelect}
             parentId={block.id}
@@ -667,6 +704,7 @@ function EditableBlockList({
         onCodeChange={onCodeChange}
         onDragOverBlock={(event) => onDragOverBlock(block, parentId, index, event)}
         onDropBlock={(event) => onDropBlock(block, parentId, index, event)}
+        onEmbedUrlChange={onEmbedUrlChange}
         onOpenMenu={onOpenMenu ? (event) => onOpenMenu(block, parentId, index, event) : undefined}
         onSelect={onSelect}
         onTextAction={onTextAction}
@@ -684,6 +722,8 @@ function EditableBlockList({
 
 export default function WysiwygProjectCanvas({
   document,
+  onAddTableColumn,
+  onAddTableRow,
   onBackspace,
   onCaptionChange,
   onChangeType,
@@ -692,6 +732,7 @@ export default function WysiwygProjectCanvas({
   onDeleteBlocks,
   onDocumentChange,
   onDuplicate,
+  onEmbedUrlChange,
   onEnter,
   onFrameChange,
   onGroupBlocks,
@@ -704,6 +745,8 @@ export default function WysiwygProjectCanvas({
   onPaste,
   onPickFrameBackground,
   onPlaybackChange,
+  onRemoveTableColumn,
+  onRemoveTableRow,
   onReplaceMedia,
   onReplaceMediaWithAsset,
   onResize,
@@ -887,6 +930,34 @@ export default function WysiwygProjectCanvas({
     };
   }, [mediaMenu]);
   useEffect(() => {
+    if (!popover) return;
+    const closePopover = (event) => {
+      if (!event.target.closest?.("[data-block-toolbar]")) setPopover(null);
+    };
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") setPopover(null);
+    };
+    window.addEventListener("pointerdown", closePopover);
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("pointerdown", closePopover);
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [popover]);
+  // Opening a menu with a click leaves keyboard focus on whatever triggered
+  // it (the toolbar button, a context-menu click) - the panel that appears
+  // elsewhere in the DOM never receives focus on its own, so arrow-key
+  // navigation inside it (see Menu.jsx) has nothing to move from until
+  // something inside it is focused first.
+  useEffect(() => {
+    if (!popover && !mediaMenu) return;
+    const frame = window.requestAnimationFrame(() => {
+      const container = popover ? "[data-block-toolbar]" : "[data-media-menu]";
+      window.document.querySelector(`${container} [role="menuitem"]:not(:disabled)`)?.focus();
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, [popover, mediaMenu]);
+  useEffect(() => {
     if (selectedBlockIds.size === 0) return;
     const handleKeyDown = (event) => {
       if (event.key === "Escape") setSelectedBlockIds(new Set());
@@ -928,6 +999,12 @@ export default function WysiwygProjectCanvas({
       width: rect.width,
       height: rect.height,
       lineHeight,
+      // Drag-resize computes a 1-14 grid.span against a [data-content-grid]
+      // ancestor's own width (see startResize) - a block outside one (a
+      // fullMax section, or one not yet wrapped in a section at all) has no
+      // such grid to measure against, so span never has any visual effect
+      // there. Captured once here rather than re-queried on every render.
+      hasGridAncestor: Boolean(element.closest("[data-content-grid]")),
     });
     setPopover(null);
     setReplaceMode(false);
@@ -982,9 +1059,23 @@ export default function WysiwygProjectCanvas({
   // interactive control, where the same keys mean "edit this text"/"delete
   // this character" instead (mirrors the guard handleCanvasMouseDown already
   // uses to tell "clicked a block" from "clicked into its editable content").
+  const moveActiveBlock = (direction) => {
+    if (!liveActiveBlock || !onMove) return;
+    const parent = findParentBlock(document.blocks, liveActiveBlock.id);
+    const siblings = parent ? (parent.children ?? []) : document.blocks;
+    const index = siblings.findIndex((sibling) => sibling.id === liveActiveBlock.id);
+    const nextIndex = index + direction;
+    if (index === -1 || nextIndex < 0 || nextIndex >= siblings.length) return;
+    onMove(liveActiveBlock.id, parent?.id ?? null, nextIndex);
+  };
   useEffect(() => {
     if (!activeBlock) return;
     const handleKeyDown = (event) => {
+      if ((event.metaKey || event.ctrlKey) && event.shiftKey && (event.key === "ArrowUp" || event.key === "ArrowDown")) {
+        event.preventDefault();
+        moveActiveBlock(event.key === "ArrowUp" ? -1 : 1);
+        return;
+      }
       if (event.key !== "Delete" && event.key !== "Backspace") return;
       if (event.target.closest?.("[contenteditable], input, select, textarea")) return;
       event.preventDefault();
@@ -992,7 +1083,7 @@ export default function WysiwygProjectCanvas({
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [activeBlock]);
+  }, [activeBlock, document]);
   useEffect(() => {
     if (selectedBlockIds.size === 0) return;
     const handleKeyDown = (event) => {
@@ -1009,6 +1100,16 @@ export default function WysiwygProjectCanvas({
     if (event.target.closest("[data-editor-block], [contenteditable], button, a, input, select, textarea, [data-media-menu]")) {
       return;
     }
+    // The drag starts on empty canvas, but as the pointer moves it crosses
+    // over block text - left alone, the browser reads that as a normal
+    // text-selection drag and highlights the text underneath the marquee
+    // alongside it. preventDefault() here stops that native selection from
+    // ever starting (this is the standard way to do marquee/box-select
+    // without fighting the browser's own drag-to-select-text behavior), and
+    // clearing any selection left over from an earlier click keeps a stray
+    // text highlight from lingering under the new marquee.
+    event.preventDefault();
+    window.getSelection()?.removeAllRanges();
     // Attach the tracking listeners synchronously, right here, instead of
     // from an effect keyed on dragSelect state - waiting for that state to
     // commit and the effect to run loses the race against pointermove/up
@@ -1268,6 +1369,7 @@ export default function WysiwygProjectCanvas({
             setDraggedBlockId(null);
             setDropIndicator(null);
           }}
+          onEmbedUrlChange={onEmbedUrlChange}
           onOpenMenu={openMediaMenu}
           onSelect={onSelect}
           onTextAction={textActions}
@@ -1401,7 +1503,7 @@ export default function WysiwygProjectCanvas({
           }}
         />
       )}
-      {activeBlock && !activeBlockOffscreen && liveActiveBlock && isResizableBlock(liveActiveBlock) && (
+      {activeBlock && !activeBlockOffscreen && activeBlock.hasGridAncestor && liveActiveBlock && isResizableBlock(liveActiveBlock) && (
         <div
           className={styles.resizeFrame}
           style={{
@@ -1428,6 +1530,7 @@ export default function WysiwygProjectCanvas({
       {activeBlock && !activeBlockOffscreen && (
         <div
           className={styles.blockToolbar}
+          data-block-toolbar
           style={{
             // 32px matches IconButton's "small" size (see IconButton.module.scss) -
             // the toolbar's own rendered height, needed to center it against
@@ -1504,6 +1607,27 @@ export default function WysiwygProjectCanvas({
                   <MenuItem ariaLabel="그룹 해제" icon={<Icon name="ungroup" />} label="그룹 해제" onSelect={handleUngroup} />
                 )}
               </MenuSection>
+              {liveActiveBlock?.type === "table" && (
+                <>
+                  <MenuSeparator />
+                  <MenuSection>
+                    <MenuItem icon={<Icon name="add" />} label="행 추가" onSelect={() => onAddTableRow?.(liveActiveBlock.id)} />
+                    <MenuItem
+                      disabled={liveActiveBlock.children.length <= 1}
+                      icon={<Icon name="delete" />}
+                      label="행 삭제"
+                      onSelect={() => onRemoveTableRow?.(liveActiveBlock.id)}
+                    />
+                    <MenuItem icon={<Icon name="add" />} label="열 추가" onSelect={() => onAddTableColumn?.(liveActiveBlock.id)} />
+                    <MenuItem
+                      disabled={(liveActiveBlock.children[0]?.children.length ?? 0) <= 1}
+                      icon={<Icon name="delete" />}
+                      label="열 삭제"
+                      onSelect={() => onRemoveTableColumn?.(liveActiveBlock.id)}
+                    />
+                  </MenuSection>
+                </>
+              )}
             </Menu>
           )}
           {/* A sibling of settingsMenu, not nested inside it - Menu's own

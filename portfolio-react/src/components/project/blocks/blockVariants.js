@@ -51,6 +51,27 @@ export function isMediaBlock(block) {
   return block.type === "image" || block.type === "video";
 }
 
+// Single source of truth for block-type -> HTML tag, shared by the read-mode
+// renderer (ProjectRenderer.jsx) and the WYSIWYG editor canvas
+// (WysiwygProjectCanvas.jsx) so the two never drift - they previously kept
+// separate copies of this map and one was missing "span", which made span
+// blocks render fine in the editor but silently disappear on the public page.
+const blockTags = {
+  section: "section",
+  group: "div",
+  listItem: "li",
+  callout: "aside",
+  span: "span",
+  table: "table",
+  tableRow: "tr",
+  tableCell: "td",
+};
+
+export function getBlockTag(block) {
+  if (block.type === "list") return block.ordered ? "ol" : "ul";
+  return blockTags[block.type];
+}
+
 // Media blocks and manually-grouped ("custom") groups are the only blocks
 // that keep their own per-block width instead of the shared "본문 너비"
 // preset, so they're the only ones that get the drag-to-resize handles.

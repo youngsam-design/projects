@@ -5,7 +5,7 @@ import {
 } from "../../content/schema/blockText";
 import { codeLanguages } from "../../content/schema/codeLanguages";
 import { isFormattableLanguage } from "../../content/editor/formatCode";
-import { createListItemBlock } from "../../content/editor/projectBlockFactory";
+import { createListItemBlock, createTableCellBlock, createTableRowBlock } from "../../content/editor/projectBlockFactory";
 import {
   getProjectAsset,
   resolveProjectAssetUrl,
@@ -251,6 +251,79 @@ function ListEditor({ block, editorProps }) {
   );
 }
 
+function TableEditor({ block, editorProps }) {
+  const rowCount = block.children.length;
+  const columnCount = block.children[0]?.children.length ?? 0;
+  const addRow = () =>
+    editorProps.onBlockChange(block.id, (current) => ({
+      ...current,
+      children: [...current.children, createTableRowBlock(columnCount || 1)],
+    }));
+  const removeRow = () =>
+    editorProps.onBlockChange(block.id, (current) => ({
+      ...current,
+      children: current.children.slice(0, -1),
+    }));
+  const addColumn = () =>
+    editorProps.onBlockChange(block.id, (current) => ({
+      ...current,
+      children: current.children.map((row) => ({
+        ...row,
+        children: [...row.children, createTableCellBlock()],
+      })),
+    }));
+  const removeColumn = () =>
+    editorProps.onBlockChange(block.id, (current) => ({
+      ...current,
+      children: current.children.map((row) => ({
+        ...row,
+        children: row.children.slice(0, -1),
+      })),
+    }));
+
+  return (
+    <div className={styles.tableEditor}>
+      <div className={styles.tableEditorActions}>
+        <button onClick={addRow} type="button">
+          + 행
+        </button>
+        <button disabled={rowCount <= 1} onClick={removeRow} type="button">
+          - 행
+        </button>
+        <button onClick={addColumn} type="button">
+          + 열
+        </button>
+        <button disabled={columnCount <= 1} onClick={removeColumn} type="button">
+          - 열
+        </button>
+      </div>
+      {block.children.map((row, rowIndex) => (
+        <div className={styles.tableRowEditor} key={row.id}>
+          <span>{rowIndex + 1}행</span>
+          {row.children.map((cell) => (
+            <BlockEditor block={cell} key={cell.id} {...editorProps} />
+          ))}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function EmbedEditor({ block, onBlockChange }) {
+  return (
+    <label className={styles.field}>
+      임베드 URL
+      <input
+        inputMode="url"
+        onChange={(event) => onBlockChange(block.id, { url: event.target.value })}
+        placeholder="https://..."
+        type="url"
+        value={block.url}
+      />
+    </label>
+  );
+}
+
 export default function BlockEditor({
   block,
   depth = 0,
@@ -383,6 +456,24 @@ export default function BlockEditor({
         }}
       />
     );
+  }
+  if (block.type === "table") {
+    return (
+      <TableEditor
+        block={block}
+        editorProps={{
+          depth,
+          document,
+          hideMediaLayoutControl: childHideMediaLayoutControl,
+          onBlockChange,
+          onMarksChange,
+          onTextChange,
+        }}
+      />
+    );
+  }
+  if (block.type === "embed") {
+    return <EmbedEditor block={block} onBlockChange={onBlockChange} />;
   }
 
   const children = visibleChildren(block);

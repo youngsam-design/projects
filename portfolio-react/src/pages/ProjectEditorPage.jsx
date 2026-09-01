@@ -15,18 +15,24 @@ import {
   createCodeBlock,
   createColumnsBlock,
   createDividerBlock,
+  createEmbedBlock,
   createHeadingBlock,
   createLinkBlock,
   createMediaBlock,
   createParagraphBlock,
   createQuoteBlock,
   createSpacerBlock,
+  createTableBlock,
+  createTableCellBlock,
+  createTableRowBlock,
   createTextBlock,
   createTextListBlock,
   convertBlockType,
   getBlockTypeValue,
 } from "../content/editor/projectBlockFactory";
 import { materializeEditorAssets, removeDocumentEditorAssets } from "../content/editor/editorAssetStorage";
+import { prepareImportedProjectDocument, findMissingEditorAssets } from "../content/editor/projectDocumentImport";
+import { downloadProjectDocument } from "../content/editor/projectDraftStorage";
 import {
   detachListItemHeading,
   duplicateBlock,
@@ -47,7 +53,7 @@ import {
 } from "../content/editor/projectDocumentOperations";
 import { loadProjectV2Content } from "../content/projects-v2";
 import { normalizeProjectDocumentWhitespace } from "../content/schema/blockText";
-import { uploadProjectAsset } from "../content/repositories/assetRepository";
+import { deleteProjectAsset, uploadProjectAsset } from "../content/repositories/assetRepository";
 import { contentApiRequest } from "../content/repositories/contentApiClient";
 import {
   getProjectRepositoryMode,
@@ -79,6 +85,7 @@ export default function ProjectEditorPage() {
   const [saveState, setSaveState] = useState("saved");
   const [dragActive, setDragActive] = useState(false);
   const fileInputRef = useRef(null);
+  const importInputRef = useRef(null);
   const mediaInsertTargetRef = useRef(null);
   const dragDepthRef = useRef(0);
   const documentRef = useRef(null);
@@ -127,6 +134,17 @@ export default function ProjectEditorPage() {
   useEffect(() => {
     documentRef.current = document;
   }, [document]);
+
+  // "conflict"/"error" describe an unresolved problem and should stay on
+  // screen until the user acts on them (see reloadLatestDocument/save) -
+  // every other message (upload success, export result, etc.) is just a
+  // passing notice and shouldn't linger indefinitely over whatever comes
+  // after it.
+  useEffect(() => {
+    if (!message || saveState === "conflict" || saveState === "error") return;
+    const timer = window.setTimeout(() => setMessage(""), 4500);
+    return () => window.clearTimeout(timer);
+  }, [message, saveState]);
 
   useEffect(() => {
     if (!["dirty", "saving"].includes(saveState)) return;
@@ -517,10 +535,64 @@ export default function ProjectEditorPage() {
     setSaveState("dirty");
   };
   const updateMarks = (blockId, marks) => apply((current) => setTextMarks(current, blockId, marks));
+
+  // Every asset in document.assets is expected to be referenced from exactly
+  // one place (a block's assetId/posterAssetId/frameBackgroundAssetId, the
+  // hero cover, or a related-project thumbnail) - uploadMedia always attaches
+  // a freshly uploaded asset to one of those the moment it's uploaded, there's
+  // no "upload without placing" flow. So after any operation that can drop a
+  // reference (deleting a block, replacing its media), whatever's left
+  // unreferenced is garbage, not something intentionally kept around.
+  const collectReferencedAssetIds = (targetDocument) => {
+    const referenced = new Set();
+    const visit = (block) => {
+      if (block.assetId) referenced.add(block.assetId);
+      if (block.posterAssetId) referenced.add(block.posterAssetId);
+      if (block.frameBackgroundAssetId) referenced.add(block.frameBackgroundAssetId);
+      block.children?.forEach(visit);
+    };
+    targetDocument.blocks.forEach(visit);
+    if (targetDocument.hero?.coverAssetId) referenced.add(targetDocument.hero.coverAssetId);
+    targetDocument.relatedProjects?.forEach((project) => {
+      if (project.thumbnailAssetId) referenced.add(project.thumbnailAssetId);
+    });
+    return referenced;
+  };
+  const pruneOrphanedAssets = (previousDocument, nextDocument) => {
+    const referenced = collectReferencedAssetIds(nextDocument);
+    const orphaned = previousDocument.assets.filter((asset) => !referenced.has(asset.id));
+    if (!orphaned.length) return nextDocument;
+    orphaned.forEach((asset) => {
+      deleteProjectAsset(asset).catch((error) => console.warn(`에셋을 정리하지 못했습니다: ${asset.id}`, error));
+    });
+    return { ...nextDocument, assets: nextDocument.assets.filter((asset) => referenced.has(asset.id)) };
+  };
+
   const updateMediaBlock = (blockId, update, historyField = null) => {
     change((current) => updateBlock(current, blockId, update), historyField ? `media:${blockId}:${historyField}` : null);
     setSaveState("dirty");
   };
+
+  const updateEmbedUrl = (blockId, url) => updateMediaBlock(blockId, { url }, `embed-url:${blockId}`);
+
+  const addTableRow = (blockId) =>
+    updateMediaBlock(blockId, (current) => ({
+      ...current,
+      children: [...current.children, createTableRowBlock(current.children[0]?.children.length ?? 1)],
+    }));
+  const removeTableRow = (blockId) =>
+    updateMediaBlock(blockId, (current) => (current.children.length <= 1 ? current : { ...current, children: current.children.slice(0, -1) }));
+  const addTableColumn = (blockId) =>
+    updateMediaBlock(blockId, (current) => ({
+      ...current,
+      children: current.children.map((row) => ({ ...row, children: [...row.children, createTableCellBlock()] })),
+    }));
+  const removeTableColumn = (blockId) =>
+    updateMediaBlock(blockId, (current) =>
+      (current.children[0]?.children.length ?? 0) <= 1
+        ? current
+        : { ...current, children: current.children.map((row) => ({ ...row, children: row.children.slice(0, -1) })) },
+    );
   const uploadMedia = async (file) => {
     if (!file) return;
     const kind = file.type.startsWith("image/") ? "image" : file.type.startsWith("video/") ? "video" : null;
@@ -560,17 +632,19 @@ export default function ProjectEditorPage() {
           assets: [...current.assets, asset],
         };
         if (target?.mode === "replace") {
-          return updateBlock(withAsset, target.blockId, (existing) => ({
+          const replaced = updateBlock(withAsset, target.blockId, (existing) => ({
             ...createMediaBlock(asset.id, kind),
             id: existing.id,
             ...(target.grid ? { grid: target.grid } : {}),
           }));
+          return pruneOrphanedAssets(current, replaced);
         }
         if (target?.mode === "frame-background") {
-          return updateBlock(withAsset, target.blockId, (existing) => ({
+          const updated = updateBlock(withAsset, target.blockId, (existing) => ({
             ...existing,
             frameBackgroundAssetId: asset.id,
           }));
+          return pruneOrphanedAssets(current, updated);
         }
         return insertBlock(withAsset, {
           parentId: target?.parentId ?? null,
@@ -658,6 +732,8 @@ export default function ProjectEditorPage() {
       spacer: createSpacerBlock,
       "columns-2": () => createColumnsBlock(2),
       "columns-3": () => createColumnsBlock(3),
+      table: () => createTableBlock(),
+      embed: () => createEmbedBlock(),
     };
     let block;
     if (kind.startsWith("heading-")) {
@@ -671,11 +747,11 @@ export default function ProjectEditorPage() {
   };
 
   const deleteBlock = (blockId) => {
-    apply((current) => removeBlock(current, blockId));
+    apply((current) => pruneOrphanedAssets(current, removeBlock(current, blockId)));
   };
 
   const deleteBlocksHandler = (blockIds) => {
-    apply((current) => removeBlocks(current, blockIds));
+    apply((current) => pruneOrphanedAssets(current, removeBlocks(current, blockIds)));
   };
 
   const save = async () => {
@@ -697,6 +773,7 @@ export default function ProjectEditorPage() {
   };
 
   const reset = async () => {
+    if (!window.confirm("로컬 초안을 삭제하고 원본으로 되돌립니다. 계속할까요?")) return;
     try {
       await resetEditableProject(document);
       await removeDocumentEditorAssets(document);
@@ -709,6 +786,40 @@ export default function ProjectEditorPage() {
   };
 
   const saveOrExport = () => (getProjectRepositoryMode() === "api" ? save() : exportProjectFile());
+
+  const reloadLatestDocument = async () => {
+    if (!window.confirm("저장하지 않은 로컬 변경 내용을 버리고 최신 문서를 다시 불러옵니다. 계속할까요?")) return;
+    try {
+      const latest = await loadEditableProject(sourceDocument);
+      replace(latest, { clearHistory: true });
+      setSaveState("saved");
+      setMessage("최신 문서를 다시 불러왔습니다.");
+    } catch (error) {
+      setMessage(`최신 문서를 불러오지 못했습니다: ${error.message}`);
+    }
+  };
+
+  const downloadDocumentAsJson = () => downloadProjectDocument(document);
+
+  const importDocumentFromFile = async (file) => {
+    if (!file) return;
+    try {
+      const text = await file.text();
+      const imported = prepareImportedProjectDocument(text, document);
+      const missingAssetIds = await findMissingEditorAssets(imported);
+      replace(imported, { clearHistory: true });
+      setSaveState("dirty");
+      setMessage(
+        missingAssetIds.length
+          ? `문서를 가져왔습니다. 로컬에 없는 에셋 ${missingAssetIds.length}개는 다시 업로드해야 합니다.`
+          : "문서를 가져왔습니다.",
+      );
+    } catch (error) {
+      setMessage(`가져오기 실패: ${error.message}`);
+    } finally {
+      if (importInputRef.current) importInputRef.current.value = "";
+    }
+  };
 
   const exportProjectFile = async () => {
     setBusy(true);
@@ -830,6 +941,8 @@ export default function ProjectEditorPage() {
               <Header isProject />
               <WysiwygProjectCanvas
                 document={displayDocument}
+                onAddTableColumn={addTableColumn}
+                onAddTableRow={addTableRow}
                 onBackspace={mergePreviousBlock}
                 onCaptionChange={(blockId, caption) => updateMediaBlock(blockId, { caption }, `caption:${blockId}`)}
                 onChangeType={changeBlockType}
@@ -838,6 +951,7 @@ export default function ProjectEditorPage() {
                 onDeleteBlocks={deleteBlocksHandler}
                 onDocumentChange={updateProjectSettings}
                 onDuplicate={duplicateBlockHandler}
+                onEmbedUrlChange={updateEmbedUrl}
                 onEnter={splitTextBlock}
                 onFrameChange={(blockId, patch) => updateMediaBlock(blockId, patch, `frame:${blockId}`)}
                 onGroupBlocks={groupBlocksHandler}
@@ -850,6 +964,8 @@ export default function ProjectEditorPage() {
                 onPaste={pasteBlocks}
                 onPickFrameBackground={pickFrameBackground}
                 onPlaybackChange={(blockId, patch) => updateMediaBlock(blockId, patch, `playback:${blockId}`)}
+                onRemoveTableColumn={removeTableColumn}
+                onRemoveTableRow={removeTableRow}
                 onReplaceMedia={replaceMediaBlock}
                 onReplaceMediaWithAsset={replaceMediaWithExistingAsset}
                 onUngroup={ungroupBlockHandler}
@@ -886,6 +1002,8 @@ export default function ProjectEditorPage() {
                           <option value="divider">구분선</option>
                           <option value="spacer">간격</option>
                           <option value="media">이미지 또는 영상</option>
+                          <option value="table">표</option>
+                          <option value="embed">임베드</option>
                         </select>
                       </label>
                       {isMediaBlock(block) && <p className={styles.gridResizeHint}>블록 좌우의 핸들을 드래그해 너비를 조절하세요.</p>}
@@ -931,6 +1049,24 @@ export default function ProjectEditorPage() {
                   <Button disabled={!hasDraft} onClick={reset} size="small" variant="neutral">
                     초기화
                   </Button>
+                  <Button onClick={downloadDocumentAsJson} size="small" variant="neutral">
+                    JSON 내보내기
+                  </Button>
+                  <Button onClick={() => importInputRef.current?.click()} size="small" variant="neutral">
+                    JSON 가져오기
+                  </Button>
+                  <input
+                    accept="application/json"
+                    className={styles.fileInput}
+                    onChange={(event) => importDocumentFromFile(event.target.files?.[0])}
+                    ref={importInputRef}
+                    type="file"
+                  />
+                  {saveState === "conflict" && (
+                    <Button onClick={reloadLatestDocument} size="small" variant="neutral">
+                      최신 문서 불러오기
+                    </Button>
+                  )}
                   <Button disabled={busy || saveState === "saving"} onClick={saveOrExport} size="small" variant="primary">
                     저장
                   </Button>

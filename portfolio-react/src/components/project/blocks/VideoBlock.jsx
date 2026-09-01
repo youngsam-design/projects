@@ -1,29 +1,42 @@
 import { useAsset } from "./AssetContext";
 import { getMediaClassName } from "./blockVariants";
 import FrameBox from "./FrameBox";
+import VideoPlaybackControl, { useVideoPlayback } from "./VideoPlaybackControl";
 
 export default function VideoBlock({ block, gridProps = {}, resolveAssetUrl }) {
   const video = useAsset(block.assetId);
   const poster = useAsset(block.posterAssetId, { optional: true });
   const frameBackground = useAsset(block.frameBackgroundAssetId, { optional: true });
+  const { isPlaying, progress, toggle, videoHandlers, videoRef } = useVideoPlayback(block.playback.autoplay);
 
-  // The .img-wrap wrapper (not the <video> itself) is what carries grid
-  // positioning and the legacy vertical-rhythm rules it shares with the
-  // static-HTML projects (see ProjectRenderer.scss) - standalone images and
-  // videos need it exactly like the old group-wrapped ones did.
-  const player = (
+  // The custom bottom-right control below is the sole way to see or change
+  // playback state when the "컨트롤 표시" option is on - the browser's own
+  // controls bar (heavier, and styled per-browser rather than to match the
+  // site) never renders at all, so `controls` on the element itself stays
+  // permanently off regardless of block.playback.controls.
+  const mediaElement = (
     <video
       className={getMediaClassName(block.variant, block.layout)}
       data-block-type="video"
       data-layout={block.layout}
       src={resolveAssetUrl(video.src)}
       poster={poster ? resolveAssetUrl(poster.src) : undefined}
-      controls={block.playback.controls}
       autoPlay={block.playback.autoplay}
       muted={block.playback.muted}
       loop={block.playback.loop}
       playsInline
+      ref={videoRef}
+      {...videoHandlers}
     />
+  );
+
+  const player = block.playback.controls ? (
+    <div className="video-player">
+      {mediaElement}
+      <VideoPlaybackControl isPlaying={isPlaying} onToggle={toggle} progress={progress} />
+    </div>
+  ) : (
+    mediaElement
   );
 
   const captioned = block.caption ? (

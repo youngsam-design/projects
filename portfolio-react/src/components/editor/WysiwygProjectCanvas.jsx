@@ -5,6 +5,7 @@ import { formatCode } from "../../content/editor/formatCode";
 import { getBlockTypeValue } from "../../content/editor/projectBlockFactory";
 import { getAssetLabel, getProjectAsset, resolveProjectAssetUrl } from "../project/projectAssets";
 import FrameBox from "../project/blocks/FrameBox";
+import VideoPlaybackControl, { useVideoPlayback } from "../project/blocks/VideoPlaybackControl";
 import ProjectMeta from "../project/ProjectMeta";
 import RelatedProjects from "../project/RelatedProjects";
 import {
@@ -332,14 +333,16 @@ function Media({ block, document, gridProps, onActivate, onCaptionChange, onCont
   // videos need it exactly like the old group-wrapped ones did.
   const className = getMediaClassName(block.variant, block.layout);
   const activate = (event) => (onActivate ? onActivate(event) : onSelect(block.id));
-  const media =
-    block.type === "image" ? (
-      <img alt={block.alt} className={className} data-block-type="image" data-layout={block.layout} onClick={activate} src={src} />
-    ) : (
+  // Called unconditionally regardless of block.type (Rules of Hooks) - the
+  // returned state/ref just goes unused for an image block.
+  const { isPlaying, progress, toggle, videoHandlers, videoRef } = useVideoPlayback(
+    block.type === "video" && block.playback.autoplay,
+  );
+  const videoElement =
+    block.type === "video" ? (
       <video
         autoPlay={block.playback.autoplay}
         className={className}
-        controls={block.playback.controls}
         data-block-type="video"
         data-layout={block.layout}
         loop={block.playback.loop}
@@ -347,8 +350,21 @@ function Media({ block, document, gridProps, onActivate, onCaptionChange, onCont
         onClick={activate}
         playsInline
         poster={block.posterAssetId ? resolveProjectAssetUrl(document, getProjectAsset(document, block.posterAssetId).src) : undefined}
+        ref={videoRef}
         src={src}
+        {...videoHandlers}
       />
+    ) : null;
+  const media =
+    block.type === "image" ? (
+      <img alt={block.alt} className={className} data-block-type="image" data-layout={block.layout} onClick={activate} src={src} />
+    ) : block.playback.controls ? (
+      <div className="video-player">
+        {videoElement}
+        <VideoPlaybackControl isPlaying={isPlaying} onToggle={toggle} progress={progress} />
+      </div>
+    ) : (
+      videoElement
     );
 
   const captioned = hasCaption ? (

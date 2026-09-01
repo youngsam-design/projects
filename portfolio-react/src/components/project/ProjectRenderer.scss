@@ -479,10 +479,6 @@ body .container .contents {
   margin-top: var(--spacing-spacious-md);
 }
 
-.contents > section .img-wrap + .img-wrap {
-  margin-top: 0;
-}
-
 .contents > section .text-li .img-wrap {
   margin-top: 3em;
   margin-bottom: 6em;
@@ -679,6 +675,93 @@ body .container .contents {
 .contents > section .content-section .img-wrap .video-in {
   width: 100%;
   height: auto;
+}
+
+/* Custom play/pause control (VideoPlaybackControl.jsx) shown instead of the
+   browser's own controls bar whenever a video block's "컨트롤 표시" option is
+   on. Click always toggles play/pause. A dynamic ring (drawn via
+   pathLength="1" so stroke-dasharray/-offset are plain 0-1 fractions) shows
+   real playback progress, sized larger than the icon so the two don't
+   overlap - the icon itself (see Icon.jsx's
+   videoPlay/videoPlayHover/videoPause/videoPauseHover) already bakes in its
+   own static ring-outline/solid-fill look, swapping to the "filled" variant
+   on hover/focus as a bolder "click me" cue. */
+.video-player {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.video-playback-control {
+  position: absolute;
+  right: var(--spacing-normal-lg);
+  bottom: var(--spacing-normal-lg);
+  z-index: 1;
+  display: grid;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  place-items: center;
+}
+
+// Sized smaller than the button so it sits inside the progress ring's
+// circumference rather than overlapping it - the ring is the one thing here
+// that's actually live, the icon's own baked-in ring/fill is just a frame.
+.video-playback-ring {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.video-playback-ring-track {
+  fill: none;
+  stroke: var(--palette-white-alpha-300);
+  stroke-width: 3;
+}
+
+.video-playback-ring-progress {
+  fill: none;
+  stroke: var(--palette-white-main);
+  stroke-linecap: round;
+  stroke-width: 3;
+  transition: stroke-dashoffset 0.15s linear;
+}
+
+// Every icon variant (play/pause x default/hover) stays mounted and is
+// pinned to the same single grid cell so all four stack exactly on top of
+// each other - grid-auto-flow would otherwise place undeclared children into
+// separate implicit rows instead.
+.video-playback-icon {
+  grid-area: 1 / 1;
+  width: 40px;
+  height: 40px;
+  color: var(--palette-white-main);
+  opacity: 1;
+  transition: opacity 0.01s ease-in-out;
+}
+
+// The hover/focus variant is already the "filled" artwork, so it starts
+// hidden and fades in on hover while its default-state sibling fades out -
+// purely CSS-driven (:hover/:focus-visible), independent of which play/pause
+// pair is currently active (an inline opacity:0 on the inactive pair, set in
+// VideoPlaybackControl.jsx, always wins over these class-based rules).
+.video-playback-icon-hover {
+  opacity: 0;
+}
+
+.video-playback-control:hover .video-playback-icon:not(.video-playback-icon-hover),
+.video-playback-control:focus-visible .video-playback-icon:not(.video-playback-icon-hover) {
+  opacity: 0;
+}
+
+.video-playback-control:hover .video-playback-icon-hover,
+.video-playback-control:focus-visible .video-playback-icon-hover {
+  opacity: 1;
 }
 
 .contents > section.full .img-wrap {

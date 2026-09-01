@@ -29,7 +29,11 @@ import icLayers3 from "../../assets/icon/ic_layers-3.svg";
 import icLink from "../../assets/icon/ic_link.svg";
 import icListDot from "../../assets/icon/ic_list-dot.svg";
 import icListNumbered from "../../assets/icon/ic_list-numbered.svg";
+import icPause from "../../assets/icon/ic_pause.svg";
+import icPauseFilled from "../../assets/icon/ic_pause-filled.svg";
 import icPhoto from "../../assets/icon/ic_photo.svg";
+import icPlay from "../../assets/icon/ic_play.svg";
+import icPlayFilled from "../../assets/icon/ic_play-filled.svg";
 import icPlaySquare from "../../assets/icon/ic_play-square.svg";
 import icPlus from "../../assets/icon/ic_plus.svg";
 import icRepeat from "../../assets/icon/ic_repeat.svg";
@@ -97,16 +101,20 @@ const icons = {
   underline: icUnderline,
   ungroup: icLayers3,
   unlink: icBrokenLink,
+  videoPause: icPause,
+  videoPauseHover: icPauseFilled,
+  videoPlay: icPlay,
+  videoPlayHover: icPlayFilled,
 };
 
-export default function Icon({ className, name }) {
+export default function Icon({ className, name, style }) {
   const src = icons[name];
   if (!src) return null;
   return (
     <span
       aria-hidden="true"
       className={[styles.icon, className].filter(Boolean).join(" ")}
-      style={{ WebkitMaskImage: `url("${src}")`, maskImage: `url("${src}")` }}
+      style={{ WebkitMaskImage: `url("${src}")`, maskImage: `url("${src}")`, ...style }}
     />
   );
 }

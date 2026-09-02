@@ -153,6 +153,17 @@ export function createEmbedBlock(url = "") {
   return { id: createId("embed"), type: "embed", url, variant: [] };
 }
 
+// Most providers' "share/embed" action hands you a whole <iframe> snippet
+// (YouTube, Figma, Google Maps, ...), not a bare URL - pulling the src out
+// so pasting that snippet directly into the URL field just works, instead
+// of requiring the author to dig the URL out of the markup themselves.
+// Anything that isn't an iframe tag (a plain URL, or an in-progress partial
+// paste) passes through unchanged.
+export function extractEmbedUrl(value) {
+  const match = value.match(/<iframe[^>]*\ssrc=["']([^"']+)["']/i);
+  return match ? match[1] : value;
+}
+
 export function createLinkedParagraphBlock() {
   return {
     id: createId("paragraph"),

@@ -38,6 +38,7 @@ import {
   createTextListBlock,
   convertBlockType,
   duplicateBlockNode,
+  extractEmbedUrl,
 } from "../src/content/editor/projectBlockFactory.js";
 import { prepareImportedProjectDocument } from "../src/content/editor/projectDocumentImport.js";
 import { createProjectDocument } from "../src/content/schema/projectDocument.js";
@@ -503,6 +504,19 @@ let embedDocument = insertBlock(source, { index: source.blocks.length, block: em
 if (embedDocument.blocks.at(-1).url !== "https://example.com/embed") {
   throw new Error("Embed block creation verification failed");
 }
+// Most providers' "embed" action hands you a whole <iframe> snippet, not a
+// bare URL - pasting one into the URL field should pull the src out rather
+// than trying to use the whole tag as a URL.
+if (
+  extractEmbedUrl('<iframe width="560" height="315" src="https://www.youtube.com/embed/abc123" title="x" allowfullscreen></iframe>') !==
+  "https://www.youtube.com/embed/abc123"
+) {
+  throw new Error("extractEmbedUrl did not pull the src out of a pasted iframe snippet");
+}
+if (extractEmbedUrl("https://example.com/embed") !== "https://example.com/embed") {
+  throw new Error("extractEmbedUrl altered a plain URL");
+}
+
 let rejectedUnsafeEmbedUrl = false;
 try {
   insertBlock(source, {

@@ -2,7 +2,7 @@ import { createElement, useEffect, useRef, useState } from "react";
 import { getBlockText, isBlankTextBlock } from "../../content/schema/blockText";
 import { getCodeLanguageLabel } from "../../content/schema/codeLanguages";
 import { formatCode } from "../../content/editor/formatCode";
-import { getBlockTypeValue } from "../../content/editor/projectBlockFactory";
+import { extractEmbedUrl, getBlockTypeValue } from "../../content/editor/projectBlockFactory";
 import { getAssetLabel, getProjectAsset, resolveProjectAssetUrl } from "../project/projectAssets";
 import FrameBox from "../project/blocks/FrameBox";
 import VideoPlaybackControl, { useVideoPlayback } from "../project/blocks/VideoPlaybackControl";
@@ -625,7 +625,7 @@ function EditableBlock({
         <input
           className={styles.embedUrlInput}
           inputMode="url"
-          onChange={(event) => onEmbedUrlChange?.(block.id, event.target.value)}
+          onChange={(event) => onEmbedUrlChange?.(block.id, extractEmbedUrl(event.target.value))}
           onClick={(event) => event.stopPropagation()}
           placeholder="임베드 URL (https://...)"
           type="url"

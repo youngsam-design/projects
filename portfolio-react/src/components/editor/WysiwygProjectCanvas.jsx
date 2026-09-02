@@ -1335,7 +1335,6 @@ export default function WysiwygProjectCanvas({
       }}
     >
       {document.pageMeta.styles && <style>{document.pageMeta.styles}</style>}
-      <div className={styles.canvasLabel}>페이지에서 직접 편집</div>
       <div className="contents" id="contents">
         <div id="slider">
           <div className="title-sec">

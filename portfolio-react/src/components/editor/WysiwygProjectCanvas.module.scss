@@ -40,20 +40,6 @@
   content: attr(data-placeholder);
 }
 
-.canvasLabel {
-  position: absolute;
-  z-index: calc(var(--z-header) + 1);
-  top: var(--spacing-tiny-lg);
-  right: var(--spacing-normal-sm);
-  padding: var(--spacing-tiny-lg) var(--spacing-normal-md);
-  border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-circular);
-  color: var(--color-neutral-foreground-low);
-  font-size: var(--caption-xs);
-  background: var(--palette-gray-alpha-inverse-900);
-  backdrop-filter: var(--blur-sm);
-}
-
 .canvas :global(#slider [contenteditable="true"]) {
   display: block;
   cursor: text;

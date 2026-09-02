@@ -274,7 +274,7 @@ body .container .contents {
   flex-wrap: wrap;
   font-family: "Wanted Sans Variable";
   margin-top: 4em;
-  margin-bottom: 1.25em;
+  margin-bottom: var(--spacing-normal-lg);
   letter-spacing: 0;
   word-break: keep-all;
   color: rgb(var(--theme-foreground));

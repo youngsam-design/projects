@@ -37,6 +37,7 @@
   top: 50%;
   display: flex;
   transform: translateY(-50%);
+  z-index: 1;
 }
 
 .field {
@@ -94,7 +95,7 @@
   cursor: not-allowed;
 }
 
-.input[data-invalid='true'] .field {
+.input[data-invalid="true"] .field {
   border-color: var(--color-error-border-main);
 }
 

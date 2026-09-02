@@ -1,4 +1,5 @@
 import { useLayoutEffect, useRef, useState } from "react";
+import { useSquircleClipPath } from "../../hooks/useSquircleClipPath";
 import Icon from "./Icon";
 import styles from "./Menu.module.scss";
 
@@ -52,14 +53,24 @@ function handleMenuKeyDown(event) {
 }
 
 export default function Menu({ children, className, style, width, ...rest }) {
-  const { ref, style: clampStyle } = useClampToViewport();
+  const { ref: clampRef, style: clampStyle } = useClampToViewport();
+  // main.scss's global `corner-shape: squircle` already covers this in
+  // Chromium - the clip-path here is what makes the same continuous-corner
+  // look show up in Safari/Firefox too. Needs its own ref (figma-squircle
+  // has to measure the rendered box), merged with useClampToViewport's via a
+  // callback ref since an element can only take one `ref` prop.
+  const { ref: squircleRef, style: squircleStyle } = useSquircleClipPath();
+  const setRefs = (node) => {
+    clampRef.current = node;
+    squircleRef.current = node;
+  };
   return (
     <div
       className={[styles.menu, className].filter(Boolean).join(" ")}
       onKeyDown={handleMenuKeyDown}
-      ref={ref}
+      ref={setRefs}
       role="menu"
-      style={width ? { width, ...style, ...clampStyle } : { ...style, ...clampStyle }}
+      style={width ? { width, ...style, ...clampStyle, ...squircleStyle } : { ...style, ...clampStyle, ...squircleStyle }}
       {...rest}
     >
       {children}

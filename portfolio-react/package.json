@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.7.0",
+    "figma-squircle": "^1.1.0",
     "html-react-parser": "^6.1.7",
     "prettier": "^3.9.6",
     "prismjs": "^1.30.0",

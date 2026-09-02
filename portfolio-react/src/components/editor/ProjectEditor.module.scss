@@ -267,15 +267,10 @@
   z-index: calc(var(--z-overlay) + 2);
   top: var(--spacing-normal-md);
   right: var(--spacing-normal-md);
-  min-height: 40px;
-  padding-inline: var(--spacing-normal-md);
-  border: 1px solid var(--color-neutral-border-main);
-  border-radius: var(--radius-circular);
-  color: var(--color-neutral-foreground-main);
-  font: inherit;
-  background: var(--palette-gray-alpha-inverse-900);
+  // Button's own variants have no shadow of their own (they're meant to sit
+  // on this app's flat chrome) - this one floats over an arbitrary project's
+  // rendered page instead, so it needs to visually lift off that content.
   box-shadow: var(--elevation-md);
-  cursor: pointer;
 }
 
 .revisionPanel {

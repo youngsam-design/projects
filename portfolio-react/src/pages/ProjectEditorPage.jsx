@@ -928,9 +928,9 @@ export default function ProjectEditorPage() {
             "--text-color": document.theme.mainForegroundColor,
           }}
         >
-          <button className={styles.previewBack} onClick={() => setView("edit")} type="button">
-            편집으로 돌아가기
-          </button>
+          <Button className={styles.previewBack} onClick={() => setView("edit")} size="small" variant="neutral">
+            Edit
+          </Button>
           <ProjectHero document={displayDocument} />
           <ProjectRenderer document={displayDocument} />
         </div>

@@ -1,4 +1,5 @@
 import { useCursorActive, useCursorHandlers } from "../effects/Cursor";
+import { useSquircleClipPath } from "../../hooks/useSquircleClipPath";
 import Icon from "./Icon";
 import styles from "./Button.module.scss";
 
@@ -19,12 +20,17 @@ export default function Button({
   onMouseEnter,
   onMouseLeave,
   size = "medium",
+  style,
   type = "button",
   variant = "primary",
   ...rest
 }) {
   const cursorActive = useCursorActive();
   const cursorHandlers = useCursorHandlers({ onMouseEnter, onMouseLeave });
+  // main.scss's global `corner-shape: squircle` already covers this in
+  // Chromium - the clip-path here is what makes the same continuous-corner
+  // look show up in Safari/Firefox too.
+  const squircle = useSquircleClipPath();
   return (
     <Component
       // "no-scale" opts this element out of Cursor.jsx's generic <a>
@@ -36,6 +42,8 @@ export default function Button({
       className={[styles.button, styles[variant], styles[size], cursorActive && styles.cursorActive, className, "no-scale"]
         .filter(Boolean)
         .join(" ")}
+      ref={squircle.ref}
+      style={{ ...style, ...squircle.style }}
       {...(Component === "button" ? { type } : {})}
       {...cursorHandlers}
       {...rest}
